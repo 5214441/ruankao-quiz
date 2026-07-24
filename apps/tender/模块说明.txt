@@ -1,0 +1,57 @@
+霍邱·六安招投标信息看板 V1.0 部署步骤
+
+一、建立新仓库
+1. 登录 GitHub。
+2. 点击右上角“+”。
+3. 选择“New repository”。
+4. Repository name 填：luan-tender-dashboard
+5. 选择 Public。
+6. 点击 Create repository。
+
+二、上传文件
+1. 在新仓库点击“uploading an existing file”或“Add file → Upload files”。
+2. 解压本升级包。
+3. 必须上传解压后的全部内容，包括：
+   .github
+   assets
+   data
+   icons
+   scripts
+   index.html
+   config.json
+   manifest.webmanifest
+   requirements.txt
+   sw.js
+   README.md
+4. 点击 Commit changes。
+
+提醒：
+GitHub网页上传时，隐藏文件夹“.github”有时不方便拖入。
+最稳妥方式是使用 GitHub Desktop，或者在网页中逐层新建：
+.github/workflows/update-and-deploy.yml
+
+三、启用 Pages
+1. 打开 Settings。
+2. 左侧点击 Pages。
+3. Source 选择 GitHub Actions。
+4. 保存。
+
+四、首次运行
+1. 点击仓库上方 Actions。
+2. 点击“每日更新并部署招投标看板”。
+3. 点击 Run workflow。
+4. 等待出现绿色对勾。
+
+五、访问地址
+https://5214441.github.io/luan-tender-dashboard/
+
+六、日常使用
+系统每天北京时间09:00自动更新。
+可在 Actions 页面随时手动点击 Run workflow 立即更新。
+
+七、看板当前默认规则
+- 重点地区：霍邱县、市直区
+- 可切换：六安市各县区
+- 行业：房建、市政、公路、水利
+- 排除：竞争性谈判、竞争性磋商、询价、单一来源、中标结果、成交公告
+- 默认隐藏：纯勘察、设计、监理、咨询

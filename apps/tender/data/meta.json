@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-07-25T09:00:00+08:00",
+  "sourceName": "六安市公共资源交易中心",
+  "sourceUrl": "https://ggzy.luan.gov.cn/",
+  "count": 12,
+  "newCount": 0,
+  "status": "示例数据已初始化；部署后由GitHub Actions每日自动更新",
+  "updateSchedule": "每天北京时间09:00"
+}

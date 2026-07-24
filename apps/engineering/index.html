@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4b3b8f"><link rel="stylesheet" href="style.css"><title>工程常用计算</title>
+</head><body>
+<header><a href="../../">← 返回工具箱</a><div><h1>工程常用计算</h1><p>所有参数按实际招标文件、合同或财务口径填写</p></div></header>
+<main>
+<div class="nav">
+<button class="active" data-tool="tax">含税换算</button><button data-tool="profit">利润测算</button><button data-tool="bid">报价线</button><button data-tool="payment">进度款</button><button data-tool="guarantee">保证金</button><button data-tool="uppercase">金额大写</button><button data-tool="date">工期日期</button><button data-tool="average">平均值</button>
+</div>
+
+<section id="tax" class="tool active"><h2>含税与不含税换算</h2><div class="form"><label>金额（元）<input id="taxAmount" type="number" value="1000000"></label><label>税率（%）<input id="taxRate" type="number" value="9"></label><label>输入金额类型<select id="taxType"><option value="inclusive">含税金额</option><option value="exclusive">不含税金额</option></select></label></div><button onclick="calcTax()">计算</button><div id="taxResult" class="result"></div></section>
+
+<section id="profit" class="tool"><h2>项目利润与利润率</h2><div class="form"><label>合同收入（元）<input id="income" type="number" value="1000000"></label><label>预计总成本（元）<input id="cost" type="number" value="850000"></label><label>其他费用（元）<input id="otherCost" type="number" value="30000"></label></div><button onclick="calcProfit()">计算</button><div id="profitResult" class="result"></div></section>
+
+<section id="bid" class="tool"><h2>投标报价比例线</h2><p class="hint">此工具只做数学换算，最终规则以招标文件为准。</p><div class="form"><label>控制价（元）<input id="controlPrice" type="number" value="10000000"></label><label>目标比例（%）<input id="targetRate" type="number" value="85"></label><label>拟报价（元）<input id="myBid" type="number" value="8500000"></label></div><button onclick="calcBid()">计算</button><div id="bidResult" class="result"></div></section>
+
+<section id="payment" class="tool"><h2>进度款与质保金</h2><div class="form"><label>已完成产值（元）<input id="completed" type="number" value="500000"></label><label>支付比例（%）<input id="payRate" type="number" value="80"></label><label>质保金比例（%）<input id="retentionRate" type="number" value="3"></label><label>已支付金额（元）<input id="paid" type="number" value="100000"></label></div><button onclick="calcPayment()">计算</button><div id="paymentResult" class="result"></div></section>
+
+<section id="guarantee" class="tool"><h2>投标/履约保证金测算</h2><div class="form"><label>计算基数（元）<input id="guaranteeBase" type="number" value="10000000"></label><label>比例（%）<input id="guaranteeRate" type="number" value="2"></label><label>招标文件规定上限（元，可空）<input id="guaranteeCap" type="number" value=""></label></div><button onclick="calcGuarantee()">计算</button><div id="guaranteeResult" class="result"></div></section>
+
+<section id="uppercase" class="tool"><h2>人民币金额大写</h2><div class="form one"><label>金额（元）<input id="upperAmount" type="number" step="0.01" value="1234567.89"></label></div><button onclick="calcUpper()">转换</button><div id="upperResult" class="result"></div></section>
+
+<section id="date" class="tool"><h2>工期日期计算</h2><div class="form"><label>开始日期<input id="startDate" type="date"></label><label>日历工期（天）<input id="duration" type="number" value="90"></label><label>计算方式<select id="dateMode"><option value="inclusive">开始日计入第1天</option><option value="exclusive">开始日后第N天</option></select></label></div><button onclick="calcDate()">计算</button><div id="dateResult" class="result"></div></section>
+
+<section id="average" class="tool"><h2>多家报价平均值</h2><div class="form one"><label>报价列表（用空格、逗号或换行分隔）<textarea id="values">8500000, 8620000, 8450000, 8710000</textarea></label></div><button onclick="calcAverage()">计算</button><div id="averageResult" class="result"></div></section>
+</main><script src="app.js"></script></body></html>

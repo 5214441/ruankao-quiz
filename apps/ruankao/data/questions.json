@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "q001",
+    "category": "项目管理",
+    "knowledge": "项目管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目章程最重要的作用是下列哪一项？",
+    "options": [
+      "详细列出全部项目活动",
+      "正式批准项目，并授予项目经理相应权限",
+      "确定所有采购供应商",
+      "代替项目管理计划"
+    ],
+    "answer": 1,
+    "explanation": "项目章程正式批准项目并授权项目经理使用组织资源。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q002",
+    "category": "范围管理",
+    "knowledge": "范围管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "WBS中可进一步估算成本、工期并分配责任的最低层级通常称为：",
+    "options": [
+      "控制账户",
+      "里程碑",
+      "工作包",
+      "项目章程"
+    ],
+    "answer": 2,
+    "explanation": "工作包是WBS的最低层级，是估算和控制的重要基础。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q003",
+    "category": "范围管理",
+    "knowledge": "范围管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "需求跟踪矩阵的主要用途是：",
+    "options": [
+      "记录员工考勤",
+      "建立需求与设计、成果和测试的对应关系",
+      "计算项目利润",
+      "确定付款比例"
+    ],
+    "answer": 1,
+    "explanation": "需求跟踪矩阵用于追踪需求从来源到验证与交付。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q004",
+    "category": "变更管理",
+    "knowledge": "变更管理",
+    "difficulty": 1,
+    "type": "scenario",
+    "text": "客户提出增加重要功能，项目经理首先应：",
+    "options": [
+      "立即开发",
+      "直接拒绝",
+      "记录变更并分析范围、进度、成本和风险影响",
+      "先开发再补审批"
+    ],
+    "answer": 2,
+    "explanation": "应先形成变更请求并进行影响分析，再按流程审批。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q005",
+    "category": "变更管理",
+    "knowledge": "变更管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "变更控制委员会CCB的核心职责通常是：",
+    "options": [
+      "编写代码",
+      "审查并批准、推迟或否决变更请求",
+      "代替客户验收",
+      "招聘成员"
+    ],
+    "answer": 1,
+    "explanation": "CCB负责变更评审和决策。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q006",
+    "category": "风险管理",
+    "knowledge": "风险管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "通过购买保险把经济损失转给保险公司，属于：",
+    "options": [
+      "规避",
+      "减轻",
+      "接受",
+      "转移"
+    ],
+    "answer": 3,
+    "explanation": "保险和合同责任转移通常属于风险转移。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q007",
+    "category": "质量管理",
+    "knowledge": "质量管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "检查、测试可交付成果是否符合质量标准，属于：",
+    "options": [
+      "规划质量",
+      "管理质量",
+      "控制质量",
+      "规划范围"
+    ],
+    "answer": 2,
+    "explanation": "控制质量关注实际成果是否符合标准。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q008",
+    "category": "采购与合同",
+    "knowledge": "采购与合同",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "范围明确且买方希望把成本超支风险更多转给卖方，宜采用：",
+    "options": [
+      "成本补偿合同",
+      "工料合同",
+      "固定总价合同",
+      "口头协议"
+    ],
+    "answer": 2,
+    "explanation": "固定总价合同下卖方承担的成本风险通常较大。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q009",
+    "category": "干系人与沟通",
+    "knowledge": "干系人与沟通",
+    "difficulty": 1,
+    "type": "scenario",
+    "text": "对权力高、利益高的干系人，应：",
+    "options": [
+      "监督即可",
+      "令其满意",
+      "重点管理、密切沟通",
+      "尽量少联系"
+    ],
+    "answer": 2,
+    "explanation": "这类干系人对项目影响最大，应重点管理。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q010",
+    "category": "范围管理",
+    "knowledge": "范围管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目范围基准通常包括：",
+    "options": [
+      "项目章程、合同、风险登记册",
+      "范围说明书、WBS和WBS词典",
+      "进度计划、预算和采购文件",
+      "会议纪要、周报和验收单"
+    ],
+    "answer": 1,
+    "explanation": "范围基准由范围说明书、WBS和WBS词典组成。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q011",
+    "category": "计算机网络",
+    "knowledge": "机网络",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "关于TCP的描述，正确的是：",
+    "options": [
+      "无连接且不可靠",
+      "面向连接并提供可靠传输",
+      "只能用于局域网",
+      "不进行差错检测"
+    ],
+    "answer": 1,
+    "explanation": "TCP具有确认、重传、排序和流量控制等机制。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q012",
+    "category": "数据库",
+    "knowledge": "数据库",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "关系数据库中，主键最基本的要求是：",
+    "options": [
+      "可以重复",
+      "必须由中文组成",
+      "唯一标识记录且不能为空",
+      "只能使用一个字符"
+    ],
+    "answer": 2,
+    "explanation": "主键值应唯一且不能为NULL。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q013",
+    "category": "信息安全",
+    "knowledge": "信息安全",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "HTTPS通常使用什么机制保护浏览器与服务器通信？",
+    "options": [
+      "FTP",
+      "TLS",
+      "DNS",
+      "DHCP"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS在HTTP基础上使用TLS进行加密和身份验证。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q014",
+    "category": "云计算",
+    "knowledge": "云",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "供应商提供计算、存储和网络资源，用户自行部署操作系统与应用，属于：",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "DaaS"
+    ],
+    "answer": 2,
+    "explanation": "IaaS提供基础设施资源。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q015",
+    "category": "信息安全",
+    "knowledge": "信息安全",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "系统RPO为4小时，含义更接近：",
+    "options": [
+      "4小时内恢复运行",
+      "最多可接受丢失故障前4小时的数据",
+      "每4小时停机",
+      "备份保存4年"
+    ],
+    "answer": 1,
+    "explanation": "RPO表示可接受的数据丢失时间窗口。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q016",
+    "category": "存储与运维",
+    "knowledge": "存储与运维",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "RAID 1最典型的数据组织方式是：",
+    "options": [
+      "数据镜像",
+      "数据压缩",
+      "无冗余",
+      "单盘存储"
+    ],
+    "answer": 0,
+    "explanation": "RAID 1通过镜像提高可用性。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q017",
+    "category": "项目收尾",
+    "knowledge": "项目收尾",
+    "difficulty": 1,
+    "type": "scenario",
+    "text": "客户正式确认可交付成果满足要求，通常称为：",
+    "options": [
+      "风险识别",
+      "正式验收",
+      "质量规划",
+      "资源平衡"
+    ],
+    "answer": 1,
+    "explanation": "正式验收是客户或发起人确认成果满足验收条件。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q018",
+    "category": "配置管理",
+    "knowledge": "配置管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "关于配置基线，正确的是：",
+    "options": [
+      "可随意修改",
+      "经正式评审批准，修改必须受控",
+      "仅记录工资",
+      "项目结束后才建立"
+    ],
+    "answer": 1,
+    "explanation": "基线是经批准的配置状态，后续修改需受控。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q019",
+    "category": "项目管理",
+    "knowledge": "项目管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "经验教训登记册最适合在什么时候更新？",
+    "options": [
+      "仅项目结束",
+      "项目全生命周期持续更新",
+      "仅签合同时",
+      "只在失败时"
+    ],
+    "answer": 1,
+    "explanation": "经验教训应在项目过程中持续记录和更新。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q020",
+    "category": "范围管理",
+    "knowledge": "范围管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目管理中的“镀金”通常指：",
+    "options": [
+      "按合同完成范围",
+      "未经批准增加客户未要求的功能",
+      "继续分解WBS",
+      "正式批准变更"
+    ],
+    "answer": 1,
+    "explanation": "未经批准增加额外功能会带来成本、进度和责任风险。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q021",
+    "category": "范围管理",
+    "knowledge": "范围管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "确认范围的主要输出之一是：",
+    "options": [
+      "验收的可交付成果",
+      "项目章程",
+      "采购说明书",
+      "质量指标"
+    ],
+    "answer": 0,
+    "explanation": "确认范围由客户或发起人正式验收成果。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q022",
+    "category": "进度管理",
+    "knowledge": "进度管理",
+    "difficulty": 1,
+    "type": "calculation",
+    "text": "关键路径上的活动通常具有：",
+    "options": [
+      "总浮动时间最小",
+      "成本一定最高",
+      "资源一定最多",
+      "风险为零"
+    ],
+    "answer": 0,
+    "explanation": "关键路径决定项目最短工期，其活动总浮动通常最小。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q023",
+    "category": "进度管理",
+    "knowledge": "进度管理",
+    "difficulty": 1,
+    "type": "calculation",
+    "text": "增加资源以缩短关键路径活动工期，属于：",
+    "options": [
+      "快速跟进",
+      "赶工",
+      "资源平衡",
+      "滚动规划"
+    ],
+    "answer": 1,
+    "explanation": "赶工通过增加资源或成本来压缩工期。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q024",
+    "category": "进度管理",
+    "knowledge": "进度管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "快速跟进通常会：",
+    "options": [
+      "降低返工风险",
+      "增加返工和协调风险",
+      "必然降低成本",
+      "无需审批"
+    ],
+    "answer": 1,
+    "explanation": "把原本顺序活动并行会提高返工与协调风险。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q025",
+    "category": "成本管理",
+    "knowledge": "成本管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "成本基准通常不包括：",
+    "options": [
+      "批准的项目预算",
+      "应急储备",
+      "管理储备",
+      "按时间分段预算"
+    ],
+    "answer": 2,
+    "explanation": "管理储备不属于成本基准，但属于项目总预算。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q026",
+    "category": "成本管理",
+    "knowledge": "成本管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "应急储备主要用于：",
+    "options": [
+      "完全未知风险",
+      "已识别风险发生时的应对",
+      "发奖金",
+      "替代范围基准"
+    ],
+    "answer": 1,
+    "explanation": "应急储备用于已识别风险。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q027",
+    "category": "质量管理",
+    "knowledge": "质量管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "帕累托图常用于：",
+    "options": [
+      "识别造成大多数问题的少数主要原因",
+      "绘制网络图",
+      "计算净现值",
+      "确定合同价格"
+    ],
+    "answer": 0,
+    "explanation": "帕累托分析帮助优先处理重要的少数原因。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q028",
+    "category": "质量管理",
+    "knowledge": "质量管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "因果图又称鱼骨图，主要用于：",
+    "options": [
+      "分析潜在根本原因",
+      "计算关键路径",
+      "评估报价",
+      "记录干系人权力"
+    ],
+    "answer": 0,
+    "explanation": "鱼骨图用于系统分析问题可能原因。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q029",
+    "category": "风险管理",
+    "knowledge": "风险管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "风险概率影响矩阵主要用于：",
+    "options": [
+      "风险定性排序",
+      "计算带宽",
+      "确定工资",
+      "替代应对计划"
+    ],
+    "answer": 0,
+    "explanation": "它通过概率和影响组合确定风险优先级。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q030",
+    "category": "风险管理",
+    "knowledge": "风险管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "改变项目计划使威胁不再存在，属于：",
+    "options": [
+      "规避",
+      "转移",
+      "减轻",
+      "接受"
+    ],
+    "answer": 0,
+    "explanation": "风险规避通过改变计划消除威胁。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q031",
+    "category": "采购与合同",
+    "knowledge": "采购与合同",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "工料合同较适合：",
+    "options": [
+      "范围完全明确且价格固定",
+      "工作量难准确估计但可约定单价",
+      "无需合同管理",
+      "买方不承担风险"
+    ],
+    "answer": 1,
+    "explanation": "工料合同适合工作量不确定但可约定人工和材料单价的服务。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q032",
+    "category": "采购与合同",
+    "knowledge": "采购与合同",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "采购工作说明书主要描述：",
+    "options": [
+      "卖方需提供的产品、服务或成果",
+      "项目经理工资",
+      "全部联系人",
+      "组织战略"
+    ],
+    "answer": 0,
+    "explanation": "采购工作说明书明确采购对象、规格和验收要求。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q033",
+    "category": "干系人与沟通",
+    "knowledge": "干系人与沟通",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "推式沟通的典型例子是：",
+    "options": [
+      "将邮件发给指定收件人",
+      "资料放知识库等待查阅",
+      "面对面互动",
+      "视频会议"
+    ],
+    "answer": 0,
+    "explanation": "邮件和报告属于把信息直接发送给接收者的推式沟通。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q034",
+    "category": "干系人与沟通",
+    "knowledge": "干系人与沟通",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "问题日志主要用于：",
+    "options": [
+      "记录并跟踪已发生、需解决的问题",
+      "记录全部潜在风险",
+      "替代章程",
+      "计算绩效"
+    ],
+    "answer": 0,
+    "explanation": "问题日志跟踪实际问题，风险登记册关注不确定事件。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q035",
+    "category": "团队管理",
+    "knowledge": "团队管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "通常最有利于形成长期双赢方案的冲突解决方式是：",
+    "options": [
+      "强迫",
+      "撤退",
+      "合作/解决问题",
+      "缓和"
+    ],
+    "answer": 2,
+    "explanation": "合作通过共同分析问题寻找双赢方案。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q036",
+    "category": "配置管理",
+    "knowledge": "配置管理",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "配置状态报告的作用是：",
+    "options": [
+      "报告配置项及变更处理状态",
+      "计算关键路径",
+      "确定供应商价格",
+      "批准章程"
+    ],
+    "answer": 0,
+    "explanation": "配置状态报告保证版本和变更状态可追溯。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q037",
+    "category": "计算机网络",
+    "knowledge": "机网络",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "DNS的主要作用是：",
+    "options": [
+      "域名解析为IP地址",
+      "加密全部流量",
+      "分配数据库主键",
+      "存储章程"
+    ],
+    "answer": 0,
+    "explanation": "DNS负责域名与IP地址解析。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q038",
+    "category": "数据库",
+    "knowledge": "数据库",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "数据库事务ACID中的A代表：",
+    "options": [
+      "原子性",
+      "可用性",
+      "授权性",
+      "审计性"
+    ],
+    "answer": 0,
+    "explanation": "原子性表示事务操作要么全部成功，要么全部回滚。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q039",
+    "category": "信息安全",
+    "knowledge": "信息安全",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "最小权限原则是：",
+    "options": [
+      "只授予完成工作所必需的最低权限",
+      "人人拥有管理员权限",
+      "权限越多越安全",
+      "权限永久不回收"
+    ],
+    "answer": 0,
+    "explanation": "最小权限能降低误操作和账户失陷后的影响。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q040",
+    "category": "软件工程",
+    "knowledge": "软件工程",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "回归测试主要用于：",
+    "options": [
+      "确认修改未破坏原有功能",
+      "只测试颜色",
+      "替代需求分析",
+      "评估投标价格"
+    ],
+    "answer": 0,
+    "explanation": "回归测试检查修改对已有功能的影响。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q041",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝80万元，AC＝100万元，正确判断是：",
+    "options": [
+      "CPI＝0.80，成本超支",
+      "CPI＝0.80，成本节约",
+      "CPI＝1.25，成本超支",
+      "SPI＝0.80，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.80；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q042",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝90万元，AC＝120万元，正确判断是：",
+    "options": [
+      "CPI＝0.75，成本超支",
+      "CPI＝0.75，成本节约",
+      "CPI＝1.33，成本超支",
+      "SPI＝0.75，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.75；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q043",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝120万元，AC＝100万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q044",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝150万元，AC＝125万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q045",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝160万元，AC＝200万元，正确判断是：",
+    "options": [
+      "CPI＝0.80，成本超支",
+      "CPI＝0.80，成本节约",
+      "CPI＝1.25，成本超支",
+      "SPI＝0.80，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.80；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q046",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝210万元，AC＝175万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q047",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝240万元，AC＝300万元，正确判断是：",
+    "options": [
+      "CPI＝0.80，成本超支",
+      "CPI＝0.80，成本节约",
+      "CPI＝1.25，成本超支",
+      "SPI＝0.80，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.80；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q048",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝300万元，AC＝250万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q049",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝350万元，AC＝400万元，正确判断是：",
+    "options": [
+      "CPI＝0.88，成本超支",
+      "CPI＝0.88，成本节约",
+      "CPI＝1.14，成本超支",
+      "SPI＝0.88，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.88；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q050",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝420万元，AC＝350万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q051",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝450万元，AC＝500万元，正确判断是：",
+    "options": [
+      "CPI＝0.90，成本超支",
+      "CPI＝0.90，成本节约",
+      "CPI＝1.11，成本超支",
+      "SPI＝0.90，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.90；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q052",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝560万元，AC＝400万元，正确判断是：",
+    "options": [
+      "CPI＝1.40，成本节约",
+      "CPI＝1.40，成本超支",
+      "CPI＝0.71，成本节约",
+      "SPI＝1.40，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.40；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q053",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝630万元，AC＝700万元，正确判断是：",
+    "options": [
+      "CPI＝0.90，成本超支",
+      "CPI＝0.90，成本节约",
+      "CPI＝1.11，成本超支",
+      "SPI＝0.90，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.90；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q054",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝720万元，AC＝600万元，正确判断是：",
+    "options": [
+      "CPI＝1.20，成本节约",
+      "CPI＝1.20，成本超支",
+      "CPI＝0.83，成本节约",
+      "SPI＝1.20，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝1.20；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q055",
+    "category": "成本计算",
+    "knowledge": "成本",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝810万元，AC＝900万元，正确判断是：",
+    "options": [
+      "CPI＝0.90，成本超支",
+      "CPI＝0.90，成本节约",
+      "CPI＝1.11，成本超支",
+      "SPI＝0.90，表示进度状态"
+    ],
+    "answer": 0,
+    "explanation": "CPI＝EV/AC＝0.90；小于1表示成本超支，大于1表示成本节约。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q056",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝80万元，PV＝100万元，正确判断是：",
+    "options": [
+      "SPI＝0.80，进度落后",
+      "SPI＝0.80，进度提前",
+      "SPI＝1.25，进度落后",
+      "CPI＝0.80，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.80；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q057",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝90万元，PV＝120万元，正确判断是：",
+    "options": [
+      "SPI＝0.75，进度落后",
+      "SPI＝0.75，进度提前",
+      "SPI＝1.33，进度落后",
+      "CPI＝0.75，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.75；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q058",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝120万元，PV＝100万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q059",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝150万元，PV＝125万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q060",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝160万元，PV＝200万元，正确判断是：",
+    "options": [
+      "SPI＝0.80，进度落后",
+      "SPI＝0.80，进度提前",
+      "SPI＝1.25，进度落后",
+      "CPI＝0.80，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.80；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q061",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝210万元，PV＝175万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q062",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝240万元，PV＝300万元，正确判断是：",
+    "options": [
+      "SPI＝0.80，进度落后",
+      "SPI＝0.80，进度提前",
+      "SPI＝1.25，进度落后",
+      "CPI＝0.80，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.80；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q063",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝300万元，PV＝250万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q064",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝350万元，PV＝400万元，正确判断是：",
+    "options": [
+      "SPI＝0.88，进度落后",
+      "SPI＝0.88，进度提前",
+      "SPI＝1.14，进度落后",
+      "CPI＝0.88，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.88；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q065",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝420万元，PV＝350万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q066",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝450万元，PV＝500万元，正确判断是：",
+    "options": [
+      "SPI＝0.90，进度落后",
+      "SPI＝0.90，进度提前",
+      "SPI＝1.11，进度落后",
+      "CPI＝0.90，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.90；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q067",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝560万元，PV＝400万元，正确判断是：",
+    "options": [
+      "SPI＝1.40，进度提前",
+      "SPI＝1.40，进度落后",
+      "SPI＝0.71，进度提前",
+      "CPI＝1.40，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.40；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q068",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝630万元，PV＝700万元，正确判断是：",
+    "options": [
+      "SPI＝0.90，进度落后",
+      "SPI＝0.90，进度提前",
+      "SPI＝1.11，进度落后",
+      "CPI＝0.90，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.90；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q069",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝720万元，PV＝600万元，正确判断是：",
+    "options": [
+      "SPI＝1.20，进度提前",
+      "SPI＝1.20，进度落后",
+      "SPI＝0.83，进度提前",
+      "CPI＝1.20，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝1.20；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q070",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某项目EV＝810万元，PV＝900万元，正确判断是：",
+    "options": [
+      "SPI＝0.90，进度落后",
+      "SPI＝0.90，进度提前",
+      "SPI＝1.11，进度落后",
+      "CPI＝0.90，表示成本状态"
+    ],
+    "answer": 0,
+    "explanation": "SPI＝EV/PV＝0.90；小于1表示进度落后，大于1表示进度提前。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q071",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有4名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "6条",
+      "7条",
+      "10条",
+      "16条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝6条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q072",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有5名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "10条",
+      "11条",
+      "15条",
+      "25条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝10条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q073",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有6名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "15条",
+      "16条",
+      "21条",
+      "36条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝15条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q074",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有7名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "21条",
+      "22条",
+      "28条",
+      "49条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝21条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q075",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有8名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "28条",
+      "29条",
+      "36条",
+      "64条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝28条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q076",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有9名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "36条",
+      "37条",
+      "45条",
+      "81条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝36条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q077",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有10名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "45条",
+      "46条",
+      "55条",
+      "100条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝45条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q078",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有11名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "55条",
+      "56条",
+      "66条",
+      "121条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝55条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q079",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有12名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "66条",
+      "67条",
+      "78条",
+      "144条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝66条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q080",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有13名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "78条",
+      "79条",
+      "91条",
+      "169条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝78条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q081",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有14名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "91条",
+      "92条",
+      "105条",
+      "196条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝91条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q082",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有15名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "105条",
+      "106条",
+      "120条",
+      "225条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝105条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q083",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有16名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "120条",
+      "121条",
+      "136条",
+      "256条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝120条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q084",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有17名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "136条",
+      "137条",
+      "153条",
+      "289条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝136条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q085",
+    "category": "沟通计算",
+    "knowledge": "沟通",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目有18名核心沟通成员，潜在沟通渠道数是：",
+    "options": [
+      "153条",
+      "154条",
+      "171条",
+      "324条"
+    ],
+    "answer": 0,
+    "explanation": "沟通渠道数＝n(n－1)/2＝153条。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q086",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需2天；A后B需5天、C需3天并行；B、C完成后D需4天。最短工期是：",
+    "options": [
+      "11天",
+      "10天",
+      "12天",
+      "14天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝11天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q087",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需3天；A后B需4天、C需7天并行；B、C完成后D需2天。最短工期是：",
+    "options": [
+      "12天",
+      "11天",
+      "13天",
+      "16天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝12天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q088",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需4天；A后B需6天、C需3天并行；B、C完成后D需5天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "18天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q089",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需1天；A后B需8天、C需5天并行；B、C完成后D需3天。最短工期是：",
+    "options": [
+      "12天",
+      "11天",
+      "13天",
+      "17天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝12天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q090",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需5天；A后B需4天、C需6天并行；B、C完成后D需2天。最短工期是：",
+    "options": [
+      "13天",
+      "12天",
+      "14天",
+      "17天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝13天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q091",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需2天；A后B需7天、C需4天并行；B、C完成后D需5天。最短工期是：",
+    "options": [
+      "14天",
+      "13天",
+      "15天",
+      "18天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝14天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q092",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需3天；A后B需9天、C需6天并行；B、C完成后D需1天。最短工期是：",
+    "options": [
+      "13天",
+      "12天",
+      "14天",
+      "19天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝13天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q093",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需4天；A后B需5天、C需8天并行；B、C完成后D需3天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "20天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q094",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需6天；A后B需3天、C需7天并行；B、C完成后D需2天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "18天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q095",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需2天；A后B需6天、C需9天并行；B、C完成后D需4天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "21天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q096",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需7天；A后B需4天、C需5天并行；B、C完成后D需3天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "19天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q097",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需3天；A后B需8天、C需2天并行；B、C完成后D需6天。最短工期是：",
+    "options": [
+      "17天",
+      "16天",
+      "18天",
+      "19天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝17天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q098",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需5天；A后B需7天、C需9天并行；B、C完成后D需1天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "22天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q099",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需4天；A后B需3天、C需6天并行；B、C完成后D需5天。最短工期是：",
+    "options": [
+      "15天",
+      "14天",
+      "16天",
+      "18天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝15天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q100",
+    "category": "进度计算",
+    "knowledge": "进度",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "活动A需6天；A后B需8天、C需4天并行；B、C完成后D需2天。最短工期是：",
+    "options": [
+      "16天",
+      "15天",
+      "17天",
+      "20天"
+    ],
+    "answer": 0,
+    "explanation": "总工期＝A＋max(B,C)＋D＝16天。",
+    "mistakeTip": "先识别题目考查的管理过程、输入输出或公式，再排除越权、跳过流程和先做后批等选项。",
+    "formula": ""
+  },
+  {
+    "id": "q101",
+    "category": "项目管理",
+    "knowledge": "项目管理计划",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目管理计划获得批准后，项目经理最合适的做法是：",
+    "options": [
+      "将其作为指导执行、监控和收尾的整合性基准",
+      "只交给发起人保存",
+      "允许团队成员随时直接修改",
+      "用项目章程替代全部子计划"
+    ],
+    "answer": 0,
+    "explanation": "项目管理计划整合各知识领域子计划和基准，用于指导项目执行、监控与收尾。",
+    "mistakeTip": "项目章程授权项目，项目管理计划指导项目。",
+    "formula": ""
+  },
+  {
+    "id": "q102",
+    "category": "项目管理",
+    "knowledge": "商业论证",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "商业论证在项目中的主要作用是：",
+    "options": [
+      "说明项目为什么值得投资以及预期收益",
+      "列出全部工作包的详细工期",
+      "替代采购合同",
+      "记录每位成员的绩效评价"
+    ],
+    "answer": 0,
+    "explanation": "商业论证用于说明项目的商业需求、可行性、收益和投资合理性。",
+    "mistakeTip": "不要把商业论证与WBS、合同或人事评价混淆。",
+    "formula": ""
+  },
+  {
+    "id": "q103",
+    "category": "项目管理",
+    "knowledge": "效益管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目已交付，但预期业务收益迟迟未出现。项目经理首先应协助确认：",
+    "options": [
+      "收益责任人、收益指标和实现时间是否清晰",
+      "是否增加更多开发人员",
+      "是否删除经验教训",
+      "是否取消所有质量检查"
+    ],
+    "answer": 0,
+    "explanation": "效益实现需要明确收益责任人、可衡量指标、实现时间和跟踪机制。",
+    "mistakeTip": "交付物完成不等于收益自动实现。",
+    "formula": ""
+  },
+  {
+    "id": "q104",
+    "category": "项目管理",
+    "knowledge": "工作绩效数据",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "团队报告“本周完成12个任务、消耗480工时”，这更接近：",
+    "options": [
+      "工作绩效数据",
+      "工作绩效信息",
+      "工作绩效报告",
+      "项目章程"
+    ],
+    "answer": 0,
+    "explanation": "原始观察和测量结果属于工作绩效数据；分析汇总后才形成信息和报告。",
+    "mistakeTip": "数据是原始值，信息是分析结果，报告是面向决策的表达。",
+    "formula": ""
+  },
+  {
+    "id": "q105",
+    "category": "项目管理",
+    "knowledge": "问题日志",
+    "difficulty": 1,
+    "type": "scenario",
+    "text": "项目成员之间发生职责冲突并影响进度，项目经理应首先：",
+    "options": [
+      "记录到问题日志并明确责任人和解决期限",
+      "立即更换全部成员",
+      "直接修改范围基准",
+      "跳过沟通等待冲突自行消失"
+    ],
+    "answer": 0,
+    "explanation": "问题日志用于记录问题、责任人、优先级和解决状态，便于跟踪闭环。",
+    "mistakeTip": "问题已发生，应进入问题管理，而不是风险登记册。",
+    "formula": ""
+  },
+  {
+    "id": "q106",
+    "category": "项目管理",
+    "knowledge": "假设日志",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "“客户将在下月提供测试环境”尚未得到确认，最适合记录在：",
+    "options": [
+      "假设日志",
+      "质量核对单",
+      "采购工作说明书",
+      "资源日历"
+    ],
+    "answer": 0,
+    "explanation": "尚未证实但用于规划的条件属于假设，应记录并持续验证。",
+    "mistakeTip": "假设不是事实，也不是已经发生的问题。",
+    "formula": ""
+  },
+  {
+    "id": "q107",
+    "category": "项目管理",
+    "knowledge": "知识管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目使用一种新技术，团队担心关键经验只掌握在一名专家手中。最有效的措施是：",
+    "options": [
+      "安排结对工作、知识分享和文档沉淀",
+      "限制其他成员接触技术",
+      "只在项目结束后总结",
+      "把所有风险转移给客户"
+    ],
+    "answer": 0,
+    "explanation": "通过显性知识文档化和隐性知识交流可降低单点依赖。",
+    "mistakeTip": "知识管理应贯穿项目，不应等到收尾。",
+    "formula": ""
+  },
+  {
+    "id": "q108",
+    "category": "项目管理",
+    "knowledge": "阶段关口",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "阶段关口评审的主要目的通常是：",
+    "options": [
+      "判断是否继续、调整或终止下一阶段投资",
+      "替代日常站会",
+      "确定每个人的工资",
+      "自动批准所有变更"
+    ],
+    "answer": 0,
+    "explanation": "阶段关口用于基于阶段成果、风险和商业价值做继续投资决策。",
+    "mistakeTip": "阶段关口关注治理决策，不是日常执行会议。",
+    "formula": ""
+  },
+  {
+    "id": "q109",
+    "category": "项目管理",
+    "knowledge": "裁剪",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "一个规模很小、周期两周的内部项目仍被要求提交几十份复杂文档。项目经理最合适的做法是：",
+    "options": [
+      "在组织治理要求内对过程和文档进行适度裁剪",
+      "完全取消所有管理活动",
+      "照搬大型项目流程且不做调整",
+      "让开发人员自行决定是否遵守"
+    ],
+    "answer": 0,
+    "explanation": "项目管理过程应根据规模、复杂性、风险和组织要求进行裁剪。",
+    "mistakeTip": "裁剪不是取消控制，而是保留必要价值并降低浪费。",
+    "formula": ""
+  },
+  {
+    "id": "q110",
+    "category": "项目管理",
+    "knowledge": "治理与升级",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "关键决策超出项目经理授权范围，且可能导致项目目标变化。项目经理应：",
+    "options": [
+      "按治理机制升级给发起人或项目委员会决策",
+      "自行批准以节省时间",
+      "让供应商决定",
+      "只在周报中简单备注"
+    ],
+    "answer": 0,
+    "explanation": "超出授权边界的决策应按治理和升级路径提交有权主体。",
+    "mistakeTip": "项目经理应管理而不是越权。",
+    "formula": ""
+  },
+  {
+    "id": "q111",
+    "category": "范围管理",
+    "knowledge": "需求获取",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "访谈、焦点小组和引导式研讨会主要用于：",
+    "options": [
+      "获取和澄清需求",
+      "压缩项目进度",
+      "计算挣值",
+      "选择合同类型"
+    ],
+    "answer": 0,
+    "explanation": "这些工具用于收集、讨论和澄清干系人需求。",
+    "mistakeTip": "需求获取关注“要什么”，不是进度或成本计算。",
+    "formula": ""
+  },
+  {
+    "id": "q112",
+    "category": "范围管理",
+    "knowledge": "产品范围与项目范围",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "产品范围与项目范围的主要区别是：",
+    "options": [
+      "产品范围描述产品特性，项目范围描述完成产品所需工作",
+      "两者完全相同",
+      "项目范围只描述合同价格",
+      "产品范围只描述项目团队"
+    ],
+    "answer": 0,
+    "explanation": "产品范围关注成果的功能和特性，项目范围关注为交付成果所需完成的工作。",
+    "mistakeTip": "区分“交付什么”和“做哪些工作”。",
+    "formula": ""
+  },
+  {
+    "id": "q113",
+    "category": "范围管理",
+    "knowledge": "验收标准",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "需求文件写着“系统响应要快”，测试时双方产生争议。最根本的问题是：",
+    "options": [
+      "验收标准不可测量且不明确",
+      "项目章程太长",
+      "沟通渠道太少",
+      "合同价格过低"
+    ],
+    "answer": 0,
+    "explanation": "需求和验收标准应具体、可测量、可验证。",
+    "mistakeTip": "“快、友好、稳定”等模糊词需量化。",
+    "formula": ""
+  },
+  {
+    "id": "q114",
+    "category": "范围管理",
+    "knowledge": "范围蔓延",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队连续接受多个未审批的小改动，单个影响不大，但累计造成延期。这属于：",
+    "options": [
+      "范围蔓延",
+      "风险转移",
+      "资源平衡",
+      "质量审计"
+    ],
+    "answer": 0,
+    "explanation": "未经正式控制的范围逐步增加属于范围蔓延。",
+    "mistakeTip": "小改动累计同样需要变更控制。",
+    "formula": ""
+  },
+  {
+    "id": "q115",
+    "category": "范围管理",
+    "knowledge": "WBS分解",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "判断WBS分解程度是否合适，最有用的标准是：",
+    "options": [
+      "工作包能够合理估算、分配责任并进行控制",
+      "每个工作包必须恰好一天完成",
+      "WBS层级越多越好",
+      "每个工作包只能由一人完成"
+    ],
+    "answer": 0,
+    "explanation": "分解应达到可估算、可分配、可监控的管理需要。",
+    "mistakeTip": "没有固定层级或固定天数。",
+    "formula": ""
+  },
+  {
+    "id": "q116",
+    "category": "范围管理",
+    "knowledge": "范围确认",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "内部测试已证明功能符合技术规范，下一步希望获得客户正式接受。应执行：",
+    "options": [
+      "确认范围",
+      "控制质量",
+      "规划范围",
+      "识别风险"
+    ],
+    "answer": 0,
+    "explanation": "控制质量验证正确性，确认范围取得客户或发起人的正式验收。",
+    "mistakeTip": "先质检再验收，两者目的不同。",
+    "formula": ""
+  },
+  {
+    "id": "q117",
+    "category": "范围管理",
+    "knowledge": "原型法",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "当用户难以准确描述界面需求时，最适合采用：",
+    "options": [
+      "原型法",
+      "蒙特卡洛分析",
+      "挣值分析",
+      "趋势分析"
+    ],
+    "answer": 0,
+    "explanation": "原型可以让用户通过可视化样例逐步澄清需求。",
+    "mistakeTip": "原型用于需求澄清，不是进度成本分析。",
+    "formula": ""
+  },
+  {
+    "id": "q118",
+    "category": "范围管理",
+    "knowledge": "需求优先级",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "预算有限，不能一次实现所有需求。项目经理应组织相关方：",
+    "options": [
+      "依据价值、风险、依赖和紧迫性确定优先级",
+      "按提出顺序全部开发",
+      "只选择最容易的需求",
+      "由一名程序员独自决定"
+    ],
+    "answer": 0,
+    "explanation": "需求优先级应综合业务价值、风险、依赖和紧迫性，并由适当干系人参与。",
+    "mistakeTip": "优先级不应只按先来后到或技术便利。",
+    "formula": ""
+  },
+  {
+    "id": "q119",
+    "category": "范围管理",
+    "knowledge": "需求跟踪",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "需求跟踪矩阵最能帮助发现：",
+    "options": [
+      "某项需求是否已映射到设计、开发、测试和验收",
+      "某成员是否迟到",
+      "供应商利润率",
+      "网络带宽峰值"
+    ],
+    "answer": 0,
+    "explanation": "需求跟踪矩阵建立需求到设计、实现、测试和交付的双向关联。",
+    "mistakeTip": "核心是全生命周期可追踪。",
+    "formula": ""
+  },
+  {
+    "id": "q120",
+    "category": "范围管理",
+    "knowledge": "范围基准",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "客户批准了一项范围变更。项目经理下一步应确保：",
+    "options": [
+      "相关范围、进度、成本基准及文件按批准结果更新",
+      "只口头通知开发人员",
+      "删除原始变更记录",
+      "继续使用旧基准进行绩效比较"
+    ],
+    "answer": 0,
+    "explanation": "批准变更应落实到相关基准、计划和项目文件，并保持可追溯。",
+    "mistakeTip": "批准只是决策，后续还要实施和更新基准。",
+    "formula": ""
+  },
+  {
+    "id": "q121",
+    "category": "进度管理",
+    "knowledge": "活动排序",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "“必须先完成数据库设计，才能开始数据迁移脚本开发”描述的是：",
+    "options": [
+      "强制依赖关系",
+      "外部依赖关系",
+      "可选择依赖关系",
+      "资源依赖关系"
+    ],
+    "answer": 0,
+    "explanation": "由工作本身性质决定、不可轻易改变的逻辑关系属于强制依赖。",
+    "mistakeTip": "强制依赖源于工作逻辑，不是团队偏好。",
+    "formula": ""
+  },
+  {
+    "id": "q122",
+    "category": "进度管理",
+    "knowledge": "提前量与滞后量",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "在“完成编码后等待2天再开始系统测试”中，这2天属于：",
+    "options": [
+      "滞后量",
+      "提前量",
+      "总浮动时间",
+      "自由浮动时间"
+    ],
+    "answer": 0,
+    "explanation": "后续活动需等待一段时间才能开始，这段等待是滞后量。",
+    "mistakeTip": "提前量是允许后续活动提前开始。",
+    "formula": ""
+  },
+  {
+    "id": "q123",
+    "category": "进度管理",
+    "knowledge": "里程碑",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "里程碑通常具有的特点是：",
+    "options": [
+      "持续时间为零，用于标志重要事件",
+      "必须持续一个月",
+      "一定消耗大量资源",
+      "只用于成本管理"
+    ],
+    "answer": 0,
+    "explanation": "里程碑用于标志关键事件或决策点，通常持续时间为零。",
+    "mistakeTip": "里程碑不是活动，不必消耗资源。",
+    "formula": ""
+  },
+  {
+    "id": "q124",
+    "category": "进度管理",
+    "knowledge": "资源平衡",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "两项非关键活动同时需要同一名稀缺专家，资源冲突。若允许项目结束日期改变，可优先考虑：",
+    "options": [
+      "资源平衡",
+      "快速跟进",
+      "范围确认",
+      "风险转移"
+    ],
+    "answer": 0,
+    "explanation": "资源平衡通过调整活动日期解决资源过度分配，可能改变关键路径和工期。",
+    "mistakeTip": "资源平滑通常不改变关键路径。",
+    "formula": ""
+  },
+  {
+    "id": "q125",
+    "category": "进度管理",
+    "knowledge": "资源平滑",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "资源平滑与资源平衡相比，更强调：",
+    "options": [
+      "在不超过浮动时间的前提下调整资源，通常不改变关键路径",
+      "一定缩短项目工期",
+      "增加项目范围",
+      "取消资源约束"
+    ],
+    "answer": 0,
+    "explanation": "资源平滑利用浮动时间优化资源使用，通常不改变关键路径。",
+    "mistakeTip": "平滑受浮动时间约束。",
+    "formula": ""
+  },
+  {
+    "id": "q126",
+    "category": "进度管理",
+    "knowledge": "滚动式规划",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目远期工作信息不足，但近期工作已清晰。最适合采用：",
+    "options": [
+      "滚动式规划",
+      "一次性把全部远期工作细化到小时",
+      "停止规划直到全部信息明确",
+      "只建立成本基准"
+    ],
+    "answer": 0,
+    "explanation": "滚动式规划对近期工作详细规划，对远期工作保留较高层次并逐步细化。",
+    "mistakeTip": "渐进明细不是无计划。",
+    "formula": ""
+  },
+  {
+    "id": "q127",
+    "category": "进度管理",
+    "knowledge": "进度偏差分析",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "某关键活动延迟3天，但其后续活动有5天自由浮动。正确理解是：",
+    "options": [
+      "该延迟未必立即影响后续活动最早开始",
+      "项目一定延期3天",
+      "项目一定提前2天",
+      "无需再监控该活动"
+    ],
+    "answer": 0,
+    "explanation": "延迟小于可用浮动时间时，可能暂不影响后续或项目结束，但仍需监控。",
+    "mistakeTip": "有浮动不代表没有风险。",
+    "formula": ""
+  },
+  {
+    "id": "q128",
+    "category": "进度管理",
+    "knowledge": "关键链",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "关键链方法与传统关键路径方法相比，特别关注：",
+    "options": [
+      "资源约束和缓冲管理",
+      "只计算合同价格",
+      "取消所有依赖关系",
+      "以质量缺陷数作为工期"
+    ],
+    "answer": 0,
+    "explanation": "关键链在逻辑依赖之外考虑资源约束，并使用项目缓冲和接驳缓冲。",
+    "mistakeTip": "关键链不是简单等同于关键路径。",
+    "formula": ""
+  },
+  {
+    "id": "q129",
+    "category": "进度管理",
+    "knowledge": "敏捷迭代",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "迭代开发中，某个低优先级故事未能在本迭代完成。通常最合适的处理是：",
+    "options": [
+      "重新放回待办列表并由产品负责人重新排序",
+      "擅自延长迭代直到完成",
+      "直接标记为已完成",
+      "删除验收标准"
+    ],
+    "answer": 0,
+    "explanation": "未完成项通常回到产品待办列表，由产品负责人重新确定优先级。",
+    "mistakeTip": "固定迭代节奏下不应随意延长。",
+    "formula": ""
+  },
+  {
+    "id": "q130",
+    "category": "进度管理",
+    "knowledge": "趋势分析",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "连续多个报告期里程碑完成日期不断向后移动，最适合使用哪种分析识别恶化趋势？",
+    "options": [
+      "趋势分析",
+      "头脑风暴",
+      "投标人会议",
+      "亲和图"
+    ],
+    "answer": 0,
+    "explanation": "趋势分析通过比较多个时期的数据判断绩效方向。",
+    "mistakeTip": "单点偏差和持续趋势不同。",
+    "formula": ""
+  },
+  {
+    "id": "q131",
+    "category": "成本管理",
+    "knowledge": "估算类型",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目早期信息很少时，为快速得到大致成本范围，常采用：",
+    "options": [
+      "类比估算",
+      "自下而上估算",
+      "挣值分析",
+      "控制图"
+    ],
+    "answer": 0,
+    "explanation": "类比估算利用历史相似项目，速度快但精度通常较低。",
+    "mistakeTip": "自下而上更详细但耗时。",
+    "formula": ""
+  },
+  {
+    "id": "q132",
+    "category": "成本管理",
+    "knowledge": "参数估算",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "按“每个用户账号120元实施费”估算总成本，属于：",
+    "options": [
+      "参数估算",
+      "类比估算",
+      "储备分析",
+      "质量成本分析"
+    ],
+    "answer": 0,
+    "explanation": "参数估算利用单位成本与数量之间的统计关系。",
+    "mistakeTip": "识别单位参数×数量。",
+    "formula": ""
+  },
+  {
+    "id": "q133",
+    "category": "成本管理",
+    "knowledge": "自下而上估算",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "自下而上估算的典型特点是：",
+    "options": [
+      "从工作包或活动逐项估算再汇总，通常较准确但耗时",
+      "只参考一个历史项目",
+      "无需WBS",
+      "只能用于采购"
+    ],
+    "answer": 0,
+    "explanation": "自下而上估算建立在详细工作分解基础上，精度高但工作量大。",
+    "mistakeTip": "详细程度与成本、时间之间存在权衡。",
+    "formula": ""
+  },
+  {
+    "id": "q134",
+    "category": "成本管理",
+    "knowledge": "管理储备",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "发生了一个项目计划中完全未识别、无法预见的风险，需要额外预算。最可能使用：",
+    "options": [
+      "管理储备",
+      "应急储备",
+      "成本基准内的活动预算",
+      "质量测量指标"
+    ],
+    "answer": 0,
+    "explanation": "管理储备用于应对未知—未知风险，通常不属于成本基准。",
+    "mistakeTip": "已识别风险用应急储备。",
+    "formula": ""
+  },
+  {
+    "id": "q135",
+    "category": "成本管理",
+    "knowledge": "全生命周期成本",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "选择设备方案时，不仅考虑采购价，还考虑运维、能耗和报废费用，这体现：",
+    "options": [
+      "全生命周期成本",
+      "沉没成本",
+      "机会成本忽略",
+      "范围镀金"
+    ],
+    "answer": 0,
+    "explanation": "全生命周期成本考虑从获得到运营维护及处置的全部成本。",
+    "mistakeTip": "最低采购价不一定总成本最低。",
+    "formula": ""
+  },
+  {
+    "id": "q136",
+    "category": "成本管理",
+    "knowledge": "沉没成本",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "已投入且无法收回的200万元不应成为是否继续项目的唯一依据，因为它属于：",
+    "options": [
+      "沉没成本",
+      "可变成本",
+      "直接成本",
+      "机会收益"
+    ],
+    "answer": 0,
+    "explanation": "沉没成本已经发生且无法收回，未来决策应关注增量成本和收益。",
+    "mistakeTip": "避免“投入越多越不能停”的沉没成本谬误。",
+    "formula": ""
+  },
+  {
+    "id": "q137",
+    "category": "成本管理",
+    "knowledge": "机会成本",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "选择项目A而放弃项目B可获得的收益，通常称为：",
+    "options": [
+      "机会成本",
+      "质量成本",
+      "应急储备",
+      "间接成本"
+    ],
+    "answer": 0,
+    "explanation": "机会成本是选择一个方案而放弃的最佳替代方案收益。",
+    "mistakeTip": "机会成本不是实际支付，但影响决策。",
+    "formula": ""
+  },
+  {
+    "id": "q138",
+    "category": "成本管理",
+    "knowledge": "成本基准",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "发起人批准动用管理储备后，项目经理应：",
+    "options": [
+      "按组织流程更新项目预算，必要时调整成本基准并保留记录",
+      "直接把费用计入任意工作包且不留痕",
+      "删除原预算",
+      "把管理储备当作利润"
+    ],
+    "answer": 0,
+    "explanation": "动用管理储备需遵循治理流程，并更新预算和相关基准/记录。",
+    "mistakeTip": "管理储备使用通常需要高层批准。",
+    "formula": ""
+  },
+  {
+    "id": "q139",
+    "category": "成本管理",
+    "knowledge": "完工尚需绩效指数",
+    "difficulty": 3,
+    "type": "calculation",
+    "text": "项目BAC为100万元，EV为50万元，AC为60万元。若必须按原BAC完成，TCPI约为：",
+    "options": [
+      "0.80",
+      "1.25",
+      "1.50",
+      "2.00"
+    ],
+    "answer": 1,
+    "explanation": "TCPI=(BAC-EV)/(BAC-AC)=(100-50)/(100-60)=1.25。",
+    "mistakeTip": "分母使用BAC-AC，表示剩余可用预算。",
+    "formula": "TCPI=(BAC-EV)/(BAC-AC)"
+  },
+  {
+    "id": "q140",
+    "category": "成本管理",
+    "knowledge": "完工估算",
+    "difficulty": 3,
+    "type": "calculation",
+    "text": "项目BAC为120万元，当前CPI为0.80，假设后续成本绩效仍按当前水平，EAC约为：",
+    "options": [
+      "96万元",
+      "120万元",
+      "150万元",
+      "200万元"
+    ],
+    "answer": 2,
+    "explanation": "EAC=BAC/CPI=120/0.80=150万元。",
+    "mistakeTip": "只有在后续成本绩效继续按当前CPI时使用BAC/CPI。",
+    "formula": "EAC=BAC/CPI"
+  },
+  {
+    "id": "q141",
+    "category": "质量管理",
+    "knowledge": "质量与等级",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "关于质量和等级，正确的是：",
+    "options": [
+      "低等级产品也可以是高质量产品，只要满足既定要求",
+      "高等级一定代表零缺陷",
+      "质量和等级完全相同",
+      "低等级必然不合格"
+    ],
+    "answer": 0,
+    "explanation": "等级是功能或特性的类别，质量是满足要求的程度。",
+    "mistakeTip": "不要把“功能少”和“不符合要求”混为一谈。",
+    "formula": ""
+  },
+  {
+    "id": "q142",
+    "category": "质量管理",
+    "knowledge": "预防与检查",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "“通过改进流程避免缺陷产生”与“测试发现缺陷”分别属于：",
+    "options": [
+      "预防与检查",
+      "检查与预防",
+      "范围确认与采购",
+      "风险转移与接受"
+    ],
+    "answer": 0,
+    "explanation": "预防关注不让错误发生，检查关注发现已发生的错误。",
+    "mistakeTip": "预防通常比返工更经济。",
+    "formula": ""
+  },
+  {
+    "id": "q143",
+    "category": "质量管理",
+    "knowledge": "质量成本",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "培训、流程改进和质量规划费用通常属于：",
+    "options": [
+      "预防成本",
+      "内部失败成本",
+      "外部失败成本",
+      "沉没成本"
+    ],
+    "answer": 0,
+    "explanation": "为防止缺陷发生而投入的费用属于预防成本。",
+    "mistakeTip": "返工是内部失败，保修投诉是外部失败。",
+    "formula": ""
+  },
+  {
+    "id": "q144",
+    "category": "质量管理",
+    "knowledge": "控制图",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "控制图中的控制上限和控制下限主要用于：",
+    "options": [
+      "判断过程是否处于统计控制状态",
+      "表示客户验收标准",
+      "计算项目利润",
+      "确定合同边界"
+    ],
+    "answer": 0,
+    "explanation": "控制限由过程数据计算，用于识别特殊原因波动；不等同于规格限。",
+    "mistakeTip": "控制限与规格限概念不同。",
+    "formula": ""
+  },
+  {
+    "id": "q145",
+    "category": "质量管理",
+    "knowledge": "过程能力",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "生产过程稳定，但大量结果仍超出客户规格限。最准确的判断是：",
+    "options": [
+      "过程受控但能力不足",
+      "过程一定失控",
+      "客户需求已自动满足",
+      "无需改进"
+    ],
+    "answer": 0,
+    "explanation": "统计受控表示波动稳定，不代表过程输出一定满足规格。",
+    "mistakeTip": "稳定性和满足规格是两个维度。",
+    "formula": ""
+  },
+  {
+    "id": "q146",
+    "category": "质量管理",
+    "knowledge": "抽样",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "从大量交付记录中抽取部分样本检查，属于：",
+    "options": [
+      "统计抽样",
+      "敏感性分析",
+      "资源平衡",
+      "合同谈判"
+    ],
+    "answer": 0,
+    "explanation": "统计抽样用部分样本推断总体质量状况。",
+    "mistakeTip": "抽样方案需考虑代表性和风险。",
+    "formula": ""
+  },
+  {
+    "id": "q147",
+    "category": "质量管理",
+    "knowledge": "质量审计",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "组织希望确认项目是否遵循既定质量政策、流程和最佳实践，应开展：",
+    "options": [
+      "质量审计",
+      "产品验收",
+      "关键路径分析",
+      "投标人会议"
+    ],
+    "answer": 0,
+    "explanation": "质量审计关注过程遵循性和改进机会，通常属于管理质量。",
+    "mistakeTip": "审计过程，检查成果。",
+    "formula": ""
+  },
+  {
+    "id": "q148",
+    "category": "质量管理",
+    "knowledge": "根本原因分析",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "同类缺陷连续返工多次。项目经理最应推动：",
+    "options": [
+      "根本原因分析并实施纠正措施",
+      "继续逐个修补而不分析",
+      "降低验收标准",
+      "隐藏缺陷数据"
+    ],
+    "answer": 0,
+    "explanation": "重复问题需要查找根因并消除产生缺陷的机制。",
+    "mistakeTip": "纠正缺陷不等于纠正根因。",
+    "formula": ""
+  },
+  {
+    "id": "q149",
+    "category": "质量管理",
+    "knowledge": "持续改进",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "PDCA循环中的“Check”主要是：",
+    "options": [
+      "检查结果并与目标比较",
+      "制定计划",
+      "执行计划",
+      "标准化并采取改进"
+    ],
+    "answer": 0,
+    "explanation": "PDCA为计划、执行、检查、处理/改进。",
+    "mistakeTip": "注意各阶段顺序。",
+    "formula": ""
+  },
+  {
+    "id": "q150",
+    "category": "质量管理",
+    "knowledge": "验收与质量控制",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "测试团队发现交付物不符合技术标准，应首先：",
+    "options": [
+      "记录缺陷并按质量控制流程处理",
+      "要求客户先正式验收",
+      "直接关闭项目",
+      "修改合同价格"
+    ],
+    "answer": 0,
+    "explanation": "不合格成果应在质量控制中识别、记录、纠正和复测，再提交验收。",
+    "mistakeTip": "不能把未通过质检的成果直接推给客户。",
+    "formula": ""
+  },
+  {
+    "id": "q151",
+    "category": "团队管理",
+    "knowledge": "责任分配矩阵",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "RACI矩阵中“A”通常表示：",
+    "options": [
+      "对结果最终负责并批准的人",
+      "实际执行工作的所有人",
+      "仅被咨询的人",
+      "仅接收信息的人"
+    ],
+    "answer": 0,
+    "explanation": "A是Accountable，对结果最终负责；R是Responsible，执行工作。",
+    "mistakeTip": "一个任务通常应有明确且尽量唯一的A。",
+    "formula": ""
+  },
+  {
+    "id": "q152",
+    "category": "团队管理",
+    "knowledge": "团队发展阶段",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队成员开始公开争论工作方法和权责边界，通常处于：",
+    "options": [
+      "震荡阶段",
+      "形成阶段",
+      "规范阶段",
+      "解散阶段"
+    ],
+    "answer": 0,
+    "explanation": "震荡阶段常出现冲突、竞争和角色边界争议。",
+    "mistakeTip": "冲突并不一定是团队失败，而是发展阶段。",
+    "formula": ""
+  },
+  {
+    "id": "q153",
+    "category": "团队管理",
+    "knowledge": "冲突解决",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "两个核心成员对技术方案分歧严重，双方都掌握关键信息且时间允许。最优先的冲突解决方式通常是：",
+    "options": [
+      "合作/解决问题",
+      "强迫",
+      "撤退",
+      "缓和但不解决根因"
+    ],
+    "answer": 0,
+    "explanation": "合作通过公开分析事实和共同目标寻找双赢、可持续方案。",
+    "mistakeTip": "重要技术冲突应解决根因。",
+    "formula": ""
+  },
+  {
+    "id": "q154",
+    "category": "团队管理",
+    "knowledge": "激励理论",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "根据赫茨伯格双因素理论，成就感和认可更接近：",
+    "options": [
+      "激励因素",
+      "保健因素",
+      "风险因素",
+      "质量指标"
+    ],
+    "answer": 0,
+    "explanation": "成就、认可、责任和成长是激励因素；工资和工作条件多属保健因素。",
+    "mistakeTip": "保健因素不足会不满，但改善不一定产生持续激励。",
+    "formula": ""
+  },
+  {
+    "id": "q155",
+    "category": "团队管理",
+    "knowledge": "虚拟团队",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "跨地区虚拟团队沟通效率低。最有效的早期措施之一是：",
+    "options": [
+      "建立沟通规范、共同工具、时区约定和定期互动",
+      "要求所有人随时在线",
+      "只用非正式口头消息",
+      "取消会议记录"
+    ],
+    "answer": 0,
+    "explanation": "虚拟团队需要明确沟通协议、工具、节奏和时区边界。",
+    "mistakeTip": "增加工具数量不等于改善沟通。",
+    "formula": ""
+  },
+  {
+    "id": "q156",
+    "category": "团队管理",
+    "knowledge": "资源日历",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "资源日历主要描述：",
+    "options": [
+      "资源可用时间、班次、节假日和限制",
+      "项目全部风险",
+      "客户验收标准",
+      "合同付款条款"
+    ],
+    "answer": 0,
+    "explanation": "资源日历记录人员、设备等资源的可用性和时间限制。",
+    "mistakeTip": "进度安排需要同时考虑活动逻辑和资源可用性。",
+    "formula": ""
+  },
+  {
+    "id": "q157",
+    "category": "团队管理",
+    "knowledge": "培训计划",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "新成员缺少必要技能，但项目仍有培训时间。项目经理应：",
+    "options": [
+      "根据技能差距安排培训并更新资源管理计划",
+      "降低质量标准",
+      "隐瞒技能差距",
+      "立即取消项目"
+    ],
+    "answer": 0,
+    "explanation": "应基于团队能力评估制定培训、辅导或知识转移措施。",
+    "mistakeTip": "技能差距是可管理的资源风险。",
+    "formula": ""
+  },
+  {
+    "id": "q158",
+    "category": "团队管理",
+    "knowledge": "认可与奖励",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "有效的认可与奖励通常应：",
+    "options": [
+      "与期望行为和可控绩效相关，并及时、公平",
+      "只奖励最会表达的人",
+      "完全保密且无标准",
+      "鼓励成员互相隐藏信息"
+    ],
+    "answer": 0,
+    "explanation": "奖励应基于明确、可控和公平的绩效标准，并与项目目标一致。",
+    "mistakeTip": "不要奖励破坏协作的局部行为。",
+    "formula": ""
+  },
+  {
+    "id": "q159",
+    "category": "团队管理",
+    "knowledge": "权力类型",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "项目经理因其专业知识而获得团队信任，这主要属于：",
+    "options": [
+      "专家权力",
+      "惩罚权力",
+      "正式权力",
+      "奖励权力"
+    ],
+    "answer": 0,
+    "explanation": "专家权力来源于知识、技能和经验。",
+    "mistakeTip": "职位权力与专业影响力不同。",
+    "formula": ""
+  },
+  {
+    "id": "q160",
+    "category": "团队管理",
+    "knowledge": "团队章程",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "团队章程最常用于明确：",
+    "options": [
+      "团队价值观、沟通规则、决策方式和行为规范",
+      "客户付款金额",
+      "数据库表结构",
+      "项目全部成本"
+    ],
+    "answer": 0,
+    "explanation": "团队章程建立共同工作规则和期望，帮助减少协作摩擦。",
+    "mistakeTip": "它不是合同或技术设计文档。",
+    "formula": ""
+  },
+  {
+    "id": "q161",
+    "category": "干系人与沟通",
+    "knowledge": "沟通模型",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "在基本沟通模型中，噪声最可能导致：",
+    "options": [
+      "信息在传递或理解过程中失真",
+      "沟通渠道自动减少",
+      "合同自动生效",
+      "风险概率变为零"
+    ],
+    "answer": 0,
+    "explanation": "噪声包括语言、环境、文化和技术干扰，会影响信息准确传递。",
+    "mistakeTip": "反馈有助于确认理解。",
+    "formula": ""
+  },
+  {
+    "id": "q162",
+    "category": "干系人与沟通",
+    "knowledge": "推式沟通",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "向大量相关人员发送项目周报邮件属于：",
+    "options": [
+      "推式沟通",
+      "拉式沟通",
+      "互动沟通",
+      "非正式验收"
+    ],
+    "answer": 0,
+    "explanation": "推式沟通把信息发送给特定接收者，但不保证其已理解。",
+    "mistakeTip": "互动沟通是实时双向，拉式是自行访问资料库。",
+    "formula": ""
+  },
+  {
+    "id": "q163",
+    "category": "干系人与沟通",
+    "knowledge": "拉式沟通",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "将大量项目文档放在知识库供成员按需查阅，属于：",
+    "options": [
+      "拉式沟通",
+      "推式沟通",
+      "互动沟通",
+      "风险规避"
+    ],
+    "answer": 0,
+    "explanation": "拉式沟通适合大量信息和大量受众，由接收者按需获取。",
+    "mistakeTip": "文档库不是自动保证阅读。",
+    "formula": ""
+  },
+  {
+    "id": "q164",
+    "category": "干系人与沟通",
+    "knowledge": "沟通需求分析",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目新增监管部门作为关键干系人。项目经理应首先：",
+    "options": [
+      "重新分析其信息需求并更新沟通管理计划",
+      "继续沿用原沟通方案不变",
+      "只增加群聊人数",
+      "删除原干系人登记册"
+    ],
+    "answer": 0,
+    "explanation": "干系人变化会影响沟通对象、内容、频率、渠道和责任。",
+    "mistakeTip": "沟通计划应随干系人变化更新。",
+    "formula": ""
+  },
+  {
+    "id": "q165",
+    "category": "干系人与沟通",
+    "knowledge": "会议管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目会议经常超时且没有结论。最有效的改进是：",
+    "options": [
+      "会前明确议程和决策目标，会中控时，会后记录责任人和期限",
+      "增加所有会议时长",
+      "取消会议纪要",
+      "让所有人自由讨论不设主题"
+    ],
+    "answer": 0,
+    "explanation": "高效会议需要明确目的、议程、参与者、时间盒和行动项。",
+    "mistakeTip": "会议数量多不代表沟通有效。",
+    "formula": ""
+  },
+  {
+    "id": "q166",
+    "category": "干系人与沟通",
+    "knowledge": "信息升级",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目发现重大合规问题，若延迟报告可能扩大损失。项目经理应：",
+    "options": [
+      "按升级路径及时向有权决策者报告",
+      "等待下月例会",
+      "仅告诉一名开发人员",
+      "删除相关记录"
+    ],
+    "answer": 0,
+    "explanation": "重大问题应按沟通和治理机制及时升级，保证决策者获得准确信息。",
+    "mistakeTip": "坏消息越晚披露，风险通常越大。",
+    "formula": ""
+  },
+  {
+    "id": "q167",
+    "category": "干系人与沟通",
+    "knowledge": "沟通方法选择",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "处理紧急且复杂、需要立即澄清的问题，最适合：",
+    "options": [
+      "互动沟通，如面对面或视频会议",
+      "只发送无回执邮件",
+      "只上传文档库",
+      "等待月报"
+    ],
+    "answer": 0,
+    "explanation": "复杂紧急问题需要实时双向反馈。",
+    "mistakeTip": "媒介应匹配紧急性和复杂度。",
+    "formula": ""
+  },
+  {
+    "id": "q168",
+    "category": "干系人与沟通",
+    "knowledge": "信息管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "不同版本的周报在多个群中传播，导致决策依据不一致。最合适的措施是：",
+    "options": [
+      "建立单一可信信息源和版本控制规则",
+      "继续复制更多文件",
+      "禁止任何人查看周报",
+      "删除历史记录"
+    ],
+    "answer": 0,
+    "explanation": "单一可信信息源和版本标识可减少信息不一致。",
+    "mistakeTip": "沟通管理也需要配置和版本意识。",
+    "formula": ""
+  },
+  {
+    "id": "q169",
+    "category": "干系人与沟通",
+    "knowledge": "积极倾听",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "积极倾听最典型的行为是：",
+    "options": [
+      "复述对方要点并确认理解",
+      "只等待自己发言",
+      "立即打断并给结论",
+      "忽略非语言信息"
+    ],
+    "answer": 0,
+    "explanation": "复述、提问和确认可减少误解并体现倾听。",
+    "mistakeTip": "听到不等于理解。",
+    "formula": ""
+  },
+  {
+    "id": "q170",
+    "category": "干系人与沟通",
+    "knowledge": "沟通效果",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "周报按时发送，但管理层仍表示无法判断是否需要决策。主要改进方向是：",
+    "options": [
+      "把原始数据转化为突出偏差、趋势、影响和决策请求的绩效报告",
+      "增加更多未经整理的数据",
+      "减少关键结论",
+      "只使用技术术语"
+    ],
+    "answer": 0,
+    "explanation": "有效报告应服务受众决策，突出重要信息、影响、趋势和所需行动。",
+    "mistakeTip": "“发送了”不等于“沟通有效”。",
+    "formula": ""
+  },
+  {
+    "id": "q171",
+    "category": "干系人与沟通",
+    "knowledge": "干系人识别",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "干系人识别最合适的时间是：",
+    "options": [
+      "项目开始时尽早进行，并在全生命周期持续更新",
+      "只在项目收尾时",
+      "只在采购完成后",
+      "只在发生冲突时"
+    ],
+    "answer": 0,
+    "explanation": "干系人会随项目阶段和环境变化，应持续识别和更新。",
+    "mistakeTip": "一次性名单容易遗漏后来出现的关键影响者。",
+    "formula": ""
+  },
+  {
+    "id": "q172",
+    "category": "干系人与沟通",
+    "knowledge": "权力利益方格",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "权力高、利益低的干系人通常应：",
+    "options": [
+      "令其满意",
+      "密切管理",
+      "监督即可",
+      "完全忽略"
+    ],
+    "answer": 0,
+    "explanation": "权力高、利益低者通常采取“令其满意”的策略，避免过度沟通又保持支持。",
+    "mistakeTip": "权力高利益高才是密切管理。",
+    "formula": ""
+  },
+  {
+    "id": "q173",
+    "category": "干系人与沟通",
+    "knowledge": "参与度评估",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "关键用户当前抵制项目，但期望状态是支持。项目经理应：",
+    "options": [
+      "制定有针对性的参与策略，理解其顾虑并持续沟通",
+      "把他从登记册删除",
+      "只向其发送最终验收通知",
+      "强制其公开支持"
+    ],
+    "answer": 0,
+    "explanation": "干系人参与度矩阵帮助识别当前与期望状态差距并制定策略。",
+    "mistakeTip": "抵制通常需要理解原因而不是标签化。",
+    "formula": ""
+  },
+  {
+    "id": "q174",
+    "category": "干系人与沟通",
+    "knowledge": "发起人职责",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目发起人最典型的职责之一是：",
+    "options": [
+      "提供高层支持、资源保障并处理超出项目经理权限的问题",
+      "编写全部代码",
+      "执行每次测试",
+      "维护数据库索引"
+    ],
+    "answer": 0,
+    "explanation": "发起人承担项目治理、授权、资源和高层障碍清除等职责。",
+    "mistakeTip": "发起人不是日常技术执行者。",
+    "formula": ""
+  },
+  {
+    "id": "q175",
+    "category": "干系人与沟通",
+    "knowledge": "用户参与",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "系统上线后用户接受度低，回顾发现需求阶段几乎没有最终用户参与。最可能缺失的是：",
+    "options": [
+      "持续的用户参与和反馈机制",
+      "更多服务器容量",
+      "更多合同罚款",
+      "更复杂的WBS编号"
+    ],
+    "answer": 0,
+    "explanation": "缺少用户参与会导致需求偏差和变革阻力。",
+    "mistakeTip": "技术成功不保证使用成功。",
+    "formula": ""
+  },
+  {
+    "id": "q176",
+    "category": "干系人与沟通",
+    "knowledge": "抵制管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "部门负责人担心新系统削弱其控制权，公开抵制。项目经理首先应：",
+    "options": [
+      "一对一了解其利益、影响和顾虑，再设计参与策略",
+      "公开批评其态度",
+      "立即删除相关功能",
+      "停止所有沟通"
+    ],
+    "answer": 0,
+    "explanation": "应先理解抵制背后的利益和担忧，建立信任并寻求共同目标。",
+    "mistakeTip": "抵制常是利益和影响变化的信号。",
+    "formula": ""
+  },
+  {
+    "id": "q177",
+    "category": "干系人与沟通",
+    "knowledge": "期望管理",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "管理干系人期望的关键是：",
+    "options": [
+      "持续沟通范围、进展、风险和决策边界",
+      "保证所有愿望都会实现",
+      "隐藏坏消息",
+      "只在项目结束时沟通"
+    ],
+    "answer": 0,
+    "explanation": "透明且持续的期望管理可减少误解和冲突。",
+    "mistakeTip": "管理期望不等于无限承诺。",
+    "formula": ""
+  },
+  {
+    "id": "q178",
+    "category": "干系人与沟通",
+    "knowledge": "关键干系人离任",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "客户方核心业务代表突然离任。项目经理应优先：",
+    "options": [
+      "更新干系人登记册，确认继任者并重新评估需求和决策影响",
+      "继续假设原承诺自动有效",
+      "删除全部需求",
+      "立即关闭项目"
+    ],
+    "answer": 0,
+    "explanation": "关键干系人变化会影响需求、决策权和沟通，需要重新识别和分析。",
+    "mistakeTip": "人员变化可能带来重大项目风险。",
+    "formula": ""
+  },
+  {
+    "id": "q179",
+    "category": "干系人与沟通",
+    "knowledge": "参与策略",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "某监管机构权力高、利益高，但只在特定里程碑审查。最合适的是：",
+    "options": [
+      "按其法定节点和信息要求密切管理并提前准备材料",
+      "每天发送所有内部聊天记录",
+      "只在最终上线后通知",
+      "完全交由供应商沟通"
+    ],
+    "answer": 0,
+    "explanation": "高权力高利益干系人应密切管理，但沟通频率和内容要符合其实际需求。",
+    "mistakeTip": "密切管理不等于信息轰炸。",
+    "formula": ""
+  },
+  {
+    "id": "q180",
+    "category": "干系人与沟通",
+    "knowledge": "参与效果评估",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "判断干系人参与策略是否有效，最有价值的证据是：",
+    "options": [
+      "其行为、支持程度和决策响应是否向期望状态变化",
+      "邮件发送数量是否增加",
+      "会议时长是否变长",
+      "项目文档页数是否增加"
+    ],
+    "answer": 0,
+    "explanation": "参与管理关注干系人的实际态度和行为变化，而非活动数量。",
+    "mistakeTip": "衡量结果而不是只衡量动作。",
+    "formula": ""
+  },
+  {
+    "id": "q181",
+    "category": "风险管理",
+    "knowledge": "风险与问题",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "“服务器已经宕机并影响测试”应记录为：",
+    "options": [
+      "问题",
+      "风险",
+      "假设",
+      "机会"
+    ],
+    "answer": 0,
+    "explanation": "已经发生并产生影响的是问题；尚未发生的不确定事件才是风险。",
+    "mistakeTip": "时态是区分风险和问题的关键。",
+    "formula": ""
+  },
+  {
+    "id": "q182",
+    "category": "风险管理",
+    "knowledge": "风险登记册",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "风险登记册通常不应缺少：",
+    "options": [
+      "风险描述、原因、影响、责任人和应对措施",
+      "每位员工工资",
+      "全部源代码",
+      "客户身份证复印件"
+    ],
+    "answer": 0,
+    "explanation": "风险登记册用于记录和跟踪风险及其责任与应对。",
+    "mistakeTip": "应明确风险所有者。",
+    "formula": ""
+  },
+  {
+    "id": "q183",
+    "category": "风险管理",
+    "knowledge": "风险分解结构",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "风险分解结构RBS的主要用途是：",
+    "options": [
+      "按来源或类别组织风险，帮助系统识别",
+      "分解项目范围",
+      "计算沟通渠道",
+      "编制采购合同"
+    ],
+    "answer": 0,
+    "explanation": "RBS按技术、管理、外部等类别组织风险来源。",
+    "mistakeTip": "WBS分解工作，RBS分解风险来源。",
+    "formula": ""
+  },
+  {
+    "id": "q184",
+    "category": "风险管理",
+    "knowledge": "威胁应对",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "某高风险功能可以通过改用成熟组件彻底消除技术不确定性，这更接近：",
+    "options": [
+      "规避",
+      "转移",
+      "接受",
+      "开拓"
+    ],
+    "answer": 0,
+    "explanation": "改变方案使威胁不再存在属于规避。",
+    "mistakeTip": "转移是把责任或损失转给第三方，不一定消除风险。",
+    "formula": ""
+  },
+  {
+    "id": "q185",
+    "category": "风险管理",
+    "knowledge": "机会应对",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "为确保一个有利机会一定发生而投入最佳资源，属于机会应对中的：",
+    "options": [
+      "开拓",
+      "分享",
+      "提高",
+      "接受"
+    ],
+    "answer": 0,
+    "explanation": "开拓旨在确保机会实现；提高只增加概率或影响。",
+    "mistakeTip": "机会与威胁的应对术语不同。",
+    "formula": ""
+  },
+  {
+    "id": "q186",
+    "category": "风险管理",
+    "knowledge": "次生风险",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "为降低网络攻击风险部署新安全软件，但该软件可能造成系统性能下降。性能下降风险属于：",
+    "options": [
+      "次生风险",
+      "残余风险",
+      "已关闭风险",
+      "纯机会"
+    ],
+    "answer": 0,
+    "explanation": "由风险应对措施直接引入的新风险称为次生风险。",
+    "mistakeTip": "残余风险是应对后仍然存在的原风险部分。",
+    "formula": ""
+  },
+  {
+    "id": "q187",
+    "category": "风险管理",
+    "knowledge": "残余风险",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "采取防火墙和多因素认证后，仍存在少量被攻破可能性，这属于：",
+    "options": [
+      "残余风险",
+      "次生风险",
+      "问题",
+      "机会成本"
+    ],
+    "answer": 0,
+    "explanation": "实施应对后仍保留的风险部分称为残余风险。",
+    "mistakeTip": "应评估是否在容忍度内。",
+    "formula": ""
+  },
+  {
+    "id": "q188",
+    "category": "风险管理",
+    "knowledge": "风险触发条件",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "合同约定“供应商延迟超过5天即启动备用供应商”，其中“延迟超过5天”是：",
+    "options": [
+      "风险触发条件",
+      "项目章程",
+      "质量成本",
+      "资源日历"
+    ],
+    "answer": 0,
+    "explanation": "触发条件是表明风险即将发生或已发生并启动应对的可观察信号。",
+    "mistakeTip": "触发条件应可监测。",
+    "formula": ""
+  },
+  {
+    "id": "q189",
+    "category": "风险管理",
+    "knowledge": "定量风险分析",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "蒙特卡洛模拟最常用于：",
+    "options": [
+      "评估总体进度或成本结果的概率分布",
+      "确定组织结构",
+      "编写需求规格",
+      "选择会议地点"
+    ],
+    "answer": 0,
+    "explanation": "蒙特卡洛通过大量随机迭代估计不同工期或成本结果的概率。",
+    "mistakeTip": "它处理整体不确定性，不只是单一风险评分。",
+    "formula": ""
+  },
+  {
+    "id": "q190",
+    "category": "风险管理",
+    "knowledge": "风险审查",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目进入新阶段，原风险环境已明显变化。项目经理应：",
+    "options": [
+      "开展风险审查，识别新风险并关闭过期风险",
+      "保留登记册不变",
+      "删除所有历史风险记录",
+      "只关注已经发生的问题"
+    ],
+    "answer": 0,
+    "explanation": "风险管理是持续过程，应定期审查风险状态、应对有效性和新风险。",
+    "mistakeTip": "风险登记册是动态文件。",
+    "formula": ""
+  },
+  {
+    "id": "q191",
+    "category": "采购与合同",
+    "knowledge": "自制或外购分析",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "自制或外购分析主要帮助决定：",
+    "options": [
+      "某项工作由内部完成还是从外部采购",
+      "是否增加沟通渠道",
+      "如何绘制控制图",
+      "是否关闭风险"
+    ],
+    "answer": 0,
+    "explanation": "该分析比较内部能力、成本、时间、风险和战略因素。",
+    "mistakeTip": "最低报价不是唯一决策因素。",
+    "formula": ""
+  },
+  {
+    "id": "q192",
+    "category": "采购与合同",
+    "knowledge": "采购工作说明书",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "采购工作说明书应主要描述：",
+    "options": [
+      "卖方需要提供的产品、服务、成果和技术要求",
+      "项目经理个人履历",
+      "所有干系人的家庭信息",
+      "组织年度利润"
+    ],
+    "answer": 0,
+    "explanation": "采购SOW定义采购对象及其范围、规格、质量和验收要求。",
+    "mistakeTip": "采购范围越明确，报价和履约越可控。",
+    "formula": ""
+  },
+  {
+    "id": "q193",
+    "category": "采购与合同",
+    "knowledge": "投标人会议",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "投标人会议的主要目的是：",
+    "options": [
+      "确保潜在卖方对采购要求获得一致理解和公平信息",
+      "与某一卖方秘密谈判",
+      "自动确定中标人",
+      "替代合同签署"
+    ],
+    "answer": 0,
+    "explanation": "投标人会议用于澄清采购文件，保证所有潜在卖方公平获取信息。",
+    "mistakeTip": "对所有投标人应保持一致性。",
+    "formula": ""
+  },
+  {
+    "id": "q194",
+    "category": "采购与合同",
+    "knowledge": "索赔管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "买卖双方对合同变更费用产生争议。项目经理应首先：",
+    "options": [
+      "依据合同条款、变更记录和争议解决程序处理",
+      "口头承诺任意金额",
+      "删除变更文件",
+      "立即终止合同且不评估影响"
+    ],
+    "answer": 0,
+    "explanation": "合同争议应基于完整记录、合同条款和约定的索赔/争议解决机制。",
+    "mistakeTip": "文档和可追溯性是索赔管理基础。",
+    "formula": ""
+  },
+  {
+    "id": "q195",
+    "category": "采购与合同",
+    "knowledge": "成本补偿合同",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "当工作范围难以准确界定且买方愿意承担较多成本风险时，较可能采用：",
+    "options": [
+      "成本补偿合同",
+      "固定总价合同",
+      "无合同采购",
+      "仅口头协议"
+    ],
+    "answer": 0,
+    "explanation": "成本补偿合同适用于范围不确定性较高的工作，买方成本风险较大。",
+    "mistakeTip": "固定总价适合范围明确。",
+    "formula": ""
+  },
+  {
+    "id": "q196",
+    "category": "采购与合同",
+    "knowledge": "工料合同",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "需要临时聘请专家，工作量暂不确定，按实际工时和材料结算。最合适的合同类型是：",
+    "options": [
+      "工料合同",
+      "固定总价合同",
+      "成本加奖励费合同",
+      "无偿合同"
+    ],
+    "answer": 0,
+    "explanation": "工料合同按约定费率和实际投入结算，适合范围或工作量不确定的短期工作。",
+    "mistakeTip": "应设置上限和监督机制以控制成本。",
+    "formula": ""
+  },
+  {
+    "id": "q197",
+    "category": "采购与合同",
+    "knowledge": "合同变更控制",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "卖方表示口头同意免费增加功能。项目经理仍应：",
+    "options": [
+      "按合同变更控制程序形成书面记录并获得授权",
+      "立即安排实施且不留记录",
+      "删除原合同",
+      "让开发人员私下决定"
+    ],
+    "answer": 0,
+    "explanation": "合同变更应书面化并由有权人员批准，避免后续争议。",
+    "mistakeTip": "“免费”也可能影响范围、进度、责任和验收。",
+    "formula": ""
+  },
+  {
+    "id": "q198",
+    "category": "采购与合同",
+    "knowledge": "采购绩效审查",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "采购绩效审查主要评估：",
+    "options": [
+      "卖方在范围、质量、进度和成本方面的履约表现",
+      "项目成员的家庭情况",
+      "客户公司股价",
+      "数据库密码"
+    ],
+    "answer": 0,
+    "explanation": "采购绩效审查用于判断卖方履约、识别偏差并采取纠正措施。",
+    "mistakeTip": "关注合同义务和实际绩效。",
+    "formula": ""
+  },
+  {
+    "id": "q199",
+    "category": "采购与合同",
+    "knowledge": "合同收尾",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "合同工作已完成，最终付款前最需要确认：",
+    "options": [
+      "成果已验收、索赔已解决、记录完整且义务履行",
+      "只要卖方发来发票即可",
+      "删除往来记录",
+      "无需确认知识产权移交"
+    ],
+    "answer": 0,
+    "explanation": "合同收尾需确认验收、付款、索赔、移交、审计和记录归档。",
+    "mistakeTip": "技术完成不等于合同关闭。",
+    "formula": ""
+  },
+  {
+    "id": "q200",
+    "category": "采购与合同",
+    "knowledge": "选择标准",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "某供应商报价最低，但技术能力和履约记录明显不足。最合理的选择原则是：",
+    "options": [
+      "依据预先公布的综合选择标准评估价值和风险",
+      "只选最低价",
+      "临时修改标准偏向熟悉供应商",
+      "随机抽签"
+    ],
+    "answer": 0,
+    "explanation": "卖方选择应使用事先确定的技术、商务、风险和价格等综合标准。",
+    "mistakeTip": "公平、透明和可审计很重要。",
+    "formula": ""
+  },
+  {
+    "id": "q201",
+    "category": "变更管理",
+    "knowledge": "变更请求",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "纠正措施、预防措施、缺陷补救和更新通常都可能形成：",
+    "options": [
+      "变更请求",
+      "项目章程",
+      "资源日历",
+      "投标邀请书"
+    ],
+    "answer": 0,
+    "explanation": "这些措施若改变受控内容，应形成变更请求进入整体变更控制。",
+    "mistakeTip": "变更请求不只包括范围增加。",
+    "formula": ""
+  },
+  {
+    "id": "q202",
+    "category": "变更管理",
+    "knowledge": "整体变更控制",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队发现一个能明显提升性能的优化，但不在批准范围内。项目经理应：",
+    "options": [
+      "提交变更请求并进行影响分析和审批",
+      "因为有益就直接实施",
+      "让程序员自行决定",
+      "在项目结束后再说明"
+    ],
+    "answer": 0,
+    "explanation": "有益变更同样需要正式评估和批准。",
+    "mistakeTip": "“技术上更好”不等于“已获授权”。",
+    "formula": ""
+  },
+  {
+    "id": "q203",
+    "category": "变更管理",
+    "knowledge": "紧急变更",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "生产系统出现严重安全漏洞，需要立即修复。组织已有紧急变更流程。最合适的是：",
+    "options": [
+      "按紧急变更流程快速授权、实施并事后补全审计记录",
+      "绕过所有控制且不留记录",
+      "等待普通月度CCB",
+      "只通知最终用户"
+    ],
+    "answer": 0,
+    "explanation": "紧急变更可以加速，但仍应遵循预定义授权、测试、回退和审计要求。",
+    "mistakeTip": "紧急不等于无控制。",
+    "formula": ""
+  },
+  {
+    "id": "q204",
+    "category": "配置管理",
+    "knowledge": "配置项",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "配置项最合理的定义是：",
+    "options": [
+      "被置于配置控制下并需要唯一标识和版本管理的产品或组成部分",
+      "所有口头讨论",
+      "每一次普通聊天",
+      "未批准的想法"
+    ],
+    "answer": 0,
+    "explanation": "配置项是需要受控管理的产品、文档、代码、环境等对象。",
+    "mistakeTip": "并非所有信息都必须成为配置项。",
+    "formula": ""
+  },
+  {
+    "id": "q205",
+    "category": "配置管理",
+    "knowledge": "配置状态记录",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "配置状态记录主要用于：",
+    "options": [
+      "报告配置项当前版本、变更状态和基线情况",
+      "批准项目章程",
+      "计算净现值",
+      "确定团队奖金"
+    ],
+    "answer": 0,
+    "explanation": "状态记录提供配置项和变更的可追溯信息。",
+    "mistakeTip": "它回答“当前是什么状态”。",
+    "formula": ""
+  },
+  {
+    "id": "q206",
+    "category": "配置管理",
+    "knowledge": "配置审计",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "配置审计主要确认：",
+    "options": [
+      "配置项实际状态与批准的需求、基线和记录一致",
+      "所有风险已消失",
+      "合同价格最低",
+      "项目没有任何会议"
+    ],
+    "answer": 0,
+    "explanation": "配置审计检查功能和物理配置的一致性与完整性。",
+    "mistakeTip": "版本号正确不代表内容一定符合。",
+    "formula": ""
+  },
+  {
+    "id": "q207",
+    "category": "配置管理",
+    "knowledge": "版本控制",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "开发人员在本地保存多个文件名为“最终版2_最新_真的最终版”。最需要建立：",
+    "options": [
+      "统一版本控制库、分支和发布规则",
+      "更多聊天群",
+      "更长文件名",
+      "取消代码审查"
+    ],
+    "answer": 0,
+    "explanation": "集中版本控制、提交记录和发布规则可解决版本混乱与追溯问题。",
+    "mistakeTip": "文件名不是可靠的版本控制机制。",
+    "formula": ""
+  },
+  {
+    "id": "q208",
+    "category": "变更管理",
+    "knowledge": "变更日志",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "变更日志最主要记录：",
+    "options": [
+      "变更请求、状态、决策、责任人和实施结果",
+      "每位员工工资",
+      "所有源代码内容",
+      "客户公司组织架构"
+    ],
+    "answer": 0,
+    "explanation": "变更日志保证变更从提出到关闭的可追踪性。",
+    "mistakeTip": "被否决或推迟的变更也应保留记录。",
+    "formula": ""
+  },
+  {
+    "id": "q209",
+    "category": "变更管理",
+    "knowledge": "基准比较",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "批准变更更新了进度基准。后续绩效分析应：",
+    "options": [
+      "与最新批准的进度基准比较，并保留历史版本",
+      "继续只与原始基准比较且不说明",
+      "不再做任何偏差分析",
+      "删除旧基准和变更记录"
+    ],
+    "answer": 0,
+    "explanation": "绩效应对照当前有效基准，同时保留历史变更可追溯性。",
+    "mistakeTip": "基准可变，但必须经批准且有版本。",
+    "formula": ""
+  },
+  {
+    "id": "q210",
+    "category": "配置管理",
+    "knowledge": "发布管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "某版本已经通过测试，但生产环境部署包与测试包不一致。最可能缺失的是：",
+    "options": [
+      "受控的构建、发布和部署配置管理",
+      "更多需求访谈",
+      "更低的合同价格",
+      "更多沟通渠道"
+    ],
+    "answer": 0,
+    "explanation": "应确保同一受控构建产物从测试推广到生产，并可验证校验值和版本。",
+    "mistakeTip": "测试通过的不是“代码概念”，而是具体构建物。",
+    "formula": ""
+  },
+  {
+    "id": "q211",
+    "category": "项目收尾",
+    "knowledge": "行政收尾",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "项目行政收尾通常包括：",
+    "options": [
+      "确认工作完成、移交成果、归档记录和总结经验",
+      "继续无限增加需求",
+      "删除合同文件",
+      "停止与客户沟通"
+    ],
+    "answer": 0,
+    "explanation": "收尾确保成果、文件、财务、合同和经验得到正式处理。",
+    "mistakeTip": "收尾不是简单停止工作。",
+    "formula": ""
+  },
+  {
+    "id": "q212",
+    "category": "项目收尾",
+    "knowledge": "经验教训",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目即将结束，但团队成员已陆续离开。项目经理应优先：",
+    "options": [
+      "尽快组织经验教训会议并保存可复用知识",
+      "等所有人离开后再总结",
+      "只记录成功，不记录问题",
+      "删除问题日志"
+    ],
+    "answer": 0,
+    "explanation": "知识应在关键人员离开前捕获，并在项目全周期持续记录。",
+    "mistakeTip": "收尾时过晚会导致知识流失。",
+    "formula": ""
+  },
+  {
+    "id": "q213",
+    "category": "项目收尾",
+    "knowledge": "成果移交",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "系统技术验收通过，但运维团队尚未接受培训和文档。项目经理不应关闭项目，因为：",
+    "options": [
+      "运营移交条件尚未满足",
+      "技术验收足以自动完成全部收尾",
+      "培训与项目无关",
+      "文档不属于交付物"
+    ],
+    "answer": 0,
+    "explanation": "可持续移交通常包括培训、运维手册、权限、支持和责任交接。",
+    "mistakeTip": "交付不仅是软件文件。",
+    "formula": ""
+  },
+  {
+    "id": "q214",
+    "category": "项目收尾",
+    "knowledge": "释放资源",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "正式释放项目资源前，项目经理应：",
+    "options": [
+      "确认剩余工作和移交已完成，并按组织流程沟通",
+      "突然取消所有账号",
+      "删除绩效记录",
+      "忽略职能经理"
+    ],
+    "answer": 0,
+    "explanation": "资源释放应有计划，并与团队、职能经理和后续工作安排协调。",
+    "mistakeTip": "提前沟通有助于平稳过渡。",
+    "formula": ""
+  },
+  {
+    "id": "q215",
+    "category": "项目收尾",
+    "knowledge": "合同关闭",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "采购合同关闭与项目关闭的关系是：",
+    "options": [
+      "相关合同通常需完成验收、付款和争议处理后再完成项目收尾",
+      "项目关闭后合同永远无需处理",
+      "两者毫无关系",
+      "合同关闭只看技术人员意见"
+    ],
+    "answer": 0,
+    "explanation": "项目收尾应确认所有采购合同和义务已妥善关闭。",
+    "mistakeTip": "未解决索赔可能继续产生法律和财务风险。",
+    "formula": ""
+  },
+  {
+    "id": "q216",
+    "category": "项目收尾",
+    "knowledge": "提前终止",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目因战略调整被提前终止。项目经理仍应：",
+    "options": [
+      "记录终止原因、保存成果、处理合同、归档并总结经验",
+      "立即删除所有记录",
+      "跳过干系人沟通",
+      "假装项目仍在继续"
+    ],
+    "answer": 0,
+    "explanation": "提前终止同样需要正式收尾，以保护组织资产和减少后续风险。",
+    "mistakeTip": "终止不是无序停止。",
+    "formula": ""
+  },
+  {
+    "id": "q217",
+    "category": "项目管理",
+    "knowledge": "审计",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "项目审计与日常状态报告相比，更强调：",
+    "options": [
+      "独立、客观地评价合规性、治理和管理有效性",
+      "每天分配任务",
+      "替代客户验收",
+      "编写程序代码"
+    ],
+    "answer": 0,
+    "explanation": "审计通常由相对独立角色评估过程、控制和合规情况。",
+    "mistakeTip": "审计与状态汇报目的不同。",
+    "formula": ""
+  },
+  {
+    "id": "q218",
+    "category": "项目管理",
+    "knowledge": "PMO",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "支持型PMO通常表现为：",
+    "options": [
+      "提供模板、培训、最佳实践和咨询，控制程度较低",
+      "直接接管所有项目经理职权",
+      "只负责采购付款",
+      "完全不提供任何帮助"
+    ],
+    "answer": 0,
+    "explanation": "支持型PMO以咨询和资源支持为主；控制型和指令型权力更高。",
+    "mistakeTip": "区分支持、控制和指令型PMO。",
+    "formula": ""
+  },
+  {
+    "id": "q219",
+    "category": "项目管理",
+    "knowledge": "组合管理",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "项目组合管理最关注：",
+    "options": [
+      "选择和优先排序项目以实现组织战略价值",
+      "单个活动的详细技术方案",
+      "某个缺陷的代码修复",
+      "一次会议的议程"
+    ],
+    "answer": 0,
+    "explanation": "组合管理在组织层面平衡战略、价值、风险和资源。",
+    "mistakeTip": "项目管理关注把项目做对，组合管理关注做对的项目。",
+    "formula": ""
+  },
+  {
+    "id": "q220",
+    "category": "项目管理",
+    "knowledge": "项目集管理",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "将多个相互关联项目协调管理以获得单独管理无法实现的收益，属于：",
+    "options": [
+      "项目集管理",
+      "项目组合管理",
+      "日常运营管理",
+      "配置管理"
+    ],
+    "answer": 0,
+    "explanation": "项目集强调相关项目的协同收益和统一治理。",
+    "mistakeTip": "组合中的项目不一定相互依赖。",
+    "formula": ""
+  },
+  {
+    "id": "q221",
+    "category": "软件工程",
+    "knowledge": "生命周期模型",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "需求稳定、技术成熟且变更较少的项目，更适合采用：",
+    "options": [
+      "预测型生命周期",
+      "完全无计划开发",
+      "只做运维",
+      "随机迭代"
+    ],
+    "answer": 0,
+    "explanation": "预测型生命周期适用于范围和需求相对稳定、可提前详细规划的场景。",
+    "mistakeTip": "生命周期应匹配不确定性。",
+    "formula": ""
+  },
+  {
+    "id": "q222",
+    "category": "软件工程",
+    "knowledge": "敏捷价值",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "敏捷方法更强调：",
+    "options": [
+      "频繁交付可用增量并持续获得反馈",
+      "一次性完成全部文档后再开发",
+      "拒绝任何变化",
+      "只追求个人产出"
+    ],
+    "answer": 0,
+    "explanation": "敏捷通过短周期反馈和增量交付应对不确定性。",
+    "mistakeTip": "敏捷不是不要文档或不要计划。",
+    "formula": ""
+  },
+  {
+    "id": "q223",
+    "category": "软件工程",
+    "knowledge": "产品待办列表",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "在Scrum中，产品待办列表优先级主要由谁负责？",
+    "options": [
+      "产品负责人",
+      "Scrum Master",
+      "任意开发人员",
+      "外部审计员"
+    ],
+    "answer": 0,
+    "explanation": "产品负责人对产品价值和待办列表排序负责。",
+    "mistakeTip": "Scrum Master促进流程，不决定业务优先级。",
+    "formula": ""
+  },
+  {
+    "id": "q224",
+    "category": "软件工程",
+    "knowledge": "完成定义",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队成员对“开发完成”理解不同，导致很多故事测试未通过。最应建立：",
+    "options": [
+      "共同的完成定义DoD",
+      "更长的需求名称",
+      "更少的测试",
+      "取消代码评审"
+    ],
+    "answer": 0,
+    "explanation": "完成定义明确质量、测试、文档等统一完成标准。",
+    "mistakeTip": "“编码结束”通常不等于可交付。",
+    "formula": ""
+  },
+  {
+    "id": "q225",
+    "category": "软件工程",
+    "knowledge": "持续集成",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "持续集成的核心实践是：",
+    "options": [
+      "频繁合并代码并自动构建和测试",
+      "每半年才合并一次",
+      "跳过版本控制",
+      "只在生产环境调试"
+    ],
+    "answer": 0,
+    "explanation": "持续集成通过小批量频繁集成和自动验证快速发现问题。",
+    "mistakeTip": "自动化测试和快速反馈是关键。",
+    "formula": ""
+  },
+  {
+    "id": "q226",
+    "category": "软件工程",
+    "knowledge": "代码审查",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "代码审查的主要价值不包括：",
+    "options": [
+      "保证永远没有任何缺陷",
+      "发现问题并促进知识共享",
+      "提高代码一致性",
+      "降低单点知识风险"
+    ],
+    "answer": 0,
+    "explanation": "代码审查可降低缺陷并共享知识，但不能保证零缺陷。",
+    "mistakeTip": "警惕绝对化表述。",
+    "formula": ""
+  },
+  {
+    "id": "q227",
+    "category": "软件工程",
+    "knowledge": "单元测试",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "单元测试主要验证：",
+    "options": [
+      "最小可测试软件单元的行为",
+      "整个组织战略",
+      "合同法律效力",
+      "网络运营商资费"
+    ],
+    "answer": 0,
+    "explanation": "单元测试关注函数、类或模块等最小单元。",
+    "mistakeTip": "系统测试关注整体系统。",
+    "formula": ""
+  },
+  {
+    "id": "q228",
+    "category": "软件工程",
+    "knowledge": "回归测试",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "修复一个缺陷后，为确认原有功能未被破坏，应进行：",
+    "options": [
+      "回归测试",
+      "冒烟测试只能替代全部测试",
+      "需求访谈",
+      "采购审计"
+    ],
+    "answer": 0,
+    "explanation": "回归测试验证变更没有引入对既有功能的不良影响。",
+    "mistakeTip": "修复通过不代表其他功能未受影响。",
+    "formula": ""
+  },
+  {
+    "id": "q229",
+    "category": "软件工程",
+    "knowledge": "架构质量属性",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "系统需要在节点故障后继续提供服务，主要关注的架构质量属性是：",
+    "options": [
+      "可用性",
+      "可移植性",
+      "易学习性",
+      "可读性"
+    ],
+    "answer": 0,
+    "explanation": "可用性关注系统在需要时能够提供服务，常通过冗余、故障转移等实现。",
+    "mistakeTip": "可靠性、可用性和可维护性相关但不完全相同。",
+    "formula": ""
+  },
+  {
+    "id": "q230",
+    "category": "软件工程",
+    "knowledge": "技术债务",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队为赶进度采用临时方案，短期可用但未来修改成本会增加。这通常称为：",
+    "options": [
+      "技术债务",
+      "机会成本",
+      "质量基准",
+      "风险开拓"
+    ],
+    "answer": 0,
+    "explanation": "技术债务是为短期速度牺牲长期可维护性所形成的未来成本。",
+    "mistakeTip": "技术债务应可见、评估并计划偿还。",
+    "formula": ""
+  },
+  {
+    "id": "q231",
+    "category": "数据库",
+    "knowledge": "规范化",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "数据库规范化的主要目标之一是：",
+    "options": [
+      "减少数据冗余和更新异常",
+      "让所有表只有一列",
+      "取消主键",
+      "增加重复数据"
+    ],
+    "answer": 0,
+    "explanation": "规范化通过合理分解关系减少冗余及插入、更新、删除异常。",
+    "mistakeTip": "规范化并非越高越好，要兼顾性能。",
+    "formula": ""
+  },
+  {
+    "id": "q232",
+    "category": "数据库",
+    "knowledge": "事务ACID",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "事务的原子性是指：",
+    "options": [
+      "事务中的操作要么全部成功，要么全部失败",
+      "事务执行速度一定最快",
+      "事务永远不并发",
+      "数据必须加密"
+    ],
+    "answer": 0,
+    "explanation": "原子性保证事务作为不可分割整体提交或回滚。",
+    "mistakeTip": "ACID四个性质不要混淆。",
+    "formula": ""
+  },
+  {
+    "id": "q233",
+    "category": "数据库",
+    "knowledge": "隔离级别",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "两个事务并发时，一个事务读取到另一个尚未提交的数据，称为：",
+    "options": [
+      "脏读",
+      "不可重复读",
+      "幻读",
+      "死锁"
+    ],
+    "answer": 0,
+    "explanation": "读取未提交数据是脏读。",
+    "mistakeTip": "不可重复读是同一行两次读取值变化，幻读是结果集行数变化。",
+    "formula": ""
+  },
+  {
+    "id": "q234",
+    "category": "数据库",
+    "knowledge": "索引",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "为高频查询列建立索引通常会：",
+    "options": [
+      "提高查询速度，但增加存储和写入维护成本",
+      "同时让所有写入更快且无成本",
+      "自动消除所有重复数据",
+      "替代备份"
+    ],
+    "answer": 0,
+    "explanation": "索引以额外空间和写入维护换取查询效率。",
+    "mistakeTip": "索引过多会拖慢增删改。",
+    "formula": ""
+  },
+  {
+    "id": "q235",
+    "category": "数据库",
+    "knowledge": "备份恢复",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "数据库每天全量备份、每小时增量备份。故障恢复时通常需要：",
+    "options": [
+      "最近一次全量备份及其后的相关增量备份",
+      "只恢复最早的全量备份",
+      "只恢复最后一个增量文件且无需基础",
+      "删除事务日志"
+    ],
+    "answer": 0,
+    "explanation": "增量备份依赖前序基础，恢复链必须完整。",
+    "mistakeTip": "差异备份与增量备份恢复链不同。",
+    "formula": ""
+  },
+  {
+    "id": "q236",
+    "category": "数据库",
+    "knowledge": "主从复制",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "数据库主从复制常用于：",
+    "options": [
+      "读扩展、冗余和故障恢复，但需关注复制延迟",
+      "保证所有查询绝对实时一致",
+      "替代所有备份",
+      "消除网络故障"
+    ],
+    "answer": 0,
+    "explanation": "复制可提升可用性和读取能力，但异步复制可能存在延迟和数据丢失窗口。",
+    "mistakeTip": "复制不是备份。",
+    "formula": ""
+  },
+  {
+    "id": "q237",
+    "category": "数据库",
+    "knowledge": "SQL注入",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "应用把用户输入直接拼接到SQL语句中，主要风险是：",
+    "options": [
+      "SQL注入",
+      "缓冲区一定溢出",
+      "DNS污染",
+      "RAID失效"
+    ],
+    "answer": 0,
+    "explanation": "攻击者可构造输入改变SQL语义。应使用参数化查询和最小权限。",
+    "mistakeTip": "只过滤某些字符通常不如参数化查询可靠。",
+    "formula": ""
+  },
+  {
+    "id": "q238",
+    "category": "数据库",
+    "knowledge": "数据仓库",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "数据仓库通常更侧重：",
+    "options": [
+      "面向主题的历史分析和决策支持",
+      "高频小事务在线处理",
+      "替代所有源系统",
+      "只保存当天数据"
+    ],
+    "answer": 0,
+    "explanation": "数据仓库面向分析，具有主题性、集成性、时变性和相对稳定性。",
+    "mistakeTip": "OLTP与OLAP目标不同。",
+    "formula": ""
+  },
+  {
+    "id": "q239",
+    "category": "数据库",
+    "knowledge": "CAP",
+    "difficulty": 3,
+    "type": "concept",
+    "text": "分布式系统CAP理论中的P表示：",
+    "options": [
+      "分区容错性",
+      "性能",
+      "隐私",
+      "持久化"
+    ],
+    "answer": 0,
+    "explanation": "P是Partition tolerance，即网络分区发生时系统仍能继续运行。",
+    "mistakeTip": "CAP中的C是一致性，A是可用性。",
+    "formula": ""
+  },
+  {
+    "id": "q240",
+    "category": "数据库",
+    "knowledge": "数据治理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "不同系统对“客户”口径不一致，导致报表冲突。最需要加强：",
+    "options": [
+      "主数据管理和数据标准治理",
+      "增加更多本地Excel",
+      "减少元数据记录",
+      "取消数据质量规则"
+    ],
+    "answer": 0,
+    "explanation": "统一主数据定义、编码、责任和质量规则可解决跨系统口径不一致。",
+    "mistakeTip": "技术集成前先明确数据语义。",
+    "formula": ""
+  },
+  {
+    "id": "q241",
+    "category": "计算机网络",
+    "knowledge": "OSI模型",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "路由器主要工作在OSI模型的：",
+    "options": [
+      "网络层",
+      "数据链路层",
+      "会话层",
+      "表示层"
+    ],
+    "answer": 0,
+    "explanation": "路由器依据IP地址进行网络层转发。",
+    "mistakeTip": "交换机通常主要在数据链路层。",
+    "formula": ""
+  },
+  {
+    "id": "q242",
+    "category": "计算机网络",
+    "knowledge": "DNS",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "在企业网络中，DNS服务的主要作用是：",
+    "options": [
+      "将域名解析为IP地址等资源记录",
+      "动态分配IP地址",
+      "加密全部网络流量",
+      "传输网页文件"
+    ],
+    "answer": 0,
+    "explanation": "DNS提供域名与IP及其他记录之间的解析。",
+    "mistakeTip": "DHCP负责动态地址分配。",
+    "formula": ""
+  },
+  {
+    "id": "q243",
+    "category": "计算机网络",
+    "knowledge": "DHCP",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "DHCP主要用于：",
+    "options": [
+      "自动分配IP地址、网关和DNS等网络参数",
+      "解析域名",
+      "传输邮件",
+      "进行数据库事务"
+    ],
+    "answer": 0,
+    "explanation": "DHCP简化终端网络参数配置。",
+    "mistakeTip": "不要与DNS混淆。",
+    "formula": ""
+  },
+  {
+    "id": "q244",
+    "category": "计算机网络",
+    "knowledge": "子网划分",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "一个IPv4 /26 子网可提供的可用主机地址数通常为：",
+    "options": [
+      "30",
+      "62",
+      "126",
+      "254"
+    ],
+    "answer": 1,
+    "explanation": "/26保留6位主机位，共64个地址，扣除网络地址和广播地址后可用62个。",
+    "mistakeTip": "可用主机数通常为2^(32-前缀)-2。",
+    "formula": "2^(32-prefix)-2"
+  },
+  {
+    "id": "q245",
+    "category": "计算机网络",
+    "knowledge": "NAT",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "NAT最常见的作用之一是：",
+    "options": [
+      "在私有地址与公网地址之间转换并节约公网IPv4地址",
+      "提供端到端加密",
+      "替代DNS",
+      "保证零延迟"
+    ],
+    "answer": 0,
+    "explanation": "NAT通过地址转换使多个私网主机共享公网地址。",
+    "mistakeTip": "NAT不是安全机制的完整替代。",
+    "formula": ""
+  },
+  {
+    "id": "q246",
+    "category": "计算机网络",
+    "knowledge": "TCP与UDP",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "实时语音更关注低延迟并能容忍少量丢包，通常更可能使用：",
+    "options": [
+      "UDP",
+      "TCP且必须等待所有重传",
+      "FTP",
+      "SMTP"
+    ],
+    "answer": 0,
+    "explanation": "UDP开销低、无连接，适合实时性优先且应用可自行处理丢包的场景。",
+    "mistakeTip": "协议选择取决于可靠性与实时性权衡。",
+    "formula": ""
+  },
+  {
+    "id": "q247",
+    "category": "计算机网络",
+    "knowledge": "负载均衡",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "负载均衡器的主要作用是：",
+    "options": [
+      "把请求分配到多个后端实例，提高扩展性和可用性",
+      "永久保存所有业务数据",
+      "替代数据库事务",
+      "生成项目章程"
+    ],
+    "answer": 0,
+    "explanation": "负载均衡分散流量，并可结合健康检查摘除故障实例。",
+    "mistakeTip": "负载均衡不等于数据备份。",
+    "formula": ""
+  },
+  {
+    "id": "q248",
+    "category": "计算机网络",
+    "knowledge": "VPN",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "VPN通常通过什么方式保护跨公网通信？",
+    "options": [
+      "建立加密隧道并进行身份验证",
+      "公开发送明文密码",
+      "关闭路由",
+      "只修改域名"
+    ],
+    "answer": 0,
+    "explanation": "VPN通过隧道、加密和认证建立受保护的逻辑网络连接。",
+    "mistakeTip": "VPN安全仍依赖密钥、终端和策略。",
+    "formula": ""
+  },
+  {
+    "id": "q249",
+    "category": "计算机网络",
+    "knowledge": "高可用网络",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "核心交换机成为单点故障。最直接的改进是：",
+    "options": [
+      "部署冗余设备和链路并配置故障切换",
+      "增加交换机名称长度",
+      "关闭监控",
+      "只提高单台设备CPU"
+    ],
+    "answer": 0,
+    "explanation": "消除单点需要冗余架构、独立故障域和验证过的切换机制。",
+    "mistakeTip": "更强单机仍可能是单点。",
+    "formula": ""
+  },
+  {
+    "id": "q250",
+    "category": "计算机网络",
+    "knowledge": "网络排障",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "用户能ping通服务器IP，但无法通过域名访问。优先排查：",
+    "options": [
+      "DNS解析",
+      "服务器电源",
+      "数据库事务隔离",
+      "项目范围基准"
+    ],
+    "answer": 0,
+    "explanation": "IP连通但域名失败通常指向DNS配置、缓存或解析记录问题。",
+    "mistakeTip": "先根据现象缩小故障层次。",
+    "formula": ""
+  },
+  {
+    "id": "q251",
+    "category": "信息安全",
+    "knowledge": "CIA三要素",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "防止未经授权查看数据主要保护：",
+    "options": [
+      "机密性",
+      "完整性",
+      "可用性",
+      "可移植性"
+    ],
+    "answer": 0,
+    "explanation": "机密性确保信息不被未授权主体访问。",
+    "mistakeTip": "完整性防篡改，可用性确保可访问。",
+    "formula": ""
+  },
+  {
+    "id": "q252",
+    "category": "信息安全",
+    "knowledge": "最小权限",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "最小权限原则要求：",
+    "options": [
+      "只授予完成工作所需的最低权限和最短必要时间",
+      "所有人共享管理员账号",
+      "权限越多越方便越安全",
+      "永久保留离职人员权限"
+    ],
+    "answer": 0,
+    "explanation": "最小权限降低误操作和攻击面。",
+    "mistakeTip": "权限应定期审查和回收。",
+    "formula": ""
+  },
+  {
+    "id": "q253",
+    "category": "信息安全",
+    "knowledge": "多因素认证",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "密码加手机动态验证码属于：",
+    "options": [
+      "多因素认证",
+      "单因素认证",
+      "匿名访问",
+      "数据脱敏"
+    ],
+    "answer": 0,
+    "explanation": "密码是知识因素，手机验证码通常是持有因素，组合构成多因素。",
+    "mistakeTip": "两个不同密码仍属于同一种因素。",
+    "formula": ""
+  },
+  {
+    "id": "q254",
+    "category": "信息安全",
+    "knowledge": "哈希与加密",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "用于验证文件是否被篡改，更适合使用：",
+    "options": [
+      "密码学哈希或消息认证码",
+      "仅改变文件名",
+      "无校验压缩",
+      "DHCP"
+    ],
+    "answer": 0,
+    "explanation": "哈希摘要可检测内容变化；需要防伪时应结合密钥或数字签名。",
+    "mistakeTip": "哈希通常不可逆，不等同于加密。",
+    "formula": ""
+  },
+  {
+    "id": "q255",
+    "category": "信息安全",
+    "knowledge": "数字签名",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "数字签名主要提供：",
+    "options": [
+      "身份真实性、完整性和不可否认性支持",
+      "数据压缩",
+      "自动备份",
+      "IP地址分配"
+    ],
+    "answer": 0,
+    "explanation": "数字签名用私钥签名、公钥验证，可证明来源并检测篡改。",
+    "mistakeTip": "签名本身通常不提供内容保密。",
+    "formula": ""
+  },
+  {
+    "id": "q256",
+    "category": "信息安全",
+    "knowledge": "漏洞管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "扫描发现高危漏洞但尚未被利用。最合适的处理是：",
+    "options": [
+      "评估影响和可利用性，按优先级修补并验证",
+      "等攻击发生后再处理",
+      "删除扫描报告",
+      "公开漏洞细节给所有人"
+    ],
+    "answer": 0,
+    "explanation": "漏洞管理包括识别、评估、修复、缓解、复测和跟踪。",
+    "mistakeTip": "漏洞尚未被利用也不代表无需处理。",
+    "formula": ""
+  },
+  {
+    "id": "q257",
+    "category": "信息安全",
+    "knowledge": "安全事件响应",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "发现服务器疑似被入侵。首要目标之一是：",
+    "options": [
+      "按预案确认事件并控制影响，同时保留证据",
+      "立即格式化所有磁盘",
+      "向外公开全部内部信息",
+      "关闭日志"
+    ],
+    "answer": 0,
+    "explanation": "事件响应通常包括准备、检测分析、遏制、清除、恢复和复盘。",
+    "mistakeTip": "贸然销毁系统可能破坏证据和恢复能力。",
+    "formula": ""
+  },
+  {
+    "id": "q258",
+    "category": "信息安全",
+    "knowledge": "备份防勒索",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "为了降低勒索软件同时加密生产数据和备份的风险，最有效的措施之一是：",
+    "options": [
+      "保留离线或不可变备份并定期恢复演练",
+      "只把备份放在同一管理员共享盘",
+      "关闭所有备份日志",
+      "永不测试恢复"
+    ],
+    "answer": 0,
+    "explanation": "隔离、不可变和经过验证的备份可降低勒索软件破坏全部副本的风险。",
+    "mistakeTip": "有备份不等于能恢复。",
+    "formula": ""
+  },
+  {
+    "id": "q259",
+    "category": "信息安全",
+    "knowledge": "零信任",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "零信任架构的核心思想更接近：",
+    "options": [
+      "默认不信任，持续验证身份、设备和访问上下文",
+      "内网用户永远可信",
+      "只部署一道边界防火墙",
+      "取消身份认证"
+    ],
+    "answer": 0,
+    "explanation": "零信任强调显式验证、最小权限和假设已被攻破。",
+    "mistakeTip": "它不是单一产品。",
+    "formula": ""
+  },
+  {
+    "id": "q260",
+    "category": "信息安全",
+    "knowledge": "数据脱敏",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "测试环境需要使用近似真实数据，但不能暴露客户身份证号。适合采用：",
+    "options": [
+      "数据脱敏或匿名化",
+      "直接复制生产明文数据",
+      "关闭访问日志",
+      "使用更长文件名"
+    ],
+    "answer": 0,
+    "explanation": "脱敏通过替换、掩码、泛化等方式降低敏感数据暴露。",
+    "mistakeTip": "测试便利不能凌驾于隐私与合规。",
+    "formula": ""
+  },
+  {
+    "id": "q261",
+    "category": "云计算",
+    "knowledge": "服务模型",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "供应商提供完整应用，用户主要通过浏览器使用，属于：",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "裸机托管"
+    ],
+    "answer": 0,
+    "explanation": "SaaS向用户提供可直接使用的软件应用。",
+    "mistakeTip": "PaaS提供开发运行平台，IaaS提供基础资源。",
+    "formula": ""
+  },
+  {
+    "id": "q262",
+    "category": "云计算",
+    "knowledge": "弹性伸缩",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "云平台根据负载自动增加或减少实例，体现：",
+    "options": [
+      "弹性伸缩",
+      "数据规范化",
+      "范围确认",
+      "固定成本合同"
+    ],
+    "answer": 0,
+    "explanation": "弹性伸缩使资源随需求变化，提高效率和应对峰值能力。",
+    "mistakeTip": "弹性不等于无限资源。",
+    "formula": ""
+  },
+  {
+    "id": "q263",
+    "category": "云计算",
+    "knowledge": "可用区",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "把应用部署在同一区域的多个可用区，主要是为了：",
+    "options": [
+      "降低单一机房故障影响",
+      "消除所有应用缺陷",
+      "避免任何网络延迟",
+      "替代数据备份"
+    ],
+    "answer": 0,
+    "explanation": "多个可用区提供独立电力、网络等故障域，提高区域内高可用。",
+    "mistakeTip": "多可用区仍需应用和数据层支持。",
+    "formula": ""
+  },
+  {
+    "id": "q264",
+    "category": "存储与运维",
+    "knowledge": "监控指标",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "CPU使用率、错误率和响应时间属于：",
+    "options": [
+      "运行监控指标",
+      "项目章程",
+      "采购合同",
+      "需求跟踪矩阵"
+    ],
+    "answer": 0,
+    "explanation": "这些指标用于观察系统健康和性能。",
+    "mistakeTip": "指标需要阈值、趋势和业务上下文。",
+    "formula": ""
+  },
+  {
+    "id": "q265",
+    "category": "存储与运维",
+    "knowledge": "日志管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "发生故障后日志分散在多台服务器且时间不一致，难以定位。最有效的改进是：",
+    "options": [
+      "集中日志、统一时间同步和结构化字段",
+      "关闭日志以提高性能",
+      "只保留截图",
+      "使用不同时间区且不标记"
+    ],
+    "answer": 0,
+    "explanation": "集中化、统一时间和关联标识有利于跨组件追踪事件。",
+    "mistakeTip": "没有统一时间线很难还原故障。",
+    "formula": ""
+  },
+  {
+    "id": "q266",
+    "category": "存储与运维",
+    "knowledge": "容量管理",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "容量管理应主要基于：",
+    "options": [
+      "当前使用、增长趋势、业务预测和服务目标",
+      "只看服务器采购价格",
+      "随机增加资源",
+      "等系统满载后再考虑"
+    ],
+    "answer": 0,
+    "explanation": "容量管理需要结合历史趋势、业务需求和性能目标进行预测。",
+    "mistakeTip": "过度和不足配置都产生风险。",
+    "formula": ""
+  },
+  {
+    "id": "q267",
+    "category": "存储与运维",
+    "knowledge": "变更窗口",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "生产变更可能影响大量用户，最合适的是：",
+    "options": [
+      "选择批准的变更窗口，准备测试、沟通、备份和回退方案",
+      "在业务高峰直接修改",
+      "不通知任何人",
+      "只在个人电脑验证"
+    ],
+    "answer": 0,
+    "explanation": "生产变更需控制时间、影响、验证和回退，并提前沟通。",
+    "mistakeTip": "成功变更依赖技术和组织准备。",
+    "formula": ""
+  },
+  {
+    "id": "q268",
+    "category": "存储与运维",
+    "knowledge": "RTO",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "系统RTO为2小时，表示：",
+    "options": [
+      "故障后业务应在目标2小时内恢复到约定水平",
+      "最多只能丢失2小时数据",
+      "每2小时备份一次",
+      "系统必须连续运行2年"
+    ],
+    "answer": 0,
+    "explanation": "RTO是可接受的恢复时间目标；RPO是可接受的数据丢失窗口。",
+    "mistakeTip": "RTO与RPO常被混淆。",
+    "formula": ""
+  },
+  {
+    "id": "q269",
+    "category": "存储与运维",
+    "knowledge": "灾难恢复演练",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "组织有完整灾备文档，但从未实际切换。最大的风险是：",
+    "options": [
+      "真实故障时流程、权限和依赖可能无法工作",
+      "文档页数太多",
+      "系统一定不会故障",
+      "无需维护备份"
+    ],
+    "answer": 0,
+    "explanation": "未经演练的灾备方案可能存在隐藏依赖和操作缺陷。",
+    "mistakeTip": "恢复能力必须通过演练验证。",
+    "formula": ""
+  },
+  {
+    "id": "q270",
+    "category": "云计算",
+    "knowledge": "成本优化",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "云资源长期低利用率但持续付费。最合适的措施是：",
+    "options": [
+      "结合监控进行规格调整、自动关停和费用分摊治理",
+      "关闭所有监控",
+      "永久扩大实例规格",
+      "忽略账单"
+    ],
+    "answer": 0,
+    "explanation": "云成本优化需基于使用率、业务时段、承诺折扣和责任分摊持续治理。",
+    "mistakeTip": "云的按需特性需要主动管理。",
+    "formula": ""
+  },
+  {
+    "id": "q271",
+    "category": "法律与知识产权",
+    "knowledge": "著作权",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "软件源代码通常可受哪类权利保护？",
+    "options": [
+      "著作权",
+      "地理标志",
+      "土地使用权",
+      "海域使用权"
+    ],
+    "answer": 0,
+    "explanation": "计算机软件作为作品可依法受到著作权保护。",
+    "mistakeTip": "具体权利归属还需结合合同和职务作品规则。",
+    "formula": ""
+  },
+  {
+    "id": "q272",
+    "category": "法律与知识产权",
+    "knowledge": "商业秘密",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "构成商业秘密通常需要信息具有商业价值、非公开，并且权利人：",
+    "options": [
+      "采取合理保密措施",
+      "主动公开给所有人",
+      "从不标记和控制访问",
+      "只口头称其重要"
+    ],
+    "answer": 0,
+    "explanation": "保密措施是商业秘密保护的重要条件之一。",
+    "mistakeTip": "机密性需要实际管理措施。",
+    "formula": ""
+  },
+  {
+    "id": "q273",
+    "category": "法律与知识产权",
+    "knowledge": "开源许可证",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目准备引入开源组件，最合适的做法是：",
+    "options": [
+      "审查许可证义务、兼容性、安全和维护状态",
+      "只要免费就可任意使用",
+      "删除许可证文件",
+      "隐瞒使用情况"
+    ],
+    "answer": 0,
+    "explanation": "不同开源许可证可能要求保留声明、公开修改或满足再分发条件。",
+    "mistakeTip": "免费不等于无义务。",
+    "formula": ""
+  },
+  {
+    "id": "q274",
+    "category": "法律与知识产权",
+    "knowledge": "合同效力",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "正式合同管理中，项目经理最不应依赖：",
+    "options": [
+      "未经授权人员的口头承诺",
+      "双方签署的合同文本",
+      "批准的书面变更",
+      "验收记录"
+    ],
+    "answer": 0,
+    "explanation": "未经授权的口头承诺可能不具备合同效力且难以举证。",
+    "mistakeTip": "授权和书面记录是合同管理关键。",
+    "formula": ""
+  },
+  {
+    "id": "q275",
+    "category": "法律与知识产权",
+    "knowledge": "个人信息保护",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "系统收集用户身份证和联系方式。项目团队应优先遵循：",
+    "options": [
+      "目的明确、最小必要、授权访问和安全保护",
+      "能收多少就收多少",
+      "永久保存且无删除机制",
+      "向任意第三方共享"
+    ],
+    "answer": 0,
+    "explanation": "个人信息处理应遵循合法、正当、必要和安全原则。",
+    "mistakeTip": "只收集实现明确目的所必需的数据。",
+    "formula": ""
+  },
+  {
+    "id": "q276",
+    "category": "法律与知识产权",
+    "knowledge": "数据分类分级",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "数据分类分级的主要价值是：",
+    "options": [
+      "根据敏感性和重要性匹配不同保护措施",
+      "让所有数据采用完全相同控制",
+      "取消访问权限",
+      "降低备份频率"
+    ],
+    "answer": 0,
+    "explanation": "分类分级帮助合理配置访问、加密、审计、备份和共享控制。",
+    "mistakeTip": "一刀切可能成本高或保护不足。",
+    "formula": ""
+  },
+  {
+    "id": "q277",
+    "category": "法律与知识产权",
+    "knowledge": "电子证据",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "项目争议可能进入法律程序。对重要电子记录最应：",
+    "options": [
+      "保持完整性、时间、来源和保管链可证明",
+      "随意修改文件时间",
+      "只保留口头回忆",
+      "删除原始邮件"
+    ],
+    "answer": 0,
+    "explanation": "电子证据需要可验证的真实性、完整性和保管过程。",
+    "mistakeTip": "审计日志和哈希可辅助证明完整性。",
+    "formula": ""
+  },
+  {
+    "id": "q278",
+    "category": "法律与知识产权",
+    "knowledge": "标准与规范",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "采用行业标准的主要好处之一是：",
+    "options": [
+      "促进一致性、互操作性和质量控制",
+      "保证项目永远成功",
+      "取消所有风险",
+      "替代用户需求"
+    ],
+    "answer": 0,
+    "explanation": "标准提供共同规则和接口，有助于质量、兼容和沟通。",
+    "mistakeTip": "标准不能替代项目具体需求。",
+    "formula": ""
+  },
+  {
+    "id": "q279",
+    "category": "法律与知识产权",
+    "knowledge": "知识产权归属",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "外包开发合同未明确源代码和成果知识产权归属，最主要的风险是：",
+    "options": [
+      "交付后使用、修改和再授权权利可能发生争议",
+      "服务器性能必然下降",
+      "数据库一定损坏",
+      "项目自动延期一年"
+    ],
+    "answer": 0,
+    "explanation": "合同应明确成果、源代码、第三方组件和知识产权许可/转让范围。",
+    "mistakeTip": "技术交付不等于取得全部权利。",
+    "formula": ""
+  },
+  {
+    "id": "q280",
+    "category": "法律与知识产权",
+    "knowledge": "保密协议",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "保密协议NDA的主要目的通常是：",
+    "options": [
+      "约定机密信息范围、使用限制、保护义务和责任",
+      "确定关键路径",
+      "计算CPI",
+      "分配IP地址"
+    ],
+    "answer": 0,
+    "explanation": "NDA用于约束接收方对机密信息的使用和披露。",
+    "mistakeTip": "仍需配合访问控制和实际保密措施。",
+    "formula": ""
+  },
+  {
+    "id": "q281",
+    "category": "系统集成",
+    "knowledge": "接口管理",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "两个子系统分别开发完成，但联调时字段含义和错误码不一致。最需要加强：",
+    "options": [
+      "接口契约、数据字典和版本管理",
+      "增加团队人数但不沟通",
+      "只修改界面颜色",
+      "取消集成测试"
+    ],
+    "answer": 0,
+    "explanation": "接口应明确结构、语义、协议、错误处理、版本和兼容性。",
+    "mistakeTip": "“接口能调用”不代表语义一致。",
+    "formula": ""
+  },
+  {
+    "id": "q282",
+    "category": "系统集成",
+    "knowledge": "集成策略",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "增量集成相比一次性大爆炸集成的主要优势是：",
+    "options": [
+      "问题更容易定位，风险逐步暴露",
+      "完全不需要测试",
+      "一定没有接口变更",
+      "部署次数永远更少"
+    ],
+    "answer": 0,
+    "explanation": "逐步集成可更早发现问题并缩小故障范围。",
+    "mistakeTip": "增量集成仍需要整体测试。",
+    "formula": ""
+  },
+  {
+    "id": "q283",
+    "category": "系统集成",
+    "knowledge": "消息队列",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "消息队列常用于：",
+    "options": [
+      "系统解耦、异步处理和削峰填谷",
+      "永久替代数据库",
+      "保证消息绝不会重复",
+      "取消错误处理"
+    ],
+    "answer": 0,
+    "explanation": "消息队列可缓冲流量和解耦生产者消费者，但需处理重复、顺序和失败。",
+    "mistakeTip": "“至少一次”投递可能产生重复。",
+    "formula": ""
+  },
+  {
+    "id": "q284",
+    "category": "系统集成",
+    "knowledge": "幂等性",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "支付回调可能重复发送。接口设计应重点保证：",
+    "options": [
+      "同一业务请求重复执行不会产生重复扣款",
+      "每次回调都新建订单",
+      "关闭日志",
+      "只依赖用户刷新"
+    ],
+    "answer": 0,
+    "explanation": "幂等设计通过业务唯一键、状态机等保证重复请求结果一致。",
+    "mistakeTip": "网络重试是常态，应主动处理重复。",
+    "formula": ""
+  },
+  {
+    "id": "q285",
+    "category": "系统集成",
+    "knowledge": "API网关",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "API网关常见职责包括：",
+    "options": [
+      "统一认证、路由、限流和监控",
+      "保存所有业务主数据",
+      "替代全部微服务",
+      "编写项目章程"
+    ],
+    "answer": 0,
+    "explanation": "API网关提供跨服务的入口治理能力。",
+    "mistakeTip": "不应把全部业务逻辑堆入网关。",
+    "formula": ""
+  },
+  {
+    "id": "q286",
+    "category": "系统集成",
+    "knowledge": "微服务",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "微服务架构的一个典型代价是：",
+    "options": [
+      "分布式通信、数据一致性和运维复杂度增加",
+      "系统自动变得简单",
+      "无需监控和部署自动化",
+      "所有事务天然强一致"
+    ],
+    "answer": 0,
+    "explanation": "微服务提升独立演进能力，但引入网络、部署、观测和一致性复杂度。",
+    "mistakeTip": "架构选择需权衡，不是越新越好。",
+    "formula": ""
+  },
+  {
+    "id": "q287",
+    "category": "系统集成",
+    "knowledge": "容器",
+    "difficulty": 1,
+    "type": "concept",
+    "text": "容器相比传统虚拟机通常：",
+    "options": [
+      "共享宿主机内核，启动更快、资源开销较小",
+      "每个容器都包含完整独立硬件",
+      "完全不需要隔离",
+      "自动保证应用无漏洞"
+    ],
+    "answer": 0,
+    "explanation": "容器采用操作系统级隔离，通常更轻量。",
+    "mistakeTip": "轻量不等于绝对安全。",
+    "formula": ""
+  },
+  {
+    "id": "q288",
+    "category": "系统集成",
+    "knowledge": "物联网",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "大量低功耗传感器通过不稳定网络上报数据。系统设计应重点考虑：",
+    "options": [
+      "断线重传、设备身份、数据缓冲和协议开销",
+      "只增加网页动画",
+      "取消时间戳",
+      "所有设备共享同一密码"
+    ],
+    "answer": 0,
+    "explanation": "物联网场景需要处理受限设备、网络波动、安全和数据时序。",
+    "mistakeTip": "设备身份和密钥管理尤为重要。",
+    "formula": ""
+  },
+  {
+    "id": "q289",
+    "category": "系统集成",
+    "knowledge": "人工智能应用",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "在业务系统中使用机器学习模型时，除了准确率还应关注：",
+    "options": [
+      "数据偏差、可解释性、漂移、隐私和监控",
+      "只看模型文件大小",
+      "取消人工复核",
+      "永久不更新模型"
+    ],
+    "answer": 0,
+    "explanation": "生产AI需要全生命周期治理，包括数据、模型、风险、监控和人机协作。",
+    "mistakeTip": "离线高分不代表线上长期可靠。",
+    "formula": ""
+  },
+  {
+    "id": "q290",
+    "category": "系统集成",
+    "knowledge": "区块链",
+    "difficulty": 2,
+    "type": "concept",
+    "text": "区块链更适合的场景通常具有：",
+    "options": [
+      "多方协作、互信不足且需要共享可追溯账本",
+      "单一组织内部高频低延迟临时缓存",
+      "所有数据必须绝对保密且不可共享",
+      "无需任何治理"
+    ],
+    "answer": 0,
+    "explanation": "区块链适用于多方共同维护、需要防篡改和可追溯的共享记录，但有性能和治理成本。",
+    "mistakeTip": "不要为了使用新技术而使用。",
+    "formula": ""
+  },
+  {
+    "id": "q291",
+    "category": "综合管理",
+    "knowledge": "优先级决策",
+    "difficulty": 3,
+    "type": "scenario",
+    "text": "项目同时出现：生产安全漏洞、普通界面缺陷、低优先级新需求和下月培训安排。项目经理应优先处理：",
+    "options": [
+      "可能造成重大损失的生产安全漏洞",
+      "普通界面缺陷",
+      "低优先级新需求",
+      "下月培训安排"
+    ],
+    "answer": 0,
+    "explanation": "应基于紧急性、影响、风险和合规性确定优先级。",
+    "mistakeTip": "高影响且正在发生的问题通常优先。",
+    "formula": ""
+  },
+  {
+    "id": "q292",
+    "category": "综合管理",
+    "knowledge": "约束平衡",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "客户要求提前两周上线且范围不变。项目经理首先应：",
+    "options": [
+      "分析进度、成本、质量和风险影响并提出可选方案",
+      "直接承诺且不分析",
+      "降低测试标准且不说明",
+      "要求团队无偿无限加班"
+    ],
+    "answer": 0,
+    "explanation": "约束变化应进行整体影响分析并通过变更控制做决策。",
+    "mistakeTip": "项目约束相互影响。",
+    "formula": ""
+  },
+  {
+    "id": "q293",
+    "category": "综合管理",
+    "knowledge": "数据驱动决策",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "团队认为项目“感觉还不错”，但没有统一指标。项目经理应：",
+    "options": [
+      "定义可测量的成功标准和绩效指标",
+      "只依赖个人直觉",
+      "取消周报",
+      "增加口号"
+    ],
+    "answer": 0,
+    "explanation": "可测量指标支持客观监控、预测和决策。",
+    "mistakeTip": "定性判断可以补充，但不能替代关键数据。",
+    "formula": ""
+  },
+  {
+    "id": "q294",
+    "category": "综合管理",
+    "knowledge": "沟通渠道计算",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "一个项目核心团队由8人增加到10人，潜在沟通渠道增加了多少条？",
+    "options": [
+      "10",
+      "15",
+      "17",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "8人渠道为8×7/2=28；10人渠道为10×9/2=45；增加17条。",
+    "mistakeTip": "先分别计算再相减。",
+    "formula": "n(n-1)/2"
+  },
+  {
+    "id": "q295",
+    "category": "综合管理",
+    "knowledge": "三点估算",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "某活动乐观4天、最可能7天、悲观16天，按PERT期望工期约为：",
+    "options": [
+      "7天",
+      "8天",
+      "9天",
+      "10天"
+    ],
+    "answer": 1,
+    "explanation": "PERT=(4+4×7+16)/6=48/6=8天。",
+    "mistakeTip": "最可能值需要乘4。",
+    "formula": "(O+4M+P)/6"
+  },
+  {
+    "id": "q296",
+    "category": "综合管理",
+    "knowledge": "期望货币价值",
+    "difficulty": 3,
+    "type": "calculation",
+    "text": "方案A有40%概率收益50万元，60%概率损失10万元。其EMV为：",
+    "options": [
+      "14万元",
+      "20万元",
+      "26万元",
+      "40万元"
+    ],
+    "answer": 0,
+    "explanation": "EMV=0.4×50+0.6×(-10)=20-6=14万元。",
+    "mistakeTip": "损失应按负值计入。",
+    "formula": "EMV=Σ(概率×影响)"
+  },
+  {
+    "id": "q297",
+    "category": "综合管理",
+    "knowledge": "可用性计算",
+    "difficulty": 3,
+    "type": "calculation",
+    "text": "某系统一年计划运行8760小时，非计划停机8.76小时，其可用性约为：",
+    "options": [
+      "90%",
+      "99%",
+      "99.9%",
+      "99.99%"
+    ],
+    "answer": 2,
+    "explanation": "可用性=(8760-8.76)/8760≈99.9%。",
+    "mistakeTip": "先用正常运行时间除以总时间。",
+    "formula": "Availability=Uptime/Total"
+  },
+  {
+    "id": "q298",
+    "category": "综合管理",
+    "knowledge": "投资回收期",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "项目初始投资120万元，每年净现金流40万元，忽略折现，静态投资回收期为：",
+    "options": [
+      "2年",
+      "3年",
+      "4年",
+      "5年"
+    ],
+    "answer": 1,
+    "explanation": "120÷40=3年。",
+    "mistakeTip": "静态回收期不考虑时间价值。",
+    "formula": "回收期=初始投资/年净现金流"
+  },
+  {
+    "id": "q299",
+    "category": "综合管理",
+    "knowledge": "存储容量",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "每天产生50GB日志，保留30天，另预留20%空间，至少需要约多少存储？",
+    "options": [
+      "1.2TB",
+      "1.5TB",
+      "1.8TB",
+      "2.5TB"
+    ],
+    "answer": 2,
+    "explanation": "基础容量50×30=1500GB，预留20%后为1800GB，约1.8TB。",
+    "mistakeTip": "先算保留期总量，再加预留。",
+    "formula": "容量=日增量×天数×(1+预留比例)"
+  },
+  {
+    "id": "q300",
+    "category": "综合管理",
+    "knowledge": "缺陷率",
+    "difficulty": 2,
+    "type": "calculation",
+    "text": "抽检500个功能点发现15个缺陷，缺陷率为：",
+    "options": [
+      "0.3%",
+      "3%",
+      "15%",
+      "30%"
+    ],
+    "answer": 1,
+    "explanation": "15÷500=0.03，即3%。",
+    "mistakeTip": "小数转百分比需乘100%。",
+    "formula": "缺陷率=缺陷数/检查总数"
+  }
+]

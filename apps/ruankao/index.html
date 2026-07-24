@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#155eef">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="柱子软考">
+  <meta name="description" content="系统集成项目管理工程师静态智能备考工具：300题、自适应练习、错题复习、案例评分、固定试卷与离线使用。">
+  <title>柱子软考智能备考 V3.5</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css?v=3.5.0">
+</head>
+<body><a href="../../" style="position:fixed;right:12px;top:12px;z-index:9999;background:#172033;color:#fff;text-decoration:none;border-radius:999px;padding:7px 11px;font-size:12px;box-shadow:0 4px 16px rgba(0,0,0,.18)">← 工具箱</a>
+<div id="toast" class="toast hidden" aria-live="polite"></div>
+<div class="app">
+  <section class="hero">
+    <div class="hero-top">
+      <div>
+        <h1>柱子软考智能备考 V3.5</h1>
+        <p>系统集成项目管理工程师 · 300题静态增强版</p>
+        <p class="small">原创学习工具，仅用于备考辅助，不代表官方题库或官方通过预测。</p>
+      </div>
+      <div class="hero-actions">
+        <span class="hero-badge" id="versionBadge">题库加载中</span>
+        <button class="hero-action hidden" id="installApp">安装到桌面</button>
+        <button class="hero-action" id="shareSite">分享网站</button>
+      </div>
+    </div>
+    <div id="heroMeta" class="hero-meta hidden"></div>
+  </section>
+
+  <section id="updateBanner" class="update-banner hidden">
+    <div><b id="updateTitle">发现新版本</b><div class="small" id="updateText"></div></div>
+    <button class="primary" id="applyUpdate">立即更新</button>
+  </section>
+
+  <section id="loadingView" class="card"><h2>正在加载题库……</h2><p class="muted">首次打开或更新后可能需要几秒。</p></section>
+  <section id="fatalView" class="card hidden"><h2>题库加载失败</h2><p id="fatalText" class="muted"></p><button class="primary" onclick="location.reload()">重新加载</button></section>
+
+  <section id="setupView" class="setup-wrap hidden">
+    <div class="card">
+      <div class="section-title"><h2>建立你的备考档案</h2><span class="tag">首次设置</span></div>
+      <p class="muted">数据只保存在当前浏览器，可随时导出备份。系统会根据错题、答题速度和复习间隔调整练习重点。</p>
+      <div class="setup-steps"><div class="setup-step"><b>1</b>设置目标日期</div><div class="setup-step"><b>2</b>完成摸底练习</div><div class="setup-step"><b>3</b>按弱项持续复习</div></div>
+      <label class="field" for="setupName">姓名或昵称</label><input class="input" id="setupName" maxlength="30" placeholder="例如：柱子">
+      <div class="form-grid">
+        <div><label class="field" for="setupDate">目标考试日期</label><input class="input" id="setupDate" type="date"></div>
+        <div><label class="field" for="setupTarget">每日目标题量</label><select class="select" id="setupTarget"><option>10</option><option selected>20</option><option>30</option><option>50</option></select></div>
+      </div>
+      <button id="createProfile" class="primary wide" style="margin-top:16px">进入智能备考</button>
+    </div>
+  </section>
+
+  <main id="mainApp" class="hidden">
+    <nav class="tabs no-print" aria-label="主导航">
+      <button class="tab active" data-page="dashboard">首页</button>
+      <button class="tab" data-page="practice">练习</button>
+      <button class="tab" data-page="plan">计划</button>
+      <button class="tab" data-page="wrongs">错题与收藏</button>
+      <button class="tab" data-page="cases">案例</button>
+      <button class="tab" data-page="formulas">公式</button>
+      <button class="tab" data-page="stats">统计</button>
+      <button class="tab" data-page="settings">设置</button>
+    </nav>
+
+    <section id="page-dashboard" class="page">
+      <div id="resumeCard" class="card hidden"></div>
+      <div class="grid4" id="dashboardMetrics"></div>
+      <div class="card">
+        <div class="section-title"><h2>今日建议</h2><span class="tag" id="phaseTag">智能计划</span></div>
+        <div id="todayAdvice" class="callout"></div>
+        <div class="action-grid" style="margin-top:13px">
+          <button class="action-card" data-quick="adaptive"><div class="action-icon">🎯</div><b>智能练习</b><span class="muted small">优先抽取薄弱与到期知识点</span></button>
+          <button class="action-card" data-quick="diagnostic"><div class="action-icon">🧭</div><b>能力摸底</b><span class="muted small">覆盖主要章节的20题</span></button>
+          <button class="action-card" data-quick="mock"><div class="action-icon">⏱️</div><b>全真模拟</b><span class="muted small">75题、严格模式、限时150分钟</span></button>
+          <button class="action-card" data-quick="wrong"><div class="action-icon">🧠</div><b>到期错题</b><span class="muted small">按1/3/7/14/30天复习</span></button>
+          <button class="action-card" data-quick="favorite"><div class="action-icon">⭐</div><b>收藏题</b><span class="muted small">集中复习考前再看题目</span></button>
+          <button class="action-card" data-go="plan"><div class="action-icon">📅</div><b>学习计划</b><span class="muted small">根据考试日期和完成情况调整</span></button>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="card"><div class="section-title"><h3>薄弱章节</h3><button class="ghost" data-go="stats">查看全部</button></div><div id="weakBars"></div></div>
+        <div class="card"><div class="section-title"><h3>今日任务</h3><span id="todayTaskCount" class="tag"></span></div><div id="todayTasks"></div></div>
+      </div>
+      <div class="card"><div class="section-title"><h3>最近成绩</h3><span class="tag" id="historyCount"></span></div><div id="recentHistory"></div></div>
+    </section>
+
+    <section id="page-practice" class="page hidden">
+      <div id="practiceHome">
+        <div class="card">
+          <div class="section-title"><h2>选择练习模式</h2><span class="tag">题库 <span id="questionCountLabel">300</span> 题</span></div>
+          <div class="mode-grid" id="modeGrid">
+            <button class="mode-card selected" data-mode="adaptive"><b>智能练习</b><span class="muted small">按掌握度、错题到期和难度动态抽题</span></button>
+            <button class="mode-card" data-mode="random"><b>随机练习</b><span class="muted small">从全部题库随机抽取</span></button>
+            <button class="mode-card" data-mode="category"><b>章节专项</b><span class="muted small">选择章节、难度和题型</span></button>
+            <button class="mode-card" data-mode="wrong"><b>错题复习</b><span class="muted small">优先到期、未掌握题目</span></button>
+            <button class="mode-card" data-mode="favorite"><b>收藏题练习</b><span class="muted small">只练已收藏题目</span></button>
+            <button class="mode-card" data-mode="formula"><b>计算专项</b><span class="muted small">计算题和公式题集中训练</span></button>
+            <button class="mode-card" data-mode="mock"><b>全真模拟</b><span class="muted small">严格模式，交卷后统一解析</span></button>
+            <button class="mode-card" data-mode="shared"><b>固定试卷</b><span class="muted small">生成可分享、题目固定的试卷链接</span></button>
+          </div>
+          <div class="form-grid" style="margin-top:12px">
+            <div><label class="field" for="practiceCount">题目数量</label><select class="select" id="practiceCount"><option>10</option><option selected>20</option><option>30</option><option>50</option><option>75</option></select></div>
+            <div><label class="field" for="practiceCategory">章节</label><select class="select" id="practiceCategory"><option value="">全部章节</option></select></div>
+            <div><label class="field" for="practiceDifficulty">难度</label><select class="select" id="practiceDifficulty"><option value="">全部难度</option><option value="1">基础</option><option value="2">中等</option><option value="3">较难</option></select></div>
+            <div><label class="field" for="practiceType">题型</label><select class="select" id="practiceType"><option value="">全部题型</option><option value="concept">概念题</option><option value="scenario">情景题</option><option value="calculation">计算题</option></select></div>
+          </div>
+          <div id="modeHelp" class="callout" style="margin-top:12px"></div>
+          <button id="startPractice" class="primary wide" style="margin-top:13px">开始练习</button>
+        </div>
+        <div id="shareBuilder" class="card hidden">
+          <div class="section-title"><h3>固定试卷链接</h3><span class="tag">同一链接题目一致</span></div>
+          <div class="form-grid">
+            <div><label class="field" for="shareSeed">试卷编号</label><input id="shareSeed" class="input" placeholder="例如 20260723"></div>
+            <div><label class="field" for="shareTime">限时（分钟，0为不限时）</label><input id="shareTime" class="input" type="number" min="0" max="300" value="60"></div>
+          </div>
+          <button id="generateShareLink" class="secondary" style="margin-top:12px">生成链接</button>
+          <div id="shareLinkBox" class="share-box hidden" style="margin-top:12px"></div>
+        </div>
+      </div>
+
+      <div id="quizView" class="hidden">
+        <div class="card">
+          <div class="quiz-top">
+            <div><span class="tag" id="quizModeTag"></span> <span class="tag" id="quizMetaTag"></span></div>
+            <div class="quiz-tools"><button class="ghost" id="favoriteCurrent">☆ 收藏</button><button class="ghost" id="toggleNote">📝 笔记</button><span id="timer" class="tag warn hidden"></span></div>
+          </div>
+          <div class="progress"><div id="quizProgress"></div></div>
+          <div id="questionNav" class="qnav"></div>
+          <div class="question" id="questionText"></div>
+          <div id="questionTags" class="inline"></div>
+          <div id="options"></div>
+          <div id="feedback" class="feedback hidden"></div>
+          <div id="reasonPanel" class="hidden"><div class="small muted">这道题为什么错？标记后系统会统计你的主要错因。</div><div class="reason-row" id="reasonButtons"></div></div>
+          <div id="notePanel" class="note-panel hidden"><label class="field" for="questionNote">个人笔记</label><textarea class="textarea" id="questionNote" placeholder="记录易错点、口诀或解题步骤"></textarea><button class="secondary" id="saveNote">保存笔记</button></div>
+          <div class="actions">
+            <button class="ghost" id="quitQuiz">退出并暂存</button>
+            <div class="right"><button class="secondary" id="prevQuestion">上一题</button><button class="secondary" id="nextQuestion">下一题</button><button class="primary" id="submitQuiz">交卷</button></div>
+          </div>
+        </div>
+      </div>
+      <div id="resultView" class="hidden"></div>
+    </section>
+
+    <section id="page-plan" class="page hidden">
+      <div class="card"><div class="section-title"><h2>动态学习计划</h2><div class="inline"><button id="plan7" class="ghost">生成7天</button><button id="plan30" class="primary">生成30天</button></div></div><p id="planSummary" class="muted"></p><div class="progress"><div id="planProgress"></div></div><div id="planProgressText" class="small muted"></div></div>
+      <div id="planList"></div>
+    </section>
+
+    <section id="page-wrongs" class="page hidden">
+      <div class="card"><div class="section-title"><h2>错题、收藏与笔记</h2><button id="startDueWrongs" class="primary">练习到期错题</button></div><div class="filter-row"><button class="ghost wrong-filter active" data-filter="due">今日到期</button><button class="ghost wrong-filter" data-filter="all">全部错题</button><button class="ghost wrong-filter" data-filter="mastered">已掌握</button><button class="ghost wrong-filter" data-filter="favorite">收藏题</button><button class="ghost wrong-filter" data-filter="notes">有笔记</button></div></div>
+      <div id="wrongList"></div>
+    </section>
+
+    <section id="page-cases" class="page hidden">
+      <div class="card"><div class="section-title"><h2>案例题关键词检查</h2><span class="tag">本地评分</span></div><label class="field" for="caseSelect">选择案例</label><select id="caseSelect" class="select"></select><div id="casePrompt" class="callout" style="margin-top:12px"></div><label class="field" for="caseAnswer">你的答案</label><textarea id="caseAnswer" class="textarea" placeholder="建议结论先行、分条作答、结合场景并写出闭环"></textarea><button id="scoreCase" class="primary wide">检查关键词覆盖</button></div>
+      <div id="caseResult" class="hidden"></div>
+    </section>
+
+    <section id="page-formulas" class="page hidden">
+      <div class="card"><div class="section-title"><h2>计算公式卡</h2><button id="startFormulaPractice" class="primary">开始10题计算专项</button></div><p class="muted">公式只是起点，先判断题目条件再选择对应公式。</p></div>
+      <div id="formulaGrid" class="grid3"></div>
+    </section>
+
+    <section id="page-stats" class="page hidden">
+      <div class="grid4" id="statsMetrics"></div>
+      <div class="grid2">
+        <div class="card"><div class="section-title"><h3>章节掌握度</h3><span class="tag">按答题记录估算</span></div><div id="categoryStats"></div></div>
+        <div class="card"><div class="section-title"><h3>主要错因</h3><span class="tag">本机数据</span></div><div id="reasonStats"></div></div>
+      </div>
+      <div class="card"><div class="section-title"><h3>历史练习</h3><button id="makePosterLast" class="ghost">生成最近成绩海报</button></div><div id="historyTable"></div></div>
+    </section>
+
+    <section id="page-settings" class="page hidden">
+      <div class="grid2">
+        <div class="card"><h2>学习设置</h2><label class="field" for="settingName">姓名或昵称</label><input id="settingName" class="input"><label class="field" for="settingDate">目标考试日期</label><input id="settingDate" class="input" type="date"><label class="field" for="settingTarget">每日目标题量</label><select id="settingTarget" class="select"><option>10</option><option>20</option><option>30</option><option>50</option></select><label class="field" for="themeSelect">显示模式</label><select id="themeSelect" class="select"><option value="system">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select><label class="field" for="fontSelect">字体大小</label><select id="fontSelect" class="select"><option value="0.9">较小</option><option value="1" selected>标准</option><option value="1.1">较大</option><option value="1.2">特大</option></select><button id="saveSettings" class="primary wide" style="margin-top:14px">保存设置</button></div>
+        <div class="card"><h2>数据与更新</h2><div class="data-note">学习记录只保存在当前浏览器。换手机、清理浏览器数据或使用无痕模式都可能导致记录丢失，建议定期导出。</div><div class="toggle-line"><span>导出全部学习记录</span><button id="exportData" class="secondary">导出</button></div><div class="toggle-line"><span>复制备份文本</span><button id="copyData" class="secondary">复制</button></div><div class="toggle-line"><span>导入学习记录</span><label class="secondary" for="importFile" style="cursor:pointer">选择文件</label><input id="importFile" class="file-input" type="file" accept="application/json"></div><div class="toggle-line"><span>题库管理工具</span><a class="ghost" href="admin.html">打开</a></div><div class="toggle-line"><span>检查网站更新</span><button id="checkUpdate" class="secondary">检查</button></div><div class="toggle-line"><span>清空全部学习记录</span><button id="resetData" class="danger">清空</button></div><p class="install-tip">iPhone：Safari分享菜单 → 添加到主屏幕。安卓：浏览器菜单 → 安装应用或添加到主屏幕。</p></div>
+      </div>
+      <div class="card"><div class="section-title"><h3>版本信息</h3><span id="settingsVersion" class="tag"></span></div><div id="updateNotes"></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">柱子软考智能备考 · GitHub Pages 静态版 · 数据仅保存在本机</footer>
+</div>
+
+<nav id="bottomNav" class="bottom-nav hidden no-print">
+  <button class="active" data-page="dashboard"><b>🏠</b>首页</button>
+  <button data-page="practice"><b>📝</b>练习</button>
+  <button data-page="plan"><b>📅</b>计划</button>
+  <button data-page="wrongs"><b>🧠</b>错题</button>
+  <button data-page="stats"><b>📊</b>统计</button>
+</nav>
+
+<script src="js/storage.js?v=3.5.0"></script>
+<script src="js/app.js?v=3.5.0"></script>
+</body>
+</html>

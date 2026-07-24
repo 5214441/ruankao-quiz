@@ -1,0 +1,20 @@
+{
+  "name": "柱子软考智能备考",
+  "short_name": "柱子软考",
+  "description": "系统集成项目管理工程师静态智能备考工具",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f7fb",
+  "theme_color": "#155eef",
+  "lang": "zh-CN",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ],
+  "shortcuts": [
+    {"name":"开始练习","short_name":"练习","url":"./?open=practice"},
+    {"name":"查看错题","short_name":"错题","url":"./?open=wrongs"}
+  ]
+}

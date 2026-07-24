@@ -1,0 +1,37 @@
+{
+  "name": "柱子万能工具箱",
+  "short_name": "柱子工具箱",
+  "description": "软考、招投标、酒店经营和工程计算一站式工具箱",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f9",
+  "theme_color": "#102a43",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/toolbox.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "招投标看板",
+      "url": "apps/tender/"
+    },
+    {
+      "name": "软考备考",
+      "url": "apps/ruankao/"
+    },
+    {
+      "name": "酒店经营",
+      "url": "apps/hotel/"
+    },
+    {
+      "name": "工程计算",
+      "url": "apps/engineering/"
+    }
+  ]
+}

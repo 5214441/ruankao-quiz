@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="霍邱、六安公开招标工程信息看板">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>霍邱·六安招投标信息看板</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-inner">
+        <div>
+          <a href="../../" style="display:inline-block;color:#fff;text-decoration:none;margin-bottom:10px;opacity:.9">← 返回万能工具箱</a><div class="eyebrow">GITHUB PAGES · 每日自动更新</div>
+          <h1>霍邱·六安招投标信息看板</h1>
+          <p>只看公开招标工程：房建、市政、公路、水利。默认重点关注霍邱县与市直区。</p>
+        </div>
+        <div class="hero-actions">
+          <button id="installBtn" class="btn btn-light hidden">安装到桌面</button>
+          <button id="refreshBtn" class="btn btn-light">刷新数据</button>
+        </div>
+      </div>
+      <div class="update-line">
+        <span id="updateStatus">正在读取数据…</span>
+        <span id="sourceStatus">来源：六安市公共资源交易中心</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="metrics" aria-label="数据概览">
+        <article class="metric">
+          <span>当前项目</span>
+          <strong id="metricTotal">—</strong>
+          <small>符合当前筛选</small>
+        </article>
+        <article class="metric">
+          <span>今日新发布</span>
+          <strong id="metricToday">—</strong>
+          <small>以公告发布日期计算</small>
+        </article>
+        <article class="metric">
+          <span>7天内截止</span>
+          <strong id="metricDeadline">—</strong>
+          <small>已识别截止时间</small>
+        </article>
+        <article class="metric">
+          <span>高匹配项目</span>
+          <strong id="metricHigh">—</strong>
+          <small>适配评分≥80分</small>
+        </article>
+      </section>
+
+      <section class="panel filter-panel">
+        <div class="panel-title">
+          <div>
+            <h2>筛选项目</h2>
+            <p>筛选结果只保存在当前页面，不会上传个人数据。</p>
+          </div>
+          <div class="panel-actions">
+            <button id="resetBtn" class="btn btn-ghost">恢复默认</button>
+            <button id="exportBtn" class="btn btn-primary">导出CSV</button>
+          </div>
+        </div>
+
+        <div class="filter-grid">
+          <label class="field search-field">
+            <span>关键词</span>
+            <input id="searchInput" type="search" placeholder="项目名称、地区、类别、资质关键词">
+          </label>
+
+          <label class="field">
+            <span>时间范围</span>
+            <select id="dateRange">
+              <option value="all">全部</option>
+              <option value="3">近3天</option>
+              <option value="7" selected>近7天</option>
+              <option value="30">近30天</option>
+              <option value="90">近90天</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>排序</span>
+            <select id="sortSelect">
+              <option value="dateDesc">最新发布</option>
+              <option value="scoreDesc">匹配度最高</option>
+              <option value="deadlineAsc">截止时间最近</option>
+              <option value="budgetDesc">预算金额最高</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>项目状态</span>
+            <select id="statusFilter">
+              <option value="all">全部状态</option>
+              <option value="未跟进">未跟进</option>
+              <option value="重点关注">重点关注</option>
+              <option value="准备投标">准备投标</option>
+              <option value="暂不参与">暂不参与</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-label">地区</div>
+          <div id="regionChips" class="chips"></div>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-label">行业</div>
+          <div id="categoryChips" class="chips"></div>
+        </div>
+
+        <div class="toggle-row">
+          <label><input id="constructionOnly" type="checkbox" checked> 施工优先（隐藏纯勘察、设计、监理、咨询）</label>
+          <label><input id="favoriteOnly" type="checkbox"> 只看已收藏</label>
+        </div>
+      </section>
+
+      <section class="content-layout">
+        <div class="main-column">
+          <div class="section-head">
+            <div>
+              <h2>招标项目</h2>
+              <p id="resultText">正在加载…</p>
+            </div>
+            <div class="legend">
+              <span><i class="dot high"></i>高匹配</span>
+              <span><i class="dot medium"></i>可关注</span>
+              <span><i class="dot low"></i>一般</span>
+            </div>
+          </div>
+
+          <div id="projectList" class="project-list"></div>
+          <div id="emptyState" class="empty hidden">
+            <div class="empty-icon">⌕</div>
+            <h3>没有符合条件的项目</h3>
+            <p>可放宽时间、地区或行业筛选。</p>
+          </div>
+        </div>
+
+        <aside class="side-column">
+          <section class="panel compact">
+            <h3>今日重点</h3>
+            <div id="todayFocus" class="focus-list"></div>
+          </section>
+
+          <section class="panel compact">
+            <h3>看板规则</h3>
+            <ul class="rule-list">
+              <li>只收录工程建设“招标公告”。</li>
+              <li>排除谈判、磋商、采购成交和中标结果。</li>
+              <li>类别限定为房建、市政、公路、水利。</li>
+              <li>评分是规则辅助，不代替招标文件审查。</li>
+            </ul>
+          </section>
+
+          <section class="panel compact">
+            <h3>快捷入口</h3>
+            <a class="source-link" href="https://ggzy.luan.gov.cn/" target="_blank" rel="noopener">六安市公共资源交易中心 ↗</a>
+            <a class="source-link" href="https://ggzy.luan.gov.cn/jysearch.html" target="_blank" rel="noopener">官方交易查询 ↗</a>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <span>霍邱·六安招投标信息看板 V1.0</span>
+      <span>公开信息仅供筛选，投标前以原公告及招标文件为准。</span>
+    </footer>
+  </div>
+
+  <dialog id="detailDialog">
+    <form method="dialog" class="dialog-card">
+      <div class="dialog-head">
+        <div>
+          <span id="dialogCategory" class="badge">项目</span>
+          <h2 id="dialogTitle">项目详情</h2>
+        </div>
+        <button class="icon-btn" value="cancel" aria-label="关闭">×</button>
+      </div>
+
+      <div id="dialogMeta" class="dialog-meta"></div>
+      <div id="dialogFacts" class="facts-grid"></div>
+
+      <div class="dialog-section">
+        <h3>资格与关键信息</h3>
+        <div id="dialogQualification" class="info-box"></div>
+      </div>
+
+      <div class="dialog-section">
+        <h3>我的跟进记录</h3>
+        <label class="field">
+          <span>跟进状态</span>
+          <select id="dialogStatus">
+            <option>未跟进</option>
+            <option>重点关注</option>
+            <option>准备投标</option>
+            <option>暂不参与</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>备注</span>
+          <textarea id="dialogNote" rows="5" placeholder="例如：下载招标文件、核对资质、测算85%线、联系技术老师……"></textarea>
+        </label>
+      </div>
+
+      <div class="dialog-actions">
+        <button id="dialogFavorite" type="button" class="btn btn-ghost">收藏项目</button>
+        <a id="dialogSource" class="btn btn-primary" href="#" target="_blank" rel="noopener">查看原公告</a>
+        <button id="saveNoteBtn" type="button" class="btn btn-dark">保存记录</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

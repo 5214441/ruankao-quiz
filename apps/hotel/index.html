@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7a3e00">
+<link rel="stylesheet" href="style.css">
+<title>酒店经营助手</title>
+</head>
+<body>
+<header class="top">
+  <a href="../../" class="back">← 返回工具箱</a>
+  <div><h1>酒店经营助手</h1><p>入住率、ADR、RevPAR、利润和动态调价测算</p></div>
+  <button id="exportBtn">导出记录</button>
+</header>
+<main>
+<section class="tabs">
+  <button class="tab active" data-tab="daily">经营测算</button>
+  <button class="tab" data-tab="price">调价建议</button>
+  <button class="tab" data-tab="history">历史记录</button>
+</section>
+
+<section id="daily" class="page active">
+  <div class="grid">
+    <article class="panel">
+      <h2>今日经营数据</h2>
+      <div class="form-grid">
+        <label>总房间数<input id="rooms" type="number" min="1" value="50"></label>
+        <label>已售房间<input id="sold" type="number" min="0" value="30"></label>
+        <label>客房收入（元）<input id="revenue" type="number" min="0" value="4500"></label>
+        <label>OTA佣金率（%）<input id="commission" type="number" min="0" step="0.1" value="12"></label>
+        <label>每间变动成本（元）<input id="variableCost" type="number" min="0" value="28"></label>
+        <label>每日固定成本（元）<input id="fixedCost" type="number" min="0" value="1200"></label>
+      </div>
+      <button id="calcDaily" class="primary">立即计算</button>
+    </article>
+    <article class="panel result">
+      <h2>经营结果</h2>
+      <div class="metrics">
+        <div><span>入住率</span><strong id="occupancy">—</strong></div>
+        <div><span>ADR平均房价</span><strong id="adr">—</strong></div>
+        <div><span>RevPAR</span><strong id="revpar">—</strong></div>
+        <div><span>净客房收入</span><strong id="netRevenue">—</strong></div>
+        <div><span>经营利润</span><strong id="profit">—</strong></div>
+        <div><span>保本入住率</span><strong id="breakEven">—</strong></div>
+      </div>
+      <div id="dailyAdvice" class="advice"></div>
+      <button id="saveDaily" class="secondary">保存今日记录</button>
+    </article>
+  </div>
+</section>
+
+<section id="price" class="page">
+  <div class="grid">
+    <article class="panel">
+      <h2>动态房价参数</h2>
+      <div class="form-grid">
+        <label>基础门市价（元）<input id="basePrice" type="number" value="138"></label>
+        <label>当前入住率（%）<input id="currentOcc" type="number" value="55"></label>
+        <label>竞品平均展示价（元）<input id="competitor" type="number" value="128"></label>
+        <label>距离入住日（天）<input id="leadDays" type="number" value="1"></label>
+        <label>日期类型
+          <select id="dayType"><option value="weekday">普通工作日</option><option value="weekend">周末</option><option value="holiday">节假日/大型活动</option></select>
+        </label>
+        <label>目标定位
+          <select id="position"><option value="lower">比竞品低3%–6%</option><option value="same">跟随竞品</option><option value="higher">比竞品高3%–6%</option></select>
+        </label>
+      </div>
+      <button id="calcPrice" class="primary">生成调价建议</button>
+    </article>
+    <article class="panel result">
+      <h2>建议价格</h2>
+      <div class="price-main"><span>建议展示价</span><strong id="suggestedPrice">—</strong></div>
+      <div class="range">合理区间：<b id="priceRange">—</b></div>
+      <div id="priceReasons" class="advice"></div>
+      <p class="tip">提示：这是规则测算，不会自动修改美团或携程价格。实际价格还要结合房型库存、活动折扣和周边临时需求。</p>
+    </article>
+  </div>
+</section>
+
+<section id="history" class="page">
+  <article class="panel">
+    <div class="head"><div><h2>本机历史记录</h2><p>记录只保存在当前浏览器。</p></div><button id="clearHistory" class="danger">清空记录</button></div>
+    <div id="historyList"></div>
+  </article>
+</section>
+</main>
+<div id="toast" class="toast hidden"></div>
+<script src="app.js"></script>
+</body></html>

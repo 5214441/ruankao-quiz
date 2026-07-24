@@ -1,0 +1,77 @@
+[
+  {
+    "name": "成本绩效指数 CPI",
+    "formula": "CPI = EV ÷ AC",
+    "meaning": "CPI＜1 成本超支；CPI＞1 成本节约。"
+  },
+  {
+    "name": "进度绩效指数 SPI",
+    "formula": "SPI = EV ÷ PV",
+    "meaning": "SPI＜1 进度落后；SPI＞1 进度提前。"
+  },
+  {
+    "name": "成本偏差 CV",
+    "formula": "CV = EV − AC",
+    "meaning": "CV＜0 成本超支；CV＞0 成本节约。"
+  },
+  {
+    "name": "进度偏差 SV",
+    "formula": "SV = EV − PV",
+    "meaning": "SV＜0 进度落后；SV＞0 进度提前。"
+  },
+  {
+    "name": "完工估算 EAC（成本绩效持续）",
+    "formula": "EAC = BAC ÷ CPI",
+    "meaning": "假设当前成本绩效在剩余工作中继续。"
+  },
+  {
+    "name": "完工估算 EAC（剩余按预算效率）",
+    "formula": "EAC = AC + (BAC − EV)",
+    "meaning": "假设过去偏差是偶发的，剩余工作按原预算完成。"
+  },
+  {
+    "name": "沟通渠道",
+    "formula": "n × (n − 1) ÷ 2",
+    "meaning": "n为沟通成员数量。"
+  },
+  {
+    "name": "PERT期望工期",
+    "formula": "(O + 4M + P) ÷ 6",
+    "meaning": "O乐观、M最可能、P悲观。"
+  },
+  {
+    "name": "PERT标准差",
+    "formula": "(P − O) ÷ 6",
+    "meaning": "用于衡量活动工期的不确定性。"
+  },
+  {
+    "name": "预期货币价值 EMV",
+    "formula": "概率 × 影响金额",
+    "meaning": "多个结果的EMV可相加用于决策分析。"
+  },
+  {
+    "name": "完工尚需绩效指数 TCPI",
+    "formula": "TCPI = (BAC - EV) ÷ (BAC - AC)",
+    "meaning": "在必须按原BAC完成时，表示剩余工作需要达到的成本效率。"
+  },
+  {
+    "name": "期望货币价值 EMV",
+    "formula": "EMV = Σ(概率 × 金额影响)",
+    "meaning": "机会为正、威胁损失为负，用于决策树和风险量化。"
+  },
+  {
+    "name": "可用性",
+    "formula": "可用性 = 正常运行时间 ÷ 总时间",
+    "meaning": "常用百分比表示，可结合MTBF与MTTR分析。"
+  },
+  {
+    "name": "可用主机数",
+    "formula": "2^(主机位数) - 2",
+    "meaning": "传统IPv4子网中通常扣除网络地址和广播地址。"
+  },
+  {
+    "name": "缺陷率",
+    "formula": "缺陷率 = 缺陷数 ÷ 检查总数 × 100%",
+    "meaning": "应结合严重程度、阶段和趋势解读。"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "霍邱·六安招投标信息看板",
+  "short_name": "招标看板",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f9",
+  "theme_color": "#102a43",
+  "description": "霍邱、六安公开招标工程信息看板",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

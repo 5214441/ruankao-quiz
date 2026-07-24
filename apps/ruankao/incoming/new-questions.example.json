@@ -1,0 +1,15 @@
+[
+  {
+    "id": "candidate-001",
+    "category": "范围管理",
+    "knowledge": "需求跟踪",
+    "difficulty": 2,
+    "type": "scenario",
+    "text": "这是一道候选题示例，正式使用时请替换完整题干。",
+    "options": ["选项A", "选项B", "选项C", "选项D"],
+    "answer": 1,
+    "explanation": "这里填写不少于一句话的答案解析。",
+    "mistakeTip": "这里填写易错提示。",
+    "formula": ""
+  }
+]

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#155eef"><title>题库管理工具 · 柱子软考</title><link rel="stylesheet" href="css/app.css?v=3.5.0"></head>
+<body><div class="app"><section class="hero"><div class="hero-top"><div><h1>题库管理工具</h1><p>本地校验、查重、合并并导出 questions.json</p><p class="small">工具不会直接修改GitHub仓库，处理过程全部在浏览器本地完成。</p></div><div class="hero-actions"><a class="hero-action" href="index.html">返回学习系统</a></div></div></section>
+<div class="grid2"><div class="card"><h2>1. 载入候选题</h2><p class="muted">支持JSON数组，或包含 <code>questions</code> 数组的JSON对象。</p><label class="field" for="candidateFile">候选题文件</label><input id="candidateFile" class="input" type="file" accept="application/json"><label class="field" for="candidateText">也可直接粘贴JSON</label><textarea id="candidateText" class="textarea" style="min-height:220px" placeholder='[{"id":"new-001",...}]'></textarea><button id="validateBtn" class="primary wide">校验候选题</button></div>
+<div class="card"><h2>2. 校验规则</h2><div class="task"><span>✓</span><span>题目ID唯一</span></div><div class="task"><span>✓</span><span>题干、4个选项、答案和解析完整</span></div><div class="task"><span>✓</span><span>答案索引必须为0—3</span></div><div class="task"><span>✓</span><span>章节、知识点、难度和题型合法</span></div><div class="task"><span>✓</span><span>与现有题库题干不完全重复</span></div><div class="task"><span>✓</span><span>满足至少10道有效新题，才建议自动合并</span></div><div class="data-note">自动工具只能检查结构和重复，不能完全判断题意、答案和政策时效。正式发布前仍应人工抽查。</div></div></div>
+<div id="resultCard" class="card hidden"><div class="section-title"><h2>校验结果</h2><span id="resultTag" class="tag"></span></div><div id="resultSummary"></div><div id="errorList"></div><div class="actions"><a class="ghost" href="data/questions.json" download>下载当前题库</a><div class="right"><button id="downloadValid" class="secondary" disabled>下载有效候选题</button><button id="downloadMerged" class="primary" disabled>合并并下载新题库</button></div></div></div>
+<div class="card"><h2>候选题标准格式</h2><pre style="white-space:pre-wrap;word-break:break-word;background:#f8fafc;border:1px solid #dbe3ec;border-radius:12px;padding:14px">{
+  "id": "q301",
+  "category": "范围管理",
+  "knowledge": "需求跟踪",
+  "difficulty": 2,
+  "type": "scenario",
+  "text": "题干",
+  "options": ["选项A", "选项B", "选项C", "选项D"],
+  "answer": 1,
+  "explanation": "答案解析",
+  "mistakeTip": "易错提示",
+  "formula": ""
+}</pre></div><footer class="footer">静态题库管理工具 · 数据不会上传服务器</footer></div><script src="js/admin.js?v=3.5.0"></script></body></html>

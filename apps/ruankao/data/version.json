@@ -1,0 +1,14 @@
+{
+  "appVersion": "3.5.0",
+  "questionVersion": "2026.07.23.1",
+  "questionCount": 300,
+  "caseCount": 10,
+  "updatedAt": "2026-07-23",
+  "updateNotes": [
+    "题库扩充至300道选择题",
+    "新增收藏、笔记和错因标记",
+    "支持固定试卷分享链接",
+    "支持PWA安装与离线练习",
+    "支持题库自动校验和条件更新"
+  ]
+}

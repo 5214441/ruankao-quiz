@@ -1,0 +1,61 @@
+柱子万能工具箱 V1.0 单仓库版部署说明
+
+目标：
+只使用一个GitHub仓库、一个网站地址，统一放置：
+1. 软考智能备考
+2. 招投标信息看板
+3. 酒店经营助手
+4. 工程常用计算
+农业模块暂不加入。
+
+一、新建仓库
+1. 登录 GitHub。
+2. 点击右上角“+”。
+3. 选择“New repository”。
+4. Repository name 建议填写：zhuzi-toolbox
+5. 选择 Public。
+6. 点击 Create repository。
+
+二、上传
+1. 下载并解压本压缩包。
+2. 将解压后的全部文件和文件夹上传到新仓库根目录。
+3. 必须包含隐藏目录：
+   .github/workflows/deploy.yml
+4. 提交更改。
+
+三、启用GitHub Pages
+1. 打开仓库 Settings。
+2. 左侧点击 Pages。
+3. Build and deployment 的 Source 选择 GitHub Actions。
+
+四、首次部署
+1. 点击仓库顶部 Actions。
+2. 选择“更新并部署柱子万能工具箱”。
+3. 点击 Run workflow。
+4. 等待绿色对勾。
+
+五、访问
+仓库名为 zhuzi-toolbox 时，网址为：
+https://5214441.github.io/zhuzi-toolbox/
+
+各模块网址：
+首页：
+https://5214441.github.io/zhuzi-toolbox/
+
+软考：
+https://5214441.github.io/zhuzi-toolbox/apps/ruankao/
+
+招投标：
+https://5214441.github.io/zhuzi-toolbox/apps/tender/
+
+酒店：
+https://5214441.github.io/zhuzi-toolbox/apps/hotel/
+
+工程计算：
+https://5214441.github.io/zhuzi-toolbox/apps/engineering/
+
+六、更新规则
+- 每次上传代码后自动重新部署。
+- 每天北京时间09:00自动检查招投标信息。
+- 招投标抓取失败时保留旧数据。
+- 软考题库在部署前自动校验结构。
