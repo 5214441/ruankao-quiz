@@ -1,0 +1,71 @@
+name: 更新并部署柱子万能工具箱
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    # UTC 01:00 = 北京时间 09:00
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: toolbox-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 获取仓库代码
+        uses: actions/checkout@v6
+
+      - name: 配置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 校验软考题库
+        run: python apps/ruankao/scripts/validate_questions.py apps/ruankao/data/questions.json
+
+      - name: 定时更新招投标数据
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python apps/tender/scripts/fetch_tenders.py
+
+      - name: 保存自动更新数据
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/tender/data/projects.json apps/tender/data/meta.json
+          if git diff --cached --quiet; then
+            echo "没有数据变化"
+          else
+            git commit -m "[skip ci] 自动更新招投标数据"
+            git push
+          fi
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传网站文件
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      - name: 部署网站
+        id: deployment
+        uses: actions/deploy-pages@v4
