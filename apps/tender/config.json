@@ -1,7 +1,11 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "sourceUrl": "https://ggzy.luan.gov.cn/",
-  "sourceSearchUrl": "https://ggzy.luan.gov.cn/jysearch.html",
+  "sourceSearchUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
+  "sourceUrls": [
+    "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
+    "https://ggzy.luan.gov.cn/"
+  ],
   "regions": [
     "霍邱县",
     "市直区",
@@ -33,6 +37,6 @@
     "采购公告"
   ],
   "keepDays": 180,
-  "updateTime": "每天北京时间09:00",
+  "updateTime": "每天北京时间09:17",
   "toolboxPath": "../../"
 }

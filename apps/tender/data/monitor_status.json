@@ -1,0 +1,37 @@
+{
+  "version": "1.2.0",
+  "enabled": true,
+  "channelConfigured": false,
+  "status": "waiting",
+  "statusText": "等待GitHub Actions首次运行",
+  "scheduleText": "每天北京时间09:17",
+  "keywords": [
+    "土地复垦",
+    "高标准农田",
+    "行蓄洪居民迁建配套",
+    "行蓄洪",
+    "居民迁建",
+    "农田水利",
+    "水利",
+    "河道",
+    "防洪",
+    "排涝",
+    "市政道路",
+    "道路",
+    "桥梁",
+    "厂房工程",
+    "厂房",
+    "产业园",
+    "乡村振兴",
+    "EPC",
+    "二次招标"
+  ],
+  "regionKeywords": [
+    "霍邱县",
+    "霍邱"
+  ],
+  "lastCheckAt": null,
+  "matchedProjectCount": 0,
+  "pendingCount": 0,
+  "lastNotificationAt": null
+}

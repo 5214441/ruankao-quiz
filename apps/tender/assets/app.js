@@ -1,12 +1,14 @@
 const DATA_URL = "data/projects.json";
 const META_URL = "data/meta.json";
 const CONFIG_URL = "config.json";
+const MONITOR_URL = "data/monitor_status.json";
 const STORE_KEY = "luanTenderBoardUserDataV1";
 
 const state = {
   projects: [],
   meta: {},
   config: {},
+  monitor: {},
   filtered: [],
   activeProject: null,
   userData: loadUserData(),
@@ -52,21 +54,73 @@ function toast(message){
 async function loadData(){
   $("updateStatus").textContent = "正在读取最新数据…";
   const bust = `?v=${Date.now()}`;
-  const [projectsRes, metaRes, configRes] = await Promise.all([
+  const [projectsRes, metaRes, configRes, monitorRes] = await Promise.all([
     fetch(DATA_URL+bust),
     fetch(META_URL+bust),
-    fetch(CONFIG_URL+bust)
+    fetch(CONFIG_URL+bust),
+    fetch(MONITOR_URL+bust)
   ]);
   if(!projectsRes.ok) throw new Error("项目数据读取失败");
   state.projects = await projectsRes.json();
   state.meta = metaRes.ok ? await metaRes.json() : {};
   state.config = configRes.ok ? await configRes.json() : {};
+  state.monitor = monitorRes.ok ? await monitorRes.json() : {};
   const defaults = state.config.defaultRegions || ["霍邱县","市直区"];
   state.filters.regions = new Set(defaults);
   renderFilterChips();
   applyFilters();
   const updated = state.meta.updatedAt ? fmtDateTime(state.meta.updatedAt) : "暂无";
-  $("updateStatus").textContent = `数据更新时间：${updated} · 共收录 ${state.projects.length} 个项目`;
+  if(state.meta.success === false){
+    const attempted = state.meta.lastAttemptAt ? fmtDateTime(state.meta.lastAttemptAt) : "未知";
+    $("updateStatus").textContent = `今日抓取失败（${attempted}），当前显示上一次成功数据 · ${state.projects.length} 个项目`;
+  }else{
+    $("updateStatus").textContent = `数据更新时间：${updated} · 共收录 ${state.projects.length} 个项目`;
+  }
+  $("sourceStatus").textContent = "来源：六安市公共资源交易中心 · 霍邱监控每天09:17";
+}
+
+
+function renderMonitor(){
+  const monitor = state.monitor || {};
+  const huoqiuProjects = state.projects.filter(project => {
+    const text = [
+      project.title, project.region, project.summary, project.tenderer
+    ].join(" ");
+    return project.region === "霍邱县" || /霍邱县|霍邱/.test(text);
+  });
+
+  $("metricMonitor").textContent = huoqiuProjects.length;
+  const configured = !!monitor.channelConfigured;
+  const pending = Number(monitor.pendingCount || 0);
+  $("metricMonitorStatus").textContent = pending
+    ? `${pending}个待推送`
+    : configured ? "微信已连接" : "微信待配置";
+
+  const badge = $("monitorBadge");
+  const statusMap = {
+    waiting:["等待运行","waiting"],
+    ready:["监控正常","ok"],
+    no_new:["监控正常","ok"],
+    sent:["已推送","sent"],
+    test_ok:["测试成功","sent"],
+    not_configured:["待配置","warning"],
+    pending:["待推送","warning"],
+    error:["推送失败","error"],
+    disabled:["已停用","error"]
+  };
+  const [label, cls] = statusMap[monitor.status] || ["状态未知","waiting"];
+  badge.textContent = label;
+  badge.className = `monitor-badge ${cls}`;
+
+  $("monitorStatusText").textContent = monitor.statusText || "等待GitHub Actions首次运行";
+  $("monitorLastCheck").textContent = monitor.lastCheckAt ? fmtDateTime(monitor.lastCheckAt) : "暂无";
+  $("monitorChannel").textContent = configured ? "已连接" : "待配置";
+  $("monitorPending").textContent = pending;
+
+  const keywords = monitor.keywords || [];
+  $("monitorKeywords").innerHTML = keywords.length
+    ? keywords.slice(0,12).map(keyword => `<span>${escapeHtml(keyword)}</span>`).join("")
+    : '<span>等待配置</span>';
 }
 
 function renderFilterChips(){
@@ -150,6 +204,7 @@ function renderAll(){
   renderMetrics();
   renderProjects();
   renderFocus();
+  renderMonitor();
 }
 function renderMetrics(){
   const today = new Date().toISOString().slice(0,10);

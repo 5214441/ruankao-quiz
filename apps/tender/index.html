@@ -15,9 +15,9 @@
     <header class="hero">
       <div class="hero-inner">
         <div>
-          <a href="../../" style="display:inline-block;color:#fff;text-decoration:none;margin-bottom:10px;opacity:.9">← 返回万能工具箱</a><div class="eyebrow">GITHUB PAGES · 每日自动更新</div>
+          <a href="../../" style="display:inline-block;color:#fff;text-decoration:none;margin-bottom:10px;opacity:.9">← 返回万能工具箱</a><div class="eyebrow">每日自动更新 · 霍邱关键词监控 · 微信提醒</div>
           <h1>霍邱·六安招投标信息看板</h1>
-          <p>只看公开招标工程：房建、市政、公路、水利。默认重点关注霍邱县与市直区。</p>
+          <p>只看公开招标工程：房建、市政、公路、水利。自动监控霍邱县新项目，并对重点工程关键词进行微信提醒。</p>
         </div>
         <div class="hero-actions">
           <button id="installBtn" class="btn btn-light hidden">安装到桌面</button>
@@ -51,6 +51,11 @@
           <span>高匹配项目</span>
           <strong id="metricHigh">—</strong>
           <small>适配评分≥80分</small>
+        </article>
+        <article class="metric monitor-metric">
+          <span>霍邱监控</span>
+          <strong id="metricMonitor">—</strong>
+          <small id="metricMonitorStatus">等待状态</small>
         </article>
       </section>
 
@@ -144,6 +149,22 @@
         </div>
 
         <aside class="side-column">
+          <section class="panel compact monitor-panel">
+            <div class="monitor-head">
+              <h3>霍邱招标雷达</h3>
+              <span id="monitorBadge" class="monitor-badge waiting">等待运行</span>
+            </div>
+            <p id="monitorStatusText" class="monitor-status-text">正在读取监控状态…</p>
+            <div class="monitor-facts">
+              <div><span>检查时间</span><b id="monitorLastCheck">暂无</b></div>
+              <div><span>微信通知</span><b id="monitorChannel">待配置</b></div>
+              <div><span>待推送</span><b id="monitorPending">0</b></div>
+            </div>
+            <div class="monitor-label">重点关键词</div>
+            <div id="monitorKeywords" class="monitor-keywords"></div>
+            <small class="monitor-note">SendKey保存在GitHub Secrets，不会显示在网页或提交到仓库。</small>
+          </section>
+
           <section class="panel compact">
             <h3>今日重点</h3>
             <div id="todayFocus" class="focus-list"></div>
@@ -162,14 +183,14 @@
           <section class="panel compact">
             <h3>快捷入口</h3>
             <a class="source-link" href="https://ggzy.luan.gov.cn/" target="_blank" rel="noopener">六安市公共资源交易中心 ↗</a>
-            <a class="source-link" href="https://ggzy.luan.gov.cn/jysearch.html" target="_blank" rel="noopener">官方交易查询 ↗</a>
+            <a class="source-link" href="https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html" target="_blank" rel="noopener">官方交易查询 ↗</a>
           </section>
         </aside>
       </section>
     </main>
 
     <footer>
-      <span>霍邱·六安招投标信息看板 V1.0</span>
+      <span>霍邱·六安招投标信息看板 V1.2</span>
       <span>公开信息仅供筛选，投标前以原公告及招标文件为准。</span>
     </footer>
   </div>

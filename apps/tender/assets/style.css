@@ -71,7 +71,7 @@ main{
 }
 .metrics{
   display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-template-columns:repeat(5,minmax(0,1fr));
   gap:14px;
   margin-top:-42px;
   margin-bottom:18px;
@@ -265,6 +265,25 @@ textarea{resize:vertical}
 .btn-ghost{color:#33485b;background:#fff;border:1px solid var(--line)}
 .btn:hover{filter:brightness(.98)}
 .favorite-btn.active{color:#9a5a00;background:#fff5db;border-color:#f0cf78}
+
+.monitor-metric{border-color:#b9dfd0;background:linear-gradient(145deg,#fff,#f1fbf7)}
+.monitor-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.monitor-head h3{margin:0!important}
+.monitor-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:800;background:#edf2f6;color:#617180}
+.monitor-badge.ok{background:var(--green-soft);color:var(--green)}
+.monitor-badge.sent{background:var(--blue-soft);color:var(--blue)}
+.monitor-badge.warning{background:var(--amber-soft);color:var(--amber)}
+.monitor-badge.error{background:var(--red-soft);color:var(--red)}
+.monitor-status-text{font-size:13px;color:#536273;margin:11px 0}
+.monitor-facts{display:grid;grid-template-columns:1fr;gap:6px;margin:10px 0}
+.monitor-facts div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #edf1f4;padding-bottom:6px;font-size:12px}
+.monitor-facts span{color:var(--muted)}
+.monitor-facts b{text-align:right}
+.monitor-label{font-size:12px;font-weight:800;color:#425466;margin:11px 0 7px}
+.monitor-keywords{display:flex;flex-wrap:wrap;gap:5px}
+.monitor-keywords span{font-size:11px;padding:3px 7px;border-radius:999px;background:#eaf2ff;color:#1554a3}
+.monitor-note{display:block;color:#8995a2;margin-top:11px;line-height:1.5}
+
 .rule-list{padding-left:18px;margin:0;color:#566575;font-size:14px}
 .rule-list li+li{margin-top:8px}
 .source-link{
@@ -347,7 +366,7 @@ dialog::backdrop{background:rgba(11,25,38,.58);backdrop-filter:blur(3px)}
 }
 @media(max-width:960px){
   .content-layout{grid-template-columns:1fr}
-  .side-column{position:static;grid-template-columns:repeat(3,1fr)}
+  .side-column{position:static;grid-template-columns:repeat(2,1fr)}
   .filter-grid{grid-template-columns:1.5fr repeat(2,1fr)}
   .filter-grid .field:last-child{grid-column:3}
 }
