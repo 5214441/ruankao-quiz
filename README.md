@@ -3,7 +3,7 @@
 一个仓库、一个 GitHub Pages 地址，包含四个模块：
 
 - `apps/ruankao/`：软考智能备考 V3.5
-- `apps/tender/`：霍邱·六安招投标信息看板
+- `apps/tender/`：招投标信息看板
 - `apps/hotel/`：酒店经营助手
 - `apps/engineering/`：工程常用计算
 
