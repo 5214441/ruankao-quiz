@@ -1,7 +1,13 @@
 {
   "version": "1.2.0",
-  "bootstrapped": false,
-  "knownProjectIds": [],
+  "bootstrapped": true,
+  "knownProjectIds": [
+    "17b4910d-1829-425e-ba88-df6f6da27e1a",
+    "4c265dd8-c901-49a8-b325-4b6dfe1d745d",
+    "6b8a67a5-d642-4c8a-a91c-0600f519afe3",
+    "57d0a296-0480-4948-83da-7c6e49a54bc7"
+  ],
   "lastNotificationAt": null,
-  "lastFailureAlertDate": null
+  "lastFailureAlertDate": null,
+  "lastBootstrapAt": "2026-07-25T14:02:42+08:00"
 }
