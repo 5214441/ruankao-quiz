@@ -1,0 +1,31 @@
+{
+  "version": "1.1.0",
+  "symbol": "BTCUSDT",
+  "market": "USDⓈ-M perpetual",
+  "defaultInterval": "5m",
+  "matrixIntervals": [
+    "1m",
+    "5m",
+    "15m",
+    "1h",
+    "4h"
+  ],
+  "dataSource": "Binance public market data",
+  "accountConnection": false,
+  "autoTrading": false,
+  "localStorageOnly": true,
+  "features": [
+    "实时价格与24小时行情",
+    "K线与EMA20/EMA60/RSI/MACD/ATR",
+    "多周期趋势矩阵",
+    "假突破识别",
+    "资金费率与持仓量",
+    "全市场多空比与主动买入占比",
+    "实时强平动态",
+    "关键价位地图",
+    "中文整数价位语音播报",
+    "自定义本地提醒",
+    "历史K线回放",
+    "行情快照与每日摘要"
+  ]
+}

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1320">
+  <meta name="description" content="BTC短线行情雷达 V1.1：多周期趋势、K线指标、合约数据、强平动态、关键价位和语音提醒">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>BTC短线行情雷达 V1.1</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../../">← 返回工具箱</a>
+    <div class="brand">
+      <span class="coin">₿</span>
+      <div>
+        <strong>BTC短线行情雷达</strong>
+        <small>V1.1 · 公开行情 · 无需API密钥</small>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button id="themeBtn" class="btn ghost">切换浅色</button>
+      <button id="refreshBtn" class="btn primary">刷新数据</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="warning">
+      <strong>只读监测工具</strong>
+      <span>不连接交易账户、不自动下单，技术指标仅用于学习和复盘，不构成交易建议。</span>
+    </section>
+
+    <section class="hero-grid">
+      <article class="price-card panel">
+        <div class="price-head">
+          <div>
+            <span class="label">BTCUSDT 永续</span>
+            <div id="mainPrice" class="main-price">--</div>
+            <div class="price-sub">
+              <span id="priceMove">等待实时行情</span>
+              <span id="dataTime">--</span>
+            </div>
+          </div>
+          <div id="connectionBadge" class="status connecting"><i></i>连接中</div>
+        </div>
+        <div class="stat-row">
+          <div><span>24小时涨跌</span><strong id="change24">--</strong></div>
+          <div><span>24小时最高</span><strong id="high24">--</strong></div>
+          <div><span>24小时最低</span><strong id="low24">--</strong></div>
+          <div><span>24小时成交额</span><strong id="quoteVolume24">--</strong></div>
+        </div>
+      </article>
+
+      <article class="panel contract-summary">
+        <div class="panel-title">
+          <div><h2>合约快照</h2><p>公开市场数据</p></div>
+          <span id="contractUpdated" class="muted">--</span>
+        </div>
+        <div class="contract-grid">
+          <div><span>标记价格</span><strong id="markPrice">--</strong></div>
+          <div><span>指数价格</span><strong id="indexPrice">--</strong></div>
+          <div><span>资金费率</span><strong id="fundingRate">--</strong></div>
+          <div><span>下次结算</span><strong id="fundingCountdown">--</strong></div>
+          <div><span>持仓量</span><strong id="openInterest">--</strong></div>
+          <div><span>5分钟变化</span><strong id="oiChange">--</strong></div>
+          <div><span>全市场多空比</span><strong id="longShortRatio">--</strong></div>
+          <div><span>主动买入占比</span><strong id="takerBuyRatio">--</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <div class="main-column">
+        <article class="panel chart-panel">
+          <div class="chart-toolbar">
+            <div>
+              <h2>价格结构与指标</h2>
+              <p id="chartSubtitle">加载K线中</p>
+            </div>
+            <div id="intervalTabs" class="tabs">
+              <button data-interval="1m">1分钟</button>
+              <button class="active" data-interval="5m">5分钟</button>
+              <button data-interval="15m">15分钟</button>
+              <button data-interval="1h">1小时</button>
+              <button data-interval="4h">4小时</button>
+            </div>
+          </div>
+          <div class="indicator-strip">
+            <span>EMA20 <b id="ema20Value">--</b></span>
+            <span>EMA60 <b id="ema60Value">--</b></span>
+            <span>RSI14 <b id="rsiValue">--</b></span>
+            <span>MACD柱 <b id="macdValue">--</b></span>
+            <span>ATR14 <b id="atrValue">--</b></span>
+            <span>量比 <b id="volumeRatio">--</b></span>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="priceChart"></canvas>
+            <div id="chartEmpty" class="chart-empty">正在读取行情数据…</div>
+          </div>
+          <div class="legend">
+            <span><i class="ema20"></i>EMA20</span>
+            <span><i class="ema60"></i>EMA60</span>
+            <span><i class="level"></i>整数关键位</span>
+          </div>
+        </article>
+
+        <article class="panel replay-panel">
+          <div class="panel-title">
+            <div><h2>历史K线回放</h2><p>隐藏未来K线，练习识别结构</p></div>
+            <button id="replayToggle" class="btn secondary">进入回放</button>
+          </div>
+          <div id="replayControls" class="replay-controls hidden">
+            <button id="replayPlay" class="btn ghost">播放</button>
+            <input id="replaySlider" type="range" min="60" max="239" value="120">
+            <span id="replayTime">--</span>
+            <button id="replayExit" class="btn ghost">退出</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>多周期趋势矩阵</h2><p>统一规则计算，避免只盯一个周期</p></div>
+            <span id="matrixUpdated" class="muted">--</span>
+          </div>
+          <div id="trendMatrix" class="matrix">
+            <div class="matrix-loading">正在计算多周期结构…</div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>结构判断</h2><p>突破、量能和关键价位</p></div>
+            <span class="tag neutral">仅供复盘</span>
+          </div>
+          <div class="analysis-grid">
+            <div class="analysis-card">
+              <span>假突破识别</span>
+              <strong id="breakoutTitle">等待K线</strong>
+              <p id="breakoutText">数据加载后自动分析。</p>
+            </div>
+            <div class="analysis-card">
+              <span>当前周期结构</span>
+              <strong id="structureTitle">等待K线</strong>
+              <p id="structureText">数据加载后自动分析。</p>
+            </div>
+            <div class="analysis-card">
+              <span>短线订单流</span>
+              <strong id="flowTitle">等待实时成交</strong>
+              <p id="flowText">统计最近60秒主动买卖成交额。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>每日行情摘要</h2><p>根据当前数据自动生成，不包含操作指令</p></div>
+            <button id="copyReportBtn" class="btn ghost">复制摘要</button>
+          </div>
+          <div id="dailyReport" class="report">等待行情数据…</div>
+        </article>
+      </div>
+
+      <aside class="side-column">
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>关键价位地图</h2><p>整数位、区间高低点</p></div>
+          </div>
+          <div id="levelMap" class="level-map">
+            <div class="empty-line">等待价格数据</div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>强平动态</h2><p>实时公开强平订单流</p></div>
+            <span id="liqCount" class="tag neutral">0条</span>
+          </div>
+          <div id="liquidationFeed" class="liquidation-feed">
+            <div class="empty-line">等待强平数据</div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>整数价位语音</h2><p>价格跨越指定间隔时播报</p></div>
+            <label class="switch"><input id="voiceEnabled" type="checkbox"><span></span></label>
+          </div>
+          <div class="form-grid">
+            <label>播报间隔
+              <select id="voiceStep">
+                <option value="100">每100美元</option>
+                <option value="500" selected>每500美元</option>
+                <option value="1000">每1000美元</option>
+              </select>
+            </label>
+            <label>冷却时间
+              <select id="voiceCooldown">
+                <option value="30">30秒</option>
+                <option value="60" selected>1分钟</option>
+                <option value="120">2分钟</option>
+                <option value="300">5分钟</option>
+              </select>
+            </label>
+            <label>播报风格
+              <select id="voiceStyle">
+                <option value="amount">中文金额</option>
+                <option value="digits">逐位数字</option>
+              </select>
+            </label>
+            <button id="voiceTestBtn" class="btn secondary full">测试语音</button>
+          </div>
+          <p class="micro">手机浏览器可能需要先点击“测试语音”，系统才允许自动播报。</p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>自定义提醒</h2><p>本机保存，触发后可语音和通知</p></div>
+          </div>
+          <div class="alert-form">
+            <select id="alertType">
+              <option value="price_above">价格高于</option>
+              <option value="price_below">价格低于</option>
+              <option value="rsi_above">RSI高于</option>
+              <option value="rsi_below">RSI低于</option>
+              <option value="funding_abs_above">资金费率绝对值高于</option>
+              <option value="oi_change_abs_above">持仓量5分钟变化绝对值高于</option>
+            </select>
+            <input id="alertValue" type="number" step="any" placeholder="输入数值">
+            <div class="check-row">
+              <label><input id="alertSpeech" type="checkbox" checked>语音</label>
+              <label><input id="alertNotify" type="checkbox">浏览器通知</label>
+            </div>
+            <button id="addAlertBtn" class="btn primary">添加提醒</button>
+          </div>
+          <div id="alertList" class="alert-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>行情快照</h2><p>保存当时指标和自己的判断</p></div>
+          </div>
+          <textarea id="snapshotNote" rows="3" placeholder="例如：观察整数位附近是否放量，暂不做结论。"></textarea>
+          <button id="saveSnapshotBtn" class="btn secondary full">保存当前快照</button>
+          <div id="snapshotList" class="snapshot-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div><h2>触发记录</h2><p>本机最多保留50条</p></div>
+            <button id="clearEventsBtn" class="btn ghost tiny">清空</button>
+          </div>
+          <div id="eventLog" class="event-log"></div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

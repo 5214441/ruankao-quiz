@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#102a43">
-  <meta name="description" content="软考、招投标、酒店经营和工程计算一站式静态工具箱">
+  <meta name="description" content="软考、招投标、酒店经营、工程计算和BTC行情监测一站式静态工具箱">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/toolbox.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/portal.css">
@@ -17,7 +17,7 @@
         <div>
           <div class="eyebrow">ONE REPOSITORY · ONE WEBSITE</div>
           <h1>KK万能工具箱</h1>
-          <p>软考备考、招投标信息、酒店经营和工程计算</p>
+          <p>软考备考、招投标信息、酒店经营、工程计算和BTC行情监测</p>
         </div>
         <div class="hero-actions">
           <button id="installBtn" class="btn btn-light hidden">安装到桌面</button>
@@ -29,6 +29,7 @@
         <span>本地保存数据</span>
         <span>手机与电脑通用</span>
         <span>招投标每日自动更新</span>
+        <span>BTC实时行情</span>
       </div>
     </header>
 
@@ -36,7 +37,7 @@
       <section class="overview">
         <article class="overview-card">
           <span>已启用模块</span>
-          <strong>4</strong>
+          <strong>5</strong>
           <small>后续可继续增加</small>
         </article>
         <article class="overview-card">
@@ -59,10 +60,11 @@
       <section class="toolbar">
         <label>
           <span>搜索工具</span>
-          <input id="toolSearch" type="search" placeholder="例如：软考、招标、酒店、利润、税率">
+          <input id="toolSearch" type="search" placeholder="例如：BTC、软考、招标、酒店、利润、税率">
         </label>
         <div class="quick-links">
           <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="market">行情</button>
           <button class="filter" data-filter="study">学习</button>
           <button class="filter" data-filter="business">经营</button>
           <button class="filter" data-filter="engineering">工程</button>
@@ -78,6 +80,22 @@
         </div>
 
         <div id="toolGrid" class="tool-grid">
+          <a class="tool-card featured btc-card" href="apps/btc/" data-category="market business" data-keywords="BTC 比特币 行情 合约 K线 资金费率 持仓量 多空比 爆仓 语音提醒 技术分析">
+            <div class="icon btc">₿</div>
+            <div class="tool-body">
+              <div class="tool-head">
+                <span class="tag live">实时行情</span>
+                <span class="arrow">→</span>
+              </div>
+              <h3>BTC短线行情雷达 V1.1</h3>
+              <p>多周期趋势矩阵、K线指标、资金费率、持仓量、多空比、强平动态、关键价位和中文语音提醒。</p>
+              <div class="tool-stats">
+                <span>无需API密钥</span>
+                <span>只读行情 · 不自动下单</span>
+              </div>
+            </div>
+          </a>
+
           <a class="tool-card featured" href="apps/tender/" data-category="engineering business" data-keywords="招投标 招标 公告 霍邱 六安 工程 房建 市政 公路 水利">
             <div class="icon tender">标</div>
             <div class="tool-body">
@@ -89,7 +107,7 @@
               <p>筛选霍邱、六安公开招标工程，查看适配评分、预算、截止时间、收藏和跟进记录。</p>
               <div class="tool-stats">
                 <span id="tenderCardCount">项目读取中</span>
-                <span>每天09:00更新</span>
+                <span>每天09:17更新</span>
               </div>
             </div>
           </a>
@@ -148,12 +166,10 @@
           <p>换一个关键词试试。</p>
         </div>
       </section>
-
-    
     </main>
 
     <footer>
-      <span>KK万能工具箱 V1.0</span>
+      <span>KK万能工具箱 V1.1</span>
       <span>可随时继续扩展</span>
     </footer>
   </div>
