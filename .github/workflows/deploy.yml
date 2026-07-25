@@ -4,9 +4,15 @@ on:
   push:
     branches: ["main"]
   schedule:
-    # UTC 01:00 = 北京时间 09:00
-    - cron: "0 1 * * *"
+    # UTC 01:17 = 北京时间 09:17，避开整点拥堵
+    - cron: "17 1 * * *"
   workflow_dispatch:
+    inputs:
+      send_test:
+        description: "发送一条霍邱招标雷达微信测试消息"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,32 +46,67 @@ jobs:
       - name: 校验软考题库
         run: python apps/ruankao/scripts/validate_questions.py apps/ruankao/data/questions.json
 
-      - name: 定时更新招投标数据
+      - name: 安装 Chromium
+        if: github.event_name != 'push'
+        run: python -m playwright install --with-deps chromium
+
+      - name: 更新招投标数据
+        id: tender_fetch
         if: github.event_name != 'push'
         continue-on-error: true
         run: python apps/tender/scripts/fetch_tenders.py
 
-      - name: 保存自动更新数据
+      - name: 霍邱关键词监控与微信提醒
+        id: huoqiu_monitor
         if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          TENDER_FETCH_OUTCOME: ${{ steps.tender_fetch.outcome }}
+          SEND_TEST: ${{ inputs.send_test }}
+        run: |
+          EXTRA_ARGS=""
+          if [ "$SEND_TEST" = "true" ]; then
+            EXTRA_ARGS="--test"
+          fi
+          python apps/tender/scripts/monitor_huoqiu.py $EXTRA_ARGS
+
+      - name: 保存招投标数据和监控状态
+        if: github.event_name != 'push' && always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps/tender/data/projects.json apps/tender/data/meta.json
+          git add \
+            apps/tender/data/projects.json \
+            apps/tender/data/meta.json \
+            apps/tender/data/monitor_state.json \
+            apps/tender/data/monitor_status.json
           if git diff --cached --quiet; then
-            echo "没有数据变化"
+            echo "项目数据和监控状态均无变化"
           else
-            git commit -m "[skip ci] 自动更新招投标数据"
+            git commit -m "[skip ci] 更新招投标数据与霍邱监控状态"
             git push
           fi
 
       - name: 配置 GitHub Pages
+        if: always()
         uses: actions/configure-pages@v5
 
       - name: 上传网站文件
+        if: always()
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
 
       - name: 部署网站
+        if: always()
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 标记抓取或提醒失败
+        if: |
+          github.event_name != 'push' &&
+          (steps.tender_fetch.outcome == 'failure' || steps.huoqiu_monitor.outcome == 'failure')
+        run: |
+          echo "抓取或微信提醒存在失败；状态文件已经保存并部署到网页。"
+          exit 1
