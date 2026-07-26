@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "sourceUrl": "https://ggzy.luan.gov.cn/",
   "sourceSearchUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "sourceUrls": [
@@ -37,6 +37,6 @@
     "采购公告"
   ],
   "keepDays": 180,
-  "updateTime": "每天北京时间09:17",
+  "updateTime": "每天北京时间09:17和11:17",
   "toolboxPath": "../../"
 }

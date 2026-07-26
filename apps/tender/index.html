@@ -4,29 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#102a43">
-  <meta name="description" content="霍邱、六安公开招标工程信息看板">
+  <meta name="description" content="公开招标工程信息、公司资质匹配、截止提醒和投标进度管理">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-  <title>霍邱·六安招投标信息看板</title>
+  <title>招投标信息看板 V1.3</title>
 </head>
 <body>
   <div class="app-shell">
     <header class="hero">
       <div class="hero-inner">
         <div>
-          <a href="../../" style="display:inline-block;color:#fff;text-decoration:none;margin-bottom:10px;opacity:.9">← 返回万能工具箱</a><div class="eyebrow">每日自动更新 · 霍邱关键词监控 · 微信提醒</div>
-          <h1>霍邱·六安招投标信息看板</h1>
-          <p>只看公开招标工程：房建、市政、公路、水利。自动监控霍邱县新项目，并对重点工程关键词进行微信提醒。</p>
+          <a class="back-link" href="../../">← 返回KK万能工具箱</a>
+          <div class="eyebrow">每日自动更新 · 重点项目监控 · 微信提醒</div>
+          <h1>招投标信息看板</h1>
+          <p>公开招标工程筛选、公司资质匹配、截止提醒和投标进度管理。</p>
         </div>
         <div class="hero-actions">
+          <button id="companyBtn" class="btn btn-light">公司档案</button>
+          <button id="backupBtn" class="btn btn-light">备份数据</button>
           <button id="installBtn" class="btn btn-light hidden">安装到桌面</button>
           <button id="refreshBtn" class="btn btn-light">刷新数据</button>
         </div>
       </div>
       <div class="update-line">
         <span id="updateStatus">正在读取数据…</span>
-        <span id="sourceStatus">来源：六安市公共资源交易中心</span>
+        <span id="sourceStatus">来源：公共资源交易中心</span>
       </div>
     </header>
 
@@ -45,17 +48,22 @@
         <article class="metric">
           <span>7天内截止</span>
           <strong id="metricDeadline">—</strong>
-          <small>已识别截止时间</small>
+          <small>含手动设置截止时间</small>
         </article>
         <article class="metric">
           <span>高匹配项目</span>
           <strong id="metricHigh">—</strong>
-          <small>适配评分≥80分</small>
+          <small>公司匹配≥75分</small>
         </article>
-        <article class="metric monitor-metric">
-          <span>霍邱监控</span>
-          <strong id="metricMonitor">—</strong>
-          <small id="metricMonitorStatus">等待状态</small>
+        <article class="metric">
+          <span>正在跟进</span>
+          <strong id="metricTracking">—</strong>
+          <small>已进入投标流程</small>
+        </article>
+        <article class="metric reminder-metric">
+          <span>待办提醒</span>
+          <strong id="metricReminders">—</strong>
+          <small>7天内需要处理</small>
         </article>
       </section>
 
@@ -63,9 +71,10 @@
         <div class="panel-title">
           <div>
             <h2>筛选项目</h2>
-            <p>筛选结果只保存在当前页面，不会上传个人数据。</p>
+            <p>公司档案、跟进记录和待办数据只保存在当前浏览器。</p>
           </div>
           <div class="panel-actions">
+            <button id="notifyBtn" class="btn btn-ghost">开启浏览器提醒</button>
             <button id="resetBtn" class="btn btn-ghost">恢复默认</button>
             <button id="exportBtn" class="btn btn-primary">导出CSV</button>
           </div>
@@ -76,7 +85,6 @@
             <span>关键词</span>
             <input id="searchInput" type="search" placeholder="项目名称、地区、类别、资质关键词">
           </label>
-
           <label class="field">
             <span>时间范围</span>
             <select id="dateRange">
@@ -87,25 +95,30 @@
               <option value="90">近90天</option>
             </select>
           </label>
-
           <label class="field">
             <span>排序</span>
             <select id="sortSelect">
               <option value="dateDesc">最新发布</option>
-              <option value="scoreDesc">匹配度最高</option>
+              <option value="companyMatchDesc">公司匹配最高</option>
+              <option value="scoreDesc">原适配评分最高</option>
               <option value="deadlineAsc">截止时间最近</option>
               <option value="budgetDesc">预算金额最高</option>
             </select>
           </label>
-
           <label class="field">
             <span>项目状态</span>
             <select id="statusFilter">
               <option value="all">全部状态</option>
-              <option value="未跟进">未跟进</option>
-              <option value="重点关注">重点关注</option>
-              <option value="准备投标">准备投标</option>
-              <option value="暂不参与">暂不参与</option>
+              <option>待分析</option>
+              <option>重点关注</option>
+              <option>准备报名</option>
+              <option>已报名</option>
+              <option>商务标制作</option>
+              <option>技术标制作</option>
+              <option>保证金已缴</option>
+              <option>已上传</option>
+              <option>已开标</option>
+              <option>暂不参与</option>
             </select>
           </label>
         </div>
@@ -114,15 +127,14 @@
           <div class="filter-label">地区</div>
           <div id="regionChips" class="chips"></div>
         </div>
-
         <div class="filter-block">
           <div class="filter-label">行业</div>
           <div id="categoryChips" class="chips"></div>
         </div>
-
         <div class="toggle-row">
           <label><input id="constructionOnly" type="checkbox" checked> 施工优先（隐藏纯勘察、设计、监理、咨询）</label>
           <label><input id="favoriteOnly" type="checkbox"> 只看已收藏</label>
+          <label><input id="trackingOnly" type="checkbox"> 只看正在跟进</label>
         </div>
       </section>
 
@@ -134,12 +146,11 @@
               <p id="resultText">正在加载…</p>
             </div>
             <div class="legend">
-              <span><i class="dot high"></i>高匹配</span>
-              <span><i class="dot medium"></i>可关注</span>
-              <span><i class="dot low"></i>一般</span>
+              <span><i class="dot high"></i>公司高匹配</span>
+              <span><i class="dot medium"></i>需要核查</span>
+              <span><i class="dot low"></i>资料不足</span>
             </div>
           </div>
-
           <div id="projectList" class="project-list"></div>
           <div id="emptyState" class="empty hidden">
             <div class="empty-icon">⌕</div>
@@ -149,49 +160,55 @@
         </div>
 
         <aside class="side-column">
+          <section class="panel compact company-panel">
+            <div class="monitor-head">
+              <h3>公司档案</h3>
+              <button id="editCompanyBtn" class="text-btn">编辑</button>
+            </div>
+            <p id="companySummary" class="monitor-status-text">尚未填写公司档案</p>
+            <div class="monitor-facts">
+              <div><span>重点行业</span><b id="companyCategories">未设置</b></div>
+              <div><span>保证金上限</span><b id="companyGuarantee">未设置</b></div>
+              <div><span>垫资上限</span><b id="companyAdvance">未设置</b></div>
+            </div>
+          </section>
+
+          <section class="panel compact reminder-panel">
+            <div class="monitor-head">
+              <h3>截止与待办</h3>
+              <span id="reminderBadge" class="monitor-badge waiting">0项</span>
+            </div>
+            <div id="reminderList" class="reminder-list"></div>
+            <small class="monitor-note">收藏或进入跟进流程后，可在项目详情中设置负责人、下一步和自定义截止时间。</small>
+          </section>
+
           <section class="panel compact monitor-panel">
             <div class="monitor-head">
-              <h3>霍邱招标雷达</h3>
+              <h3>重点项目雷达</h3>
               <span id="monitorBadge" class="monitor-badge waiting">等待运行</span>
             </div>
             <p id="monitorStatusText" class="monitor-status-text">正在读取监控状态…</p>
             <div class="monitor-facts">
               <div><span>检查时间</span><b id="monitorLastCheck">暂无</b></div>
               <div><span>微信通知</span><b id="monitorChannel">待配置</b></div>
+              <div><span>匹配项目</span><b id="monitorMatched">0</b></div>
               <div><span>待推送</span><b id="monitorPending">0</b></div>
             </div>
             <div class="monitor-label">重点关键词</div>
             <div id="monitorKeywords" class="monitor-keywords"></div>
-            <small class="monitor-note">SendKey保存在GitHub Secrets，不会显示在网页或提交到仓库。</small>
           </section>
 
           <section class="panel compact">
             <h3>今日重点</h3>
             <div id="todayFocus" class="focus-list"></div>
           </section>
-
-          <section class="panel compact">
-            <h3>看板规则</h3>
-            <ul class="rule-list">
-              <li>只收录工程建设“招标公告”。</li>
-              <li>排除谈判、磋商、采购成交和中标结果。</li>
-              <li>类别限定为房建、市政、公路、水利。</li>
-              <li>评分是规则辅助，不代替招标文件审查。</li>
-            </ul>
-          </section>
-
-          <section class="panel compact">
-            <h3>快捷入口</h3>
-            <a class="source-link" href="https://ggzy.luan.gov.cn/" target="_blank" rel="noopener">六安市公共资源交易中心 ↗</a>
-            <a class="source-link" href="https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html" target="_blank" rel="noopener">官方交易查询 ↗</a>
-          </section>
         </aside>
       </section>
     </main>
 
     <footer>
-      <span>霍邱·六安招投标信息看板 V1.2</span>
-      <span>公开信息仅供筛选，投标前以原公告及招标文件为准。</span>
+      <span>招投标信息看板 V1.3</span>
+      <span>自动分析仅供筛选，投标前以原公告及招标文件为准。</span>
     </footer>
   </div>
 
@@ -204,7 +221,6 @@
         </div>
         <button class="icon-btn" value="cancel" aria-label="关闭">×</button>
       </div>
-
       <div id="dialogMeta" class="dialog-meta"></div>
       <div id="dialogFacts" class="facts-grid"></div>
 
@@ -214,32 +230,154 @@
       </div>
 
       <div class="dialog-section">
-        <h3>我的跟进记录</h3>
+        <h3>公司匹配分析</h3>
+        <div id="dialogCompanyMatch" class="match-box"></div>
+      </div>
+
+      <div class="dialog-section">
+        <h3>投标进度</h3>
+        <div class="form-grid">
+          <label class="field">
+            <span>跟进状态</span>
+            <select id="dialogStatus">
+              <option>待分析</option>
+              <option>重点关注</option>
+              <option>准备报名</option>
+              <option>已报名</option>
+              <option>商务标制作</option>
+              <option>技术标制作</option>
+              <option>保证金已缴</option>
+              <option>已上传</option>
+              <option>已开标</option>
+              <option>暂不参与</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>负责人</span>
+            <input id="dialogOwner" type="text" placeholder="例如：李经理">
+          </label>
+          <label class="field">
+            <span>下一步</span>
+            <input id="dialogNextAction" type="text" placeholder="例如：下载招标文件">
+          </label>
+          <label class="field">
+            <span>自定义截止时间</span>
+            <input id="dialogCustomDeadline" type="datetime-local">
+          </label>
+          <label class="field">
+            <span>预计保证金（万元）</span>
+            <input id="dialogGuarantee" type="number" min="0" step="0.01" placeholder="0">
+          </label>
+          <label class="field">
+            <span>预计垫资（万元）</span>
+            <input id="dialogAdvance" type="number" min="0" step="0.01" placeholder="0">
+          </label>
+        </div>
+      </div>
+
+      <div class="dialog-section">
+        <h3>投标准备清单</h3>
+        <div id="dialogChecklist" class="checklist">
+          <label><input type="checkbox" data-task="download"> 已下载招标文件</label>
+          <label><input type="checkbox" data-task="qualification"> 已核对资质和人员</label>
+          <label><input type="checkbox" data-task="guarantee"> 已安排保证金</label>
+          <label><input type="checkbox" data-task="business"> 商务标已完成</label>
+          <label><input type="checkbox" data-task="technical"> 技术标已完成</label>
+          <label><input type="checkbox" data-task="upload"> 已完成签章和上传</label>
+        </div>
+      </div>
+
+      <div class="dialog-section">
+        <h3>备注</h3>
         <label class="field">
-          <span>跟进状态</span>
-          <select id="dialogStatus">
-            <option>未跟进</option>
-            <option>重点关注</option>
-            <option>准备投标</option>
-            <option>暂不参与</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>备注</span>
-          <textarea id="dialogNote" rows="5" placeholder="例如：下载招标文件、核对资质、测算85%线、联系技术老师……"></textarea>
+          <textarea id="dialogNote" rows="5" placeholder="记录资质核查、报价测算、人员安排、风险事项等。"></textarea>
         </label>
       </div>
 
       <div class="dialog-actions">
         <button id="dialogFavorite" type="button" class="btn btn-ghost">收藏项目</button>
         <a id="dialogSource" class="btn btn-primary" href="#" target="_blank" rel="noopener">查看原公告</a>
-        <button id="saveNoteBtn" type="button" class="btn btn-dark">保存记录</button>
+        <button id="saveNoteBtn" type="button" class="btn btn-dark">保存项目记录</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="companyDialog">
+    <form method="dialog" class="dialog-card company-dialog">
+      <div class="dialog-head">
+        <div>
+          <span class="badge blue">本地保存</span>
+          <h2>公司资质档案</h2>
+        </div>
+        <button class="icon-btn" value="cancel" aria-label="关闭">×</button>
+      </div>
+      <div class="dialog-section top-section">
+        <div class="form-grid">
+          <label class="field full">
+            <span>公司名称</span>
+            <input id="companyNameInput" type="text" placeholder="例如：XX建设工程有限公司">
+          </label>
+          <label class="field full">
+            <span>企业资质与等级</span>
+            <textarea id="companyQualificationsInput" rows="4" placeholder="例如：建筑工程施工总承包二级、市政公用工程施工总承包二级、水利水电三级"></textarea>
+          </label>
+          <label class="field full">
+            <span>人员专业与等级</span>
+            <textarea id="companyPersonnelInput" rows="3" placeholder="例如：建筑一级建造师2人、市政二级建造师3人、水利二级建造师1人"></textarea>
+          </label>
+          <label class="field full">
+            <span>类似业绩关键词</span>
+            <textarea id="companyPerformanceInput" rows="3" placeholder="例如：高标准农田、道路、桥梁、厂房、产业园、河道治理"></textarea>
+          </label>
+          <label class="field">
+            <span>可承受保证金上限（万元）</span>
+            <input id="companyGuaranteeInput" type="number" min="0" step="1" placeholder="例如：100">
+          </label>
+          <label class="field">
+            <span>可承受垫资上限（万元）</span>
+            <input id="companyAdvanceInput" type="number" min="0" step="1" placeholder="例如：500">
+          </label>
+        </div>
+        <div class="filter-label company-category-label">重点参与行业</div>
+        <div id="companyCategoryChecks" class="category-checks">
+          <label><input type="checkbox" value="房建"> 房建</label>
+          <label><input type="checkbox" value="市政"> 市政</label>
+          <label><input type="checkbox" value="公路"> 公路</label>
+          <label><input type="checkbox" value="水利"> 水利</label>
+        </div>
+        <label class="field reminder-days-field">
+          <span>浏览器提醒提前天数</span>
+          <input id="companyReminderDaysInput" type="text" placeholder="例如：7,3,1">
+        </label>
+      </div>
+      <div class="dialog-actions">
+        <button id="clearCompanyBtn" type="button" class="btn btn-ghost">清空档案</button>
+        <button id="saveCompanyBtn" type="button" class="btn btn-dark">保存公司档案</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="backupDialog">
+    <form method="dialog" class="dialog-card backup-dialog">
+      <div class="dialog-head">
+        <div>
+          <span class="badge green">本地数据</span>
+          <h2>备份与恢复</h2>
+        </div>
+        <button class="icon-btn" value="cancel" aria-label="关闭">×</button>
+      </div>
+      <div class="dialog-section top-section">
+        <p class="backup-text">导出文件包含公司档案、收藏、跟进状态、负责人、待办和备注，不包含GitHub密钥。</p>
+        <div class="backup-actions">
+          <button id="exportBackupBtn" type="button" class="btn btn-primary">导出JSON备份</button>
+          <button id="importBackupBtn" type="button" class="btn btn-ghost">选择备份文件恢复</button>
+          <input id="importBackupFile" class="hidden" type="file" accept="application/json,.json">
+        </div>
       </div>
     </form>
   </dialog>
 
   <div id="toast" class="toast hidden"></div>
-
   <script src="assets/app.js" defer></script>
 </body>
 </html>
