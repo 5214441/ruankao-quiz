@@ -1,9 +1,9 @@
-const CACHE_NAME='ruankao-v3.5.0-static';
-const DATA_CACHE='ruankao-v3.5.0-data';
+const CACHE_NAME='ruankao-v3.5.1-static';
+const DATA_CACHE='ruankao-v3.5.1-data';
 const CORE=[
-  './','./index.html','./offline.html','./css/app.css','./js/storage.js','./js/app.js',
+  './','./index.html','./offline.html','./css/app.css?v=3.5.1','./js/storage.js?v=3.5.1','./js/app.js?v=3.5.1',
   './manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png',
-  './data/questions.json','./data/cases.json','./data/formulas.json','./data/version.json'
+  './data/questions.json?v=3.5.1','./data/cases.json','./data/formulas.json','./data/version.json'
 ];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>![CACHE_NAME,DATA_CACHE].includes(k)).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});

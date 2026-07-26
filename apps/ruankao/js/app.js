@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const APP_VERSION='3.5.0';
+const APP_VERSION='3.5.1';
 const REASONS=['完全不会','概念混淆','公式记错','计算错误','审题不仔细','随机猜测'];
 const MODE_NAMES={adaptive:'智能练习',random:'随机练习',category:'章节专项',wrong:'错题复习',favorite:'收藏题练习',formula:'计算专项',mock:'全真模拟',diagnostic:'能力摸底',shared:'固定试卷'};
 const REVIEW_INTERVALS=[1,3,7,14,30];
@@ -38,7 +38,7 @@ async function fetchJson(url,opts={}){const r=await fetch(url,opts);if(!r.ok)thr
 async function loadData(){
   try{
     const [questions,cases,formulas,version]=await Promise.all([
-      fetchJson('data/questions.json'),fetchJson('data/cases.json'),fetchJson('data/formulas.json'),fetchJson('data/version.json',{cache:'no-store'})
+      fetchJson('data/questions.json?v=3.5.1',{cache:'no-store'}),fetchJson('data/cases.json'),fetchJson('data/formulas.json'),fetchJson('data/version.json',{cache:'no-store'})
     ]);
     if(!Array.isArray(questions)||questions.length<50)throw new Error('题库格式异常');
     BANK=questions;CASES=cases;FORMULAS=formulas;VERSION=version;
