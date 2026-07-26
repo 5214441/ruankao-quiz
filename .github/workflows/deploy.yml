@@ -4,8 +4,11 @@ on:
   push:
     branches: ["main"]
   schedule:
-    # UTC 01:17 = 北京时间 09:17，避开整点拥堵
-    - cron: "17 1 * * *"
+  # 北京时间 09:17
+  - cron: "17 1 * * *"
+
+  # 北京时间 11:17，作为第二次兜底
+  - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       send_test:
