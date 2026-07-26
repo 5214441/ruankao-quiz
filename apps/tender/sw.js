@@ -1,7 +1,7 @@
-const CACHE_NAME="tender-board-v1.3.0";
+const CACHE_NAME="tender-board-v1.3.1";
 const STATIC_ASSETS=[
-  "./","index.html","assets/style.css","assets/app.js",
-  "config.json","manifest.webmanifest","icons/icon.svg"
+  "./","index.html","assets/style.css?v=131","assets/app.js?v=131",
+  "config.json","manifest.webmanifest?v=131","icons/icon.svg"
 ];
 const DATA_PATHS=["/data/projects.json","/data/meta.json","/data/monitor_status.json"];
 self.addEventListener("install",event=>{

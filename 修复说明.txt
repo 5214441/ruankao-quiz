@@ -1,0 +1,15 @@
+招投标信息看板 V1.3.1 缓存修复
+
+修复问题：
+新版HTML与浏览器缓存中的旧版app.js混用，导致：
+Cannot set properties of null (setting 'textContent')
+以及页面显示“数据加载失败”。
+
+上传方法：
+把解压后的 apps 文件夹上传到GitHub仓库根目录。
+
+建议提交说明：
+修复招投标看板旧缓存冲突
+
+部署完成后访问：
+https://5214441.github.io/ruankao-quiz/apps/tender/?v=131
