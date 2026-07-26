@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-六安市公共资源交易中心工程建设招标公告抓取器 V1.2
+六安市公共资源交易中心工程建设招标公告抓取器 V1.3.2
 
 修复重点：
 1. 不再只抓首页，优先访问“工程建设-招标公告”交易查询页。
 2. 普通 requests 提取不到列表时，自动使用 Playwright 渲染动态页面。
 3. 失败时保留旧项目，并把失败原因写入 meta.json。
 4. 记录每个来源的 HTTP 状态、页面长度、候选链接数量，方便排查。
+5. 详情页字段缺失时，使用 Playwright 渲染后再次解析招标编号、招标人和截止时间。
 """
 from __future__ import annotations
 
@@ -177,13 +178,25 @@ def extract_publish_date(text: str) -> str:
     return f"{year:04d}-{month:02d}-{day:02d}"
 
 
+def compact_datetime_text(text: str) -> str:
+    """修复网页排版导致的“0 9时3 0分”等数字断开。"""
+    value = normalize(text)
+    previous = None
+    while value != previous:
+        previous = value
+        value = re.sub(r"(?<=\d)\s+(?=\d)", "", value)
+        value = re.sub(r"(?<=\d)\s+(?=[年月日时分秒])", "", value)
+        value = re.sub(r"(?<=[年月日时分秒])\s+(?=\d)", "", value)
+    return value
+
+
 def parse_money(text: str):
     patterns = [
-        r"(?:最高投标限价|招标控制价|项目概算|预算金额|合同估算价|项目投资|总投资)[：:\s]*人民币?[约]?\s*([\d,.]+)\s*万元",
-        r"(?:最高投标限价|招标控制价|预算金额)[：:\s]*人民币?\s*([\d,.]+)\s*元",
+        r"(?:最高投标限价|招标控制价|项目概算|预算金额|合同估算价|项目投资|总投资)(?:金额)?[：:\s]*(?:为|约为|人民币|约)?\s*([\d,.]+)\s*万元",
+        r"(?:最高投标限价|招标控制价|预算金额)(?:金额)?[：:\s]*(?:为|人民币)?\s*([\d,.]+)\s*元",
     ]
     for index, pattern in enumerate(patterns):
-        match = re.search(pattern, text)
+        match = re.search(pattern, compact_datetime_text(text))
         if match:
             value = float(match.group(1).replace(",", ""))
             return round(value if index == 0 else value / 10000, 6)
@@ -193,31 +206,52 @@ def parse_money(text: str):
 def parse_deadline(text: str):
     contexts = []
     for pattern in (
-        r"(?:投标文件递交截止时间|投标截止时间|开标时间)[^。；\n]{0,100}",
-        r"(?:递交投标文件的截止时间)[^。；\n]{0,100}",
+        r"(?:开标时间与投标文件递交截止时间|投标文件递交截止时间|递交投标文件的截止时间|投标截止时间|开标时间)[^。；\n]{0,220}",
+        r"(?:获取时间)[^。；\n]{0,180}",
     ):
         contexts.extend(re.findall(pattern, text))
+
+    # 部分网页把同一句拆成多行，整页文本也作为最后兜底。
+    if not contexts:
+        contexts = [text]
+
+    date_pattern = re.compile(
+        r"(20\d{2})\s*[年\-/.]\s*(\d{1,2})\s*[月\-/.]\s*(\d{1,2})\s*日?"
+        r"(?:\s*[（(]?[星期一二三四五六日天]*[）)]?\s*)"
+        r"(\d{1,2})\s*[时:：]\s*(\d{1,2})?\s*分?"
+    )
     for chunk in contexts:
-        match = re.search(
-            r"(20\d{2})[年\-/](\d{1,2})[月\-/](\d{1,2})日?"
-            r"(?:\s*|\s*[（(]?[星期一二三四五六日天]*[）)]?\s*)"
-            r"(\d{1,2})[时:：](\d{1,2})?",
-            chunk,
+        match = date_pattern.search(compact_datetime_text(chunk))
+        if not match:
+            continue
+        year, month, day, hour, minute = match.groups()
+        minute = minute or "00"
+        return (
+            f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+            f"T{int(hour):02d}:{int(minute):02d}:00+08:00"
         )
-        if match:
-            year, month, day, hour, minute = match.groups()
-            minute = minute or "00"
-            return (
-                f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
-                f"T{int(hour):02d}:{int(minute):02d}:00+08:00"
-            )
     return None
 
 
 def extract_field(text: str, labels: list[str], max_len: int = 120):
-    label_group = "|".join(map(re.escape, labels))
-    match = re.search(rf"(?:{label_group})[：:\s]+([^\n。；]{{2,{max_len}}})", text)
-    return normalize(match.group(1))[:max_len] if match else ""
+    """同时兼容“标签：值”和标签、值分成两行的详情页。"""
+    lines = [normalize(line) for line in str(text or "").splitlines() if normalize(line)]
+    ordered_labels = sorted(labels, key=len, reverse=True)
+
+    for index, line in enumerate(lines):
+        for label in ordered_labels:
+            match = re.search(rf"{re.escape(label)}\s*[：:]?\s*(.*)$", line)
+            if not match:
+                continue
+            value = normalize(match.group(1)).strip("：:；;，,。 ")
+            if not value and index + 1 < len(lines):
+                value = lines[index + 1].strip("：:；;，,。 ")
+            # 避免把下一项的“地址”等标签误当成字段值。
+            if not value or value.startswith(("地址", "项目实施主体（招标人）地址", "项目实施主体(招标人)地址")):
+                continue
+            value = re.split(r"(?:\s+[一二三四五六七八九十]+、|\s+\d+[、.])", value, maxsplit=1)[0]
+            return normalize(value)[:max_len]
+    return ""
 
 
 def extract_qualification(text: str) -> str:
@@ -235,25 +269,130 @@ def extract_qualification(text: str) -> str:
     return "\n".join(dict.fromkeys(found))
 
 
+def parse_detail_text(text: str) -> dict:
+    return {
+        "budgetWan": parse_money(text),
+        "deadline": parse_deadline(text),
+        "projectCode": extract_field(
+            text,
+            ["招标项目编号", "交易项目编号", "项目编号", "招标编号"],
+        ),
+        "tenderer": extract_field(
+            text,
+            [
+                "项目实施主体（招标人）",
+                "项目实施主体(招标人)",
+                "招标人名称",
+                "项目实施主体",
+                "招标人",
+            ],
+        ),
+        "qualification": extract_qualification(text),
+        "detailText": text[:30000],
+        "detailTextLength": len(text),
+    }
+
+
 def detail_data(session: requests.Session, url: str) -> dict:
     try:
         response = session.get(url, timeout=TIMEOUT)
         response.raise_for_status()
         response.encoding = response.apparent_encoding or "utf-8"
         soup = BeautifulSoup(response.text, "html.parser")
-        text = soup.get_text("\n", strip=True)
-        return {
-            "budgetWan": parse_money(text),
-            "deadline": parse_deadline(text),
-            "projectCode": extract_field(text, ["项目编号", "招标项目编号"]),
-            "tenderer": extract_field(text, ["招标人", "项目实施主体"]),
-            "qualification": extract_qualification(text),
-            "detailText": text[:20000],
-            "detailTextLength": len(text),
-        }
+        return parse_detail_text(soup.get_text("\n", strip=True))
     except Exception as exc:
-        print(f"[WARN] 详情抓取失败：{url}：{exc}")
+        print(f"[WARN] 详情普通请求失败：{url}：{exc}")
         return {}
+
+
+def detail_needs_browser(details: dict) -> bool:
+    # 详情页常由 JavaScript 动态加载。三个核心字段有任意一个缺失时启用浏览器兜底。
+    return any(not details.get(key) for key in ("deadline", "projectCode", "tenderer"))
+
+
+class DetailRenderer:
+    """复用一个 Chromium 页面渲染多个详情页，避免每条公告重复启动浏览器。"""
+
+    def __init__(self):
+        self.playwright = None
+        self.browser = None
+        self.context = None
+        self.page = None
+        self.disabled_reason = ""
+
+    def start(self) -> bool:
+        if self.page:
+            return True
+        if self.disabled_reason:
+            return False
+        try:
+            from playwright.sync_api import sync_playwright
+
+            self.playwright = sync_playwright().start()
+            self.browser = self.playwright.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+            )
+            self.context = self.browser.new_context(
+                locale="zh-CN",
+                user_agent=HEADERS["User-Agent"],
+                ignore_https_errors=True,
+                viewport={"width": 1440, "height": 1200},
+            )
+            self.page = self.context.new_page()
+            return True
+        except Exception as exc:
+            self.disabled_reason = f"{type(exc).__name__}: {exc}"
+            print(f"[WARN] 详情页浏览器兜底不可用：{self.disabled_reason}")
+            self.close()
+            return False
+
+    def fetch(self, url: str) -> dict:
+        if not self.start():
+            return {}
+        try:
+            self.page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            body_text = ""
+            for _ in range(8):
+                self.page.wait_for_timeout(900)
+                body_text = self.page.locator("body").inner_text(timeout=15000)
+                if (
+                    len(body_text) >= 800
+                    and any(label in body_text for label in ("招标编号", "项目编号", "项目实施主体", "招标人"))
+                ):
+                    break
+            if len(body_text) < 200:
+                return {}
+            return parse_detail_text(body_text)
+        except Exception as exc:
+            print(f"[WARN] 详情浏览器渲染失败：{url}：{type(exc).__name__}: {exc}")
+            return {}
+
+    def close(self) -> None:
+        for resource in (self.page, self.context, self.browser):
+            try:
+                if resource:
+                    resource.close()
+            except Exception:
+                pass
+        self.page = self.context = self.browser = None
+        try:
+            if self.playwright:
+                self.playwright.stop()
+        except Exception:
+            pass
+        self.playwright = None
+
+
+def merge_detail_data(primary: dict, rendered: dict) -> dict:
+    merged = dict(primary or {})
+    for key in ("budgetWan", "deadline", "projectCode", "tenderer", "qualification"):
+        if rendered.get(key):
+            merged[key] = rendered[key]
+    if rendered.get("detailTextLength", 0) > merged.get("detailTextLength", 0):
+        merged["detailText"] = rendered.get("detailText", "")
+        merged["detailTextLength"] = rendered.get("detailTextLength", 0)
+    return merged
 
 
 def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> dict | None:
@@ -439,53 +578,61 @@ def build_projects(
 ) -> list[dict]:
     output = []
     seen = set()
+    renderer = DetailRenderer()
 
     # 查询页通常按时间倒序，避免对站点造成过多请求。
-    for candidate in candidates[:MAX_CANDIDATES]:
-        title = candidate["title"]
-        context = candidate["context"]
-        if any(term in f"{title} {context}" for term in excluded):
-            continue
+    try:
+        for candidate in candidates[:MAX_CANDIDATES]:
+            title = candidate["title"]
+            context = candidate["context"]
+            if any(term in f"{title} {context}" for term in excluded):
+                continue
 
-        details = detail_data(session, candidate["url"])
-        combined_text = normalize(f"{title} {context} {details.get('detailText', '')}")
-        category = infer_category(combined_text)
-        if not category or category not in allowed_categories:
-            continue
+            details = detail_data(session, candidate["url"])
+            if detail_needs_browser(details):
+                rendered = renderer.fetch(candidate["url"])
+                details = merge_detail_data(details, rendered)
+            combined_text = normalize(f"{title} {context} {details.get('detailText', '')}")
+            category = infer_category(combined_text)
+            if not category or category not in allowed_categories:
+                continue
 
-        region = candidate["region"]
-        if region == "未知地区":
-            region = parse_region(combined_text)
-        if allowed_regions and region not in allowed_regions:
-            continue
+            region = candidate["region"]
+            if region == "未知地区":
+                region = parse_region(combined_text)
+            if allowed_regions and region not in allowed_regions:
+                continue
 
-        item_id = stable_id(candidate["url"], title)
-        if item_id in seen:
-            continue
-        seen.add(item_id)
+            item_id = stable_id(candidate["url"], title)
+            if item_id in seen:
+                continue
+            seen.add(item_id)
 
-        item = {
-            "id": item_id,
-            "title": title,
-            "region": region,
-            "category": category,
-            "publishDate": candidate["publishDate"],
-            "deadline": details.get("deadline"),
-            "budgetWan": details.get("budgetWan"),
-            "score": 0,
-            "summary": "自动抓取的六安市公共资源交易中心工程建设招标公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
-            "qualification": details.get("qualification", ""),
-            "tenderer": details.get("tenderer", ""),
-            "projectCode": details.get("projectCode", ""),
-            "url": candidate["url"],
-            "sourceName": "六安市公共资源交易中心",
-            "isEpc": "EPC" in title.upper(),
-            "isSecond": "二次" in title or "第二次" in title,
-            "type": "工程建设公开招标",
-        }
-        item["score"] = compute_score(item)
-        output.append(item)
-        time.sleep(0.18)
+            item = {
+                "id": item_id,
+                "title": title,
+                "region": region,
+                "category": category,
+                "publishDate": candidate["publishDate"],
+                "deadline": details.get("deadline"),
+                "budgetWan": details.get("budgetWan"),
+                "score": 0,
+                "summary": "自动抓取的六安市公共资源交易中心工程建设招标公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+                "qualification": details.get("qualification", ""),
+                "tenderer": details.get("tenderer", ""),
+                "projectCode": details.get("projectCode", ""),
+                "url": candidate["url"],
+                "sourceName": "六安市公共资源交易中心",
+                "isEpc": "EPC" in title.upper(),
+                "isSecond": "二次" in title or "第二次" in title,
+                "type": "工程建设公开招标",
+            }
+            item["score"] = compute_score(item)
+            output.append(item)
+            time.sleep(0.18)
+
+    finally:
+        renderer.close()
 
     output.sort(key=lambda item: item.get("publishDate", ""), reverse=True)
     return output
@@ -563,7 +710,7 @@ def main() -> int:
         merged, new_count = merge(old_projects, fresh, int(config.get("keepDays", 180)))
         write_json(PROJECTS_FILE, merged)
         meta = {
-            "version": "1.2.0",
+            "version": "1.3.2",
             "success": True,
             "updatedAt": now_iso(),
             "lastAttemptAt": now_iso(),
@@ -574,7 +721,7 @@ def main() -> int:
             "count": len(merged),
             "newCount": new_count,
             "status": f"自动更新成功，本次新增 {new_count} 个项目",
-            "updateSchedule": "每天北京时间09:17",
+            "updateSchedule": "每天北京时间09:17和11:17",
             "sourceDiagnostics": diagnostics[-8:],
         }
         write_json(META_FILE, meta)
@@ -585,12 +732,12 @@ def main() -> int:
         # 保留 projects.json，只更新 meta.json 让页面和 Actions 都能看见失败原因。
         meta = dict(old_meta)
         meta.update({
-            "version": "1.2.0",
+            "version": "1.3.2",
             "success": False,
             "lastAttemptAt": now_iso(),
             "lastAttemptStatus": f"自动更新失败，已保留旧数据：{exc}",
             "status": "今日自动抓取失败，页面当前显示上一次成功数据",
-            "updateSchedule": "每天北京时间09:17",
+            "updateSchedule": "每天北京时间09:17和11:17",
             "sourceDiagnostics": diagnostics[-8:],
         })
         write_json(META_FILE, meta)
