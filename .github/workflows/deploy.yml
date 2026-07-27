@@ -3,12 +3,14 @@ name: 更新并部署柱子万能工具箱
 on:
   push:
     branches: ["main"]
-  schedule:
-  # 北京时间 09:17
-  - cron: "17 1 * * *"
 
-  # 北京时间 11:17，作为第二次兜底
-  - cron: "17 3 * * *"
+  schedule:
+    # 北京时间 09:17
+    - cron: "17 1 * * *"
+
+    # 北京时间 11:17
+    - cron: "17 3 * * *"
+
   workflow_dispatch:
     inputs:
       send_test:
