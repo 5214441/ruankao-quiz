@@ -2,8 +2,8 @@
   "version": "1.2.0",
   "enabled": true,
   "channelConfigured": true,
-  "status": "test_ok",
-  "statusText": "微信测试消息发送成功",
+  "status": "sent",
+  "statusText": "已推送 2 个霍邱新项目",
   "scheduleText": "每天北京时间09:17",
   "keywords": [
     "土地复垦",
@@ -30,8 +30,8 @@
     "霍邱县",
     "霍邱"
   ],
-  "lastCheckAt": "2026-07-27T15:39:28+08:00",
-  "matchedProjectCount": 4,
+  "lastCheckAt": "2026-07-28T12:29:25+08:00",
+  "matchedProjectCount": 6,
   "pendingCount": 0,
-  "lastNotificationAt": "2026-07-27T15:39:28+08:00"
+  "lastNotificationAt": "2026-07-28T12:29:25+08:00"
 }
