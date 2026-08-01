@@ -2,18 +2,19 @@
   "version": "1.2.0",
   "bootstrapped": true,
   "knownProjectIds": [
-    "dd086a08-9a56-48be-af87-f22d929f330a",
-    "17b4910d-1829-425e-ba88-df6f6da27e1a",
     "ae3eb0d9-01ef-475b-a0c4-ed3bd725f20a",
-    "57d0a296-0480-4948-83da-7c6e49a54bc7",
+    "4c265dd8-c901-49a8-b325-4b6dfe1d745d",
     "6b8a67a5-d642-4c8a-a91c-0600f519afe3",
+    "17b4910d-1829-425e-ba88-df6f6da27e1a",
     "de76a5c4-cd8e-4b0a-93e3-3c691566c918",
-    "4c265dd8-c901-49a8-b325-4b6dfe1d745d"
+    "57d0a296-0480-4948-83da-7c6e49a54bc7",
+    "c209ea4c-450d-4eaa-9cb8-c4c3ae2467bd",
+    "dd086a08-9a56-48be-af87-f22d929f330a"
   ],
-  "lastNotificationAt": "2026-07-31T12:41:19+08:00",
+  "lastNotificationAt": "2026-08-01T12:37:25+08:00",
   "lastFailureAlertDate": null,
   "lastBootstrapAt": "2026-07-25T14:02:42+08:00",
   "lastNotificationProjectIds": [
-    "ae3eb0d9-01ef-475b-a0c4-ed3bd725f20a"
+    "c209ea4c-450d-4eaa-9cb8-c4c3ae2467bd"
   ]
 }
