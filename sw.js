@@ -1,19 +1,5 @@
-const CACHE="toolbox-v1.1.0";
-const CORE=[
-  "./","index.html","assets/portal.css","assets/portal.js","manifest.webmanifest","icons/toolbox.svg",
-  "apps/btc/","apps/btc/index.html","apps/btc/assets/style.css","apps/btc/assets/app.js","apps/btc/config.json"
-];
-self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)));self.skipWaiting()});
-self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE&&!x.startsWith("ruankao-")&&!x.startsWith("luan-tender")).map(x=>caches.delete(x)))));self.clients.claim()});
-self.addEventListener("fetch",e=>{
-  if(e.request.method!=="GET")return;
-  const u=new URL(e.request.url);
-  if(u.origin!==location.origin)return;
-  if(e.request.mode==="navigate"){
-    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request).then(r=>r||caches.match("./index.html"))));
-    return;
-  }
-  if(CORE.some(x=>u.pathname.endsWith(x.replace("./","")))){
-    e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));
-  }
-});
+const CACHE="toolbox-v1.2.0";
+const CORE=["./","index.html","assets/portal.css","assets/portal.js","manifest.webmanifest","icons/toolbox.svg"];
+self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting()});
+self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith("toolbox-")&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
+self.addEventListener("fetch",event=>{const request=event.request;if(request.method!=="GET")return;const url=new URL(request.url);if(url.origin!==location.origin)return;if(request.mode==="navigate"){event.respondWith(fetch(request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put("./index.html",copy));return response}).catch(()=>caches.match("./index.html")));return}const isCore=CORE.some(path=>url.pathname.endsWith(path.replace("./","")));if(!isCore)return;event.respondWith(caches.match(request,{ignoreSearch:true}).then(cached=>{const network=fetch(request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy));return response}).catch(()=>cached);return cached||network}))});

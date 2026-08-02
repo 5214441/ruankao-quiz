@@ -3,178 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#102a43">
-  <meta name="description" content="软考、招投标、酒店经营、工程计算和BTC行情监测一站式静态工具箱">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="KK万能工具箱：BTC行情、招投标、智能备考、酒店经营和工程计算。">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/toolbox.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/portal.css">
+  <link rel="stylesheet" href="assets/portal.css?v=1.2.0">
   <title>KK万能工具箱</title>
 </head>
 <body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./" aria-label="KK万能工具箱首页">
+        <span class="brand-mark">KK</span>
+        <span class="brand-copy"><b>万能工具箱</b><small>PROJECT HUB</small></span>
+      </a>
+      <div class="topbar-actions">
+        <button id="installBtn" class="top-action hidden" type="button">安装应用</button>
+        <button id="themeBtn" class="theme-button" type="button" aria-label="切换显示模式"><span class="theme-icon">◐</span><span class="theme-text">深色模式</span></button>
+      </div>
+    </div>
+  </header>
+
   <div class="shell">
-    <header class="hero">
-      <div class="hero-main">
-        <div>
-          <div class="eyebrow">ONE REPOSITORY · ONE WEBSITE</div>
-          <h1>KK万能工具箱</h1>
-          <p>软考备考、招投标信息、酒店经营、工程计算和BTC行情监测</p>
-        </div>
-        <div class="hero-actions">
-          <button id="installBtn" class="btn btn-light hidden">安装到桌面</button>
-          <button id="themeBtn" class="btn btn-light">切换深色</button>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-label"><span></span> KK DIGITAL WORKSPACE</div>
+        <h1>一个入口，管理全部工具</h1>
+        <p>把行情监控、招投标、学习备考、酒店经营和工程计算集中到同一个工作台。</p>
+        <div class="hero-chips">
+          <span><i></i> 5个项目已上线</span><span><i></i> 招投标每日更新</span><span><i></i> BTC实时行情</span><span><i></i> 手机与电脑通用</span>
         </div>
       </div>
-      <div class="hero-meta">
-        <span>纯静态网页</span>
-        <span>本地保存数据</span>
-        <span>手机与电脑通用</span>
-        <span>招投标每日自动更新</span>
-        <span>BTC实时行情</span>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div>
+        <div class="visual-core"><span>KK</span><small>TOOLBOX</small></div>
+        <div class="visual-dot dot-one"></div><div class="visual-dot dot-two"></div><div class="visual-dot dot-three"></div>
       </div>
-    </header>
+    </section>
 
     <main>
-      <section class="overview">
-        <article class="overview-card">
-          <span>已启用模块</span>
-          <strong>5</strong>
-          <small>后续模块更新中</small>
-        </article>
-        <article class="overview-card">
-          <span>软考题库</span>
-          <strong id="questionCount">—</strong>
-          <small id="questionVersion">正在读取</small>
-        </article>
-        <article class="overview-card">
-          <span>招标项目</span>
-          <strong id="tenderCount">—</strong>
-          <small id="tenderUpdated">正在读取</small>
-        </article>
-        <article class="overview-card">
-          <span>本地数据</span>
-          <strong>私密</strong>
-          <small>不上传个人记录</small>
-        </article>
+      <section class="overview" aria-label="工具箱概览">
+        <article class="overview-card"><div class="overview-icon indigo">◫</div><div><span>已上线项目</span><strong id="moduleCount">5</strong><small>持续增加新板块</small></div></article>
+        <article class="overview-card"><div class="overview-icon emerald">标</div><div><span>招标项目</span><strong id="tenderCount">—</strong><small id="tenderUpdated">正在读取</small></div></article>
+        <article class="overview-card"><div class="overview-icon blue">考</div><div><span>软考题库</span><strong id="questionCount">—</strong><small id="questionVersion">正在读取</small></div></article>
+        <article class="overview-card"><div class="overview-icon amber">✓</div><div><span>服务状态</span><strong class="status-text">正常</strong><small>全部项目可访问</small></div></article>
       </section>
 
-      <section class="toolbar">
-        <label>
-          <span>搜索工具</span>
-          <input id="toolSearch" type="search" placeholder="例如：BTC、软考、招标、酒店、利润、税率">
-        </label>
-        <div class="quick-links">
-          <button class="filter active" data-filter="all">全部</button>
-          <button class="filter" data-filter="market">行情</button>
-          <button class="filter" data-filter="study">学习</button>
-          <button class="filter" data-filter="business">经营</button>
-          <button class="filter" data-filter="engineering">工程</button>
+      <section class="control-panel">
+        <div class="search-wrap"><label for="toolSearch">搜索项目</label><div class="search-box"><span class="search-icon">⌕</span><input id="toolSearch" type="search" placeholder="搜索BTC、招标、软考、酒店、利润……"></div></div>
+        <div class="filters" aria-label="项目分类">
+          <button class="filter active" type="button" data-filter="all">全部</button><button class="filter" type="button" data-filter="market">行情</button><button class="filter" type="button" data-filter="study">学习</button><button class="filter" type="button" data-filter="business">经营</button><button class="filter" type="button" data-filter="engineering">工程</button>
         </div>
       </section>
 
-      <section>
-        <div class="section-title">
-          <div>
-            <h2>工具应用</h2>
-            <p>点击卡片即可进入。</p>
-          </div>
-        </div>
-
+      <section class="projects-section">
+        <div class="section-heading"><div><span class="section-kicker">PROJECTS</span><h2>项目中心</h2><p>选择一个项目，进入对应工作台。</p></div><span class="section-count">共 5 个项目</span></div>
         <div id="toolGrid" class="tool-grid">
-          <a class="tool-card featured btc-card" href="apps/btc/" data-category="market business" data-keywords="BTC 比特币 行情 合约 K线 资金费率 持仓量 多空比 爆仓 语音提醒 技术分析">
-            <div class="icon btc">₿</div>
-            <div class="tool-body">
-              <div class="tool-head">
-                <span class="tag live">实时行情</span>
-                <span class="arrow">→</span>
-              </div>
-              <h3>BTC短线行情雷达 V1.1</h3>
-              <p>多周期趋势矩阵、K线指标、资金费率、持仓量、多空比、强平动态、关键价位和中文语音提醒。</p>
-              <div class="tool-stats">
-                <span>无需API密钥</span>
-                <span>只读行情 · 不自动下单</span>
-              </div>
-            </div>
+          <a class="tool-card btc-card" href="apps/btc/" data-category="market business" data-keywords="BTC 比特币 行情 合约 K线 资金费率 持仓量 多空比 爆仓 语音提醒 技术分析">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon btc">₿</div><div class="card-badges"><span class="badge live"><i></i> 实时行情</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">MARKET · 01</span><h3>BTC短线行情雷达</h3><p>多周期趋势、K线指标、资金费率、持仓量、多空比、强平动态和中文语音提醒。</p></div>
+            <div class="card-footer"><span>实时数据</span><span>只读行情</span><b>进入项目</b></div>
           </a>
 
-          <a class="tool-card featured" href="apps/tender/" data-category="engineering business" data-keywords="招投标 招标 公告 霍邱 六安 工程 房建 市政 公路 水利">
-            <div class="icon tender">标</div>
-            <div class="tool-body">
-              <div class="tool-head">
-                <span class="tag live">自动更新</span>
-                <span class="arrow">→</span>
-              </div>
-              <h3>招投标信息看板</h3>
-              <p>筛选霍邱、六安公开招标工程，查看适配评分、预算、截止时间、收藏和跟进记录。</p>
-              <div class="tool-stats">
-                <span id="tenderCardCount">项目读取中</span>
-                <span>每天09:17更新</span>
-              </div>
-            </div>
+          <a class="tool-card tender-card" href="apps/tender/" data-category="engineering business" data-keywords="招投标 招标 公告 霍邱 六安 工程 房建 市政 公路 水利">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon tender">标</div><div class="card-badges"><span class="badge live"><i></i> 自动更新</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">TENDER · 02</span><h3>招投标信息看板</h3><p>筛选六安、霍邱公开招标工程，查看评分、预算、截止时间、收藏和跟进状态。</p></div>
+            <div class="card-footer"><span id="tenderCardCount">项目读取中</span><span>每日自动更新</span><b>进入项目</b></div>
           </a>
 
-          <a class="tool-card" href="apps/ruankao/" data-category="study" data-keywords="软考 系统集成 项目管理 题库 模拟考试 错题 案例">
-            <div class="icon exam">考</div>
-            <div class="tool-body">
-              <div class="tool-head">
-                <span class="tag">学习工具</span>
-                <span class="arrow">→</span>
-              </div>
-              <h3>柱子专用智能备考</h3>
-              <p>智能练习、章节专项、模拟考试、错题复习、案例评分、公式卡和学习趋势。</p>
-              <div class="tool-stats">
-                <span id="examCardCount">题库读取中</span>
-                <span>本地学习记录</span>
-              </div>
-            </div>
+          <a class="tool-card exam-card" href="apps/ruankao/" data-category="study" data-keywords="软考 系统集成 项目管理 题库 模拟考试 错题 案例">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon exam">考</div><div class="card-badges"><span class="badge">智能学习</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">STUDY · 03</span><h3>智能备考中心</h3><p>智能练习、章节专项、模拟考试、错题复习、案例评分、公式卡和学习趋势。</p></div>
+            <div class="card-footer"><span id="examCardCount">题库读取中</span><span>智能练习</span><b>进入项目</b></div>
           </a>
 
-          <a class="tool-card" href="apps/hotel/" data-category="business" data-keywords="酒店 房价 入住率 ADR RevPAR 利润 动态定价 经营">
-            <div class="icon hotel">店</div>
-            <div class="tool-body">
-              <div class="tool-head">
-                <span class="tag new">新增</span>
-                <span class="arrow">→</span>
-              </div>
-              <h3>酒店经营助手</h3>
-              <p>计算入住率、ADR、RevPAR、经营利润、保本入住率，并根据入住率和竞品价生成调价建议。</p>
-              <div class="tool-stats">
-                <span>经营测算</span>
-                <span>本地历史记录</span>
-              </div>
-            </div>
+          <a class="tool-card hotel-card" href="apps/hotel/" data-category="business" data-keywords="酒店 房价 入住率 ADR RevPAR 利润 动态定价 经营">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon hotel">店</div><div class="card-badges"><span class="badge new">经营工具</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">BUSINESS · 04</span><h3>酒店经营助手</h3><p>测算入住率、ADR、RevPAR、经营利润和保本入住率，并生成动态调价建议。</p></div>
+            <div class="card-footer"><span>经营测算</span><span>房价建议</span><b>进入项目</b></div>
           </a>
 
-          <a class="tool-card" href="apps/engineering/" data-category="engineering business" data-keywords="工程 投标 报价 税率 利润 保证金 进度款 质保金 大写 日期">
-            <div class="icon engineering">算</div>
-            <div class="tool-body">
-              <div class="tool-head">
-                <span class="tag new">新增</span>
-                <span class="arrow">→</span>
-              </div>
-              <h3>工程常用计算</h3>
-              <p>含税换算、利润率、投标报价线、保证金、进度款、质保金、人民币大写和工期日期计算。</p>
-              <div class="tool-stats">
-                <span>8类计算器</span>
-                <span>无需联网</span>
-              </div>
-            </div>
+          <a class="tool-card engineering-card" href="apps/engineering/" data-category="engineering business" data-keywords="工程 投标 报价 税率 利润 保证金 进度款 质保金 大写 日期">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon engineering">算</div><div class="card-badges"><span class="badge new">快捷计算</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">ENGINEERING · 05</span><h3>工程常用计算</h3><p>含税换算、利润率、投标报价线、保证金、进度款、质保金和工期日期计算。</p></div>
+            <div class="card-footer"><span>8类计算器</span><span>快速测算</span><b>进入项目</b></div>
           </a>
+
+          <article class="tool-card coming-card" aria-label="更多项目建设中"><div class="coming-inner"><div class="coming-icon">＋</div><span class="project-code">NEXT PROJECT</span><h3>下一个项目</h3><p>新的独立项目板块将在这里继续加入。</p><span class="coming-status">规划中</span></div></article>
         </div>
-
-        <div id="emptyState" class="empty hidden">
-          <h3>没有找到相关工具</h3>
-          <p>换一个关键词试试。</p>
-        </div>
+        <div id="emptyState" class="empty hidden"><div class="empty-icon">⌕</div><h3>没有找到相关项目</h3><p>换一个关键词或分类试试。</p></div>
       </section>
     </main>
 
-    <footer>
-      <span>KK万能工具箱 V1.1</span>
-      <span>可随时继续扩展</span>
-    </footer>
+    <footer><div><b>KK万能工具箱</b><span>把常用项目集中到一个入口</span></div><span>V1.2 · PROJECT HUB</span></footer>
   </div>
-
   <div id="toast" class="toast hidden"></div>
-  <script src="assets/portal.js" defer></script>
+  <script src="assets/portal.js?v=1.2.0" defer></script>
 </body>
 </html>
