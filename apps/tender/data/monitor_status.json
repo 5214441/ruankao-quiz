@@ -2,8 +2,8 @@
   "version": "1.2.0",
   "enabled": true,
   "channelConfigured": true,
-  "status": "no_new",
-  "statusText": "本次未发现新的霍邱项目",
+  "status": "sent",
+  "statusText": "已推送 1 个霍邱新项目",
   "scheduleText": "每天北京时间09:17",
   "keywords": [
     "土地复垦",
@@ -30,8 +30,8 @@
     "霍邱县",
     "霍邱"
   ],
-  "lastCheckAt": "2026-08-18T12:04:53+08:00",
-  "matchedProjectCount": 15,
+  "lastCheckAt": "2026-08-19T10:37:24+08:00",
+  "matchedProjectCount": 16,
   "pendingCount": 0,
-  "lastNotificationAt": "2026-08-18T10:24:16+08:00"
+  "lastNotificationAt": "2026-08-19T10:37:24+08:00"
 }
