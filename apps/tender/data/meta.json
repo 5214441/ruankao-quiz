@@ -1,15 +1,15 @@
 {
   "version": "1.3.2",
   "success": true,
-  "updatedAt": "2026-08-26T12:08:41+08:00",
-  "lastAttemptAt": "2026-08-26T12:08:41+08:00",
-  "lastAttemptStatus": "自动更新成功：抓取 17 条，本次新增 0 条。",
+  "updatedAt": "2026-08-27T19:13:49+08:00",
+  "lastAttemptAt": "2026-08-27T19:13:49+08:00",
+  "lastAttemptStatus": "自动更新成功：抓取 17 条，本次新增 7 条。",
   "sourceName": "六安市公共资源交易中心",
   "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "usedSource": "requests",
-  "count": 85,
-  "newCount": 0,
-  "status": "自动更新成功，本次新增 0 个项目",
+  "count": 92,
+  "newCount": 7,
+  "status": "自动更新成功，本次新增 7 个项目",
   "updateSchedule": "每天北京时间09:17和11:17",
   "sourceDiagnostics": [
     {
@@ -23,7 +23,7 @@
       "mode": "requests",
       "url": "https://ggzy.luan.gov.cn/",
       "httpStatus": 200,
-      "bytes": 505746,
+      "bytes": 507004,
       "candidateCount": 17
     }
   ]
