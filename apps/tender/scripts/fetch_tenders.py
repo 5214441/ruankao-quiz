@@ -745,7 +745,7 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
         previous = old_map.get(item["id"], {})
         if not previous:
             new_count += 1
-        for key in ("budgetWan", "deadline", "openingTime", "qualification", "tenderer", "projectCode", "summary"):
+        for key in ("budgetWan", "deadline", "openingTime", "openingTimeCheckedAt", "qualification", "tenderer", "projectCode", "summary"):
             if not item.get(key) and previous.get(key):
                 item[key] = previous[key]
         old_map[item["id"]] = item
@@ -764,6 +764,54 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
     return merged, new_count
 
 
+def backfill_opening_times(projects: list[dict], limit: int = 6) -> tuple[int, int]:
+    """Recheck recent Huoqiu notices; never guess unpublished opening times."""
+    session = make_session()
+    renderer = DetailRenderer()
+    checked = 0
+    resolved = 0
+    today = datetime.now(CN_TZ)
+    cutoff = today.date() - timedelta(days=90)
+    try:
+        for item in projects:
+            if checked >= limit:
+                break
+            if item.get("region") != "霍邱县" or item.get("openingTime"):
+                continue
+            url = str(item.get("url") or "")
+            if not url.startswith("https://ggzy.luan.gov.cn/"):
+                continue
+            try:
+                date = datetime.fromisoformat(str(item.get("publishDate"))).date()
+            except (ValueError, TypeError):
+                continue
+            if date < cutoff:
+                continue
+            last_checked = item.get("openingTimeCheckedAt")
+            if last_checked:
+                try:
+                    if today - datetime.fromisoformat(last_checked) < timedelta(days=7):
+                        continue
+                except (ValueError, TypeError):
+                    pass
+            checked += 1
+            try:
+                parsed = detail_data(session, url)
+                opening_time = parsed.get("openingTime")
+                if not opening_time:
+                    opening_time = renderer.fetch(url).get("openingTime")
+                if opening_time:
+                    item["openingTime"] = opening_time
+                    resolved += 1
+            except Exception as exc:
+                print(f"[WARN] 回查开标时间失败：{url}：{exc}")
+            item["openingTimeCheckedAt"] = now_iso()
+    finally:
+        renderer.close()
+        session.close()
+    return checked, resolved
+
+
 def main() -> int:
     config = load_json(CONFIG_FILE, {})
     old_projects = load_json(PROJECTS_FILE, [])
@@ -773,9 +821,15 @@ def main() -> int:
     try:
         fresh, diagnostics, used_source = scrape()
         merged, new_count = merge(old_projects, fresh, int(config.get("keepDays", 180)))
+        try:
+            checked, resolved = backfill_opening_times(merged)
+            print(f"[INFO] 旧项目开标时间回查：检查 {checked} 条，识别 {resolved} 条。")
+        except Exception as exc:
+            checked = resolved = 0
+            print(f"[WARN] 旧项目开标时间回查异常，不影响主抓取：{exc}")
         write_json(PROJECTS_FILE, merged)
         meta = {
-            "version": "1.3.2",
+            "version": "2.1.0",
             "success": True,
             "updatedAt": now_iso(),
             "lastAttemptAt": now_iso(),
@@ -788,6 +842,8 @@ def main() -> int:
             "status": f"自动更新成功，本次新增 {new_count} 个项目",
             "updateSchedule": "每天北京时间09:17和11:17",
             "sourceDiagnostics": diagnostics[-8:],
+            "openingTimeBackfillChecked": checked,
+            "openingTimeBackfillResolved": resolved,
         }
         write_json(META_FILE, meta)
         print(f"[OK] 抓取 {len(fresh)} 条，合并后 {len(merged)} 条，新增 {new_count} 条")
@@ -797,7 +853,7 @@ def main() -> int:
         # 保留 projects.json，只更新 meta.json 让页面和 Actions 都能看见失败原因。
         meta = dict(old_meta)
         meta.update({
-            "version": "1.3.2",
+            "version": "2.1.0",
             "success": False,
             "lastAttemptAt": now_iso(),
             "lastAttemptStatus": f"自动更新失败，已保留旧数据：{exc}",
