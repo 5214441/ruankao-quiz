@@ -1,9 +1,12 @@
 {
-  "version": "1.3.0",
+  "version": "2.0.0",
   "sourceUrl": "https://ggzy.luan.gov.cn/",
   "sourceSearchUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "sourceUrls": [
     "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
+    "https://ggzy.luan.gov.cn/jyxx/001002/jysearch.html",
+    "https://ggzy.luan.gov.cn/jyxx/001008/jysearch.html",
+    "https://ggzy.luan.gov.cn/jyxx/jysearch.html",
     "https://ggzy.luan.gov.cn/"
   ],
   "regions": [
@@ -17,24 +20,28 @@
     "舒城县"
   ],
   "defaultRegions": [
-    "霍邱县",
-    "市直区"
+    "霍邱县"
   ],
   "categories": [
     "房建",
     "市政",
     "公路",
-    "水利"
+    "水利",
+    "其他工程",
+    "政府采购",
+    "服务"
   ],
   "excludedTerms": [
-    "竞争性谈判",
-    "竞争性磋商",
-    "询价",
-    "单一来源",
     "中标候选人",
     "中标结果",
     "成交公告",
-    "采购公告"
+    "成交公示",
+    "结果公示",
+    "终止公告",
+    "废标公告",
+    "采购文件",
+    "澄清与修改",
+    "资格预审结果"
   ],
   "keepDays": 180,
   "updateTime": "每天北京时间09:17和11:17",
