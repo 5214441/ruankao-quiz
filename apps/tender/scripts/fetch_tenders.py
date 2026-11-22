@@ -593,6 +593,10 @@ def build_projects(
     # 查询页通常按时间倒序，避免对站点造成过多请求。
     try:
         for candidate in candidates[:MAX_CANDIDATES]:
+            # 先跳过已标明属于其他区县的公告，避免逐条加载无关详情导致超时。
+            candidate_region = candidate.get("region", "未知地区")
+            if allowed_regions and candidate_region not in ("未知地区", "", None) and candidate_region not in allowed_regions:
+                continue
             title = candidate["title"]
             context = candidate["context"]
             if any(term in f"{title} {context}" for term in excluded):
