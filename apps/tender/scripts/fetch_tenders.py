@@ -663,7 +663,7 @@ def scrape() -> tuple[list[dict], list[dict], str]:
     source_urls = config.get("sourceUrls") or DEFAULT_SOURCE_URLS
     excluded = config.get("excludedTerms", EXCLUDED_DEFAULT)
     allowed_categories = set(config.get("categories", ["房建", "市政", "公路", "水利"]))
-    allowed_regions = set(config.get("regions", []))
+    allowed_regions = set(config.get("fetchRegions") or config.get("regions", []))
 
     diagnostics: list[dict] = []
     session = make_session()
@@ -696,9 +696,13 @@ def scrape() -> tuple[list[dict], list[dict], str]:
         excluded,
     )
     if not projects:
-        raise RuntimeError(
-            f"已找到 {len(candidates)} 个公告链接，但经过地区、工程类别和排除词筛选后为 0 条。"
-        )
+        # 县级项目不是每天都有新公告；抓到了有效候选但当天没有霍邱项目不应报失败。
+        if allowed_regions == {"霍邱县"}:
+            print(f"[INFO] 已提取 {len(candidates)} 条公告，但本次没有可匹配的霍邱项目。")
+        else:
+            raise RuntimeError(
+                f"已找到 {len(candidates)} 个公告链接，但经过地区、类别和排除词筛选后为 0 条。"
+            )
     return projects, diagnostics, used_source
 
 
