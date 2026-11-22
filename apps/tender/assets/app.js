@@ -90,9 +90,9 @@ const state = {
   company:Object.assign(defaultCompany(),loadJSON(COMPANY_STORE,{})),
   notices:loadJSON(NOTICE_STORE,{}),
   filters:{
-    search:"",days:"7",sort:"dateDesc",status:"all",
+    search:"",days:"30",sort:"dateDesc",status:"all",
     regions:new Set(),categories:new Set(["房建","市政","公路","水利"]),
-    constructionOnly:true,favoriteOnly:false,trackingOnly:false
+    constructionOnly:false,favoriteOnly:false,trackingOnly:false
   }
 };
 
@@ -746,12 +746,12 @@ function bind(){
   });
   $("saveNoteBtn").addEventListener("click",saveActiveProject);
   $("resetBtn").addEventListener("click",()=>{
-    state.filters.search="";state.filters.days="7";state.filters.sort="dateDesc";state.filters.status="all";
+    state.filters.search="";state.filters.days="30";state.filters.sort="dateDesc";state.filters.status="all";
     state.filters.regions=new Set(state.config.defaultRegions||state.config.regions||[]);
     state.filters.categories=new Set(state.config.categories||["房建","市政","公路","水利"]);
-    state.filters.constructionOnly=true;state.filters.favoriteOnly=false;state.filters.trackingOnly=false;
-    $("searchInput").value="";$("dateRange").value="7";$("sortSelect").value="dateDesc";$("statusFilter").value="all";
-    $("constructionOnly").checked=true;$("favoriteOnly").checked=false;$("trackingOnly").checked=false;
+    state.filters.constructionOnly=false;state.filters.favoriteOnly=false;state.filters.trackingOnly=false;
+    $("searchInput").value="";$("dateRange").value="30";$("sortSelect").value="dateDesc";$("statusFilter").value="all";
+    $("constructionOnly").checked=false;$("favoriteOnly").checked=false;$("trackingOnly").checked=false;
     renderFilterChips();applyFilters();
   });
   if("Notification" in window && Notification.permission==="granted"){
