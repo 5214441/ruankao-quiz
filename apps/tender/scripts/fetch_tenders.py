@@ -33,7 +33,7 @@ META_FILE = ROOT / "data" / "meta.json"
 
 CN_TZ = timezone(timedelta(hours=8))
 TIMEOUT = 40
-MAX_CANDIDATES = 60
+MAX_CANDIDATES = 240
 
 HEADERS = {
     "User-Agent": (
@@ -132,7 +132,7 @@ def stable_id(url: str, title: str) -> str:
 def infer_category(text: str) -> str | None:
     scores = {cat: sum(1 for kw in kws if kw in text) for cat, kws in CATEGORY_RULES.items()}
     best = max(scores, key=scores.get)
-    return best if scores[best] > 0 else None
+    return best if scores[best] > 0 else "其他工程"
 
 
 def normalize_region(value: str) -> str:
@@ -193,7 +193,7 @@ def compact_datetime_text(text: str) -> str:
 def parse_money(text: str):
     patterns = [
         r"(?:最高投标限价|招标控制价|项目概算|预算金额|合同估算价|项目投资|总投资)(?:金额)?[：:\s]*(?:为|约为|人民币|约)?\s*([\d,.]+)\s*万元",
-        r"(?:最高投标限价|招标控制价|预算金额)(?:金额)?[：:\s]*(?:为|人民币)?\s*([\d,.]+)\s*元",
+        r"(?:最高投标限价|招标控制价|预算金额|合同估算价|采购预算)(?:金额)?[：:\s]*(?:为|人民币)?\s*([\d,.]+)\s*元",
     ]
     for index, pattern in enumerate(patterns):
         match = re.search(pattern, compact_datetime_text(text))
@@ -207,7 +207,7 @@ def parse_deadline(text: str):
     contexts = []
     for pattern in (
         r"(?:开标时间与投标文件递交截止时间|投标文件递交截止时间|递交投标文件的截止时间|投标截止时间|开标时间)[^。；\n]{0,220}",
-        r"(?:获取时间)[^。；\n]{0,180}",
+        r"(?:交易时间|响应文件提交截止时间|获取时间)[^。；\n]{0,180}",
     ):
         contexts.extend(re.findall(pattern, text))
 
@@ -283,6 +283,9 @@ def parse_detail_text(text: str) -> dict:
                 "项目实施主体（招标人）",
                 "项目实施主体(招标人)",
                 "招标人名称",
+                "项目实施主体名称",
+                "采购人名称",
+                "采购人",
                 "项目实施主体",
                 "招标人",
             ],
@@ -397,7 +400,9 @@ def merge_detail_data(primary: dict, rendered: dict) -> dict:
 
 def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> dict | None:
     href = urljoin(base_url, href)
-    if "jyxxparentDetail.html" not in href:
+    is_standard = "jyxxparentDetail.html" in href
+    is_nonentry = "/jyxx/001008/001008001/" in urlparse(href).path
+    if not is_standard and not is_nonentry:
         return None
 
     combined = normalize(f"{context} {text}")
@@ -405,10 +410,14 @@ def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> d
     categorynum = query.get("categorynum", [""])[0]
 
     # 工程建设招标公告优先使用 categorynum；旧页面没有参数时再靠文字判定。
-    if categorynum and categorynum != "001001002":
+    allowed_types = {"001001002": "工程建设公开招标", "001002001": "政府采购", "001008001": "非进场发包"}
+    if categorynum and categorynum not in allowed_types:
         return None
-    if not categorynum and "招标公告" not in combined:
+    if not categorynum and not is_nonentry and not any(label in combined for label in ("招标公告", "采购公告", "发包公告")):
         return None
+    if any(word in combined[:100] for word in ("中标结果公告", "成交结果公告", "更正公告", "澄清公告")):
+        return None
+    notice_type = "非进场发包" if is_nonentry else allowed_types.get(categorynum, "工程建设公开招标" if "招标公告" in combined else "政府采购")
 
     title = clean_title(text)
     if len(title) < 5:
@@ -422,6 +431,7 @@ def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> d
         "context": combined,
         "publishDate": extract_publish_date(combined),
         "region": parse_region(combined),
+        "noticeType": notice_type,
     }
 
 
@@ -464,7 +474,7 @@ def requests_candidates(session: requests.Session, urls: list[str], diagnostics:
         except Exception as exc:
             record["error"] = f"{type(exc).__name__}: {exc}"
         diagnostics.append(record)
-        if len(all_items) >= 10:
+        if len(all_items) >= MAX_CANDIDATES:
             break
     return all_items
 
@@ -508,7 +518,7 @@ def playwright_candidates(urls: list[str], diagnostics: list[dict]) -> list[dict
 
                 record["title"] = page.title()
                 record["bodyTextLength"] = len(page.locator("body").inner_text(timeout=10000))
-                rows = page.locator("a[href*='jyxxparentDetail.html']").evaluate_all(
+                rows = page.locator("a[href*='jyxxparentDetail.html'], a[href*='/jyxx/001008/001008001/']").evaluate_all(
                     """anchors => anchors.map(a => {
                         const holder = a.closest('li,tr,article,.list-item,.ewb-list-node,.ewb-data-node')
                             || a.parentElement;
@@ -537,7 +547,7 @@ def playwright_candidates(urls: list[str], diagnostics: list[dict]) -> list[dict
             except Exception as exc:
                 record["error"] = f"{type(exc).__name__}: {exc}"
             diagnostics.append(record)
-            if len(all_items) >= 10:
+            if len(all_items) >= MAX_CANDIDATES:
                 break
 
         context.close()
@@ -593,8 +603,14 @@ def build_projects(
                 rendered = renderer.fetch(candidate["url"])
                 details = merge_detail_data(details, rendered)
             combined_text = normalize(f"{title} {context} {details.get('detailText', '')}")
-            category = infer_category(combined_text)
-            if not category or category not in allowed_categories:
+            notice_type = candidate.get("noticeType", "工程建设公开招标")
+            if notice_type == "政府采购":
+                category = "政府采购"
+            elif notice_type == "非进场发包" and "服务类" in combined_text and not any(word in title for word in ("施工", "工程", "改造", "建设")):
+                category = "服务"
+            else:
+                category = infer_category(combined_text)
+            if allowed_categories and category not in allowed_categories:
                 continue
 
             region = candidate["region"]
@@ -625,7 +641,7 @@ def build_projects(
                 "sourceName": "六安市公共资源交易中心",
                 "isEpc": "EPC" in title.upper(),
                 "isSecond": "二次" in title or "第二次" in title,
-                "type": "工程建设公开招标",
+                "type": notice_type,
             }
             item["score"] = compute_score(item)
             output.append(item)
@@ -651,10 +667,19 @@ def scrape() -> tuple[list[dict], list[dict], str]:
     candidates = requests_candidates(session, source_urls, diagnostics)
     used_source = "requests"
 
-    if not candidates:
-        print("[INFO] 普通请求未提取到公告，启用 Playwright 动态渲染兜底。")
-        candidates = playwright_candidates(source_urls, diagnostics)
-        used_source = "playwright"
+    # 动态交易查询页与官网首页互补，不能因首页已有少量结果而跳过其他栏目。
+    if len(candidates) < MAX_CANDIDATES:
+        try:
+            rendered = playwright_candidates(source_urls, diagnostics)
+            combined = {item["url"]: item for item in candidates}
+            for item in rendered:
+                combined.setdefault(item["url"], item)
+            candidates = list(combined.values())[:MAX_CANDIDATES]
+            if rendered:
+                used_source = "requests+playwright"
+        except Exception as exc:
+            diagnostics.append({"mode": "playwright", "error": f"{type(exc).__name__}: {exc}"})
+            print(f"[WARN] 浏览器候选列表抓取失败，将使用普通请求的结果：{exc}")
 
     if not candidates:
         raise RuntimeError("交易查询页与浏览器渲染均未提取到工程建设招标公告链接。")
