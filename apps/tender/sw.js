@@ -1,6 +1,6 @@
-const CACHE_NAME="tender-board-v2.0.0";
+const CACHE_NAME="tender-board-v2.1.0";
 const STATIC_ASSETS=[
-  "./","index.html","assets/style.css?v=131","assets/app.js?v=132",
+  "./","index.html","assets/style.css?v=131","assets/app.js?v=133",
   "config.json","manifest.webmanifest?v=131","icons/icon.svg"
 ];
 const DATA_PATHS=["/data/projects.json","/data/meta.json","/data/monitor_status.json"];
