@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-霍邱招标雷达 V1.2
+霍邱招标雷达 V2.0
 
 功能：
 1. 读取 projects.json，监控霍邱县新发布的工程建设公开招标项目。
@@ -272,7 +272,7 @@ def main() -> int:
 
     # 监控范围扩展后建立一次性基线，避免旧公告集中轰炸微信。
     scope_version = config.get("scopeVersion", "legacy")
-    if state.get("bootstrapped") and state.get("scopeVersion") != scope_version:
+    if matches and state.get("bootstrapped") and state.get("scopeVersion") != scope_version:
         known.update(item["id"] for item in matches)
         state["scopeVersion"] = scope_version
         state["knownProjectIds"] = sorted(known)[-2000:]
