@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-六安市公共资源交易中心工程建设招标公告抓取器 V1.3.2
+六安市公共资源交易中心霍邱全类别招标公告抓取器 V2.0.0
 
 修复重点：
 1. 不再只抓首页，优先访问“工程建设-招标公告”交易查询页。
@@ -637,7 +637,7 @@ def build_projects(
                 "deadline": details.get("deadline"),
                 "budgetWan": details.get("budgetWan"),
                 "score": 0,
-                "summary": "自动抓取的六安市公共资源交易中心工程建设招标公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+                "summary": f"自动抓取的六安市公共资源交易中心{notice_type}。请进入原公告核对完整范围、资质、评标办法和截止时间。",
                 "qualification": details.get("qualification", ""),
                 "tenderer": details.get("tenderer", ""),
                 "projectCode": details.get("projectCode", ""),
