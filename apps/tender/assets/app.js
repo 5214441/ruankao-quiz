@@ -36,7 +36,8 @@ const fmtDate = value => value ? new Intl.DateTimeFormat("zh-CN",{
   year:"numeric",month:"2-digit",day:"2-digit"
 }).format(new Date(value)) : "未识别";
 const fmtDateTime = value => value ? new Intl.DateTimeFormat("zh-CN",{
-  month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false
+  year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false,
+  timeZone:"Asia/Shanghai"
 }).format(new Date(value)) : "未识别";
 
 function loadJSON(key, fallback){
@@ -427,7 +428,8 @@ function renderProjects(){
       <div class="project-meta">
         <span>发布日期：<b>${fmtDate(project.publishDate)}</b></span>
         <span>预算/控制价：<b>${budgetText(project.budgetWan)}</b></span>
-        <span>截止时间：<b>${due?fmtDateTime(due):"未识别"}</b></span>
+        <span>投标截止：<b>${due?fmtDateTime(due):"未识别"}（北京时间）</b></span>
+        <span>开标时间：<b>${project.openingTime?fmtDateTime(project.openingTime):"未识别"}${project.openingTime?"（北京时间）":""}</b></span>
       </div>
       <p class="summary">${esc(project.summary||"请进入原公告核对完整范围、资质、评标办法和投标截止时间。")}</p>
       <div class="project-progress">
@@ -533,10 +535,11 @@ function openDetail(id){
   $("dialogMeta").textContent = `发布日期${fmtDate(project.publishDate)} · 原适配评分${project.score||0}分 · 公司匹配${match.score||0}分`;
   $("dialogFacts").innerHTML = [
     ["预算/控制价",budgetText(project.budgetWan)],
-    ["投标截止",due?fmtDateTime(due):"未识别"],
+    ["投标截止",due?fmtDateTime(due)+"（北京时间）":"未识别"],
+    ["开标时间",project.openingTime?fmtDateTime(project.openingTime)+"（北京时间）":"未识别（请核对公告）"],
     ["招标人",project.tenderer||"未识别"],
     ["项目编号",project.projectCode||"未识别"],
-    ["交易方式","公开招标"],
+    ["交易方式",project.type||"未识别"],
     ["数据来源",project.sourceName||"公共资源交易中心"]
   ].map(([k,v])=>`<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join("");
   $("dialogQualification").textContent = project.qualification || project.summary || "自动抓取尚未识别完整资格条件，请查看原公告与招标文件。";
@@ -632,13 +635,13 @@ function clearCompany(){
 function exportCsv(){
   if(!state.filtered.length){ toast("没有可导出的项目"); return; }
   const rows=[[
-    "项目名称","地区","类别","发布日期","截止时间","预算万元","原适配评分","公司匹配分",
+    "项目名称","地区","类别","发布日期","投标截止时间","开标时间","预算万元","原适配评分","公司匹配分",
     "跟进状态","负责人","下一步","保证金万元","垫资万元","清单完成数","备注","原公告"
   ]];
   state.filtered.forEach(project=>{
     const local=getLocal(project);
     rows.push([
-      project.title,project.region,project.category,project.publishDate||"",deadlineValue(project)||"",
+      project.title,project.region,project.category,project.publishDate||"",deadlineValue(project)||"",project.openingTime||"",
       project.budgetWan||"",project.score||"",companyMatch(project).score||"",local.status,local.owner,
       local.nextAction,local.guaranteeWan,local.advanceWan,completedTaskCount(local),local.note,project.url
     ]);
