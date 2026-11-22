@@ -25,12 +25,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: toolbox-24.04
+  group: toolbox-pages
   cancel-in-progress: false
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
