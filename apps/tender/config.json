@@ -45,5 +45,8 @@
   ],
   "keepDays": 180,
   "updateTime": "每天北京时间09:17和11:17",
-  "toolboxPath": "../../"
+  "toolboxPath": "../../",
+  "fetchRegions": [
+    "霍邱县"
+  ]
 }
