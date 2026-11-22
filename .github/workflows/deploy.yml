@@ -51,6 +51,9 @@ jobs:
       - name: 校验招投标脚本语法
         run: python -m compileall -q apps/tender/scripts
 
+      - name: 测试公告开标与投标截止时间解析
+        run: python -m unittest discover -s apps/tender/tests -p "test_*.py"
+
       - name: 校验软考题库
         run: python apps/ruankao/scripts/validate_questions.py apps/ruankao/data/questions.json
 
