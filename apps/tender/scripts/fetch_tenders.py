@@ -203,34 +203,62 @@ def parse_money(text: str):
     return None
 
 
-def parse_deadline(text: str):
-    contexts = []
-    for pattern in (
-        r"(?:开标时间与投标文件递交截止时间|投标文件递交截止时间|递交投标文件的截止时间|投标截止时间|开标时间)[^。；\n]{0,220}",
-        r"(?:交易时间|响应文件提交截止时间|获取时间)[^。；\n]{0,180}",
-    ):
-        contexts.extend(re.findall(pattern, text))
+# Only extract a date and time in the context of an explicit notice label.
+# Both values are Beijing time (UTC+08); do not assume they are interchangeable.
+_NOTICE_DATETIME = re.compile(
+    r"(20\d{2})\s*(?:年|[-/.])\s*(\d{1,2})\s*(?:月|[-/.])\s*(\d{1,2})\s*日?\s*"
+    r"(?:[（(]星期[一二三四五六日天][）)]\s*)?"
+    r"(\d{1,2})\s*(?:时|点|[:：])\s*(\d{1,2})\s*(?:分|[:：]\d{1,2})?"
+)
 
-    # 部分网页把同一句拆成多行，整页文本也作为最后兜底。
-    if not contexts:
-        contexts = [text]
+_SHARED_TIME_LABELS = (
+    r"开标时间与投标文件递交截止时间",
+    r"投标文件(?:递交|提交)截止时间[、，,\s]*(?:及|和|与)?\s*开标时间",
+    r"开标时间[、，,\s]*(?:及|和|与)\s*投标文件(?:递交|提交)截止时间",
+)
 
-    date_pattern = re.compile(
-        r"(20\d{2})\s*[年\-/.]\s*(\d{1,2})\s*[月\-/.]\s*(\d{1,2})\s*日?"
-        r"(?:\s*[（(]?[星期一二三四五六日天]*[）)]?\s*)"
-        r"(\d{1,2})\s*[时:：]\s*(\d{1,2})?\s*分?"
-    )
-    for chunk in contexts:
-        match = date_pattern.search(compact_datetime_text(chunk))
-        if not match:
-            continue
-        year, month, day, hour, minute = match.groups()
-        minute = minute or "00"
-        return (
-            f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
-            f"T{int(hour):02d}:{int(minute):02d}:00+08:00"
-        )
+
+def _labeled_notice_datetime(text: str, patterns: tuple[str, ...]) -> str | None:
+    value = compact_datetime_text(text).replace("\xa0", " ")
+    # Some government sites insert whitespace/newlines within Chinese headings.
+    value = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])", "", value)
+    for pattern in patterns:
+        for label in re.finditer(pattern, value, re.I):
+            after = value[label.end():label.end() + 160]
+            # "开标时间前使用CA登录" is procedural guidance, not an opening time.
+            if re.match(r"^\s*(?:前|之前|后|之后|起|开始前)(?=[^:：\d]|$)", after):
+                continue
+            match = _NOTICE_DATETIME.search(after)
+            if not match or match.start() > 90:
+                continue
+            year, month, day, hour, minute = map(int, match.groups())
+            try:
+                return datetime(year, month, day, hour, minute).strftime("%Y-%m-%dT%H:%M:00+08:00")
+            except ValueError:
+                continue
     return None
+
+
+def parse_deadline(text: str) -> str | None:
+    """Only capture explicitly identified bid/response submission deadlines."""
+    return _labeled_notice_datetime(text, (
+        r"投标文件(?:递交|提交)(?:的)?截止时间",
+        r"递交投标文件(?:的)?截止时间",
+        r"投标截止时间",
+        r"提交响应文件(?:的)?截止时间",
+        r"响应文件(?:提交|递交)(?:截止)?时间",
+        r"响应文件提交",
+        r"开标时间与投标文件递交截止时间",
+    ) + _SHARED_TIME_LABELS)
+
+
+def parse_opening_time(text: str) -> str | None:
+    """Opening time / response opening time; never guess it from a deadline."""
+    return _labeled_notice_datetime(text, _SHARED_TIME_LABELS + (
+        r"项目开标时间",
+        r"开标(?:（开启）)?时间",
+        r"响应文件开启(?:时间)?",
+    ))
 
 
 def extract_field(text: str, labels: list[str], max_len: int = 120):
@@ -273,6 +301,7 @@ def parse_detail_text(text: str) -> dict:
     return {
         "budgetWan": parse_money(text),
         "deadline": parse_deadline(text),
+        "openingTime": parse_opening_time(text),
         "projectCode": extract_field(
             text,
             ["招标项目编号", "交易项目编号", "项目编号", "招标编号"],
@@ -310,7 +339,9 @@ def detail_data(session: requests.Session, url: str) -> dict:
 
 def detail_needs_browser(details: dict) -> bool:
     # 详情页常由 JavaScript 动态加载。三个核心字段有任意一个缺失时启用浏览器兜底。
-    return any(not details.get(key) for key in ("deadline", "projectCode", "tenderer"))
+    essential_missing = any(not details.get(key) for key in ("deadline", "projectCode", "tenderer"))
+    # Re-render JS-heavy pages when no opening time was found in a short static page.
+    return essential_missing or (not details.get("openingTime") and details.get("detailTextLength", 0) < 1500)
 
 
 class DetailRenderer:
@@ -389,7 +420,7 @@ class DetailRenderer:
 
 def merge_detail_data(primary: dict, rendered: dict) -> dict:
     merged = dict(primary or {})
-    for key in ("budgetWan", "deadline", "projectCode", "tenderer", "qualification"):
+    for key in ("budgetWan", "deadline", "openingTime", "projectCode", "tenderer", "qualification"):
         if rendered.get(key):
             merged[key] = rendered[key]
     if rendered.get("detailTextLength", 0) > merged.get("detailTextLength", 0):
@@ -635,6 +666,7 @@ def build_projects(
                 "category": category,
                 "publishDate": candidate["publishDate"],
                 "deadline": details.get("deadline"),
+                "openingTime": details.get("openingTime"),
                 "budgetWan": details.get("budgetWan"),
                 "score": 0,
                 "summary": f"自动抓取的六安市公共资源交易中心{notice_type}。请进入原公告核对完整范围、资质、评标办法和截止时间。",
@@ -713,7 +745,7 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
         previous = old_map.get(item["id"], {})
         if not previous:
             new_count += 1
-        for key in ("budgetWan", "deadline", "qualification", "tenderer", "projectCode", "summary"):
+        for key in ("budgetWan", "deadline", "openingTime", "qualification", "tenderer", "projectCode", "summary"):
             if not item.get(key) and previous.get(key):
                 item[key] = previous[key]
         old_map[item["id"]] = item
