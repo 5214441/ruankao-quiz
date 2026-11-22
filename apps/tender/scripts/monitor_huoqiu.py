@@ -78,9 +78,13 @@ def is_pure_service(project: dict) -> bool:
 
 
 def is_huoqiu(project: dict, config: dict) -> bool:
-    if normalize(project.get("region")) == "霍邱县":
+    region = normalize(project.get("region"))
+    if region == "霍邱县":
         return True
-    text = project_text(project)
+    # 已确认是其他区县时不能因为正文偶尔提到霍邱就误推。
+    if region and region not in ("未知地区", "未识别"):
+        return False
+    text = normalize(" ".join((project.get("title", ""), project.get("tenderer", ""))))
     return any(keyword in text for keyword in config.get("regionKeywords", ["霍邱", "霍邱县"]))
 
 
@@ -190,6 +194,7 @@ def build_message(projects: list[dict], config: dict) -> tuple[str, str]:
         parts.extend([
             f"### {index}. {normalize(project.get('title'))}",
             f"- 类别：{normalize(project.get('category')) or '未识别'}",
+            f"- 公告类型：{normalize(project.get('type')) or '未识别'}",
             f"- 发布：{normalize(project.get('publishDate')) or '未识别'}",
             f"- 预算：{budget_text(project.get('budgetWan'))}",
             f"- 截止：{deadline_text(project.get('deadline'))}",
@@ -230,7 +235,7 @@ def build_test_message(config: dict) -> tuple[str, str]:
 def update_status(config: dict, **patch) -> dict:
     status = load_json(STATUS_FILE, {})
     status.update({
-        "version": "1.2.0",
+        "version": "2.0.0",
         "enabled": bool(config.get("enabled", True)),
         "scheduleText": config.get("scheduleText", "每天北京时间09:17"),
         "keywords": config.get("priorityKeywords", []),
@@ -265,11 +270,22 @@ def main() -> int:
     matches = eligible_projects(projects, config)
     known = set(state.get("knownProjectIds", []))
 
+    # 监控范围扩展后建立一次性基线，避免旧公告集中轰炸微信。
+    scope_version = config.get("scopeVersion", "legacy")
+    if state.get("bootstrapped") and state.get("scopeVersion") != scope_version:
+        known.update(item["id"] for item in matches)
+        state["scopeVersion"] = scope_version
+        state["knownProjectIds"] = sorted(known)[-2000:]
+        state["lastScopeBootstrapAt"] = now_iso()
+        write_json(STATE_FILE, state)
+        print(f"[INFO] 监控范围扩大，已将 {len(matches)} 条现有公告加入历史基线；此后只提醒新公告。")
+
     # 首次启用时，以当前项目作为基线，避免一次性把历史项目全部推送。
     if not state.get("bootstrapped"):
         known.update(item["id"] for item in matches)
         state["bootstrapped"] = True
-        state["knownProjectIds"] = list(known)[-2000:]
+        state["scopeVersion"] = config.get("scopeVersion", "legacy")
+        state["knownProjectIds"] = sorted(known)[-2000:]
         state["lastBootstrapAt"] = now_iso()
         write_json(STATE_FILE, state)
         update_status(
@@ -398,7 +414,7 @@ def main() -> int:
 
     # 仅在推送成功后标记为已知，失败时下次会自动重试。
     known.update(item["id"] for item in new_projects)
-    state["knownProjectIds"] = list(known)[-2000:]
+    state["knownProjectIds"] = sorted(known)[-2000:]
     state["lastNotificationAt"] = now_iso()
     state["lastNotificationProjectIds"] = [item["id"] for item in new_projects]
     write_json(STATE_FILE, state)
