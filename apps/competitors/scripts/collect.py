@@ -342,7 +342,8 @@ def normalized_bidder(value):
 
 def combine(records):
     # 始终保留每个来源页面，归并时绝不丢失不同标段。
-    records = sorted(records, key=lambda x: (x.get("publishDate", ""), x["id"]), reverse=True)
+    # 统计归并不得修改原始输入，确保重复计算和回归测试幂等。
+    records = sorted((dict(r) for r in records), key=lambda x: (x.get("publishDate", ""), x["id"]), reverse=True)
     identities = defaultdict(list)
     for r in records:
         if r.get("projectCode") and r.get("segmentCode"):
