@@ -1,11 +1,3100 @@
 {
+  "projects": [
+    {
+      "id": "e47a8bff38263fa453b8",
+      "kind": "result",
+      "title": "花园镇安业村上楼组、塘坊组、南庄组增减挂项目区配套道路提升工程",
+      "projectCode": "HXJY1110001066768",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "市政",
+      "publishDate": "2026-11-23",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261123/aaa1110a-d354-4418-a1b7-d55e71991fc6.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽文春建筑工程有限公司",
+      "winningYuan": 573118.4
+    },
+    {
+      "id": "e20b930e3bf90795222e",
+      "kind": "result",
+      "title": "霍邱县水预算实施方案编制项目",
+      "projectCode": "HXJY1110001066867",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-23",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261123/c528d572-9178-4dca-90c6-a01748dd987f.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽沃特水务科技有限公司",
+      "winningYuan": 136000.0
+    },
+    {
+      "id": "8e836deb58022c4f3b09",
+      "kind": "result",
+      "title": "霍邱县疾病预防控制中心前楼加固、实验及疫苗临床试验改造项目",
+      "projectCode": "HXJY1110001066502",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "publishDate": "2026-11-23",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261123/b83e5e50-9c2f-4486-bc29-3186a4711197.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "黄山永筑建设工程有限公司",
+      "winningYuan": 3268000.0
+    },
+    {
+      "id": "65345666a955e10a3046",
+      "kind": "result",
+      "title": "花园镇合立庙村染坊组增减挂项目区配套道路提升工程",
+      "projectCode": "HXJY1110001066774",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "市政",
+      "publishDate": "2026-11-23",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261123/adaf0f72-586f-41ac-b0dd-9cc1009ce4b9.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽宏东建筑工程有限公司",
+      "winningYuan": 585500.0
+    },
+    {
+      "id": "5545d7332f96ada2f0e9",
+      "kind": "result",
+      "title": "2026年白莲乡牛集、窑流村高标准农田管养工程",
+      "projectCode": "HXJY1110001066817",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "水利",
+      "publishDate": "2026-11-23",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261123/f6c2e6c9-fcde-4358-8850-818603199083.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽永安水利建设工程有限公司",
+      "winningYuan": 154200.0
+    },
+    {
+      "id": "d91722be43b6bd4ff295",
+      "kind": "result",
+      "title": "霍邱凯迪生物质电厂新增AGC系统、AVC系统改造项目",
+      "projectCode": "HXJY1110001065776",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "publishDate": "2026-11-09",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261109/ef105f87-f9ea-4e61-9048-71a55549404c.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽泓普惠电力科技有限公司",
+      "winningYuan": 292000.0
+    },
+    {
+      "id": "61e33d224968deed85b0",
+      "kind": "result",
+      "title": "霍邱县乌龙派出所综合业务用房建设项目",
+      "projectCode": "HXJY1110001064859",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-02",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261102/8ab89e93-61c0-4681-8385-2d38b38c5716.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽联天建设工程有限公司",
+      "winningYuan": 2261862.38
+    },
+    {
+      "id": "2417885ad3eb7de049bb",
+      "kind": "result",
+      "title": "霍邱县县域光储充一体化项目初步设计",
+      "projectCode": "HXJY1110001065200",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "服务",
+      "publishDate": "2026-10-29",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261029/8d3409c9-b891-4c6c-9615-244046e9fe36.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "创能电力设计有限公司",
+      "winningYuan": 290000.0
+    },
+    {
+      "id": "5187e47cc0264deb968b",
+      "kind": "result",
+      "title": "霍邱县农村水系综合整治方案编制项目",
+      "projectCode": "HXJY1110001064336",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-10-20",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261020/2856f693-8f75-4f47-90b5-8eb3d356eba2.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "六安市水利水电规划设计院",
+      "winningYuan": 445000.0
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404",
+      "kind": "opening",
+      "title": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "projectCode": "FS34152220230523",
+      "segmentCode": "FS34152220230523号-1",
+      "region": "霍邱县",
+      "category": "房建",
+      "publishDate": "2023-10-16",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html",
+      "openingTime": "2023-10-16 09:00:00.0",
+      "quotes": [
+        {
+          "bidder": "安徽云龙粮机有限公司",
+          "bidYuan": 7388200.0,
+          "rawPrice": "7388200.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽省凯杰机械制造有限公司",
+          "bidYuan": 7550000.0,
+          "rawPrice": "7550000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽皖润建筑有限公司",
+          "bidYuan": 5775200.0,
+          "rawPrice": "5775200.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽省同佳建设有限公司",
+          "bidYuan": 7499000.0,
+          "rawPrice": "7499000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽聚力粮机科技股份有限公司",
+          "bidYuan": 5649400.0,
+          "rawPrice": "5649400.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "沈丘县圣德粮食机械有限公司",
+          "bidYuan": 7534400.0,
+          "rawPrice": "7534400.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽慧视金瞳科技有限公司",
+          "bidYuan": 6450600.0,
+          "rawPrice": "6450600.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽朋创建设工程有限责任公司",
+          "bidYuan": 6018000.0,
+          "rawPrice": "6018000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "界首市粮食机械有限责任公司",
+          "bidYuan": 3996000.0,
+          "rawPrice": "3996000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽荣夏智能科技有限责任公司",
+          "bidYuan": 7200000.0,
+          "rawPrice": "7200000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        }
+      ],
+      "winner": "",
+      "winningYuan": null
+    },
+    {
+      "id": "f3926ad02b548195f868",
+      "kind": "opening",
+      "title": "霍邱县2022“国培计划”中青年教师提升研修第1包",
+      "projectCode": "FS34152220230247",
+      "segmentCode": "FS34152220230247-1-重1",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2023-08-01",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20230801/0b2af6aa-e203-403b-bbdf-74e96dfd2980.html",
+      "openingTime": "2023-08-01 09:00:00.0",
+      "quotes": [
+        {
+          "bidder": "北京百年树人远程教育有限公司",
+          "bidYuan": null,
+          "rawPrice": "0.000000",
+          "rawUnit": "元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "北京尚睿通教育科技股份有限公司",
+          "bidYuan": null,
+          "rawPrice": "0.000000",
+          "rawUnit": "元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽文畅教育科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "0.000000",
+          "rawUnit": "元",
+          "quoteStatus": "unverified"
+        }
+      ],
+      "winner": "",
+      "winningYuan": null
+    },
+    {
+      "id": "35d41833a9edf4bfc10b",
+      "kind": "opening",
+      "title": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "projectCode": "E341522001002340",
+      "segmentCode": "E341522001002340001",
+      "region": "霍邱县",
+      "category": "市政",
+      "publishDate": "2022-11-04",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html",
+      "openingTime": "2022-11-01 09:00:00",
+      "quotes": [
+        {
+          "bidder": "安徽江泽建设有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "蓝深集团股份有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽世绿环保科技有限公司",
+          "bidYuan": 2076749.2,
+          "rawPrice": "207.674920",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "铜陵市天资建设有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "上海泓济环保科技股份有限公司",
+          "bidYuan": 2163000.0,
+          "rawPrice": "216.300000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "淮南市超越电气安装有限责任公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽筑业建筑工程有限公司",
+          "bidYuan": 1940000.0,
+          "rawPrice": "194.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中梓科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "江西省第六建筑工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "黑山县利民水利工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽新季环保科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽亚安环境科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽益祥建设集团有限公司",
+          "bidYuan": 1810000.0,
+          "rawPrice": "181.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽天月环境工程有限公司",
+          "bidYuan": 1807230.0,
+          "rawPrice": "180.723000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "合肥朗锐环境工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽力诺环保工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽省高迪科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "皖创环保股份有限公司",
+          "bidYuan": 2076310.0,
+          "rawPrice": "207.631000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "上海艾目介流体技术有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽笃敬建筑工程有限公司",
+          "bidYuan": 1850000.0,
+          "rawPrice": "185.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽祥悦建设工程有限公司",
+          "bidYuan": 1915000.0,
+          "rawPrice": "191.500000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽黄河水处理科技股份有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "淮南市国泰消防工程有限公司",
+          "bidYuan": 1930000.0,
+          "rawPrice": "193.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "合肥冠桂环保科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽人禾园林建设有限公司",
+          "bidYuan": 1960000.0,
+          "rawPrice": "196.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽欧鑫环保科技有限责任公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽圣都建设集团有限公司",
+          "bidYuan": 1796000.0,
+          "rawPrice": "179.600000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽普氏生态环境有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽宝森建设有限公司",
+          "bidYuan": 1770000.0,
+          "rawPrice": "177.000000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽清泓环境科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽中笃建筑工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "中贡建设集团有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽志远环境工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "合肥敬业电子有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽红华电力工程有限公司",
+          "bidYuan": 1953000.0,
+          "rawPrice": "195.300000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "江苏新天鸿集团有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽青松环境工程有限公司",
+          "bidYuan": 1886976.42,
+          "rawPrice": "188.697642",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽清蓝环保工程有限公司",
+          "bidYuan": 1866000.0,
+          "rawPrice": "186.600000",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽九辰环境科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽禹信环境工程科技有限公司",
+          "bidYuan": 2099944.99,
+          "rawPrice": "209.994499",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽蓝鼎环保能源科技有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽禾美环保集团有限公司",
+          "bidYuan": 2011850.68,
+          "rawPrice": "201.185068",
+          "rawUnit": "万元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中基基固建设工程有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "万元",
+          "quoteStatus": "unverified"
+        }
+      ],
+      "winner": "",
+      "winningYuan": null
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5",
+      "kind": "opening",
+      "title": "霍邱县人民医院保安服务项目",
+      "projectCode": "FS34152220260111",
+      "segmentCode": "FS34152220260111号-1",
+      "region": "霍邱县",
+      "category": "房建",
+      "publishDate": "",
+      "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404",
+      "openingTime": "2026-05-18 09:00:00.0",
+      "quotes": [
+        {
+          "bidder": "安徽林森保安服务有限公司",
+          "bidYuan": 5174031.48,
+          "rawPrice": "5174031.480000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "上海猎鹰保安服务有限公司",
+          "bidYuan": 5174036.4,
+          "rawPrice": "5174036.400000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "江苏大德保安服务有限公司",
+          "bidYuan": 4368000.0,
+          "rawPrice": "4368000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽瑞泰保安服务有限公司",
+          "bidYuan": 5174048.14,
+          "rawPrice": "5174048.140000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽国福保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "神之盾保安集团有限公司",
+          "bidYuan": 5174036.4,
+          "rawPrice": "5174036.400000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "芜湖金箍棒保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽一盾保安服务有限公司",
+          "bidYuan": 5011130.94,
+          "rawPrice": "5011130.940000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽华杰保安服务有限公司",
+          "bidYuan": 4998996.77,
+          "rawPrice": "4998996.770000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "北京京铁卫士保安服务有限公司",
+          "bidYuan": 5175962.69,
+          "rawPrice": "5175962.690000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽祥威保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "巢湖市金盾保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽东百保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽新盾保安服务有限公司",
+          "bidYuan": 5174031.48,
+          "rawPrice": "5174031.480000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽明卫保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽零点保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽林盾保安服务有限公司",
+          "bidYuan": 5174048.13,
+          "rawPrice": "5174048.130000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽山中山保安服务有限公司",
+          "bidYuan": 5174034.26,
+          "rawPrice": "5174034.260000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽方圆保安服务集团有限公司",
+          "bidYuan": 5175000.0,
+          "rawPrice": "5175000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中军军弘保安服务有限公司",
+          "bidYuan": 4861989.6,
+          "rawPrice": "4861989.600000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中保恒杰保安服务集团有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽鼎卫保安服务有限公司",
+          "bidYuan": 5011130.94,
+          "rawPrice": "5011130.940000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽晟卫保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽天马保安服务集团有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中升瀚铭保安服务集团有限公司",
+          "bidYuan": 5174033.16,
+          "rawPrice": "5174033.160000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "中保誉和集团有限公司",
+          "bidYuan": 5174048.13,
+          "rawPrice": "5174048.130000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "上海品言保安服务有限公司",
+          "bidYuan": 5187000.0,
+          "rawPrice": "5187000.000000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽中祥保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽国盾保安服务集团有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽亿豪保安服务有限公司",
+          "bidYuan": 5174031.49,
+          "rawPrice": "5174031.490000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "浙江君特保安服务有限公司",
+          "bidYuan": null,
+          "rawPrice": "",
+          "rawUnit": "元",
+          "quoteStatus": "unverified"
+        },
+        {
+          "bidder": "安徽振升保安服务集团有限公司",
+          "bidYuan": 5174031.48,
+          "rawPrice": "5174031.480000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "山东安盛源保安服务有限公司",
+          "bidYuan": 4705081.79,
+          "rawPrice": "4705081.790000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽天河保安服务有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽神鹰保安服务有限公司",
+          "bidYuan": 5174031.48,
+          "rawPrice": "5174031.480000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "合肥市强卫保安服务有限公司",
+          "bidYuan": 5174036.4,
+          "rawPrice": "5174036.400000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽省利民保安服务有限公司",
+          "bidYuan": 5129559.5,
+          "rawPrice": "5129559.500000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "振远特卫保安集团有限公司",
+          "bidYuan": 5174033.15,
+          "rawPrice": "5174033.150000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "北京金剑卫士保安服务有限公司",
+          "bidYuan": 5174036.4,
+          "rawPrice": "5174036.400000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        },
+        {
+          "bidder": "安徽中天保安服务集团有限公司",
+          "bidYuan": 5174031.48,
+          "rawPrice": "5174031.480000",
+          "rawUnit": "元",
+          "quoteStatus": "valid"
+        }
+      ],
+      "winner": "",
+      "winningYuan": null
+    }
+  ],
+  "bids": [
+    {
+      "id": "f0b9044f6cc0f7aa2404:aca9bb2a65c8",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽云龙粮机有限公司",
+      "bidYuan": 7388200.0,
+      "quoteStatus": "valid",
+      "rawPrice": "7388200.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:29f85f17aaab",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽省凯杰机械制造有限公司",
+      "bidYuan": 7550000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "7550000.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:a6e240ac64fe",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽皖润建筑有限公司",
+      "bidYuan": 5775200.0,
+      "quoteStatus": "valid",
+      "rawPrice": "5775200.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:ed06894f7b2d",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽省同佳建设有限公司",
+      "bidYuan": 7499000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "7499000.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:432b437eb934",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽聚力粮机科技股份有限公司",
+      "bidYuan": 5649400.0,
+      "quoteStatus": "valid",
+      "rawPrice": "5649400.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:64c28dc66e2d",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "沈丘县圣德粮食机械有限公司",
+      "bidYuan": 7534400.0,
+      "quoteStatus": "valid",
+      "rawPrice": "7534400.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:2d61eb099b36",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽慧视金瞳科技有限公司",
+      "bidYuan": 6450600.0,
+      "quoteStatus": "valid",
+      "rawPrice": "6450600.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:4d5e0056336a",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽朋创建设工程有限责任公司",
+      "bidYuan": 6018000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "6018000.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:b533edda48d4",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "界首市粮食机械有限责任公司",
+      "bidYuan": 3996000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "3996000.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f0b9044f6cc0f7aa2404:e29af24c179f",
+      "projectId": "f0b9044f6cc0f7aa2404",
+      "bidder": "安徽荣夏智能科技有限责任公司",
+      "bidYuan": 7200000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "7200000.000000",
+      "unit": "元",
+      "date": "2023-10-16",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县基层粮食仓储设施提升改造（二期）项目（9.6万吨仓库）输送设备采购",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20231016/f0862122-9780-4f08-a767-c1e9d98b9f02.html"
+    },
+    {
+      "id": "f3926ad02b548195f868:c2a1a1e88e38",
+      "projectId": "f3926ad02b548195f868",
+      "bidder": "北京百年树人远程教育有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "0.000000",
+      "unit": "元",
+      "date": "2023-08-01",
+      "region": "霍邱县",
+      "category": "其他",
+      "project": "霍邱县2022“国培计划”中青年教师提升研修第1包",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20230801/0b2af6aa-e203-403b-bbdf-74e96dfd2980.html"
+    },
+    {
+      "id": "f3926ad02b548195f868:5264709d339b",
+      "projectId": "f3926ad02b548195f868",
+      "bidder": "北京尚睿通教育科技股份有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "0.000000",
+      "unit": "元",
+      "date": "2023-08-01",
+      "region": "霍邱县",
+      "category": "其他",
+      "project": "霍邱县2022“国培计划”中青年教师提升研修第1包",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20230801/0b2af6aa-e203-403b-bbdf-74e96dfd2980.html"
+    },
+    {
+      "id": "f3926ad02b548195f868:29d37fca396c",
+      "projectId": "f3926ad02b548195f868",
+      "bidder": "安徽文畅教育科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "0.000000",
+      "unit": "元",
+      "date": "2023-08-01",
+      "region": "霍邱县",
+      "category": "其他",
+      "project": "霍邱县2022“国培计划”中青年教师提升研修第1包",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001002/001002008/20230801/0b2af6aa-e203-403b-bbdf-74e96dfd2980.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:60eb73bbf390",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽江泽建设有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:0fd59a6ad550",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "蓝深集团股份有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:e28db98ac2d0",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽世绿环保科技有限公司",
+      "bidYuan": 2076749.2,
+      "quoteStatus": "valid",
+      "rawPrice": "207.674920",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:5e3e494fb1b3",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "铜陵市天资建设有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:d26d342addf9",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "上海泓济环保科技股份有限公司",
+      "bidYuan": 2163000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "216.300000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:1de16d9a18d2",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "淮南市超越电气安装有限责任公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:7d3b7342c918",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽筑业建筑工程有限公司",
+      "bidYuan": 1940000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "194.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:6d03ed94358a",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "中梓科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:d49c732372d1",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "江西省第六建筑工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:cd322eb58579",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "黑山县利民水利工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:c98caa68b70b",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽新季环保科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:427c130a9897",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽亚安环境科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:9a1cfee26cda",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽益祥建设集团有限公司",
+      "bidYuan": 1810000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "181.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:6dc165e8394d",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽天月环境工程有限公司",
+      "bidYuan": 1807230.0,
+      "quoteStatus": "valid",
+      "rawPrice": "180.723000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:7ee3e6424190",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "合肥朗锐环境工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:eeb9fe820e2c",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽力诺环保工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:f50545ad9fa0",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽省高迪科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:b769475414d8",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "皖创环保股份有限公司",
+      "bidYuan": 2076310.0,
+      "quoteStatus": "valid",
+      "rawPrice": "207.631000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:7686af6ad95f",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "上海艾目介流体技术有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:abe024c9c05d",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽笃敬建筑工程有限公司",
+      "bidYuan": 1850000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "185.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:da69b1a83eba",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽祥悦建设工程有限公司",
+      "bidYuan": 1915000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "191.500000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:9476b8eb2c5a",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽黄河水处理科技股份有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:1c7860494ee2",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "淮南市国泰消防工程有限公司",
+      "bidYuan": 1930000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "193.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:ae9089965334",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "合肥冠桂环保科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:d9c0641d630a",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽人禾园林建设有限公司",
+      "bidYuan": 1960000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "196.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:1ea1387719bc",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽欧鑫环保科技有限责任公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:119e99020997",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽圣都建设集团有限公司",
+      "bidYuan": 1796000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "179.600000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:eda4e16f0abd",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽普氏生态环境有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:0998b6223635",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽宝森建设有限公司",
+      "bidYuan": 1770000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "177.000000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:1a9cb0a6f214",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽清泓环境科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:d85794173486",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽中笃建筑工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:224617cb85c4",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "中贡建设集团有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:ccc13b189d58",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽志远环境工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:14484c74255c",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "合肥敬业电子有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:048db30724ce",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽红华电力工程有限公司",
+      "bidYuan": 1953000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "195.300000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:a1b0ceb1b62e",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "江苏新天鸿集团有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:8b4ee9d4b805",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽青松环境工程有限公司",
+      "bidYuan": 1886976.42,
+      "quoteStatus": "valid",
+      "rawPrice": "188.697642",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:736d3b48eca4",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽清蓝环保工程有限公司",
+      "bidYuan": 1866000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "186.600000",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:b5f3c4c5a7be",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽九辰环境科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:d50cb281e4e0",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽禹信环境工程科技有限公司",
+      "bidYuan": 2099944.99,
+      "quoteStatus": "valid",
+      "rawPrice": "209.994499",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:46f18c4110e3",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽蓝鼎环保能源科技有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:38746787c767",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "安徽禾美环保集团有限公司",
+      "bidYuan": 2011850.68,
+      "quoteStatus": "valid",
+      "rawPrice": "201.185068",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "35d41833a9edf4bfc10b:664116db3100",
+      "projectId": "35d41833a9edf4bfc10b",
+      "bidder": "中基基固建设工程有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "万元",
+      "date": "2022-11-04",
+      "region": "霍邱县",
+      "category": "市政",
+      "project": "霍邱县特色水产高科技产业园项目污水处理设备采购及安装",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/001001012/20221104/af434440-79fc-44b1-9262-1aa45b888cf3.html"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:e0ad8edae986",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽林森保安服务有限公司",
+      "bidYuan": 5174031.48,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.480000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:c9423ac2b39b",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "上海猎鹰保安服务有限公司",
+      "bidYuan": 5174036.4,
+      "quoteStatus": "valid",
+      "rawPrice": "5174036.400000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:073810b473eb",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "江苏大德保安服务有限公司",
+      "bidYuan": 4368000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "4368000.000000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:6f2a9280def1",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽瑞泰保安服务有限公司",
+      "bidYuan": 5174048.14,
+      "quoteStatus": "valid",
+      "rawPrice": "5174048.140000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:f8f0f1f0b770",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽国福保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:db236fa855af",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "神之盾保安集团有限公司",
+      "bidYuan": 5174036.4,
+      "quoteStatus": "valid",
+      "rawPrice": "5174036.400000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:25a31348d220",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "芜湖金箍棒保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:024c6c5b5104",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽一盾保安服务有限公司",
+      "bidYuan": 5011130.94,
+      "quoteStatus": "valid",
+      "rawPrice": "5011130.940000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:97dd9891f438",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽华杰保安服务有限公司",
+      "bidYuan": 4998996.77,
+      "quoteStatus": "valid",
+      "rawPrice": "4998996.770000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:24567c8a2641",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "北京京铁卫士保安服务有限公司",
+      "bidYuan": 5175962.69,
+      "quoteStatus": "valid",
+      "rawPrice": "5175962.690000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:6d2837de9de0",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽祥威保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:64999b468f16",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "巢湖市金盾保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:d96d2a304052",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽东百保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:33a10a7cc871",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽新盾保安服务有限公司",
+      "bidYuan": 5174031.48,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.480000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:00bbf2f466c8",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽明卫保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:fed2d051d767",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽零点保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:0d479311a1f5",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽林盾保安服务有限公司",
+      "bidYuan": 5174048.13,
+      "quoteStatus": "valid",
+      "rawPrice": "5174048.130000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:1f4f4d0015e4",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽山中山保安服务有限公司",
+      "bidYuan": 5174034.26,
+      "quoteStatus": "valid",
+      "rawPrice": "5174034.260000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:51c51acf8c3c",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽方圆保安服务集团有限公司",
+      "bidYuan": 5175000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "5175000.000000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:cf0567cf8485",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "中军军弘保安服务有限公司",
+      "bidYuan": 4861989.6,
+      "quoteStatus": "valid",
+      "rawPrice": "4861989.600000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:a414baba639a",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "中保恒杰保安服务集团有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:776de3fe1e44",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽鼎卫保安服务有限公司",
+      "bidYuan": 5011130.94,
+      "quoteStatus": "valid",
+      "rawPrice": "5011130.940000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:1e98356bb41d",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽晟卫保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:0b8aca6404d1",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽天马保安服务集团有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:12c5335e146a",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "中升瀚铭保安服务集团有限公司",
+      "bidYuan": 5174033.16,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.160000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:7a819a3ba1f1",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "中保誉和集团有限公司",
+      "bidYuan": 5174048.13,
+      "quoteStatus": "valid",
+      "rawPrice": "5174048.130000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:11b1a72d35d3",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "上海品言保安服务有限公司",
+      "bidYuan": 5187000.0,
+      "quoteStatus": "valid",
+      "rawPrice": "5187000.000000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:aa94c7dadd14",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽中祥保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:2debdeb7a947",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽国盾保安服务集团有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:a361b2fa4b4c",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽亿豪保安服务有限公司",
+      "bidYuan": 5174031.49,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.490000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:120508ebbc50",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "浙江君特保安服务有限公司",
+      "bidYuan": null,
+      "quoteStatus": "unverified",
+      "rawPrice": "",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:336a804054aa",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽振升保安服务集团有限公司",
+      "bidYuan": 5174031.48,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.480000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:e089fdaf83b2",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "山东安盛源保安服务有限公司",
+      "bidYuan": 4705081.79,
+      "quoteStatus": "valid",
+      "rawPrice": "4705081.790000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:1cef814915aa",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽天河保安服务有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:ef3edaac34ba",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽神鹰保安服务有限公司",
+      "bidYuan": 5174031.48,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.480000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:5583e61a36da",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "合肥市强卫保安服务有限公司",
+      "bidYuan": 5174036.4,
+      "quoteStatus": "valid",
+      "rawPrice": "5174036.400000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:8963948f4993",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽省利民保安服务有限公司",
+      "bidYuan": 5129559.5,
+      "quoteStatus": "valid",
+      "rawPrice": "5129559.500000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:abe8742ae768",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "振远特卫保安集团有限公司",
+      "bidYuan": 5174033.15,
+      "quoteStatus": "valid",
+      "rawPrice": "5174033.150000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:54b08c11e83e",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "北京金剑卫士保安服务有限公司",
+      "bidYuan": 5174036.4,
+      "quoteStatus": "valid",
+      "rawPrice": "5174036.400000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    },
+    {
+      "id": "1d6d4832639c6bb8bca5:720172103168",
+      "projectId": "1d6d4832639c6bb8bca5",
+      "bidder": "安徽中天保安服务集团有限公司",
+      "bidYuan": 5174031.48,
+      "quoteStatus": "valid",
+      "rawPrice": "5174031.480000",
+      "unit": "元",
+      "date": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "project": "霍邱县人民医院保安服务项目",
+      "sourceUrl": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?categorynum=001002008&infoid=08836d03-b30a-4f8e-a01d-4ae763853404&relationguid=08836d03-b30a-4f8e-a01d-4ae763853404"
+    }
+  ],
+  "companies": [
+    {
+      "name": "上海品言保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "上海泓济环保科技股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "上海猎鹰保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "上海艾目介流体技术有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "中保恒杰保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "中保誉和集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "中军军弘保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "中升瀚铭保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "中基基固建设工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "中梓科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "中贡建设集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "北京京铁卫士保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "北京尚睿通教育科技股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f3926ad02b548195f868"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "北京百年树人远程教育有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f3926ad02b548195f868"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "北京金剑卫士保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "合肥冠桂环保科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "合肥市强卫保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "合肥敬业电子有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "合肥朗锐环境工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽一盾保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽世绿环保科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽东百保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽中天保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽中祥保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽中笃建筑工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽九辰环境科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽云龙粮机有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽亚安环境科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽人禾园林建设有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽亿豪保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽力诺环保工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽华杰保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽国盾保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽国福保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽圣都建设集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽天月环境工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽天河保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽天马保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽宝森建设有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽山中山保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽志远环境工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽慧视金瞳科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽振升保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽文畅教育科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f3926ad02b548195f868"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽新季环保科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽新盾保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽方圆保安服务集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽明卫保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽晟卫保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽普氏生态环境有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽朋创建设工程有限责任公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽林森保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽林盾保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽欧鑫环保科技有限责任公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽江泽建设有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽清泓环境科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽清蓝环保工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽瑞泰保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽皖润建筑有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽益祥建设集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽省凯杰机械制造有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽省利民保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽省同佳建设有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽省高迪科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽神鹰保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽祥威保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽祥悦建设工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽禹信环境工程科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽禾美环保集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽笃敬建筑工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽筑业建筑工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽红华电力工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽聚力粮机科技股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽荣夏智能科技有限责任公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽蓝鼎环保能源科技有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽零点保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽青松环境工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "安徽黄河水处理科技股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "安徽鼎卫保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "山东安盛源保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "巢湖市金盾保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "振远特卫保安集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "江苏大德保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "江苏新天鸿集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "江西省第六建筑工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "沈丘县圣德粮食机械有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "浙江君特保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "淮南市国泰消防工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "淮南市超越电气安装有限责任公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "界首市粮食机械有限责任公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "f0b9044f6cc0f7aa2404"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "皖创环保股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "神之盾保安集团有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "芜湖金箍棒保安服务有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "1d6d4832639c6bb8bca5"
+      ],
+      "validPriceCount": 1
+    },
+    {
+      "name": "蓝深集团股份有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "铜陵市天资建设有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    },
+    {
+      "name": "黑山县利民水利工程有限公司",
+      "appearances": 1,
+      "wins": 0,
+      "projects": [
+        "35d41833a9edf4bfc10b"
+      ],
+      "validPriceCount": 0
+    }
+  ],
   "meta": {
     "version": "1.0.0",
-    "status": "首次采集尚未完成",
-    "updatedAt": null,
-    "coverage": "尚无正式采集结果，统计不代表全部项目"
-  },
-  "projects": [],
-  "bids": [],
-  "companies": []
+    "updatedAt": "2026-11-24T00:07:55+08:00",
+    "source": "https://ggzy.luan.gov.cn",
+    "records": 13,
+    "openingRecords": 4,
+    "quoteRows": 96,
+    "companies": 96,
+    "newOrUpdated": 13,
+    "fetchErrors": 0,
+    "status": "已更新",
+    "coverage": "霍邱县；仅已公开且成功采集的官方页面，不能代表全部投标活动"
+  }
 }

@@ -1,6 +1,21 @@
 {
   "version": "1.0.0",
-  "bootstrapped": false,
-  "known": [],
-  "lastNotificationAt": null
+  "bootstrapped": true,
+  "known": [
+    "1a3747ced9ecad4a7286f376",
+    "2b753f3d6601ed60341a1ae8",
+    "3897f8556a4bdc20ba92e304",
+    "4be4fad707fa9d1390a0fa68",
+    "5c942b632dd7e8f261a0f99c",
+    "65d944d3b79195ee4a1bcffd",
+    "6dcb5065dfb0abb593eaf744",
+    "728434d0aac7880725af2c98",
+    "7623caff02a45b84fcf3ddc8",
+    "79b91c1b2728411f4709fbd2",
+    "aaab0464fa1d5e2ca9cc12bf",
+    "c5aace2b88b9c743d3a9ba13",
+    "def2ae8c4da0faf269345d2b"
+  ],
+  "lastNotificationAt": null,
+  "baselineAt": "2026-11-24T00:07:56+08:00"
 }
