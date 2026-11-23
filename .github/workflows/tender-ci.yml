@@ -22,5 +22,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: 检查语法
         run: python -m compileall -q apps/tender/scripts apps/tender/tests
+      - name: 前端 JavaScript 语法检查
+        run: node --check apps/tender/assets/app.js
       - name: 公告与监控回归测试
         run: python -m unittest discover -s apps/tender/tests -p "test_*.py" -v
