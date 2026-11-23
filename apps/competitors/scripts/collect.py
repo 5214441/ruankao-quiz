@@ -197,8 +197,7 @@ def extract_result(soup):
     # 不能靠“推荐排名第一单位”冒充最终中标人。
     name = label_value(soup, ["中标人名称", "中标单位", "中标人", "成交供应商", "成交单位", "中标供应商名称"])
     price = label_value(soup, ["中标价", "中标金额", "中标（成交）价", "成交金额", "中标价格"])
-    unit = "万元" if "万元" in price else None
-    return {"winner": name[:160], "winningYuan": money_yuan(price, unit) if price else None}
+    return {"winner": name[:160], "winningYuan": money_yuan(price) if price else None}
 
 def parse_page(html, url):
     kind = kind_for_url(url)
@@ -297,6 +296,47 @@ def browser_urls(max_pages=4, max_links=240):
         print(f"[WARN] 浏览器不可用: {type(exc).__name__}: {exc}")
     return sorted(links)[:max_links]
 
+class DetailBrowser:
+    """只有静态请求未得到必要字段时才启用同一个 Chromium 浏览器。"""
+
+    def __init__(self):
+        self.pw = None
+        self.browser = None
+        self.page = None
+        self.disabled = False
+
+    def fetch(self, url):
+        if self.disabled or not canonical(url):
+            return None
+        try:
+            if self.page is None:
+                from playwright.sync_api import sync_playwright
+                self.pw = sync_playwright().start()
+                self.browser = self.pw.chromium.launch(headless=True, args=["--no-sandbox"])
+                self.page = self.browser.new_page(locale="zh-CN", ignore_https_errors=True)
+            self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            for _ in range(5):
+                self.page.wait_for_timeout(1400)
+                result = parse_page(self.page.content(), url)
+                if result and (result["kind"] != "opening" or result.get("quotes")):
+                    return result
+            return parse_page(self.page.content(), url)
+        except Exception as exc:
+            print(f"[WARN] 详情渲染失败 {url}: {type(exc).__name__}: {exc}")
+            self.close()
+            self.disabled = True
+            return None
+
+    def close(self):
+        try:
+            if self.page: self.page.close()
+            if self.browser: self.browser.close()
+            if self.pw: self.pw.stop()
+        except Exception:
+            pass
+        self.page = self.browser = self.pw = None
+
+
 def normalized_bidder(value):
     return re.sub(r"\s+", "", str(value or "")).replace("（", "(").replace("）", ")")
 
@@ -352,6 +392,7 @@ def run(no_browser=False, max_new=200):
     session.headers.update(HEADERS)
     urls = list(dict.fromkeys([*seeds, *enumerate_urls(session), *([] if no_browser else browser_urls())]))
     new_count, errors = 0, 0
+    renderer = DetailBrowser() if not no_browser else None
     for url in urls:
         if not canonical(url):
             continue
@@ -365,6 +406,15 @@ def run(no_browser=False, max_new=200):
             response.raise_for_status()
             response.encoding = response.apparent_encoding or "utf-8"
             record = parse_page(response.text, url)
+            if renderer and (
+                not record
+                or (record["kind"] == "opening" and not record.get("quotes"))
+                or (record["kind"] == "result" and not record.get("winner"))
+            ):
+                rendered = renderer.fetch(url)
+                if rendered and (not record or len(rendered.get("quotes", [])) > len(record.get("quotes", []))
+                                 or (rendered.get("winner") and not record.get("winner"))):
+                    record = rendered
             if not record:
                 continue
             if record["region"] != "霍邱县":
@@ -379,6 +429,8 @@ def run(no_browser=False, max_new=200):
             errors += 1
             print(f"[WARN] 详情采集失败 {url}: {type(exc).__name__}: {exc}")
         time.sleep(0.1)
+    if renderer:
+        renderer.close()
     if not seen:
         raise RuntimeError("没有可用的官方数据，保留已有文件，停止发布空数据库")
     bundle = combine(list(seen.values()))
