@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="KK万能工具箱：BTC行情、招投标、智能备考、酒店经营和工程计算。">
+  <meta name="description" content="KK万能工具箱：BTC行情、招投标、竞争对手情报、智能备考、酒店经营和工程计算。">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/toolbox.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/portal.css?v=1.2.0">
@@ -34,7 +34,7 @@
         <h1>万能工具箱</h1>
         <p>把行情监控、招投标、学习备考、酒店经营和工程计算集中到同一个工作台。</p>
         <div class="hero-chips">
-          <span><i></i> 5个项目已上线</span><span><i></i> 招投标每日更新</span><span><i></i> BTC实时行情</span><span><i></i> 手机与电脑通用</span>
+          <span><i></i> 6个项目已上线</span><span><i></i> 招投标每日更新</span><span><i></i> BTC实时行情</span><span><i></i> 手机与电脑通用</span>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -46,7 +46,7 @@
 
     <main>
       <section class="overview" aria-label="工具箱概览">
-        <article class="overview-card"><div class="overview-icon indigo">◫</div><div><span>已上线项目</span><strong id="moduleCount">5</strong><small>持续增加新板块</small></div></article>
+        <article class="overview-card"><div class="overview-icon indigo">◫</div><div><span>已上线项目</span><strong id="moduleCount">6</strong><small>持续增加新板块</small></div></article>
         <article class="overview-card"><div class="overview-icon emerald">标</div><div><span>招标项目</span><strong id="tenderCount">—</strong><small id="tenderUpdated">正在读取</small></div></article>
         <article class="overview-card"><div class="overview-icon blue">考</div><div><span>软考题库</span><strong id="questionCount">—</strong><small id="questionVersion">正在读取</small></div></article>
         <article class="overview-card"><div class="overview-icon amber">✓</div><div><span>服务状态</span><strong class="status-text">正常</strong><small>全部项目可访问</small></div></article>
@@ -60,7 +60,7 @@
       </section>
 
       <section class="projects-section">
-        <div class="section-heading"><div><span class="section-kicker">PROJECTS</span><h2>项目中心</h2><p>选择一个项目，进入对应工作台。</p></div><span class="section-count">共 5 个项目</span></div>
+        <div class="section-heading"><div><span class="section-kicker">PROJECTS</span><h2>项目中心</h2><p>选择一个项目，进入对应工作台。</p></div><span class="section-count">共 6 个项目</span></div>
         <div id="toolGrid" class="tool-grid">
           <a class="tool-card btc-card" href="apps/btc/" data-category="market business" data-keywords="BTC 比特币 行情 合约 K线 资金费率 持仓量 多空比 爆仓 语音提醒 技术分析">
             <div class="card-accent"></div><div class="card-top"><div class="project-icon btc">₿</div><div class="card-badges"><span class="badge live"><i></i> 实时行情</span><span class="card-arrow">↗</span></div></div>
@@ -92,15 +92,20 @@
             <div class="card-footer"><span>8类计算器</span><span>快速测算</span><b>进入项目</b></div>
           </a>
 
+          <a class="tool-card tender-card" href="apps/competitors/" data-category="engineering business" data-keywords="竞争对手 企业 情报 开标 报价 中标结果 霍邱 六安 工程 招投标">
+            <div class="card-accent"></div><div class="card-top"><div class="project-icon tender">竞</div><div class="card-badges"><span class="badge live"><i></i> 公开数据</span><span class="card-arrow">↗</span></div></div>
+            <div class="card-content"><span class="project-code">INTELLIGENCE · 06</span><h3>招投标竞争情报中心</h3><p>自动整理公开开标记录、投标企业、历史报价和中标结果，企业对比与官方证据一键查看。</p></div>
+            <div class="card-footer"><span id="competitorCardCount">等待首次采集</span><span>自动更新</span><b>进入项目</b></div>
+          </a>
           <article class="tool-card coming-card" aria-label="更多项目建设中"><div class="coming-inner"><div class="coming-icon">＋</div><span class="project-code">NEXT PROJECT</span><h3>下一个项目</h3><p>新的独立项目板块将在这里继续加入。</p><span class="coming-status">规划中</span></div></article>
         </div>
         <div id="emptyState" class="empty hidden"><div class="empty-icon">⌕</div><h3>没有找到相关项目</h3><p>换一个关键词或分类试试。</p></div>
       </section>
     </main>
 
-    <footer><div><b>KK万能工具箱</b><span>把常用项目集中到一个入口</span></div><span>V1.2 · PROJECT HUB</span></footer>
+    <footer><div><b>KK万能工具箱</b><span>把常用项目集中到一个入口</span></div><span>V1.3 · PROJECT HUB</span></footer>
   </div>
   <div id="toast" class="toast hidden"></div>
-  <script src="assets/portal.js?v=1.2.0" defer></script>
+  <script src="assets/portal.js?v=1.3.0" defer></script>
 </body>
 </html>

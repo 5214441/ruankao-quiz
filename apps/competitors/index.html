@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1526">
+  <meta name="description" content="KK招投标竞争情报中心：基于六安市公共资源交易中心公开的开评标与中标信息，提供企业档案、历史报价、结果分析和来源核验。">
+  <title>KK · 招投标竞争情报中心</title>
+  <link rel="stylesheet" href="assets/style.css?v=1.0.0">
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <a class="back" href="../../">← 返回 KK 万能工具箱</a>
+      <div class="top-actions">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="lastUpdate">读取数据中…</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">KK · BID INTELLIGENCE / 06</div>
+        <h1>招投标竞争<span>情报中心</span></h1>
+        <p>公开开标记录、竞争企业、历史报价与中标信息，一站式检索。每个数字都能追溯到官方来源。</p>
+        <div class="hero-badges"><span>六安市公共资源交易中心</span><span>霍邱县优先</span><span>GitHub 自动更新</span></div>
+      </div>
+      <div class="hero-icon" aria-hidden="true">BI<span>·06</span></div>
+    </section>
+
+    <div id="loadError" class="notice warn" role="status" hidden>数据暂时无法读取，请刷新页面重试。</div>
+    <div class="notice" id="coverage">数据按公开页面持续补充，不能代表全部投标活动。</div>
+
+    <section class="stats" aria-label="数据概览">
+      <article><span>已收录公开记录</span><strong id="sProjects">—</strong><small>含开标与结果公告</small></article>
+      <article><span>公开投标报价行</span><strong id="sBids">—</strong><small>全部保留原始单位</small></article>
+      <article><span>参与企业 / 联合体</span><strong id="sCompanies">—</strong><small>以公开投标人名称计</small></article>
+      <article><span>可用金额报价</span><strong id="sValid">—</strong><small>不含未公布及零值</small></article>
+    </section>
+
+    <nav class="tabs" aria-label="情报中心功能">
+      <button class="tab active" data-tab="overview" type="button">数据总览</button>
+      <button class="tab" data-tab="openings" type="button">开标记录</button>
+      <button class="tab" data-tab="companies" type="button">企业档案</button>
+      <button class="tab" data-tab="awards" type="button">中标结果</button>
+      <button class="tab" data-tab="compare" type="button">企业对比</button>
+    </nav>
+
+    <section class="filters" aria-label="数据筛选">
+      <label>关键词搜索<input id="q" type="search" placeholder="企业名称、项目名称、项目编号…"></label>
+      <label>项目地区<select id="region"><option value="">所有地区</option></select></label>
+      <label>工程类别<select id="category"><option value="">所有类别</option></select></label>
+      <label>发布日期<select id="range"><option value="all">全部历史</option><option value="90">近90天</option><option value="365">近一年</option><option value="730">近两年</option></select></label>
+      <button class="outline export" id="exportCsv" type="button">导出筛选记录 CSV</button>
+    </section>
+
+    <main>
+      <section class="panel active" id="view-overview">
+        <div class="section-heading"><div><span class="kicker">DATA OVERVIEW</span><h2>公开竞争态势</h2></div></div>
+        <div class="two">
+          <article class="surface">
+            <div class="panel-title"><h3>工程类别分布</h3><small>已采集的公开记录</small></div>
+            <div id="categoryChart" class="bars"></div>
+          </article>
+          <article class="surface">
+            <div class="panel-title"><h3>参与最多的企业 / 联合体</h3><small>公开样本，不代表市场份额</small></div>
+            <div id="topCompanies" class="leaderboard"></div>
+          </article>
+        </div>
+        <article class="surface">
+          <div class="panel-title"><h3>公开投标金额分布</h3><small>按金额分组 · 不等于报价下浮率</small></div>
+          <div id="priceChart" class="bars"></div>
+        </article>
+        <article class="surface">
+          <div class="panel-title"><h3>最近采集的官方记录</h3><small>点击查看证据</small></div>
+          <div id="recentRecords" class="records"></div>
+        </article>
+        <div class="notice subtle">报价下浮率只有在同一标段的招标控制价、金额单位和报价都得到确认后才可计算。当前不对缺失控制价的项目推测下浮率，也不把中标候选人当作最终中标单位。</div>
+      </section>
+
+      <section class="panel" id="view-openings">
+        <div class="section-heading"><div><span class="kicker">BID OPENING</span><h2>开标与投标报价</h2></div><small id="openingCount"></small></div>
+        <div id="openingRecords" class="records"></div>
+      </section>
+
+      <section class="panel" id="view-companies">
+        <div class="section-heading"><div><span class="kicker">COMPANY PROFILE</span><h2>竞争企业档案</h2></div><small id="companyCount"></small></div>
+        <div id="companyRecords" class="companies"></div>
+      </section>
+
+      <section class="panel" id="view-awards">
+        <div class="section-heading"><div><span class="kicker">AWARD HISTORY</span><h2>中标及成交结果</h2></div><small id="awardCount"></small></div>
+        <div id="awardRecords" class="records"></div>
+        <div class="notice subtle">“推荐第一候选人”与“最终中标人”不同。只有正式中标结果公告明确披露的单位才会显示为中标人。</div>
+      </section>
+
+      <section class="panel" id="view-compare">
+        <div class="section-heading"><div><span class="kicker">COMPANY COMPARISON</span><h2>公开样本企业对比</h2></div></div>
+        <div class="two compare-select">
+          <label>企业 A<select id="compareA"><option value="">选择企业</option></select></label>
+          <label>企业 B<select id="compareB"><option value="">选择企业</option></select></label>
+        </div>
+        <article class="surface">
+          <div id="comparison" class="compare-empty">从上方选择两家企业进行公开样本比较。</div>
+        </article>
+        <div class="notice subtle">同一联合体投标会作为一个投标人记录，暂不拆分为成员公司的独立投标。样本中“未找到中标记录”不等于该企业从未中标。</div>
+      </section>
+    </main>
+
+    <footer>
+      <span>KK 万能工具箱 · BID INTELLIGENCE</span>
+      <a href="https://ggzy.luan.gov.cn/" target="_blank" rel="noopener noreferrer">六安市公共资源交易中心 ↗</a>
+      <span>统计仅供公开信息分析，投标前请核对原始公告</span>
+    </footer>
+  </div>
+  <script src="assets/app.js?v=1.0.0" defer></script>
+</body>
+</html>
