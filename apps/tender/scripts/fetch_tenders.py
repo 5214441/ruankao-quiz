@@ -23,6 +23,11 @@ from urllib.parse import parse_qs, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+
+try:
+    from .notice_upgrade import attach_change_notices, revised_times
+except ImportError:
+    from notice_upgrade import attach_change_notices, revised_times
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -341,7 +346,7 @@ def detail_needs_browser(details: dict) -> bool:
     # 详情页常由 JavaScript 动态加载。三个核心字段有任意一个缺失时启用浏览器兜底。
     essential_missing = any(not details.get(key) for key in ("deadline", "projectCode", "tenderer"))
     # Re-render JS-heavy pages when no opening time was found in a short static page.
-    return essential_missing or (not details.get("openingTime") and details.get("detailTextLength", 0) < 1500)
+    return essential_missing or (not details.get("openingTime") and details.get("detailTextLength", 0) < 2800)
 
 
 class DetailRenderer:
@@ -432,8 +437,10 @@ def merge_detail_data(primary: dict, rendered: dict) -> dict:
 def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> dict | None:
     href = urljoin(base_url, href)
     is_standard = "jyxxparentDetail.html" in href
-    is_nonentry = "/jyxx/001008/001008001/" in urlparse(href).path
-    if not is_standard and not is_nonentry:
+    link_path = urlparse(href).path
+    is_nonentry = "/jyxx/001008/001008001/" in link_path
+    is_nonentry_change = "/jyxx/001008/001008005/" in link_path
+    if not is_standard and not (is_nonentry or is_nonentry_change):
         return None
 
     combined = normalize(f"{context} {text}")
@@ -441,14 +448,25 @@ def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> d
     categorynum = query.get("categorynum", [""])[0]
 
     # 工程建设招标公告优先使用 categorynum；旧页面没有参数时再靠文字判定。
-    allowed_types = {"001001002": "工程建设公开招标", "001002001": "政府采购", "001008001": "非进场发包"}
+    allowed_types = {
+        "001001002": "工程建设公开招标",
+        "001001003": "工程建设澄清变更",
+        "001002001": "政府采购",
+        "001002002": "政府采购澄清变更",
+        "001005001": "其他交易公告",
+        "001005002": "其他交易变更",
+        "001008001": "非进场发包",
+        "001008005": "非进场发包变更",
+    }
     if categorynum and categorynum not in allowed_types:
         return None
-    if not categorynum and not is_nonentry and not any(label in combined for label in ("招标公告", "采购公告", "发包公告")):
+    if not categorynum and not (is_nonentry or is_nonentry_change) and not any(label in combined for label in ("招标公告", "采购公告", "发包公告", "变更公告", "更正公告", "澄清")):
         return None
-    if any(word in combined[:100] for word in ("中标结果公告", "成交结果公告", "更正公告", "澄清公告")):
+    if any(word in combined[:100] for word in ("中标结果公告", "成交结果公告")):
         return None
-    notice_type = "非进场发包" if is_nonentry else allowed_types.get(categorynum, "工程建设公开招标" if "招标公告" in combined else "政府采购")
+    notice_type = ("非进场发包变更" if is_nonentry_change else "非进场发包" if is_nonentry
+                   else allowed_types.get(categorynum, "工程建设公开招标" if "招标公告" in combined else "政府采购"))
+    is_change = notice_type.endswith(("澄清变更", "交易变更", "发包变更"))
 
     title = clean_title(text)
     if len(title) < 5:
@@ -463,6 +481,7 @@ def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> d
         "publishDate": extract_publish_date(combined),
         "region": parse_region(combined),
         "noticeType": notice_type,
+        "noticeKind": "change" if is_change else "original",
     }
 
 
@@ -549,7 +568,7 @@ def playwright_candidates(urls: list[str], diagnostics: list[dict]) -> list[dict
 
                 record["title"] = page.title()
                 record["bodyTextLength"] = len(page.locator("body").inner_text(timeout=10000))
-                rows = page.locator("a[href*='jyxxparentDetail.html'], a[href*='/jyxx/001008/001008001/']").evaluate_all(
+                rows = page.locator("a[href*='jyxxparentDetail.html'], a[href*='/jyxx/001008/001008001/'], a[href*='/jyxx/001008/001008005/']").evaluate_all(
                     """anchors => anchors.map(a => {
                         const holder = a.closest('li,tr,article,.list-item,.ewb-list-node,.ewb-data-node')
                             || a.parentElement;
@@ -630,7 +649,7 @@ def build_projects(
                 continue
             title = candidate["title"]
             context = candidate["context"]
-            if any(term in f"{title} {context}" for term in excluded):
+            if candidate.get("noticeKind") != "change" and any(term in f"{title} {context}" for term in excluded):
                 continue
 
             details = detail_data(session, candidate["url"])
@@ -639,7 +658,7 @@ def build_projects(
                 details = merge_detail_data(details, rendered)
             combined_text = normalize(f"{title} {context} {details.get('detailText', '')}")
             notice_type = candidate.get("noticeType", "工程建设公开招标")
-            if notice_type == "政府采购":
+            if notice_type.startswith("政府采购"):
                 category = "政府采购"
             elif notice_type == "非进场发包" and "服务类" in combined_text and not any(word in title for word in ("施工", "工程", "改造", "建设")):
                 category = "服务"
@@ -661,6 +680,7 @@ def build_projects(
 
             item = {
                 "id": item_id,
+                "noticeKind": candidate.get("noticeKind", "original"),
                 "title": title,
                 "region": region,
                 "category": category,
@@ -679,6 +699,13 @@ def build_projects(
                 "isSecond": "二次" in title or "第二次" in title,
                 "type": notice_type,
             }
+            if item["noticeKind"] == "change":
+                item["revisedTimes"] = revised_times(
+                    details.get("detailText", ""), parse_deadline, parse_opening_time
+                )
+                # 改动公告可能同时写有旧时间，严禁将其误判为新的开标时间。
+                item["deadline"] = item["revisedTimes"].get("deadline")
+                item["openingTime"] = item["revisedTimes"].get("openingTime")
             item["score"] = compute_score(item)
             output.append(item)
             time.sleep(0.18)
@@ -745,7 +772,7 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
         previous = old_map.get(item["id"], {})
         if not previous:
             new_count += 1
-        for key in ("budgetWan", "deadline", "openingTime", "openingTimeCheckedAt", "qualification", "tenderer", "projectCode", "summary"):
+        for key in ("budgetWan", "deadline", "openingTime", "openingTimeCheckedAt", "qualification", "tenderer", "projectCode", "summary", "changeNotices", "lastChangeDate", "deadlineSourceUrl", "openingTimeSourceUrl", "relatedProjectId", "relatedProjectTitle"):
             if not item.get(key) and previous.get(key):
                 item[key] = previous[key]
         old_map[item["id"]] = item
@@ -760,11 +787,14 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
         if publish_date >= cutoff:
             merged.append(item)
 
+    changes_applied = attach_change_notices(merged)
+    if changes_applied:
+        print(f"[INFO] 已依据明确变更公告修订 {changes_applied} 个时间字段。")
     merged.sort(key=lambda item: item.get("publishDate", ""), reverse=True)
     return merged, new_count
 
 
-def backfill_opening_times(projects: list[dict], limit: int = 6) -> tuple[int, int]:
+def backfill_opening_times(projects: list[dict], limit: int = 12) -> tuple[int, int]:
     """Recheck recent Huoqiu notices; never guess unpublished opening times."""
     session = make_session()
     renderer = DetailRenderer()
@@ -776,7 +806,7 @@ def backfill_opening_times(projects: list[dict], limit: int = 6) -> tuple[int, i
         for item in projects:
             if checked >= limit:
                 break
-            if item.get("region") != "霍邱县" or item.get("openingTime"):
+            if item.get("region") != "霍邱县" or item.get("openingTime") or item.get("noticeKind") == "change":
                 continue
             url = str(item.get("url") or "")
             if not url.startswith("https://ggzy.luan.gov.cn/"):
@@ -790,7 +820,7 @@ def backfill_opening_times(projects: list[dict], limit: int = 6) -> tuple[int, i
             last_checked = item.get("openingTimeCheckedAt")
             if last_checked:
                 try:
-                    if today - datetime.fromisoformat(last_checked) < timedelta(days=7):
+                    if today - datetime.fromisoformat(last_checked) < timedelta(days=2):
                         continue
                 except (ValueError, TypeError):
                     pass
