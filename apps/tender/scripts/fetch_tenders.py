@@ -775,6 +775,12 @@ def merge(old: list[dict], fresh: list[dict], keep_days: int) -> tuple[list[dict
         for key in ("budgetWan", "deadline", "openingTime", "openingTimeCheckedAt", "qualification", "tenderer", "projectCode", "summary", "changeNotices", "lastChangeDate", "deadlineSourceUrl", "openingTimeSourceUrl", "relatedProjectId", "relatedProjectTitle"):
             if not item.get(key) and previous.get(key):
                 item[key] = previous[key]
+        if item.get("noticeKind") != "change":
+            # 最新澄清已经证实的时间优先于旧招标公告中的历史时间。
+            for field in ("deadline", "openingTime"):
+                if previous.get(field + "SourceUrl") and previous.get(field):
+                    item[field] = previous[field]
+                    item[field + "SourceUrl"] = previous[field + "SourceUrl"]
         old_map[item["id"]] = item
 
     cutoff = (datetime.now(CN_TZ) - timedelta(days=keep_days)).date()
