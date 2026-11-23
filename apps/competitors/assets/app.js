@@ -102,6 +102,13 @@
     const counts = new Map();
     projects.forEach(p => counts.set(p.category, (counts.get(p.category) || 0) + 1));
     barRows([...counts].sort((a,b)=>b[1]-a[1]), $("categoryChart"));
+    const bins=[["100万以下",0],["100–500万",0],["500–1000万",0],["1000–3000万",0],["3000万以上",0]];
+    bids.filter(x=>validNumber(x.bidYuan)).forEach(x=>{
+      const v=x.bidYuan;
+      const index=v<1e6?0:v<5e6?1:v<1e7?2:v<3e7?3:4;
+      bins[index][1]++;
+    });
+    barRows(bins.filter(x=>x[1]>0), $("priceChart"));
     const comp = new Map();
     bids.forEach(b => {
       const key = normalize(b.bidder);
