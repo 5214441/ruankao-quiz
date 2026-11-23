@@ -177,7 +177,8 @@ def send_serverchan(sendkey: str, title: str, body: str) -> dict:
 
 def build_message(projects: list[dict], config: dict) -> tuple[str, str]:
     total = len(projects)
-    title = f"〖霍邱招标雷达〗发现{total}个新项目"
+    changed = sum(p.get("noticeKind") == "change" for p in projects)
+    title = f"〖霍邱招标雷达〗新增{total}条公告（含{changed}条澄清变更）"
     max_items = int(config.get("maxItemsPerMessage", 8))
     dashboard_url = config.get(
         "dashboardUrl",
@@ -185,14 +186,15 @@ def build_message(projects: list[dict], config: dict) -> tuple[str, str]:
     )
 
     parts = [
-        f"本次发现 **{total} 个霍邱县新招标项目**。",
+        f"本次发现 **{total} 条霍邱县新公告**，其中 **{changed} 条澄清或变更**。",
         "",
     ]
     for index, project in enumerate(projects[:max_items], start=1):
         tags = project.get("_matchedKeywords") or []
         tag_text = "、".join(tags[:6]) if tags else "霍邱县工程项目"
+        notice_label = "【澄清变更】" if project.get("noticeKind") == "change" else "【新公告】"
         parts.extend([
-            f"### {index}. {normalize(project.get('title'))}",
+            f"### {index}. {notice_label}{normalize(project.get('title'))}",
             f"- 类别：{normalize(project.get('category')) or '未识别'}",
             f"- 公告类型：{normalize(project.get('type')) or '未识别'}",
             f"- 发布：{normalize(project.get('publishDate')) or '未识别'}",
@@ -201,6 +203,7 @@ def build_message(projects: list[dict], config: dict) -> tuple[str, str]:
             f"- 开标时间：{deadline_text(project.get('openingTime'))}",
             f"- 适配评分：{int(project.get('score', 0) or 0)}分",
             f"- 命中关键词：{tag_text}",
+            *(["- 关联项目：" + normalize(project.get("relatedProjectTitle"))] if project.get("relatedProjectTitle") else []),
             f"- [查看原公告]({project.get('url', dashboard_url)})",
             "",
         ])
@@ -216,6 +219,48 @@ def build_message(projects: list[dict], config: dict) -> tuple[str, str]:
     ])
     return title, "\n".join(parts)
 
+
+
+def snapshot_times(projects: list[dict]) -> dict[str, dict[str, str]]:
+    return {
+        p["id"]: {
+            "deadline": str(p.get("deadline") or ""),
+            "openingTime": str(p.get("openingTime") or ""),
+        }
+        for p in projects
+        if p.get("id") and p.get("noticeKind") != "change"
+    }
+
+
+def find_time_updates(projects: list[dict], previous: dict, excluded_ids: set[str]) -> list[dict]:
+    changes = []
+    for p in projects:
+        if p.get("noticeKind") == "change" or p.get("id") in excluded_ids:
+            continue
+        before = previous.get(p.get("id"))
+        if not isinstance(before, dict):
+            continue
+        after = {"deadline": str(p.get("deadline") or ""), "openingTime": str(p.get("openingTime") or "")}
+        if any(str(before.get(k) or "") != after[k] for k in after):
+            changes.append({"project": p, "before": before, "after": after})
+    return changes
+
+
+def append_time_changes(title: str, body: str, updates: list[dict]) -> tuple[str, str]:
+    if not updates:
+        return title, body
+    title += f"、{len(updates)}项时间更新"
+    sections = ["", f"## {len(updates)}项开标/投标截止时间数据更新", ""]
+    for entry in updates[:12]:
+        p = entry["project"]
+        sections.append("### " + normalize(p.get("title")))
+        for field, label in (("deadline", "投标截止"), ("openingTime", "开标时间")):
+            before, after = entry["before"].get(field), entry["after"].get(field)
+            if str(before or "") != str(after or ""):
+                sections.append(f"- {label}：{deadline_text(before)} → {deadline_text(after)}")
+        sections.extend([f"- [查看公告]({p.get('openingTimeSourceUrl') or p.get('deadlineSourceUrl') or p.get('url')})", ""])
+    sections.append("提示：新增识别与官方延期不同，重要时间应核对原始公告、澄清及招标文件。")
+    return title, body + "\n" + "\n".join(sections)
 
 def build_test_message(config: dict) -> tuple[str, str]:
     keywords = "、".join(config.get("priorityKeywords", [])[:12])
@@ -270,6 +315,11 @@ def main() -> int:
 
     matches = eligible_projects(projects, config)
     known = set(state.get("knownProjectIds", []))
+    current_times = snapshot_times(matches)
+    if not isinstance(state.get("timeSnapshots"), dict):
+        # 升级时只建立快照基线，不将历史项目的旧时间变化当作新事件。
+        state["timeSnapshots"] = current_times
+        write_json(STATE_FILE, state)
 
     # 监控范围扩展后建立一次性基线，避免旧公告集中轰炸微信。
     scope_version = config.get("scopeVersion", "legacy")
@@ -362,8 +412,12 @@ def main() -> int:
                 print(f"[WARN] 抓取失败提醒发送失败：{exc}", file=sys.stderr)
 
     new_projects = [item for item in matches if item["id"] not in known]
+    changed_project_ids = {
+        item.get("relatedProjectId") for item in new_projects if item.get("noticeKind") == "change"
+    }
+    time_updates = find_time_updates(matches, state.get("timeSnapshots", {}), changed_project_ids)
 
-    if not new_projects:
+    if not new_projects and not time_updates:
         update_status(
             config,
             channelConfigured=channel_configured,
@@ -377,7 +431,12 @@ def main() -> int:
         print(f"[OK] 当前霍邱匹配项目 {len(matches)} 个，本次没有新项目。")
         return 0
 
-    title, body = build_message(new_projects, config)
+    if new_projects:
+        title, body = build_message(new_projects, config)
+    else:
+        title = "〖霍邱招标雷达〗开标/截止时间更新"
+        body = "发现已记录项目的开标或投标截止时间字段发生变化。"
+    title, body = append_time_changes(title, body, time_updates)
     if args.dry_run:
         print(title)
         print(body)
@@ -415,6 +474,7 @@ def main() -> int:
 
     # 仅在推送成功后标记为已知，失败时下次会自动重试。
     known.update(item["id"] for item in new_projects)
+    state["timeSnapshots"] = current_times
     state["knownProjectIds"] = sorted(known)[-2000:]
     state["lastNotificationAt"] = now_iso()
     state["lastNotificationProjectIds"] = [item["id"] for item in new_projects]
@@ -423,13 +483,13 @@ def main() -> int:
         config,
         channelConfigured=True,
         status="sent",
-        statusText=f"已推送 {len(new_projects)} 个霍邱新项目",
+        statusText=f"已推送 {len(new_projects)} 条霍邱新公告及 {len(time_updates)} 项时间变化",
         lastCheckAt=now_iso(),
         matchedProjectCount=len(matches),
         pendingCount=0,
         lastNotificationAt=state["lastNotificationAt"],
     )
-    print(f"[OK] 已发送微信提醒：{len(new_projects)} 个新项目。")
+    print(f"[OK] 已发送微信提醒：{len(new_projects)} 条新公告，{len(time_updates)} 项时间变化。")
     return 0
 
 
