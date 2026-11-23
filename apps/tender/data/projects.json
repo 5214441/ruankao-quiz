@@ -1,6 +1,7 @@
 [
   {
     "id": "0eff1869c87d5ab0b491f6b8",
+    "noticeKind": "original",
     "title": "科创园厂房窗帘采购安装项目",
     "region": "霍邱县",
     "category": "房建",
@@ -22,6 +23,7 @@
   },
   {
     "id": "f5a1863ecad198fab7755f14",
+    "noticeKind": "original",
     "title": "蝎子山综合体配套设施采购项目（二次）",
     "region": "霍邱县",
     "category": "其他工程",
@@ -40,6 +42,27 @@
     "isSecond": true,
     "type": "非进场发包",
     "openingTimeCheckedAt": "2026-11-23T21:11:48+08:00"
+  },
+  {
+    "id": "603f7241-24d6-4e26-a4b8-d76e2b6fa463",
+    "noticeKind": "original",
+    "title": "霍邱县蓼达公共交通有限公司2027-2028年度车辆保险定点服务采购项目第二包（二次）竞争性磋商公告",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-23",
+    "deadline": "2026-12-04T09:00:00+08:00",
+    "openingTime": "2026-12-04T09:00:00+08:00",
+    "budgetWan": 75.6513,
+    "score": 86,
+    "summary": "自动抓取的六安市公共资源交易中心其他交易公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "9、是否接受联合体：本项目不接受联合体",
+    "tenderer": "考核合格的续签下一年度合同，供应商未达到考核合格标准或因政策变化导致采购人不能继续履约的不予续签合同",
+    "projectCode": "HQQT2026072 统一交易标识码 Z10-1234140076900449XQ-20261123-000308-8",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=603f7241-24d6-4e26-a4b8-d76e2b6fa463&categorynum=001005001&relationguid=44ffbd9e-b4ce-4795-a63f-ca29e58efa9b&categoryname=交易公告",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": true,
+    "type": "其他交易公告"
   },
   {
     "id": "77ce0d75bb91bd4afc400cd7",
@@ -63,7 +86,98 @@
     "openingTimeCheckedAt": "2026-11-22T19:43:11+08:00"
   },
   {
+    "id": "27a01f69-f295-4268-aaf2-348a0d6c51cagzgg",
+    "noticeKind": "change",
+    "title": "【招标文件澄清与修改】高新创业园一期公寓提升改造项目招标文件答疑澄清公告",
+    "region": "霍邱县",
+    "category": "房建",
+    "publishDate": "2026-11-20",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 77,
+    "summary": "自动抓取的六安市公共资源交易中心工程建设澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "现我公司拟任投标项目经理类似业绩为：钢陵市郊区经开区智能制造产业园二期项目（二标段），为房屋建筑施工总承包业绩，合同总金额为55615879.72元，其中包含装饰装修工程约1300万元，但合同内容无法具体体现，现由该工程业主单位出具了签章证明，证明该工程所含装饰装修部分金额达到1300万元，另招标文件中要求的其他材料均齐全且符合要求，请问评委是否认可\n问题3：本项目招标文件第七页中：⑦投标人所用业绩为联合体业绩的，业绩规模以联合体协议中所明确的比例份额为准\n请问：用于本项目的项目经理业绩为联合体业绩，且该业绩项目经理为一人\n项目经理业绩大小是按联合体协议中所明确的比例份额算还是按整个联合体业绩金额算？\n回复：招标文件关于“业绩规模以联合体协议中所明确的比例份额为准”的规定适用于投标人业绩，不适用项目经理业绩规模认定\n问题4：招标文件要求项目经理具备单项合同金额不低于400万元的装饰装修施工业绩，我公司承建的房屋建筑施工总承包合同的施工范围包含装饰装修施工内容，但合同及施工许可证未明确装饰装修施工金额",
+    "tenderer": "）",
+    "projectCode": "E341522001005156 统一交易标识码 A01-1234140076900449XQ-20261112-000912-8",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=27a01f69-f295-4268-aaf2-348a0d6c51cagzgg&categorynum=001001003&relationguid=27a01f69-f295-4268-aaf2-348a0d6c51ca&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "工程建设澄清变更",
+    "revisedTimes": {},
+    "relatedProjectId": "00fa915e-0373-4f2b-8797-bd91c65a36ad",
+    "relatedProjectTitle": "高新创业园一期公寓提升改造项目招标公告"
+  },
+  {
+    "id": "f73f02ca3b4127b6f111bce2",
+    "noticeKind": "change",
+    "title": "霍邱县2027年生命安全防护工程、联网路勘察设计",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-20",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 12.19585,
+    "score": 68,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县公路发展中心 代理机构名称 安徽鼎屹工程项目管理咨询有限公司",
+    "projectCode": "HXJY1110001067071 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008005/20261120/68a01f13-5070-464e-a0c1-843fd78216df.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包变更",
+    "revisedTimes": {}
+  },
+  {
+    "id": "bcf020aabc76230277d9c1c0",
+    "noticeKind": "change",
+    "title": "霍邱县2027年农村公路危桥改造勘察设计",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-20",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 45.0,
+    "score": 71,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县公路发展中心 代理机构名称 安徽鼎屹工程项目管理咨询有限公司",
+    "projectCode": "HXJY1110001067069 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008005/20261120/d99f7944-d1ae-4d1a-be98-57b1e0312e9e.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包变更",
+    "revisedTimes": {}
+  },
+  {
+    "id": "1e9078f9d3d5c26fb2f75048",
+    "noticeKind": "change",
+    "title": "霍邱县2027年建制村通双车道项目勘察设计",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-20",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 46.1415,
+    "score": 68,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县公路发展中心 代理机构名称 安徽鼎屹工程项目管理咨询有限公司",
+    "projectCode": "HXJY1110001067061 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008005/20261120/fff668dd-7df8-4bd8-8b7e-09582c454650.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包变更",
+    "revisedTimes": {}
+  },
+  {
     "id": "7aa84d90-ba2d-46af-a89c-355cfe1bf639",
+    "noticeKind": "original",
     "title": "【采购公告】霍邱二中（高中部）食堂厨具采购项目",
     "region": "霍邱县",
     "category": "政府采购",
@@ -85,6 +199,7 @@
   },
   {
     "id": "c85afce8-3016-4389-b79f-b9fd9d82218c",
+    "noticeKind": "original",
     "title": "【采购公告】安徽省六安市2026年中央财政林草有害生物防治项目—霍邱县2027年度松材线虫病打孔注药防治项目",
     "region": "霍邱县",
     "category": "政府采购",
@@ -105,6 +220,7 @@
   },
   {
     "id": "1b075ec0-74f2-4229-83d9-70338b2e17cc",
+    "noticeKind": "original",
     "title": "【采购公告】霍邱县2026年“送戏进万村”增补演出服务项目第三包",
     "region": "霍邱县",
     "category": "政府采购",
@@ -125,6 +241,7 @@
   },
   {
     "id": "5e4ca126-d726-4aeb-8506-195871d3784d",
+    "noticeKind": "original",
     "title": "【采购公告】霍邱县2026年“送戏进万村”增补演出服务项目第二包",
     "region": "霍邱县",
     "category": "政府采购",
@@ -145,6 +262,7 @@
   },
   {
     "id": "6bdf26d8-afb9-4f03-96e4-2f25922bccfc",
+    "noticeKind": "original",
     "title": "【采购公告】霍邱县2026年“送戏进万村”增补演出服务项目第一包",
     "region": "霍邱县",
     "category": "政府采购",
@@ -162,6 +280,28 @@
     "isEpc": false,
     "isSecond": false,
     "type": "政府采购"
+  },
+  {
+    "id": "ccc8d015-5854-436d-8e1e-4560ad0ca3a5gzgg",
+    "noticeKind": "change",
+    "title": "【采购文件澄清与修改】霍邱县东西湖省级自然保护区天地空一体化能力建设项目招标文件答疑澄清公告",
+    "region": "霍邱县",
+    "category": "政府采购",
+    "publishDate": "2026-11-17",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 73,
+    "summary": "自动抓取的六安市公共资源交易中心政府采购澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "问题：类似业绩要求投标人具有类似业绩（业绩设备中需包含本项目核心产品），本项目核心产品为自动巡航无人机（含喊话器、探照灯）",
+    "tenderer": "咨询，我方提供包含无人机供货安装合同业绩，是否可认定满足该项业绩要求，参与计分？",
+    "projectCode": "FS34152220260459号 统一交易标识码 D01-1234140076900449XQ-20261110-000799-4",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=ccc8d015-5854-436d-8e1e-4560ad0ca3a5gzgg&categorynum=001002002&relationguid=ccc8d015-5854-436d-8e1e-4560ad0ca3a5&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "政府采购澄清变更",
+    "revisedTimes": {}
   },
   {
     "id": "57e46da3-4202-4b65-84ef-968a52efe5d3",
@@ -204,7 +344,74 @@
     "type": "政府采购"
   },
   {
+    "id": "166455c1-102e-4572-8aa8-76b83ab3428fgzgg",
+    "noticeKind": "change",
+    "title": "【招标文件澄清与修改】2026年县乡公路升级改造项目X302城临路（湖心路）施工二标段招标文件答疑澄清公告",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-13",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心工程建设澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "回复：不认可，若投标人无“项目所在地”设区的市级最新年度信用评价，按招标文件规定的采信顺序确定评价结果进行赋分\n问题2：招标文件中的项目经理业绩要求为：近5年内（自投标截止时间往前追溯，以交工日期为准），投标人拟委任项目经理具备一个单项合同额不低于所投标段最高投标限价60%（精确到分）的二级及以上公路工程施工业绩，我公司近5年（自投标截止时间往前追溯，以交工日期为准），拟委任项目经理具备一个单项合同额不低于所投标段最高投标限价60%（精确到分）的二级及以上公路养护工程施工业绩是否满足要求？\n问题3：关于“2026年县乡公路升级改造项目X302城临路(湖心路)”的招标文件中要求：投标人在项目所在地设区的市级交通运输主管部门公布的最新年度信用评价中获得施工类（不含水运工程）AA级得8分，获得A级得7.8分，其他等级或未参与评价得7.6分，本项最高得8分\n为了促进建筑企业发展，是否可以把“最新年度信用评价”改成“近三年度信用评价”？\n回复：按本项目招标文件执行，须提供“项目经理和项目总工无在建承诺函”",
+    "tenderer": "和招标代理机构不承担由于投标人不及时关注网上答疑澄清信息所造成的一切责任，给各潜在投标人带来不便敬请谅解",
+    "projectCode": "E341522001005154 统一交易标识码 A03-1234140076900449XQ-20261106-000903-3",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=166455c1-102e-4572-8aa8-76b83ab3428fgzgg&categorynum=001001003&relationguid=166455c1-102e-4572-8aa8-76b83ab3428f&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "工程建设澄清变更",
+    "revisedTimes": {}
+  },
+  {
+    "id": "32e46a12-2937-4bbf-b97d-4465c651e028gzgg",
+    "noticeKind": "change",
+    "title": "【招标文件澄清与修改】2026年县乡公路升级改造项目X302城临路（湖心路）施工一标段招标文件答疑澄清公告",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-13",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心工程建设澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "回复：不认可，若投标人无“项目所在地”设区的市级最新年度信用评价，按招标文件规定的采信顺序确定评价结果进行赋分\n问题2：招标文件中的项目经理业绩要求为：近5年内（自投标截止时间往前追溯，以交工日期为准），投标人拟委任项目经理具备一个单项合同额不低于所投标段最高投标限价60%（精确到分）的二级及以上公路工程施工业绩，我公司近5年（自投标截止时间往前追溯，以交工日期为准），拟委任项目经理具备一个单项合同额不低于所投标段最高投标限价60%（精确到分）的二级及以上公路养护工程施工业绩是否满足要求？\n问题3：关于“2026年县乡公路升级改造项目X302城临路(湖心路)”的招标文件中要求：投标人在项目所在地设区的市级交通运输主管部门公布的最新年度信用评价中获得施工类（不含水运工程）AA级得8分，获得A级得7.8分，其他等级或未参与评价得7.6分，本项最高得8分\n为了促进建筑企业发展，是否可以把“最新年度信用评价”改成“近三年度信用评价”？\n回复：按本项目招标文件执行，须提供“项目经理和项目总工无在建承诺函”",
+    "tenderer": "和招标代理机构不承担由于投标人不及时关注网上答疑澄清信息所造成的一切责任，给各潜在投标人带来不便敬请谅解",
+    "projectCode": "E341522001005154 统一交易标识码 A03-1234140076900449XQ-20261106-000903-3",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=32e46a12-2937-4bbf-b97d-4465c651e028gzgg&categorynum=001001003&relationguid=32e46a12-2937-4bbf-b97d-4465c651e028&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "工程建设澄清变更",
+    "revisedTimes": {}
+  },
+  {
+    "id": "7d40eef4-a4c7-46fa-a327-40738c056fe2gzgg",
+    "noticeKind": "change",
+    "title": "【招标文件澄清与修改】霍邱县城镇污水处理及管网建设补短板工程--潘集镇污水管网提升改造工程招标文件答疑澄清公告",
+    "region": "霍邱县",
+    "category": "市政",
+    "publishDate": "2026-11-13",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心工程建设澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "投标项目经理不得有在建工程（含已中标的待建工程）要求：\n（1）投标项目经理和技术负责人必须是投标人本单位工作人员，投标项目经理不得在其他在建工程（含已中标的待建工程）中担任项目经理、技术负责人、安全员、施工员、质量员，否则，已中标的取消该投标人中标资格\n投标项目经理不得有在建工程（含已发放中标通知书的项目）要求：投标项目经理和技术负责人必须是投标人本单位工作人员，投标项目经理不得在其他在建工程（含已发放中标通知书的项目）中担任项目经理、技术负责人、安全员、施工员、质量员，否则，已中标的取消该投标人中标资格\n澄清2：招标文件 第八章投标文件（商务文件） 第十条拟委任项目经理信息中“项目经理无在建承诺函”格式由：\n（五）项目经理无在建承诺函\n我单位投标项目经理（建造师）参与本项目投标之前无在建工程包括已中标的待建工程（或原有在建工程已按照相关法律法规办理了有效的项目经理变更手续）",
+    "tenderer": "）",
+    "projectCode": "E341522001005155 统一交易标识码 A02-1234140076900449XQ-20261109-000904-8",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=7d40eef4-a4c7-46fa-a327-40738c056fe2gzgg&categorynum=001001003&relationguid=7d40eef4-a4c7-46fa-a327-40738c056fe2&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "工程建设澄清变更",
+    "revisedTimes": {}
+  },
+  {
     "id": "00fa915e-0373-4f2b-8797-bd91c65a36ad",
+    "noticeKind": "original",
     "title": "高新创业园一期公寓提升改造项目招标公告",
     "region": "霍邱县",
     "category": "房建",
@@ -221,7 +428,59 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "changeNotices": [
+      {
+        "id": "27a01f69-f295-4268-aaf2-348a0d6c51cagzgg",
+        "title": "【招标文件澄清与修改】高新创业园一期公寓提升改造项目招标文件答疑澄清公告",
+        "date": "2026-11-20",
+        "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=27a01f69-f295-4268-aaf2-348a0d6c51cagzgg&categorynum=001001003&relationguid=27a01f69-f295-4268-aaf2-348a0d6c51ca&categoryname=澄清与修改"
+      }
+    ],
+    "lastChangeDate": "2026-11-20"
+  },
+  {
+    "id": "0d40a4961abeddf6d2331c85",
+    "noticeKind": "change",
+    "title": "王截流乡淮居佳苑安置点部分外联道路工程项目",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-11-10",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 34.038396,
+    "score": 83,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县王截流乡人民政府 代理机构名称 安徽蓼欣项目管理咨询有限公司",
+    "projectCode": "HXJY1110001066235 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008005/20261110/be033b04-0caa-42e1-9d35-ef3acdb2fb11.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包变更",
+    "revisedTimes": {}
+  },
+  {
+    "id": "961b8a26-0c39-4226-800f-714c1b6e8be5",
+    "noticeKind": "original",
+    "title": "霍邱县人民医院新院区第四批医疗设备采购项目（三次）公开招标公告",
+    "region": "霍邱县",
+    "category": "房建",
+    "publishDate": "2026-11-06",
+    "deadline": "2026-12-01T09:00:00+08:00",
+    "openingTime": "2026-12-01T09:00:00+08:00",
+    "budgetWan": 497.95,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心其他交易公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "9、是否接受联合体：本项目不接受联合体投标",
+    "tenderer": "信息",
+    "projectCode": "HQQT2026071 统一交易标识码 H02-1234140076900449XQ-20261102-000296-4",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=961b8a26-0c39-4226-800f-714c1b6e8be5&categorynum=001005001&relationguid=42d29ef2-7d7e-4818-b63c-63ead39e8ced&categoryname=交易公告",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "其他交易公告"
   },
   {
     "id": "bcf968bd-d2f0-4e43-8984-e096d0c09574",
@@ -323,6 +582,27 @@
     "type": "工程建设公开招标",
     "openingTime": "2026-11-17T10:00:00+08:00",
     "openingTimeCheckedAt": "2026-11-22T19:43:39+08:00"
+  },
+  {
+    "id": "6338614c-21e0-4a35-a9fa-6bf919e59f94",
+    "noticeKind": "original",
+    "title": "霍邱县蓼达公共交通有限公司2027-2028年度车辆保险定点服务采购项目招标公告",
+    "region": "霍邱县",
+    "category": "公路",
+    "publishDate": "2026-10-28",
+    "deadline": "2026-11-18T09:00:00+08:00",
+    "openingTime": "2026-11-18T09:00:00+08:00",
+    "budgetWan": 174.95,
+    "score": 83,
+    "summary": "自动抓取的六安市公共资源交易中心其他交易公告。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "9、是否接受联合体：不接受",
+    "tenderer": "考核合格的续签下一年度合同，供应商未达到考核合格标准或因政策变化导致采购人不能继续履约的不予续签合同",
+    "projectCode": "HQQT2026070 统一交易标识码 Z10-1234140076900449XQ-20261028-000293-3",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=6338614c-21e0-4a35-a9fa-6bf919e59f94&categorynum=001005001&relationguid=49f11755-17cc-4a08-9023-fe8ea4613401&categoryname=交易公告",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "其他交易公告"
   },
   {
     "id": "00ac8e06-52cf-4043-b880-222584ddceb5",
@@ -1235,7 +1515,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": true,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-26T11:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:33:49+08:00"
   },
   {
     "id": "96fd577d-b294-4292-8720-6a1badb56fb8",
@@ -1406,7 +1688,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-26T09:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:33:55+08:00"
   },
   {
     "id": "3ba56a5d-4aa6-451d-a82d-d93d59df51ba",
@@ -1634,7 +1918,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-12T11:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:02+08:00"
   },
   {
     "id": "933eac00-786d-4f09-8085-45675c08989f",
@@ -1653,7 +1939,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": true,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-09T10:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:09+08:00"
   },
   {
     "id": "75c1ab28-bc54-497b-bea6-a75ae1998766",
@@ -2052,7 +2340,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-28T10:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:16+08:00"
   },
   {
     "id": "c728832e-bdc2-4241-ad47-f91a033e160a",
@@ -2204,7 +2494,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-22T09:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:25+08:00"
   },
   {
     "id": "a0a24bbb-fb31-4eff-8e84-499d529e05a6",
@@ -2299,7 +2591,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-21T09:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:33+08:00"
   },
   {
     "id": "2b913259-11c3-4d76-b5cf-dd874a77bed9",
@@ -2394,7 +2688,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-22T09:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:39+08:00"
   },
   {
     "id": "ccf3bec4-f53d-4e72-83c9-a0e9440a4ae5",
@@ -2432,7 +2728,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-21T09:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:46+08:00"
   },
   {
     "id": "aac1591f-ffda-47e3-98cd-40c76408e34f",
@@ -2470,7 +2768,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-09-16T15:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T23:34:54+08:00"
   },
   {
     "id": "53de3c37-27d5-45c5-891b-94dd399aee0b",
@@ -4067,5 +4367,27 @@
     "isEpc": true,
     "isSecond": false,
     "type": "工程建设公开招标"
+  },
+  {
+    "id": "c5da8de0-1f27-4b97-a7d2-22e78b1c8fe9",
+    "noticeKind": "change",
+    "title": "【交易公告变更】霍邱县宋店镇200MW／400MWh集中式储能监理项目更正公告",
+    "region": "霍邱县",
+    "category": "其他工程",
+    "publishDate": "2026-07-03",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 58,
+    "summary": "自动抓取的六安市公共资源交易中心其他交易变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "信息",
+    "projectCode": "HQQT2026053 统一交易标识码 Z10-1234140076900449XQ-20260629-000185-7",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=c5da8de0-1f27-4b97-a7d2-22e78b1c8fe9&categorynum=001005002&relationguid=e4711f1e-49fb-48e7-87db-8ab103be55e2&categoryname=交易公告变更",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "其他交易变更",
+    "revisedTimes": {}
   }
 ]
