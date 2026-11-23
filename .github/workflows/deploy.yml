@@ -51,11 +51,20 @@ jobs:
       - name: 测试公告开标与投标截止时间解析
         run: python -m unittest discover -s apps/tender/tests -p "test_*.py"
 
+      - name: 校验竞争情报采集器和通知脚本
+        run: python -m compileall -q apps/competitors/scripts apps/competitors/tests
+
+      - name: 竞争情报单元测试
+        run: python -m unittest discover -s apps/competitors/tests -p "test_*.py" -v
+
+      - name: 竞争情报网页 JavaScript 语法检查
+        run: node --check apps/competitors/assets/app.js
+
       - name: 校验软考题库
         run: python apps/ruankao/scripts/validate_questions.py apps/ruankao/data/questions.json
 
       - name: 安装 Chromium
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]') || contains(github.event.head_commit.message, '[refresh-competitors]')
         run: python -m playwright install --with-deps chromium
 
       - name: 更新招投标数据
@@ -96,6 +105,38 @@ jobs:
             git push
           fi
 
+      - name: 采集霍邱竞争情报
+        id: competitors_fetch
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-competitors]')
+        continue-on-error: true
+        run: python apps/competitors/scripts/collect.py --max-new 100
+
+      - name: 开标与中标情报微信提醒
+        id: competitors_notify
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-competitors]')
+        continue-on-error: true
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: |
+          if [ "${{ steps.competitors_fetch.outcome }}" = "success" ]; then
+            python apps/competitors/scripts/notify.py
+          else
+            echo "采集未成功：不发送可能不完整的新公告消息"
+          fi
+
+      - name: 保存竞争情报公开数据与通知状态
+        if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-competitors]')) && always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/competitors/data/records.json apps/competitors/data/notify_state.json
+          if git diff --cached --quiet; then
+            echo "竞争情报数据没有变化"
+          else
+            git commit -m "[skip ci] 更新竞争情报公开数据"
+            git push
+          fi
+
       - name: 配置 GitHub Pages
         if: always()
         uses: actions/configure-pages@v5
@@ -113,8 +154,8 @@ jobs:
 
       - name: 标记抓取或提醒失败
         if: |
-          (github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')) &&
-          (steps.tender_fetch.outcome == 'failure' || steps.huoqiu_monitor.outcome == 'failure')
+          (github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]') || contains(github.event.head_commit.message, '[refresh-competitors]')) &&
+          (steps.tender_fetch.outcome == 'failure' || steps.huoqiu_monitor.outcome == 'failure' || steps.competitors_fetch.outcome == 'failure' || steps.competitors_notify.outcome == 'failure')
         run: |
           echo "抓取或微信提醒存在失败；状态文件已经保存并部署到网页。"
           exit 1
