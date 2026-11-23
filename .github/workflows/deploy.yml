@@ -5,11 +5,8 @@ on:
     branches: ["main"]
 
   schedule:
-    # 北京时间 09:17
-    - cron: "17 1 * * *"
-
-    # 北京时间 11:17
-    - cron: "17 3 * * *"
+    # 北京时间 08:17、11:17、14:17、17:17、20:17
+    - cron: "17 0,3,6,9,12 * * *"
 
   workflow_dispatch:
     inputs:
