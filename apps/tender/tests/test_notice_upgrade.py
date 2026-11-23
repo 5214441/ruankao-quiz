@@ -37,6 +37,20 @@ class NoticeUpgradeTests(unittest.TestCase):
                 self.assertIsNotNone(candidate)
                 self.assertEqual(candidate["noticeKind"], "change")
                 self.assertEqual(candidate["noticeType"], typ)
+        for code in ("001001003", "001002002", "001005002"):
+            with self.subTest(direct_code=code):
+                url = f"https://ggzy.luan.gov.cn/jyxx/{code[:6]}/{code}/20261123/test.html"
+                candidate = candidate_from_parts(
+                    url, "霍邱县某道路工程更正公告",
+                    "〖霍邱县〗2026-11-23 霍邱县某道路工程更正公告",
+                    "https://ggzy.luan.gov.cn/",
+                )
+                self.assertIsNotNone(candidate)
+                self.assertEqual(candidate["noticeKind"], "change")
+        self.assertIsNone(candidate_from_parts(
+            "https://other.example.com/jyxx/001001/001001003/20261123/test.html",
+            "公告", "霍邱县更正公告", "https://ggzy.luan.gov.cn/"
+        ))
         nonentry = candidate_from_parts(
             "https://ggzy.luan.gov.cn/jyxx/001008/001008005/20261123/test.html",
             "霍邱县县道改造项目变更公告",
