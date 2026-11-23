@@ -166,7 +166,7 @@ def parse_quotes(soup):
         unit_i = next((i for i, h in enumerate(heads) if "单位" in h), None)
         if name_i is None or price_i is None:
             continue
-        implicit_unit = "万元" if "万元" in heads[price_i] else "元" if "/元" in heads[price_i] else None
+        implicit_unit = "万元" if "万元" in heads[price_i] else "元" if "元" in heads[price_i] else None
         for tr in rows[header_idx + 1:]:
             cells = [clean(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"], recursive=False)]
             if len(cells) <= max(name_i, price_i):
@@ -196,7 +196,7 @@ def parse_quotes(soup):
 def extract_result(soup):
     # 不能靠“推荐排名第一单位”冒充最终中标人。
     name = label_value(soup, ["中标人名称", "中标单位", "中标人", "成交供应商", "成交单位", "中标供应商名称"])
-    price = label_value(soup, ["中标价", "中标金额", "中标（成交）价", "成交金额", "中标价格"])
+    price = label_value(soup, ["中标价", "中标金额", "中标（成交）价", "成交金额", "成交价", "中标价格"])
     return {"winner": name[:160], "winningYuan": money_yuan(price) if price else None}
 
 def parse_page(html, url):
@@ -397,8 +397,8 @@ def run(no_browser=False, max_new=200):
     for url in urls:
         if not canonical(url):
             continue
-        if url in seen and seen[url].get("quotes"):
-            # 有完整报价记录的旧公告不必反复请求。
+        if url in seen and (seen[url].get("quotes") or (seen[url].get("kind") == "result" and seen[url].get("winner"))):
+            # 已抓到价格或正式结果的历史公告不必反复请求。
             continue
         if new_count >= max_new:
             break
