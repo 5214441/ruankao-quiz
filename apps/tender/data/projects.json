@@ -26,14 +26,14 @@
     "region": "霍邱县",
     "category": "政府采购",
     "publishDate": "2026-11-19",
-    "deadline": null,
+    "deadline": "2026-11-27T09:00:00+08:00",
     "openingTime": "2026-11-27T09:00:00+08:00",
-    "budgetWan": null,
+    "budgetWan": 204.0,
     "score": 73,
     "summary": "自动抓取的六安市公共资源交易中心政府采购。请进入原公告核对完整范围、资质、评标办法和截止时间。",
-    "qualification": "",
-    "tenderer": "",
-    "projectCode": "",
+    "qualification": "9、是否接受联合体：本项目不接受联合体",
+    "tenderer": "/代理机构提出质疑。监管部门：霍邱县财政局；地址：霍邱县政务中心七楼；联系人：严先生；联系电话：0564-6080450",
+    "projectCode": "FS34152220260501号 统一交易标识码 D01-1234140076900449XQ-20261119-000827-5",
     "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=7aa84d90-ba2d-46af-a89c-355cfe1bf639&categorynum=001002001&relationguid=860dd34a-7899-4dbe-b60b-01584bbe29e1&categoryname=采购公告",
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
@@ -453,7 +453,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-16T09:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:02:37+08:00"
   },
   {
     "id": "c558b97e-344c-4811-979b-3eda13fe11ff",
@@ -491,7 +493,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-10T09:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:02:43+08:00"
   },
   {
     "id": "1702d993-b866-44f3-a1b0-649bbd84b33c",
@@ -662,7 +666,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": true,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-10T10:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:02:48+08:00"
   },
   {
     "id": "9366a6aa-3d8a-4f1b-b2cc-d76ffff4cbad",
@@ -681,7 +687,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-09T09:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:02:53+08:00"
   },
   {
     "id": "1a630979-b42e-4b04-9e57-41fd457e83e4",
@@ -757,7 +765,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-03T09:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:03:01+08:00"
   },
   {
     "id": "2210e405-184c-489b-abe9-2a783ef8784e",
@@ -833,7 +843,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-11-02T09:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T17:03:09+08:00"
   },
   {
     "id": "c52784d3-2798-46f9-95cf-28cf988c5d41",
