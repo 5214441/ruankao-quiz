@@ -55,18 +55,18 @@ jobs:
         run: python apps/ruankao/scripts/validate_questions.py apps/ruankao/data/questions.json
 
       - name: 安装 Chromium
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')
         run: python -m playwright install --with-deps chromium
 
       - name: 更新招投标数据
         id: tender_fetch
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')
         continue-on-error: true
         run: python apps/tender/scripts/fetch_tenders.py
 
       - name: 霍邱关键词监控与微信提醒
         id: huoqiu_monitor
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')
         continue-on-error: true
         env:
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
@@ -80,7 +80,7 @@ jobs:
           python apps/tender/scripts/monitor_huoqiu.py $EXTRA_ARGS
 
       - name: 保存招投标数据和监控状态
-        if: github.event_name != 'push' && always()
+        if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')) && always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -113,7 +113,7 @@ jobs:
 
       - name: 标记抓取或提醒失败
         if: |
-          github.event_name != 'push' &&
+          (github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-tender]')) &&
           (steps.tender_fetch.outcome == 'failure' || steps.huoqiu_monitor.outcome == 'failure')
         run: |
           echo "抓取或微信提醒存在失败；状态文件已经保存并部署到网页。"
