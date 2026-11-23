@@ -414,6 +414,8 @@ function renderProjects(){
           <div class="badges">
             <span class="badge blue">${esc(project.region||"未知地区")}</span>
             <span class="badge">${esc(project.category||"其他")}</span>
+            ${project.noticeKind==="change"?'<span class="badge amber">澄清/变更</span>':""}
+            ${(project.changeNotices||[]).length?'<span class="badge amber">有澄清记录</span>':""}
             ${project.isSecond?'<span class="badge amber">二次招标</span>':""}
             ${project.isEpc?'<span class="badge green">EPC</span>':""}
             ${due?`<span class="badge ${deadlineTone(project)}">${esc(deadlineText(project))}</span>`:""}
@@ -537,11 +539,15 @@ function openDetail(id){
     ["预算/控制价",budgetText(project.budgetWan)],
     ["投标截止",due?fmtDateTime(due)+"（北京时间）":"未识别"],
     ["开标时间",project.openingTime?fmtDateTime(project.openingTime)+"（北京时间）":"未识别（请核对公告）"],
+    ["开标时间来源",project.openingTimeSourceUrl?"最新澄清/变更公告":"原始公告或待核对"],
     ["招标人",project.tenderer||"未识别"],
     ["项目编号",project.projectCode||"未识别"],
     ["交易方式",project.type||"未识别"],
     ["数据来源",project.sourceName||"公共资源交易中心"]
-  ].map(([k,v])=>`<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join("");
+  ].map(([k,v])=>`<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join("") +
+  ((project.changeNotices||[]).length ? `<div class="fact"><span>澄清变更历史</span><b>${project.changeNotices.slice(-8).reverse().map(n=>
+    `<a href="${esc(n.url||"#")}" target="_blank" rel="noopener noreferrer">${esc(n.date||"日期未知")} · ${esc(n.title||"变更公告")}</a>${n.openingTimeAfter?"（开标时间已更新）":""}${n.deadlineAfter?"（截止时间已更新）":""}`
+  ).join("<hr>")}</b></div>` : "");
   $("dialogQualification").textContent = project.qualification || project.summary || "自动抓取尚未识别完整资格条件，请查看原公告与招标文件。";
   $("dialogCompanyMatch").innerHTML = `
     <div class="match-score ${match.tone}"><strong>${match.score||"—"}</strong><span>${esc(match.label)}</span></div>
