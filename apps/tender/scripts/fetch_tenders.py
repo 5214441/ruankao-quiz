@@ -436,16 +436,21 @@ def merge_detail_data(primary: dict, rendered: dict) -> dict:
 
 def candidate_from_parts(href: str, text: str, context: str, base_url: str) -> dict | None:
     href = urljoin(base_url, href)
-    is_standard = "jyxxparentDetail.html" in href
-    link_path = urlparse(href).path
+    parsed_url = urlparse(href)
+    if parsed_url.scheme != "https" or parsed_url.hostname != "ggzy.luan.gov.cn":
+        return None
+    link_path = parsed_url.path
+    is_standard = link_path.endswith("/jyxxparentDetail.html")
+    # 官网不同栏目并不都采用 jyxxparentDetail.html，澄清有大量直达 .html 链接。
+    direct_link = re.search(r"/jyxx/\d{6}/(\d{9})/20\d{6}/[^/]+\.html$", link_path)
     is_nonentry = "/jyxx/001008/001008001/" in link_path
     is_nonentry_change = "/jyxx/001008/001008005/" in link_path
-    if not is_standard and not (is_nonentry or is_nonentry_change):
+    if not is_standard and not direct_link:
         return None
 
     combined = normalize(f"{context} {text}")
-    query = parse_qs(urlparse(href).query)
-    categorynum = query.get("categorynum", [""])[0]
+    query = parse_qs(parsed_url.query)
+    categorynum = query.get("categorynum", [""])[0] or (direct_link.group(1) if direct_link else "")
 
     # 工程建设招标公告优先使用 categorynum；旧页面没有参数时再靠文字判定。
     allowed_types = {
@@ -568,7 +573,7 @@ def playwright_candidates(urls: list[str], diagnostics: list[dict]) -> list[dict
 
                 record["title"] = page.title()
                 record["bodyTextLength"] = len(page.locator("body").inner_text(timeout=10000))
-                rows = page.locator("a[href*='jyxxparentDetail.html'], a[href*='/jyxx/001008/001008001/'], a[href*='/jyxx/001008/001008005/']").evaluate_all(
+                rows = page.locator("a[href*='jyxxparentDetail.html'], a[href*='/jyxx/001001/'], a[href*='/jyxx/001002/'], a[href*='/jyxx/001005/'], a[href*='/jyxx/001008/']").evaluate_all(
                     """anchors => anchors.map(a => {
                         const holder = a.closest('li,tr,article,.list-item,.ewb-list-node,.ewb-data-node')
                             || a.parentElement;
