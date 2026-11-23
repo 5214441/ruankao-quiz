@@ -1,0 +1,40 @@
+name: KK竞争情报中心回归测试
+
+on:
+  pull_request:
+    paths:
+      - "apps/competitors/**"
+      - "assets/portal.js"
+      - "index.html"
+      - ".github/workflows/deploy.yml"
+      - ".github/workflows/competitors-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+      - name: Python编译和测试
+        run: |
+          python -m compileall -q apps/competitors/scripts apps/competitors/tests
+          python -m unittest discover -s apps/competitors/tests -p "test_*.py" -v
+      - name: 前端JavaScript检查
+        run: |
+          node --check apps/competitors/assets/app.js
+          node --check assets/portal.js
+      - name: 数据格式检查
+        run: |
+          python -m json.tool apps/competitors/data/seed_urls.json > /dev/null
+          python -m json.tool apps/competitors/data/records.json > /dev/null
+          python -m json.tool apps/competitors/data/notify_state.json > /dev/null
+      - name: 保留现有霍邱招标监控回归测试
+        run: python -m unittest discover -s apps/tender/tests -p "test_*.py"
