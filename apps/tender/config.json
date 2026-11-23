@@ -1,10 +1,11 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "sourceUrl": "https://ggzy.luan.gov.cn/",
   "sourceSearchUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "sourceUrls": [
     "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
     "https://ggzy.luan.gov.cn/jyxx/001002/jysearch.html",
+    "https://ggzy.luan.gov.cn/jyxx/001005/jysearch.html",
     "https://ggzy.luan.gov.cn/jyxx/001008/jysearch.html",
     "https://ggzy.luan.gov.cn/jyxx/jysearch.html",
     "https://ggzy.luan.gov.cn/"
@@ -34,17 +35,13 @@
   "excludedTerms": [
     "中标候选人",
     "中标结果",
-    "成交公告",
     "成交公示",
     "结果公示",
-    "终止公告",
     "废标公告",
-    "采购文件",
-    "澄清与修改",
     "资格预审结果"
   ],
   "keepDays": 180,
-  "updateTime": "每天北京时间09:17和11:17",
+  "updateTime": "每天北京时间08:17、11:17、14:17、17:17、20:17",
   "toolboxPath": "../../",
   "fetchRegions": [
     "霍邱县"
