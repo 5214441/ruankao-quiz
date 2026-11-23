@@ -1,7 +1,7 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "enabled": true,
-  "scheduleText": "每天北京时间09:17和11:17",
+  "scheduleText": "每天北京时间08:17、11:17、14:17、17:17、20:17",
   "regionKeywords": [
     "霍邱县",
     "霍邱"
@@ -58,9 +58,9 @@
     "发包公告"
   ],
   "excludePureService": false,
-  "monitorDays": 60,
+  "monitorDays": 90,
   "maxItemsPerMessage": 12,
   "sendFetchFailureNotice": true,
   "dashboardUrl": "https://5214441.github.io/ruankao-quiz/apps/tender/",
-  "scopeVersion": "huoqiu-all-2026-11"
+  "scopeVersion": "huoqiu-all-2026-11-radar3"
 }
