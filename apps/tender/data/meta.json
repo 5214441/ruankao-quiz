@@ -1,15 +1,15 @@
 {
   "version": "2.1.0",
   "success": true,
-  "updatedAt": "2026-11-23T17:03:09+08:00",
-  "lastAttemptAt": "2026-11-23T17:03:09+08:00",
-  "lastAttemptStatus": "自动更新成功：抓取 6 条，本次新增 0 条。",
+  "updatedAt": "2026-11-23T21:13:08+08:00",
+  "lastAttemptAt": "2026-11-23T21:13:08+08:00",
+  "lastAttemptStatus": "自动更新成功：抓取 8 条，本次新增 2 条。",
   "sourceName": "六安市公共资源交易中心",
   "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "usedSource": "requests+playwright",
-  "count": 210,
-  "newCount": 0,
-  "status": "自动更新成功，本次新增 0 个项目",
+  "count": 212,
+  "newCount": 2,
+  "status": "自动更新成功，本次新增 2 个项目",
   "updateSchedule": "每天北京时间09:17和11:17",
   "sourceDiagnostics": [
     {
@@ -30,7 +30,7 @@
       "mode": "requests",
       "url": "https://ggzy.luan.gov.cn/",
       "httpStatus": 200,
-      "bytes": 507488,
+      "bytes": 508012,
       "candidateCount": 51
     },
     {
@@ -47,7 +47,7 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001002/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1322,
+      "bodyTextLength": 1265,
       "rawAnchorCount": 10,
       "candidateCount": 1
     },
@@ -56,29 +56,25 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001008/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1152,
-      "rawAnchorCount": 1,
-      "candidateCount": 1
+      "bodyTextLength": 1070,
+      "rawAnchorCount": 4,
+      "candidateCount": 4
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/jyxx/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1100,
-      "rawAnchorCount": 1,
+      "bodyTextLength": 1018,
+      "rawAnchorCount": 4,
       "candidateCount": 0
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/",
-      "httpStatus": 200,
-      "title": "六安市公共资源交易中心",
-      "bodyTextLength": 3515,
-      "rawAnchorCount": 357,
-      "candidateCount": 50
+      "error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://ggzy.luan.gov.cn/\", waiting until \"domcontentloaded\"\n"
     }
   ],
   "openingTimeBackfillChecked": 6,
-  "openingTimeBackfillResolved": 6
+  "openingTimeBackfillResolved": 2
 }

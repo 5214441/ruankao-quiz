@@ -1,5 +1,47 @@
 [
   {
+    "id": "0eff1869c87d5ab0b491f6b8",
+    "title": "科创园厂房窗帘采购安装项目",
+    "region": "霍邱县",
+    "category": "房建",
+    "publishDate": "2026-11-23",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 20.0,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱合高现代产业园投资有限公司 代理机构名称 安徽省睿兴工程咨询有限公司",
+    "projectCode": "HXJY1110001067348 交易项目类型 货物类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008001/20261123/c0f029ac-0133-4511-b13c-48f67f6b09bd.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包",
+    "openingTimeCheckedAt": "2026-11-23T21:11:46+08:00"
+  },
+  {
+    "id": "f5a1863ecad198fab7755f14",
+    "title": "蝎子山综合体配套设施采购项目（二次）",
+    "region": "霍邱县",
+    "category": "其他工程",
+    "publishDate": "2026-11-23",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 26.05,
+    "score": 73,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县蓼景文化旅游开发有限公司 代理机构名称 万兴德项目管理有限公司",
+    "projectCode": "HXJY1110001067341 交易项目类型 货物类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008001/20261123/a34a45f2-ee70-4e3d-92ee-89c5913a7367.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": true,
+    "type": "非进场发包",
+    "openingTimeCheckedAt": "2026-11-23T21:11:48+08:00"
+  },
+  {
     "id": "77ce0d75bb91bd4afc400cd7",
     "title": "潘集镇2019-2024年高标准农田建后管护项目",
     "region": "霍邱县",
@@ -978,7 +1020,8 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTimeCheckedAt": "2026-11-23T21:12:16+08:00"
   },
   {
     "id": "6f3ab7a5-02fc-4411-bf08-4dcd1a85860d",
@@ -1073,7 +1116,8 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTimeCheckedAt": "2026-11-23T21:12:43+08:00"
   },
   {
     "id": "ddb2a1d4-21f7-478d-bebe-6eb6b64cf697",
@@ -1092,7 +1136,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-26T10:00:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T21:12:56+08:00"
   },
   {
     "id": "8c47404e-56d3-4ad1-9910-e09fc74b04f0",
@@ -1130,7 +1176,9 @@
     "sourceName": "六安市公共资源交易中心",
     "isEpc": false,
     "isSecond": false,
-    "type": "工程建设公开招标"
+    "type": "工程建设公开招标",
+    "openingTime": "2026-10-26T10:30:00+08:00",
+    "openingTimeCheckedAt": "2026-11-23T21:13:08+08:00"
   },
   {
     "id": "4d34df98-b75d-41bc-a6fd-24b33745b20d",
