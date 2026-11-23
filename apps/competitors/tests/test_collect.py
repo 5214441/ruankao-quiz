@@ -78,6 +78,21 @@ class CollectTests(unittest.TestCase):
         joint=[q for q in quotes if ";" in q["bidder"]]
         self.assertEqual(len(joint), 1)
 
+    def test_nonentry_official_award_fields(self):
+        html = """
+        <html><body><h3>霍邱县乌龙派出所综合业务用房建设项目中标结果公示</h3>
+        <table>
+          <tr><th>交易项目名称</th><td>霍邱县乌龙派出所综合业务用房建设项目</td></tr>
+          <tr><th>交易项目编号</th><td>HXJY1110001064859</td></tr>
+          <tr><th>项目所在地</th><td>霍邱县乌龙镇</td></tr>
+          <tr><th>成交单位</th><td>安徽联天建设工程有限公司</td><th>成交价</th><td>2261862.38元</td></tr>
+        </table></body></html>"""
+        url = "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261102/8ab89e93-61c0-4681-8385-2d38b38c5716.html"
+        record = parse_page(html, url)
+        self.assertEqual(record["region"], "霍邱县")
+        self.assertEqual(record["winner"], "安徽联天建设工程有限公司")
+        self.assertEqual(record["winningYuan"], 2261862.38)
+
     def test_candidates_only_official_types(self):
         html='<a href="/jyxx/001001/001001012/20261123/a.html">开标</a><a href="/jyxx/001001/001001002/20261123/b.html">招标</a>'
         self.assertEqual(list(get_candidates(html,"https://ggzy.luan.gov.cn/")), [
