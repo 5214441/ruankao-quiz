@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "id": "553108f6589bfb212d98",
+      "kind": "result",
+      "title": "霍邱县城关镇牌坊村农民安置房二期维修工程",
+      "projectCode": "HXJY1110001066846",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-24",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261124/4ddf3abf-6cbc-44ea-8657-ffdde4197440.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽北禾建设有限公司",
+      "winningYuan": 1675530.0
+    },
+    {
       "id": "e47a8bff38263fa453b8",
       "kind": "result",
       "title": "花园镇安业村上楼组、塘坊组、南庄组增减挂项目区配套道路提升工程",
@@ -3086,13 +3101,13 @@
   ],
   "meta": {
     "version": "1.0.0",
-    "updatedAt": "2026-11-24T00:07:55+08:00",
+    "updatedAt": "2026-11-24T17:58:52+08:00",
     "source": "https://ggzy.luan.gov.cn",
-    "records": 13,
+    "records": 14,
     "openingRecords": 4,
     "quoteRows": 96,
     "companies": 96,
-    "newOrUpdated": 13,
+    "newOrUpdated": 1,
     "fetchErrors": 0,
     "status": "已更新",
     "coverage": "霍邱县；仅已公开且成功采集的官方页面，不能代表全部投标活动"

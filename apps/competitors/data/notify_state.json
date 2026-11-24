@@ -2,6 +2,7 @@
   "version": "1.0.0",
   "bootstrapped": true,
   "known": [
+    "0d8f0f1ee640bd840abf29f3",
     "1a3747ced9ecad4a7286f376",
     "2b753f3d6601ed60341a1ae8",
     "3897f8556a4bdc20ba92e304",
@@ -16,6 +17,6 @@
     "c5aace2b88b9c743d3a9ba13",
     "def2ae8c4da0faf269345d2b"
   ],
-  "lastNotificationAt": null,
+  "lastNotificationAt": "2026-11-24T17:58:55+08:00",
   "baselineAt": "2026-11-24T00:07:56+08:00"
 }
