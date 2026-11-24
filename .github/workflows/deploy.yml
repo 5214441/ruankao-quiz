@@ -28,10 +28,8 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-24.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+    outputs:
+      artifact_uploaded: ${{ steps.pages_artifact.outcome }}
     steps:
       - name: 获取仓库代码
         uses: actions/checkout@v6
@@ -142,15 +140,11 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 上传网站文件
-        if: always()
+        id: pages_artifact
+        if: success() || (steps.tender_fetch.outcome == 'failure' || steps.competitors_fetch.outcome == 'failure')
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
-
-      - name: 部署网站
-        if: always()
-        id: deployment
-        uses: actions/deploy-pages@v4
 
       - name: 标记抓取或提醒失败
         if: |
@@ -159,3 +153,16 @@ jobs:
         run: |
           echo "抓取或微信提醒存在失败；状态文件已经保存并部署到网页。"
           exit 1
+
+  deploy-pages:
+    name: 发布 KK 万能工具箱到 GitHub Pages
+    needs: build-and-deploy
+    if: ${{ always() && needs.build-and-deploy.outputs.artifact_uploaded == 'success' }}
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 从已完成的构建任务中部署网页
+        id: deployment
+        uses: actions/deploy-pages@v4
