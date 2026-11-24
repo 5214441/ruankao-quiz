@@ -1,15 +1,15 @@
 {
   "version": "2.1.0",
   "success": true,
-  "updatedAt": "2026-11-23T23:34:54+08:00",
-  "lastAttemptAt": "2026-11-23T23:34:54+08:00",
-  "lastAttemptStatus": "自动更新成功：抓取 21 条，本次新增 13 条。",
+  "updatedAt": "2026-11-24T17:54:29+08:00",
+  "lastAttemptAt": "2026-11-24T17:54:29+08:00",
+  "lastAttemptStatus": "自动更新成功：抓取 17 条，本次新增 2 条。",
   "sourceName": "六安市公共资源交易中心",
   "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "usedSource": "requests+playwright",
-  "count": 225,
-  "newCount": 13,
-  "status": "自动更新成功，本次新增 13 个项目",
+  "count": 227,
+  "newCount": 2,
+  "status": "自动更新成功，本次新增 2 个项目",
   "updateSchedule": "每天北京时间09:17和11:17",
   "sourceDiagnostics": [
     {
@@ -23,7 +23,7 @@
       "mode": "requests",
       "url": "https://ggzy.luan.gov.cn/",
       "httpStatus": 200,
-      "bytes": 508008,
+      "bytes": 508834,
       "candidateCount": 136
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1382,
+      "bodyTextLength": 1397,
       "rawAnchorCount": 10,
       "candidateCount": 10
     },
@@ -40,47 +40,43 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001002/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1265,
+      "bodyTextLength": 1260,
       "rawAnchorCount": 10,
-      "candidateCount": 4
+      "candidateCount": 2
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/jyxx/001005/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1385,
+      "bodyTextLength": 1349,
       "rawAnchorCount": 10,
-      "candidateCount": 6
+      "candidateCount": 8
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/jyxx/001008/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1082,
+      "bodyTextLength": 1109,
       "rawAnchorCount": 10,
-      "candidateCount": 6
+      "candidateCount": 3
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/jyxx/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1030,
+      "bodyTextLength": 1144,
       "rawAnchorCount": 10,
       "candidateCount": 0
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/",
-      "httpStatus": 200,
-      "title": "六安市公共资源交易中心",
-      "bodyTextLength": 3515,
-      "rawAnchorCount": 410,
-      "candidateCount": 130
+      "error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://ggzy.luan.gov.cn/\", waiting until \"domcontentloaded\"\n"
     }
   ],
-  "openingTimeBackfillChecked": 10,
-  "openingTimeBackfillResolved": 10
+  "openingTimeBackfillChecked": 1,
+  "openingTimeBackfillResolved": 0
 }

@@ -16,6 +16,7 @@
     "27a01f69-f295-4268-aaf2-348a0d6c51cagzgg",
     "291531c8-a71f-4c2c-8b16-638b036e7f67",
     "32e46a12-2937-4bbf-b97d-4465c651e028gzgg",
+    "464812cfe02f800e516fca27",
     "4c265dd8-c901-49a8-b325-4b6dfe1d745d",
     "504689da-344e-4eac-82c1-e6c96d1b2f1f",
     "57d0a296-0480-4948-83da-7c6e49a54bc7",
@@ -40,6 +41,7 @@
     "7d40eef4-a4c7-46fa-a327-40738c056fe2gzgg",
     "7eaabb86-1d85-4c48-9b2b-b5e1d2d800b0",
     "85041b14-072e-4bd5-a654-8ae92a870545",
+    "860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg",
     "8dcb1faf-1a16-45ec-84b5-672362e78a0d",
     "926114a6-d13b-484d-bb58-b739a2925943",
     "933eac00-786d-4f09-8085-45675c08989f",
@@ -73,16 +75,20 @@
     "f796949d-882c-46ae-a2e0-9c03ffbc0e47",
     "fc18d342-fb69-4676-b4b6-b650236881a0"
   ],
-  "lastNotificationAt": "2026-11-23T21:13:10+08:00",
+  "lastNotificationAt": "2026-11-24T17:54:32+08:00",
   "lastFailureAlertDate": null,
   "lastBootstrapAt": "2026-07-25T14:02:42+08:00",
   "lastNotificationProjectIds": [
-    "0eff1869c87d5ab0b491f6b8",
-    "f5a1863ecad198fab7755f14"
+    "860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg",
+    "464812cfe02f800e516fca27"
   ],
   "scopeVersion": "huoqiu-all-2026-11-radar3",
   "lastScopeBootstrapAt": "2026-11-23T23:34:54+08:00",
   "timeSnapshots": {
+    "464812cfe02f800e516fca27": {
+      "deadline": "",
+      "openingTime": ""
+    },
     "603f7241-24d6-4e26-a4b8-d76e2b6fa463": {
       "deadline": "2026-12-04T09:00:00+08:00",
       "openingTime": "2026-12-04T09:00:00+08:00"
@@ -230,10 +236,6 @@
     "e7c7fed1-ea96-46ca-9a92-8ac2f13f32eb": {
       "deadline": "2026-09-21T09:30:00+08:00",
       "openingTime": "2026-09-21T09:30:00+08:00"
-    },
-    "5ebf4a61-ee15-43d1-926d-deb1e0ef5238": {
-      "deadline": "2026-09-16T15:00:00+08:00",
-      "openingTime": "2026-09-16T15:00:00+08:00"
     }
   }
 }

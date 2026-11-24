@@ -1,5 +1,51 @@
 [
   {
+    "id": "860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg",
+    "noticeKind": "change",
+    "title": "【采购文件澄清与修改】霍邱二中（高中部）食堂厨具采购项目更正公告",
+    "region": "霍邱县",
+    "category": "政府采购",
+    "publishDate": "2026-11-24",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": null,
+    "score": 73,
+    "summary": "自动抓取的六安市公共资源交易中心政府采购澄清变更。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "信息",
+    "projectCode": "FS34152220260501号 统一交易标识码 D01-1234140076900449XQ-20261119-000827-5",
+    "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg&categorynum=001002002&relationguid=860dd34a-7899-4dbe-b60b-01584bbe29e1&categoryname=澄清与修改",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "政府采购澄清变更",
+    "revisedTimes": {},
+    "relatedProjectId": "7aa84d90-ba2d-46af-a89c-355cfe1bf639",
+    "relatedProjectTitle": "【采购公告】霍邱二中（高中部）食堂厨具采购项目"
+  },
+  {
+    "id": "464812cfe02f800e516fca27",
+    "noticeKind": "original",
+    "title": "龙潭镇中心小学新建功能室建设项目",
+    "region": "霍邱县",
+    "category": "其他工程",
+    "publishDate": "2026-11-24",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 196.786526,
+    "score": 70,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县教育局 代理机构名称 安徽云木建设工程项目管理有限公司",
+    "projectCode": "HXJY1110001067376 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008001/20261124/8f129c73-ff12-459a-a3b0-74d4b613b1a9.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包",
+    "openingTimeCheckedAt": "2026-11-24T17:54:29+08:00"
+  },
+  {
     "id": "0eff1869c87d5ab0b491f6b8",
     "noticeKind": "original",
     "title": "科创园厂房窗帘采购安装项目",
@@ -195,7 +241,16 @@
     "isEpc": false,
     "isSecond": false,
     "type": "政府采购",
-    "openingTimeCheckedAt": "2026-11-22T19:43:18+08:00"
+    "openingTimeCheckedAt": "2026-11-22T19:43:18+08:00",
+    "changeNotices": [
+      {
+        "id": "860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg",
+        "title": "【采购文件澄清与修改】霍邱二中（高中部）食堂厨具采购项目更正公告",
+        "date": "2026-11-24",
+        "url": "https://ggzy.luan.gov.cn/jyxxparentDetail.html?infoid=860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg&categorynum=001002002&relationguid=860dd34a-7899-4dbe-b60b-01584bbe29e1&categoryname=澄清与修改"
+      }
+    ],
+    "lastChangeDate": "2026-11-24"
   },
   {
     "id": "c85afce8-3016-4389-b79f-b9fd9d82218c",
