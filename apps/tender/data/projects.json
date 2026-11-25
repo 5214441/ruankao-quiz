@@ -65,6 +65,50 @@
     "openingTimeCheckedAt": "2026-11-25T16:30:24+08:00"
   },
   {
+    "id": "d2187f9f7c76286b332356b3",
+    "noticeKind": "original",
+    "title": "2026年度省级和美乡村莲花寺村下元组人居环境整治项目",
+    "region": "霍邱县",
+    "category": "市政",
+    "publishDate": "2026-11-25",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 58.499817,
+    "score": 77,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县岔路镇人民政府 代理机构名称 华瑞国际工程咨询集团有限公司",
+    "projectCode": "HXJY1110001067504 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008001/20261125/596bd1e7-ef06-4f55-afb9-ad871a8a275b.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包",
+    "openingTimeCheckedAt": "2026-11-26T03:18:44+08:00"
+  },
+  {
+    "id": "d7db7d457a73ae060c506fc3",
+    "noticeKind": "original",
+    "title": "霍邱县三流乡“皖韵虾乡·乐游香店”乡村旅游振兴基础设施配套项目",
+    "region": "霍邱县",
+    "category": "市政",
+    "publishDate": "2026-11-25",
+    "deadline": null,
+    "openingTime": null,
+    "budgetWan": 210.771338,
+    "score": 80,
+    "summary": "自动抓取的六安市公共资源交易中心非进场发包。请进入原公告核对完整范围、资质、评标办法和截止时间。",
+    "qualification": "",
+    "tenderer": "霍邱县三流乡人民政府 代理机构名称 华智建造价咨询有限公司",
+    "projectCode": "HXJY1110001067478 交易项目类型 工程类",
+    "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008001/20261125/e3334e72-9217-4cef-86de-67c7e264bcbe.html",
+    "sourceName": "六安市公共资源交易中心",
+    "isEpc": false,
+    "isSecond": false,
+    "type": "非进场发包",
+    "openingTimeCheckedAt": "2026-11-26T03:18:46+08:00"
+  },
+  {
     "id": "860dd34a-7899-4dbe-b60b-01584bbe29e1gzgg",
     "noticeKind": "change",
     "title": "【采购文件澄清与修改】霍邱二中（高中部）食堂厨具采购项目更正公告",
@@ -130,7 +174,7 @@
     "isEpc": false,
     "isSecond": false,
     "type": "非进场发包",
-    "openingTimeCheckedAt": "2026-11-23T21:11:46+08:00"
+    "openingTimeCheckedAt": "2026-11-26T03:18:47+08:00"
   },
   {
     "id": "f5a1863ecad198fab7755f14",
@@ -152,7 +196,7 @@
     "isEpc": false,
     "isSecond": true,
     "type": "非进场发包",
-    "openingTimeCheckedAt": "2026-11-23T21:11:48+08:00"
+    "openingTimeCheckedAt": "2026-11-26T03:18:49+08:00"
   },
   {
     "id": "603f7241-24d6-4e26-a4b8-d76e2b6fa463",
@@ -1421,7 +1465,8 @@
     "isEpc": false,
     "isSecond": false,
     "type": "工程建设公开招标",
-    "openingTimeCheckedAt": "2026-11-23T21:12:16+08:00"
+    "openingTimeCheckedAt": "2026-11-26T03:18:57+08:00",
+    "openingTime": "2026-11-02T09:00:00+08:00"
   },
   {
     "id": "6f3ab7a5-02fc-4411-bf08-4dcd1a85860d",
@@ -1517,7 +1562,8 @@
     "isEpc": false,
     "isSecond": false,
     "type": "工程建设公开招标",
-    "openingTimeCheckedAt": "2026-11-23T21:12:43+08:00"
+    "openingTimeCheckedAt": "2026-11-26T03:19:04+08:00",
+    "openingTime": "2026-10-26T09:00:00+08:00"
   },
   {
     "id": "ddb2a1d4-21f7-478d-bebe-6eb6b64cf697",

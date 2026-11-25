@@ -3,7 +3,7 @@
   "enabled": true,
   "channelConfigured": true,
   "status": "sent",
-  "statusText": "已推送 3 条霍邱新公告及 0 项时间变化",
+  "statusText": "已推送 2 条霍邱新公告及 2 项时间变化",
   "scheduleText": "每天北京时间08:17、11:17、14:17、17:17、20:17",
   "keywords": [
     "土地复垦",
@@ -60,8 +60,8 @@
     "霍邱县",
     "霍邱"
   ],
-  "lastCheckAt": "2026-11-25T16:30:26+08:00",
-  "matchedProjectCount": 49,
+  "lastCheckAt": "2026-11-26T03:19:05+08:00",
+  "matchedProjectCount": 51,
   "pendingCount": 0,
-  "lastNotificationAt": "2026-11-25T16:30:26+08:00"
+  "lastNotificationAt": "2026-11-26T03:19:05+08:00"
 }
