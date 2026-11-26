@@ -3131,15 +3131,15 @@
   ],
   "meta": {
     "version": "1.0.0",
-    "updatedAt": "2026-11-26T16:18:45+08:00",
+    "updatedAt": "2026-11-27T03:05:45+08:00",
     "source": "https://ggzy.luan.gov.cn",
     "records": 16,
     "openingRecords": 4,
     "quoteRows": 96,
     "companies": 96,
-    "newOrUpdated": 2,
+    "newOrUpdated": 0,
     "fetchErrors": 0,
-    "status": "已更新",
+    "status": "沿用已有记录",
     "coverage": "霍邱县；仅已公开且成功采集的官方页面，不能代表全部投标活动"
   }
 }
