@@ -16,6 +16,7 @@
     "27a01f69-f295-4268-aaf2-348a0d6c51cagzgg",
     "291531c8-a71f-4c2c-8b16-638b036e7f67",
     "32e46a12-2937-4bbf-b97d-4465c651e028gzgg",
+    "374f335a0d17e5992f7e44e9",
     "464812cfe02f800e516fca27",
     "4c265dd8-c901-49a8-b325-4b6dfe1d745d",
     "504689da-344e-4eac-82c1-e6c96d1b2f1f",
@@ -80,16 +81,19 @@
     "f91dc925688e608201c78ce4",
     "fc18d342-fb69-4676-b4b6-b650236881a0"
   ],
-  "lastNotificationAt": "2026-11-26T03:19:05+08:00",
+  "lastNotificationAt": "2026-11-26T16:14:47+08:00",
   "lastFailureAlertDate": null,
   "lastBootstrapAt": "2026-07-25T14:02:42+08:00",
   "lastNotificationProjectIds": [
-    "d7db7d457a73ae060c506fc3",
-    "d2187f9f7c76286b332356b3"
+    "374f335a0d17e5992f7e44e9"
   ],
   "scopeVersion": "huoqiu-all-2026-11-radar3",
   "lastScopeBootstrapAt": "2026-11-23T23:34:54+08:00",
   "timeSnapshots": {
+    "374f335a0d17e5992f7e44e9": {
+      "deadline": "",
+      "openingTime": ""
+    },
     "d7db7d457a73ae060c506fc3": {
       "deadline": "",
       "openingTime": ""
