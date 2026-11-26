@@ -1,6 +1,36 @@
 {
   "projects": [
     {
+      "id": "827f17b392e639326f79",
+      "kind": "result",
+      "title": "霍邱县蝎子山石头老街及沙滩堤坝景观提升工程",
+      "projectCode": "HXJY1110001067031",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-26",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261126/56b35c0e-40fb-411b-9d65-7666de7af635.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽南淮建设有限公司",
+      "winningYuan": 536762.49
+    },
+    {
+      "id": "5a5ce908a56fca112103",
+      "kind": "result",
+      "title": "霍邱县冯井镇蝎子山·旷世奇潭光影秀项目",
+      "projectCode": "HXJY1110001067032",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-26",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261126/5aec4f7b-8a50-476f-8b83-8484f9b9054a.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽远翔光电科技有限公司",
+      "winningYuan": 589000.0
+    },
+    {
       "id": "553108f6589bfb212d98",
       "kind": "result",
       "title": "霍邱县城关镇牌坊村农民安置房二期维修工程",
@@ -3101,15 +3131,15 @@
   ],
   "meta": {
     "version": "1.0.0",
-    "updatedAt": "2026-11-26T03:21:54+08:00",
+    "updatedAt": "2026-11-26T16:18:45+08:00",
     "source": "https://ggzy.luan.gov.cn",
-    "records": 14,
+    "records": 16,
     "openingRecords": 4,
     "quoteRows": 96,
     "companies": 96,
-    "newOrUpdated": 0,
+    "newOrUpdated": 2,
     "fetchErrors": 0,
-    "status": "沿用已有记录",
+    "status": "已更新",
     "coverage": "霍邱县；仅已公开且成功采集的官方页面，不能代表全部投标活动"
   }
 }
