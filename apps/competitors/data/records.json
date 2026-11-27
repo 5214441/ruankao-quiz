@@ -1,6 +1,66 @@
 {
   "projects": [
     {
+      "id": "b5f53915aac9487f6051",
+      "kind": "result",
+      "title": "霍邱县城区曹庙路口袋公园建设项目",
+      "projectCode": "HXJY1110001067089",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "其他",
+      "publishDate": "2026-11-27",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261127/0c21d902-dc17-41d6-853c-7fb226fc7174.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽超正建设工程有限公司",
+      "winningYuan": 549000.01
+    },
+    {
+      "id": "9345793047d724389dba",
+      "kind": "result",
+      "title": "霍邱县公路发展中心2026年下半年国省干线公路重要县道安全隐患整治工程",
+      "projectCode": "HXJY1110001066999",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "公路",
+      "publishDate": "2026-11-27",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261127/fbdec49a-42e3-4e87-9e13-2ea8028e21a6.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽启傲建筑工程有限公司",
+      "winningYuan": 153720.16
+    },
+    {
+      "id": "5c9e5e75575f5e5a62a1",
+      "kind": "result",
+      "title": "霍邱一中9#、10#楼室外排水工程",
+      "projectCode": "HXJY1110001067088",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "市政",
+      "publishDate": "2026-11-27",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261127/cff1f1e7-971d-4665-a126-852ce226a87b.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "安徽释佳建设工程有限公司",
+      "winningYuan": 144558.74
+    },
+    {
+      "id": "4e7cc82c12f64eb0c291",
+      "kind": "result",
+      "title": "霍邱县第六人民医院(六安市中医院马店分院）食堂外包服务项目",
+      "projectCode": "HXJY1110001065207",
+      "segmentCode": "",
+      "region": "霍邱县",
+      "category": "房建",
+      "publishDate": "2026-11-27",
+      "url": "https://ggzy.luan.gov.cn/jyxx/001008/001008002/20261127/d0d5d761-efa3-4f9a-90ee-c587724122e5.html",
+      "openingTime": "",
+      "quotes": [],
+      "winner": "",
+      "winningYuan": null
+    },
+    {
       "id": "827f17b392e639326f79",
       "kind": "result",
       "title": "霍邱县蝎子山石头老街及沙滩堤坝景观提升工程",
@@ -3131,15 +3191,15 @@
   ],
   "meta": {
     "version": "1.0.0",
-    "updatedAt": "2026-11-27T03:05:45+08:00",
+    "updatedAt": "2026-11-27T16:29:49+08:00",
     "source": "https://ggzy.luan.gov.cn",
-    "records": 16,
+    "records": 20,
     "openingRecords": 4,
     "quoteRows": 96,
     "companies": 96,
-    "newOrUpdated": 0,
+    "newOrUpdated": 4,
     "fetchErrors": 0,
-    "status": "沿用已有记录",
+    "status": "已更新",
     "coverage": "霍邱县；仅已公开且成功采集的官方页面，不能代表全部投标活动"
   }
 }
