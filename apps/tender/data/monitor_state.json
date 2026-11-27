@@ -14,6 +14,7 @@
     "1b8436a258895475cd8ecfe3",
     "1e9078f9d3d5c26fb2f75048",
     "201ca46eb5c9d42751513adf",
+    "20a81558257f0c1ca2b4d40d",
     "2301b1f0-dbb1-4300-ad01-8135badd4d26",
     "27a01f69-f295-4268-aaf2-348a0d6c51cagzgg",
     "291531c8-a71f-4c2c-8b16-638b036e7f67",
@@ -54,6 +55,7 @@
     "9366a6aa-3d8a-4f1b-b2cc-d76ffff4cbad",
     "961b8a26-0c39-4226-800f-714c1b6e8be5",
     "9b3a4b6a-9b48-4e9e-aecc-5bb78351aaf8",
+    "9f52807d138f4239b48cef06",
     "a024e147-84df-4516-a7c1-fc4ce0cd77ef",
     "a2ee8fdc-5b0b-4a6f-a991-e238998a3506",
     "a787954e-753a-42c9-b51a-083f9da72f09",
@@ -78,6 +80,7 @@
     "dd086a08-9a56-48be-af87-f22d929f330a",
     "ddb2a1d4-21f7-478d-bebe-6eb6b64cf697",
     "de76a5c4-cd8e-4b0a-93e3-3c691566c918",
+    "de9f8576-edc4-4449-922e-b67809b3eaa7",
     "e7c7fed1-ea96-46ca-9a92-8ac2f13f32eb",
     "f5932563-9a15-49ba-bb7e-1e405609621f",
     "f5a1863ecad198fab7755f14",
@@ -86,13 +89,13 @@
     "f91dc925688e608201c78ce4",
     "fc18d342-fb69-4676-b4b6-b650236881a0"
   ],
-  "lastNotificationAt": "2026-11-27T16:26:02+08:00",
+  "lastNotificationAt": "2026-11-28T02:59:48+08:00",
   "lastFailureAlertDate": null,
   "lastBootstrapAt": "2026-07-25T14:02:42+08:00",
   "lastNotificationProjectIds": [
-    "7d0878a1f4f19159b52d7762",
-    "d2338ad222e3c4904dcef1bb",
-    "d816f2344be9372543e14624"
+    "20a81558257f0c1ca2b4d40d",
+    "de9f8576-edc4-4449-922e-b67809b3eaa7",
+    "9f52807d138f4239b48cef06"
   ],
   "scopeVersion": "huoqiu-all-2026-11-radar3",
   "lastScopeBootstrapAt": "2026-11-23T23:34:54+08:00",
@@ -105,7 +108,19 @@
       "deadline": "",
       "openingTime": ""
     },
+    "20a81558257f0c1ca2b4d40d": {
+      "deadline": "",
+      "openingTime": ""
+    },
     "d816f2344be9372543e14624": {
+      "deadline": "",
+      "openingTime": ""
+    },
+    "de9f8576-edc4-4449-922e-b67809b3eaa7": {
+      "deadline": "2026-12-07T09:30:00+08:00",
+      "openingTime": "2026-12-07T09:30:00+08:00"
+    },
+    "9f52807d138f4239b48cef06": {
       "deadline": "",
       "openingTime": ""
     },

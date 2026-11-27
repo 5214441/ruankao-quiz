@@ -1,13 +1,13 @@
 {
   "version": "2.1.0",
   "success": true,
-  "updatedAt": "2026-11-27T16:25:59+08:00",
-  "lastAttemptAt": "2026-11-27T16:25:59+08:00",
-  "lastAttemptStatus": "自动更新成功：抓取 15 条，本次新增 3 条。",
+  "updatedAt": "2026-11-28T02:59:46+08:00",
+  "lastAttemptAt": "2026-11-28T02:59:46+08:00",
+  "lastAttemptStatus": "自动更新成功：抓取 17 条，本次新增 3 条。",
   "sourceName": "六安市公共资源交易中心",
   "sourceUrl": "https://ggzy.luan.gov.cn/jyxx/001001/jysearch.html",
   "usedSource": "requests+playwright",
-  "count": 238,
+  "count": 241,
   "newCount": 3,
   "status": "自动更新成功，本次新增 3 个项目",
   "updateSchedule": "每天北京时间09:17和11:17",
@@ -23,7 +23,7 @@
       "mode": "requests",
       "url": "https://ggzy.luan.gov.cn/",
       "httpStatus": 200,
-      "bytes": 507611,
+      "bytes": 508195,
       "candidateCount": 136
     },
     {
@@ -40,9 +40,9 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001002/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1205,
+      "bodyTextLength": 1350,
       "rawAnchorCount": 10,
-      "candidateCount": 3
+      "candidateCount": 1
     },
     {
       "mode": "playwright",
@@ -58,23 +58,27 @@
       "url": "https://ggzy.luan.gov.cn/jyxx/001008/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1145,
+      "bodyTextLength": 1107,
       "rawAnchorCount": 10,
-      "candidateCount": 4
+      "candidateCount": 2
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/jyxx/jysearch.html",
       "httpStatus": 200,
       "title": "六安市公共资源交易中心",
-      "bodyTextLength": 1089,
+      "bodyTextLength": 1116,
       "rawAnchorCount": 10,
       "candidateCount": 0
     },
     {
       "mode": "playwright",
       "url": "https://ggzy.luan.gov.cn/",
-      "error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://ggzy.luan.gov.cn/\", waiting until \"domcontentloaded\"\n"
+      "httpStatus": 200,
+      "title": "六安市公共资源交易中心",
+      "bodyTextLength": 2126,
+      "rawAnchorCount": 410,
+      "candidateCount": 134
     }
   ],
   "openingTimeBackfillChecked": 4,
